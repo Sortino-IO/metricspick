@@ -1,0 +1,53 @@
+---
+import Base from "./Base.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+
+interface Crumb {
+  href?: string;
+  label: string;
+}
+interface Props {
+  title: string;
+  description: string;
+  kicker: string;
+  lede: string;
+  crumbs: Crumb[];
+}
+const { title, description, kicker, lede, crumbs } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const jsonLd = [
+  {
+    "@type": "BreadcrumbList",
+    itemListElement: crumbs.map((crumb, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: crumb.label,
+      item: crumb.href ? new URL(crumb.href, Astro.site).href : canonical,
+    })),
+  },
+  {
+    "@type": "WebPage",
+    name: title,
+    description,
+    url: canonical,
+  },
+];
+---
+<Base title={title} description={description} jsonLd={jsonLd}>
+  <main id="main">
+    <header class="article-hero">
+      <div class="wrap">
+        <Breadcrumbs items={crumbs} />
+        <p class="kicker">{kicker}</p>
+        <h1>{title}</h1>
+        <p class="lede">{lede}</p>
+      </div>
+    </header>
+    <section class="band band-cream">
+      <div class="article-body prose">
+        <slot />
+      </div>
+    </section>
+    <slot name="wide" />
+  </main>
+</Base>

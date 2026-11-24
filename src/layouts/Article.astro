@@ -1,0 +1,155 @@
+---
+import type { CollectionEntry } from "astro:content";
+import Base from "./Base.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import Tldr from "../components/Tldr.astro";
+import Jobs from "../components/Jobs.astro";
+import CompareTable from "../components/CompareTable.astro";
+import ToolCards from "../components/ToolCards.astro";
+import PriceLadder from "../components/PriceLadder.astro";
+import Faq from "../components/Faq.astro";
+import Related from "../components/Related.astro";
+import SourceList from "../components/SourceList.astro";
+import { comparisons, rows } from "../data/catalog";
+import { plainText, renderMarkdown } from "../lib/markdown";
+import { SITE_URL } from "../config/site";
+
+interface Props {
+  article: CollectionEntry<"articles">;
+}
+const { article } = Astro.props;
+const data = article.data;
+const sectionLabel = data.section.charAt(0).toUpperCase() + data.section.slice(1);
+const sectionHref = `/${data.section}/`;
+const crumbs = [
+  { href: "/", label: "Home" },
+  { href: sectionHref, label: sectionLabel },
+  { label: data.breadcrumb },
+];
+const updated = new Intl.DateTimeFormat("en-GB", {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+  timeZone: "UTC",
+}).format(data.updated);
+const iso = data.updated.toISOString().slice(0, 10);
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const set = data.comparison ? comparisons[data.comparison] : undefined;
+const accent = data.accent;
+const title = data.title;
+const accentAt = accent ? title.indexOf(accent) : -1;
+const faqEntities = data.faqs.map((faq) => ({
+  "@type": "Question",
+  name: faq.q,
+  acceptedAnswer: { "@type": "Answer", text: plainText(faq.a) },
+}));
+const creativeWork: Record<string, unknown> = {
+  "@type": data.schemaType === "Review" ? "Review" : "Article",
+  headline: data.title,
+  name: data.title,
+  datePublished: iso,
+  dateModified: iso,
+  author: { "@type": "Organization", name: "MetricsPick", url: `${SITE_URL}/about/` },
+  publisher: {
+    "@type": "Organization",
+    name: "metricspick",
+    url: `${SITE_URL}/`,
+    logo: { "@type": "ImageObject", url: `${SITE_URL}/favicon.svg` },
+  },
+  description: data.description,
+  mainEntityOfPage: canonical,
+  image: `${SITE_URL}/favicon.svg`,
+};
+if (data.schemaType === "Review") {
+  creativeWork.reviewBody = data.description;
+  creativeWork.itemReviewed = {
+    "@type": "SoftwareApplication",
+    name: "DataFast",
+    applicationCategory: "BusinessApplication",
+    operatingSystem: "Web",
+    offers: {
+      "@type": "Offer",
+      price: "9",
+      priceCurrency: "USD",
+      description:
+        "Starter plan for 10,000 events per month, billed monthly, as published on the DataFast homepage on 24 November 2026.",
+      url: "https://datafa.st/?via=sortino",
+    },
+  };
+}
+const jsonLd = [
+  {
+    "@type": "BreadcrumbList",
+    itemListElement: crumbs.map((crumb, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: crumb.label,
+      item: crumb.href ? new URL(crumb.href, Astro.site).href : canonical,
+    })),
+  },
+  creativeWork,
+  { "@type": "FAQPage", mainEntity: faqEntities },
+];
+---
+<Base
+  title={data.seoTitle ?? data.title}
+  description={data.description}
+  ogType="article"
+  jsonLd={jsonLd}
+>
+  <main id="main">
+    <header class="article-hero">
+      <div class="wrap">
+        <Breadcrumbs items={crumbs} />
+        <p class="kicker">{data.kicker}</p>
+        <h1>
+          {accentAt >= 0 && accent ? (
+            <>
+              {title.slice(0, accentAt)}<span class="grad">{accent}</span>{title.slice(accentAt + accent.length)}
+            </>
+          ) : (
+            title
+          )}
+        </h1>
+        <p class="lede">{data.lede}</p>
+        <p class="byline">
+          <span>By <strong>{data.author}</strong></span>
+          <span>Updated {updated}</span>
+          <span><a href="/how-we-test/">Public-source methodology</a></span>
+        </p>
+      </div>
+    </header>
+    <Tldr items={data.tldr} note={data.tldrNote} />
+    {data.jobs && data.jobs.length > 0 && <Jobs jobs={data.jobs} />}
+    {set && <CompareTable rows={rows(set.ids, set.highlight)} note={set.note} />}
+    {data.tools && data.tools.length > 0 && <ToolCards cards={data.tools} />}
+    {data.ladders && data.ladders.length > 0 && <PriceLadder ids={data.ladders} />}
+    <section class="band band-cream">
+      <div class="article-body prose">
+        <slot />
+      </div>
+    </section>
+    {data.honesty && (
+      <section class="band band-coral" aria-labelledby="honesty-title">
+        <div class="article-body">
+          <aside class="honesty">
+            <h2 id="honesty-title">{data.honestyTitle ?? "When you should not switch"}</h2>
+            <div set:html={renderMarkdown(data.honesty)} />
+          </aside>
+        </div>
+      </section>
+    )}
+    <Faq items={data.faqs} />
+    <Related items={data.related} />
+    <SourceList extra={data.sources} />
+    <section class="band band-cream">
+      <div class="article-body">
+        <p class="byline">
+          <span>By <strong>{data.author}</strong></span>
+          <span>Updated {updated}</span>
+          <span>Prices and product behavior were read from public vendor pages. MetricsPick did not invent benchmark scores or run a paid lab test for this article.</span>
+        </p>
+      </div>
+    </section>
+  </main>
+</Base>

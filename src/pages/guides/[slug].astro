@@ -1,0 +1,15 @@
+---
+import { getEntry } from "astro:content";
+import ArticlePage from "../../components/ArticlePage.astro";
+import { pathsFor } from "../../lib/sectionPaths";
+
+export async function getStaticPaths() {
+  return pathsFor("guides");
+}
+
+const article = await getEntry("articles", Astro.props.id);
+if (!article) {
+  throw new Error(`Missing article ${Astro.props.id}`);
+}
+---
+<ArticlePage article={article} />

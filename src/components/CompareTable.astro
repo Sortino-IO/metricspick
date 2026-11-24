@@ -1,0 +1,40 @@
+---
+import type { CompareRow } from "../data/catalog";
+
+interface Props {
+  rows: CompareRow[];
+  note?: string;
+  title?: string;
+}
+const { rows, note, title = "How the tools compare" } = Astro.props;
+---
+<section class="band band-yellow" aria-labelledby="compare-title">
+  <div class="article-wide">
+    <h2 id="compare-title">{title}</h2>
+    <div class="table-scroll">
+      <table class="compare">
+        <thead>
+          <tr>
+            <th>Tool</th>
+            <th>Best for</th>
+            <th>Revenue attribution</th>
+            <th>Cookies</th>
+            <th>Starting price</th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((row) => (
+            <tr class={row.highlight ? "is-pick" : undefined}>
+              <td data-label="Tool"><strong>{row.name}</strong></td>
+              <td data-label="Best for">{row.bestFor}</td>
+              <td data-label="Attribution" class={row.attributionTone}>{row.attribution}</td>
+              <td data-label="Cookies">{row.cookies}</td>
+              <td data-label="Price" class="price">{row.price}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    {note && <p class="table-note">{note}</p>}
+  </div>
+</section>

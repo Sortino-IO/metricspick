@@ -1,0 +1,25 @@
+---
+import { renderMarkdown } from "../lib/markdown";
+
+interface Item {
+  q: string;
+  a: string;
+}
+interface Props {
+  items: Item[];
+}
+const { items } = Astro.props;
+---
+<section class="band band-yellow" aria-labelledby="faq-title">
+  <div class="article-body">
+    <h2 id="faq-title">FAQ</h2>
+    <div class="faq">
+      {items.map((item) => (
+        <details class="faq-item">
+          <summary>{item.q}</summary>
+          <div set:html={renderMarkdown(item.a)} />
+        </details>
+      ))}
+    </div>
+  </div>
+</section>

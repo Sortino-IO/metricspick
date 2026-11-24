@@ -1,0 +1,128 @@
+---
+import "../styles/global.css";
+import { getImage } from "astro:assets";
+import ogImage from "../assets/og-default.png";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Disclosure from "../components/Disclosure.astro";
+import JsonLd from "../components/JsonLd.astro";
+import { GSC_VERIFICATION, GTM_ID, SITE_NAME, SITE_URL } from "../config/site";
+import bricolage from "@fontsource/bricolage-grotesque/files/bricolage-grotesque-latin-800-normal.woff2?url";
+import nunito from "@fontsource/nunito-sans/files/nunito-sans-latin-400-normal.woff2?url";
+import nunito700 from "@fontsource/nunito-sans/files/nunito-sans-latin-700-normal.woff2?url";
+import nunito800 from "@fontsource/nunito-sans/files/nunito-sans-latin-800-normal.woff2?url";
+
+interface Props {
+  title: string;
+  description: string;
+  ogType?: "website" | "article";
+  noindex?: boolean;
+  jsonLd?: Record<string, unknown>[];
+}
+
+const { title, description, ogType = "website", noindex = false, jsonLd = [] } = Astro.props;
+const path = Astro.url.pathname.endsWith("/") || /\.[a-z0-9]+$/i.test(Astro.url.pathname)
+  ? Astro.url.pathname
+  : `${Astro.url.pathname}/`;
+const canonical = new URL(path, Astro.site).href;
+const og = await getImage({ src: ogImage, width: 1200, height: 630, format: "png" });
+const ogUrl = new URL(og.src, Astro.site).href;
+const fullTitle = title.includes("metricspick") ? title : `${title} — metricspick`;
+const gtm = GTM_ID.trim();
+const gsc = GSC_VERIFICATION.trim();
+
+const graph: Record<string, unknown>[] = [
+  {
+    "@type": "Organization",
+    name: SITE_NAME,
+    url: `${SITE_URL}/`,
+    logo: `${SITE_URL}/favicon.svg`,
+    description: "Independent comparisons of web and product analytics tools for founders.",
+  },
+  {
+    "@type": "WebSite",
+    name: SITE_NAME,
+    url: `${SITE_URL}/`,
+    publisher: { "@type": "Organization", name: SITE_NAME, url: `${SITE_URL}/` },
+    inLanguage: "en",
+  },
+  ...jsonLd,
+];
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noindex ? <meta name="robots" content="noindex, follow" /> : <meta name="robots" content="index, follow" />}
+    {gsc && <meta name="google-site-verification" content={gsc} />}
+    <meta name="theme-color" content="#FFF6EB" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href={bricolage} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={nunito} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={nunito700} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={nunito800} as="font" type="font/woff2" crossorigin />
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:image" content={ogUrl} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="metricspick — independent analytics comparisons" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogUrl} />
+    <JsonLd data={graph} />
+    {gtm && (
+      <script is:inline define:vars={{ gtm }}>
+        (function (w, d, s, l, i) {
+          w[l] = w[l] || [];
+          w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+          var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != "dataLayer" ? "&l=" + l : "";
+          j.async = true;
+          j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+          f.parentNode.insertBefore(j, f);
+        })(window, document, "script", "dataLayer", gtm);
+      </script>
+    )}
+  </head>
+  <body>
+    {gtm && (
+      <noscript>
+        <iframe src={`https://www.googletagmanager.com/ns.html?id=${gtm}`} height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe>
+      </noscript>
+    )}
+    <a class="skip" href="#main">Skip to content</a>
+    <Header />
+    <Disclosure />
+    <slot />
+    <Footer />
+    <script is:inline>
+      (function () {
+        document.addEventListener("click", function (event) {
+          var target = event.target;
+          var link = target && target.closest ? target.closest("a") : null;
+          if (!link) return;
+          var href = link.href || "";
+          if (href.indexOf("datafa.st") === -1) return;
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            event: "affiliate_click",
+            link_url: href,
+            link_text: (link.textContent || "").replace(/\s+/g, " ").trim(),
+            page_path: location.pathname,
+            placement: link.getAttribute("data-placement") || "",
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>

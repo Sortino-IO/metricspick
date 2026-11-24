@@ -1,0 +1,35 @@
+---
+import { getCollection } from "astro:content";
+import Simple from "../../layouts/Simple.astro";
+
+const articles = (await getCollection("articles", ({ data }) => data.section === "guides")).sort(
+  (a, b) => a.data.order - b.data.order,
+);
+---
+<Simple
+  title="Analytics guides"
+  description="Practical guides to marketing attribution tools and cookieless analytics, written for founders choosing a stack."
+  kicker="Guides"
+  lede="These guides explain a decision, then compare the tools that can carry it. They are not a single ranked list of logos."
+  crumbs={[{ href: "/", label: "Home" }, { label: "Guides" }]}
+>
+  <p>Attribution is the question of which visit should get credit for a payment. Cookieless analytics is the question of how stable that credit can be if you refuse a long-lived browser identifier. The two guides here answer them separately, because a cookieless script and a revenue report pull in opposite directions once a sale takes weeks instead of minutes.</p>
+  <p>Both guides link to the tool pages on this site, including the <a href="/reviews/datafast/">DataFast review</a>, the <a href="/alternatives/google-analytics/">GA4 alternatives</a>, and the <a href="/pricing/posthog/">PostHog pricing notes</a>. Claims stay tied to vendor documentation checked on 24 November 2026.</p>
+  <section slot="wide" class="band band-yellow">
+    <div class="article-wide">
+      <h2>Guides</h2>
+      <div class="guides">
+        {articles.map((article) => (
+          <a class="guide" href={`/${article.id}/`}>
+            <span class="type">Guides</span>
+            <div>
+              <h3>{article.data.title}</h3>
+              <p>{article.data.description}</p>
+            </div>
+            <span class="meta">{`/${article.id}/`}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</Simple>

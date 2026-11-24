@@ -1,0 +1,13 @@
+---
+import { render, type CollectionEntry } from "astro:content";
+import Article from "../layouts/Article.astro";
+
+interface Props {
+  article: CollectionEntry<"articles">;
+}
+const { article } = Astro.props;
+const { Content } = await render(article);
+---
+<Article article={article}>
+  <Content />
+</Article>
