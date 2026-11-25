@@ -1,6 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import AffiliateLink from "../components/AffiliateLink.astro";
+import GuideList from "../components/GuideList.astro";
 import { tools, rows, comparisons } from "../data/catalog";
 
 const home = comparisons["ga-alternatives"];
@@ -147,32 +148,25 @@ const description =
           <h2 id="guides-title">Featured guides</h2>
           <p>Starting points from the first content batch. Each one compares several tools and links the sources.</p>
         </div>
-        <div class="guides">
-          <a class="guide" href="/alternatives/google-analytics/">
-            <span class="type">Alternatives</span>
-            <div>
-              <h3>The best Google Analytics alternatives for founders</h3>
-              <p>When GA4 is more dashboard than answer, and which lighter tools actually show revenue.</p>
-            </div>
-            <span class="meta">/alternatives/google-analytics/</span>
-          </a>
-          <a class="guide" href="/guides/marketing-attribution-tools/">
-            <span class="type">Guides</span>
-            <div>
-              <h3>Marketing attribution tools, compared</h3>
-              <p>How to tell a click from a customer without standing up a full enterprise stack.</p>
-            </div>
-            <span class="meta">/guides/marketing-attribution-tools/</span>
-          </a>
-          <a class="guide" href="/guides/cookieless-analytics/">
-            <span class="type">Guides</span>
-            <div>
-              <h3>Cookieless analytics: what you gain and lose</h3>
-              <p>Privacy-friendly scripts, rotating identifiers, and the trade-off for long revenue journeys.</p>
-            </div>
-            <span class="meta">/guides/cookieless-analytics/</span>
-          </a>
-        </div>
+        <GuideList
+          items={[
+            {
+              href: "/alternatives/google-analytics/",
+              title: "The best Google Analytics alternatives for founders",
+              description: "When GA4 is more dashboard than answer, and which lighter tools actually show revenue.",
+            },
+            {
+              href: "/guides/marketing-attribution-tools/",
+              title: "Marketing attribution tools, compared",
+              description: "How to tell a click from a customer without standing up a full enterprise stack.",
+            },
+            {
+              href: "/guides/cookieless-analytics/",
+              title: "Cookieless analytics: what you gain and lose",
+              description: "Privacy-friendly scripts, rotating identifiers, and the trade-off for long revenue journeys.",
+            },
+          ]}
+        />
       </div>
     </section>
 

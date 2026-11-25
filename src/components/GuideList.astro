@@ -1,0 +1,26 @@
+---
+interface Item {
+  href: string;
+  title: string;
+  description: string;
+}
+interface Props {
+  items: Item[];
+}
+const { items } = Astro.props;
+---
+<ul class="guides">
+  {
+    items.map((item) => (
+      <li>
+        <a class="guide" href={item.href}>
+          <h3>{item.title}</h3>
+          <p>{item.description}</p>
+          <span class="more" aria-hidden="true">
+            Read guide →
+          </span>
+        </a>
+      </li>
+    ))
+  }
+</ul>

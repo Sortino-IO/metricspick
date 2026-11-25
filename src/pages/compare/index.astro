@@ -1,5 +1,6 @@
 ---
 import { getCollection } from "astro:content";
+import GuideList from "../../components/GuideList.astro";
 import Simple from "../../layouts/Simple.astro";
 
 const articles = (await getCollection("articles", ({ data }) => data.section === "compare")).sort(
@@ -18,18 +19,13 @@ const articles = (await getCollection("articles", ({ data }) => data.section ===
   <section slot="wide" class="band band-yellow">
     <div class="article-wide">
       <h2>Comparisons</h2>
-      <div class="guides">
-        {articles.map((article) => (
-          <a class="guide" href={`/${article.id}/`}>
-            <span class="type">Compare</span>
-            <div>
-              <h3>{article.data.title}</h3>
-              <p>{article.data.description}</p>
-            </div>
-            <span class="meta">{`/${article.id}/`}</span>
-          </a>
-        ))}
-      </div>
+      <GuideList
+        items={articles.map((article) => ({
+          href: `/${article.id}/`,
+          title: article.data.title,
+          description: article.data.description,
+        }))}
+      />
     </div>
   </section>
 </Simple>

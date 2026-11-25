@@ -236,14 +236,73 @@ table.compare { width: 100%; border-collapse: collapse; font-size: 0.9rem; min-w
 .hub p { margin: 0; color: var(--muted); font-size: 0.84rem; flex: 1; }
 .hub .go { color: var(--blue); font-size: 0.8rem; font-weight: 800; }
 
-.guides { display: grid; gap: 0.85rem; }
-.guide { display: grid; grid-template-columns: 8.5rem 1fr auto; gap: 1.1rem; align-items: baseline; padding: 1.15rem 1.2rem; background: #fff; border: 3px solid var(--navy); border-radius: 18px; text-decoration: none; color: var(--text); box-shadow: 4px 4px 0 0 var(--navy); }
-.guide:hover { text-decoration: none; color: var(--text); }
-.guide .type { font-family: var(--font-d); color: var(--blue); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; }
-.guide h3 { margin: 0 0 0.2rem; font-family: var(--font-d); font-size: 1.1rem; font-weight: 800; letter-spacing: -0.03em; }
-.guide:hover h3 { color: var(--coral-deep); }
-.guide p { margin: 0; color: var(--muted); font-size: 0.92rem; }
-.guide .meta { color: var(--faint); font-size: 0.8rem; font-weight: 700; }
+.guides {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.guides > li { display: flex; min-width: 0; margin: 0; }
+.guide {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  width: 100%;
+  padding: 0.9rem 1rem 0.85rem;
+  background: #fff;
+  border: 2px solid var(--navy);
+  border-radius: 16px;
+  text-decoration: none;
+  color: var(--text);
+  transition: transform 0.15s var(--ease), box-shadow 0.15s var(--ease);
+}
+.guides > li:only-child { grid-column: 1 / -1; }
+.guide:hover,
+.guide:focus-visible {
+  text-decoration: none;
+  color: var(--text);
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0 0 var(--navy);
+}
+.guide h3 {
+  margin: 0;
+  font-family: var(--font-d);
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.25;
+  color: var(--navy);
+}
+.guide:hover h3,
+.guide:focus-visible h3 { color: var(--coral-deep); }
+.guide p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.45;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+}
+.guide .more {
+  margin-top: auto;
+  padding-top: 0.45rem;
+  font-family: var(--font-d);
+  font-size: 0.84rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--blue);
+}
+.guide:hover .more,
+.guide:focus-visible .more { color: var(--coral-deep); }
+@media (prefers-reduced-motion: reduce) {
+  .guide { transition: none; }
+  .guide:hover, .guide:focus-visible { transform: none; }
+}
 
 .trust { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
 .trust-card { background: #fff; border: 3px solid var(--navy); border-radius: 20px; padding: 1.25rem 1.2rem; box-shadow: 4px 4px 0 0 var(--navy); }
@@ -317,11 +376,16 @@ table.compare { width: 100%; border-collapse: collapse; font-size: 0.9rem; min-w
 }
 .article-hero h1 .grad { color: var(--coral); background: none; }
 .article-hero .lede { margin: 0 0 1.1rem; color: var(--muted); font-size: 1.125rem; max-width: none; }
+/* Hub and article heroes share a cream background with the next band, so the
+   header's bottom padding and the band's top padding read as one empty gap. */
+.article-hero:has(+ .band) { padding-bottom: 0; }
+.article-hero:has(+ .band) .lede:last-child { margin-bottom: 0; }
 
 .byline {
   display: flex;
   flex-wrap: wrap;
   gap: 0.3rem 1.1rem;
+  margin: 0;
   color: var(--faint);
   font-size: 0.9rem;
   font-weight: 700;
@@ -330,6 +394,7 @@ table.compare { width: 100%; border-collapse: collapse; font-size: 0.9rem; min-w
 
 .article { padding: 0 0 0; }
 .article-body { padding: 0.25rem 0 0; }
+.article-body.prose > :first-child { margin-top: 0; }
 .article-body > p { color: var(--muted); }
 .article-body h2,
 .article-wide h2,
@@ -367,6 +432,7 @@ table.compare { width: 100%; border-collapse: collapse; font-size: 0.9rem; min-w
 .tldr .tldr-note { margin: 0.75rem 0 0; color: var(--faint); font-size: 0.8rem; font-weight: 700; }
 
 .band { padding: 3.25rem 0; }
+.article-hero + .band { padding-top: 2.25rem; }
 .band-cream { background: #fff6eb; }
 .band-yellow { background: #ffe9a8; }
 .band-blue { background: #d9e4ff; }
@@ -496,9 +562,15 @@ table.compare { width: 100%; border-collapse: collapse; font-size: 0.9rem; min-w
 @media (max-width: 960px) {
   .hero-grid, .picks, .trust, .footer-grid, .jobs { grid-template-columns: 1fr 1fr; }
   .hubs { grid-template-columns: 1fr 1fr; }
-  .guide { grid-template-columns: 7rem 1fr; }
-  .guide .meta { grid-column: 2; }
   .tool-card { grid-template-columns: 1fr; }
+}
+@media (max-width: 840px) {
+  .article-hero {
+    background:
+      radial-gradient(circle at 108% -8%, #ffd23f 0 88px, transparent 89px),
+      radial-gradient(circle at -28px calc(100% - 4px), #ff6a3d 0 42px, transparent 43px),
+      #fff6eb;
+  }
 }
 @media (max-width: 720px) {
   .wrap, .header-inner { width: min(calc(100% - 2rem), var(--wrap)); }
@@ -508,7 +580,7 @@ table.compare { width: 100%; border-collapse: collapse; font-size: 0.9rem; min-w
   .hero { padding: 2.8rem 0 2.5rem; }
   .article-hero { padding: 2rem 0 1.6rem; }
   .section, .band { padding: 2.6rem 0; }
-  .hero-grid, .picks, .trust, .hubs, .footer-grid, .jobs { grid-template-columns: 1fr; }
+  .hero-grid, .picks, .trust, .hubs, .footer-grid, .jobs, .guides { grid-template-columns: 1fr; }
   .nav-toggle { display: block; }
   .header-inner > .nav-menu { display: none; }
   .hero h1, .article-hero h1 { font-size: 2rem; }
@@ -523,7 +595,7 @@ table.compare { width: 100%; border-collapse: collapse; font-size: 0.9rem; min-w
   .article-hero {
     background:
       radial-gradient(circle at 114% -10%, #ffd23f 0 72px, transparent 73px),
-      radial-gradient(circle at -12% 112%, #ff6a3d 0 64px, transparent 65px),
+      radial-gradient(circle at -36px calc(100% - 6px), #ff6a3d 0 44px, transparent 45px),
       #fff6eb;
   }
 
@@ -577,7 +649,7 @@ table.compare { width: 100%; border-collapse: collapse; font-size: 0.9rem; min-w
 
 /* Production additions: prose, sources, and a few sizes bumped so small text stays at least 12px. */
 .article-hero h1 .grad { color: var(--coral-deep); }
-.sticker, .pick-badge, .guide .type, .hero-card-head h2, .tldr h2, .site-footer h2 { font-size: 0.75rem; }
+.sticker, .pick-badge, .hero-card-head h2, .tldr h2, .site-footer h2 { font-size: 0.75rem; }
 .hero-card-foot, .mini-note, .table-note { font-size: 0.8rem; }
 .prose h2, .article-body h2 {
   margin: 1.8rem 0 0.7rem;
