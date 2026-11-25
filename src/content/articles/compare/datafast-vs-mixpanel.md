@@ -33,7 +33,7 @@ tools:
   - id: datafast
     title: "DataFast — a different job"
     blurb: "Fixed monthly tiers for revenue attribution. The button is an affiliate link."
-    cta: "Visit DataFast — affiliate"
+    cta: "Visit DataFast"
     placement: datafast-vs-mixpanel-card
     featured: true
     secondaryHref: /pricing/datafast/

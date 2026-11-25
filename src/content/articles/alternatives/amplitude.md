@@ -46,7 +46,7 @@ tools:
   - id: datafast
     title: "DataFast — if the job is revenue"
     blurb: "A marketing analytics product for joining channels and pages to payments. It is not an Amplitude replacement for product work."
-    cta: "Visit DataFast — affiliate"
+    cta: "Visit DataFast"
     placement: amplitude-alt-card
     featured: true
     secondaryHref: /reviews/datafast/

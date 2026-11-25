@@ -33,7 +33,7 @@ tools:
   - id: datafast
     title: "DataFast — our pick for revenue attribution"
     blurb: "Built to connect traffic sources to payments. Not a full replacement for a product-analytics suite."
-    cta: "Visit DataFast — affiliate"
+    cta: "Visit DataFast"
     placement: attribution-card
     featured: true
     secondaryHref: /reviews/datafast/

@@ -33,7 +33,7 @@ tools:
   - id: datafast
     title: "DataFast — not a PostHog replacement"
     blurb: "A fixed tier for revenue attribution. The button is an affiliate link."
-    cta: "Visit DataFast — affiliate"
+    cta: "Visit DataFast"
     placement: datafast-vs-posthog-card
     featured: true
     secondaryHref: /reviews/datafast/

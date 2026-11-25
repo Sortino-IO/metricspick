@@ -46,7 +46,7 @@ tools:
   - id: datafast
     title: "DataFast — revenue, not the suite"
     blurb: "Use it for channel and page revenue. Keep PostHog if you still need replay, flags, or product funnels."
-    cta: "Visit DataFast — affiliate"
+    cta: "Visit DataFast"
     placement: posthog-alt-card
     featured: true
     secondaryHref: /reviews/datafast/

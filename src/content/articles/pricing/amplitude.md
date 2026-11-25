@@ -37,7 +37,7 @@ tools:
   - id: datafast
     title: DataFast
     blurb: "Fixed monthly tiers for revenue attribution. Not an Amplitude feature match."
-    cta: "Visit DataFast — affiliate"
+    cta: "Visit DataFast"
     placement: amplitude-pricing-card
     featured: true
     secondaryHref: /reviews/datafast/

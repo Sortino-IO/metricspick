@@ -34,7 +34,7 @@ const { cards } = Astro.props;
             </div>
             <div class="card-actions">
               {affiliate ? (
-                <AffiliateLink path="/" placement={card.placement ?? "article-card"} class="btn btn-primary btn-sm">{card.cta}</AffiliateLink>
+                <AffiliateLink path="/" placement={card.placement ?? "article-card"}>{card.cta}</AffiliateLink>
               ) : (
                 <a class="btn btn-secondary btn-sm" href={href}>{card.cta}</a>
               )}

@@ -36,7 +36,7 @@ tools:
   - id: datafast
     title: "DataFast — our pick for revenue"
     blurb: "Best when you want payments joined to channels and pages. DataFast is a revenue-attribution product. It does not replace a product suite."
-    cta: "Visit DataFast — affiliate"
+    cta: "Visit DataFast"
     placement: ga-alt-card
     featured: true
     secondaryHref: /reviews/datafast/

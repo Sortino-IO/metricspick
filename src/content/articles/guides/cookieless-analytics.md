@@ -43,7 +43,7 @@ tools:
   - id: datafast
     title: "DataFast — cookie or cookieless"
     blurb: "Two scripts. The cookieless one is documented as less accurate for long revenue journeys."
-    cta: "Visit DataFast — affiliate"
+    cta: "Visit DataFast"
     placement: cookieless-card
     featured: true
     secondaryHref: /reviews/datafast/

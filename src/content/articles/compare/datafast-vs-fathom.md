@@ -33,7 +33,7 @@ tools:
   - id: datafast
     title: "DataFast — the revenue specialist"
     blurb: "Starter from $9 a month. The button is an affiliate link."
-    cta: "Visit DataFast — affiliate"
+    cta: "Visit DataFast"
     placement: datafast-vs-fathom-card
     featured: true
     secondaryHref: /reviews/datafast/

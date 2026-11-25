@@ -37,7 +37,7 @@ tools:
   - id: datafast
     title: DataFast
     blurb: "A fixed monthly tier if the only question is revenue by channel. Not a PostHog substitute for replay and flags."
-    cta: "Visit DataFast — affiliate"
+    cta: "Visit DataFast"
     placement: posthog-pricing-card
     featured: true
     secondaryHref: /reviews/datafast/
