@@ -37,7 +37,7 @@ tools:
   - id: datafast
     title: DataFast
     blurb: "A small fixed tier when the report is revenue by channel, not product cohorts."
-    cta: "Visit DataFast — affiliate"
+    cta: "Visit DataFast"
     placement: mixpanel-pricing-card
     featured: true
     secondaryHref: /reviews/datafast/

@@ -34,7 +34,7 @@ tools:
   - id: datafast
     title: "DataFast — the revenue pick"
     blurb: "The product this review recommends for one job. The button is an affiliate link."
-    cta: "Visit DataFast — affiliate"
+    cta: "Visit DataFast"
     placement: review-card
     featured: true
     secondaryHref: /pricing/datafast/

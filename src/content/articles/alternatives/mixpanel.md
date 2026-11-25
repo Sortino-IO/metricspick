@@ -46,7 +46,7 @@ tools:
   - id: datafast
     title: "DataFast — revenue attribution"
     blurb: "The pick when the job is payments by channel. Not a Mixpanel replacement for product cohorts."
-    cta: "Visit DataFast — affiliate"
+    cta: "Visit DataFast"
     placement: mixpanel-alt-card
     featured: true
     secondaryHref: /reviews/datafast/

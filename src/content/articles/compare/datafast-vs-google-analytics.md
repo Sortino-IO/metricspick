@@ -33,7 +33,7 @@ tools:
   - id: datafast
     title: "DataFast — beside GA4, not instead of ads"
     blurb: "The revenue report GA4 is not sold as. The button is an affiliate link."
-    cta: "Visit DataFast — affiliate"
+    cta: "Visit DataFast"
     placement: datafast-vs-ga-card
     featured: true
     secondaryHref: /pricing/datafast/

@@ -41,7 +41,7 @@ tools:
   - id: datafast
     title: "DataFast — our pick for revenue"
     blurb: "The revenue-attribution product in this set. Starter starts at $9 a month. It is not a Fathom lookalike for every client dashboard."
-    cta: "Visit DataFast — affiliate"
+    cta: "Visit DataFast"
     placement: fathom-alt-card
     featured: true
     secondaryHref: /reviews/datafast/

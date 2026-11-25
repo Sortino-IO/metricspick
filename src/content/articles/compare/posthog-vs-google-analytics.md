@@ -45,7 +45,7 @@ tools:
   - id: datafast
     title: "DataFast — if revenue is the missing report"
     blurb: "Not a winner of PostHog vs GA4. A third tool when neither answer is the payment join."
-    cta: "Visit DataFast — affiliate"
+    cta: "Visit DataFast"
     placement: posthog-vs-ga-card
     featured: true
     secondaryHref: /reviews/datafast/

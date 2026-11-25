@@ -41,7 +41,7 @@ tools:
   - id: datafast
     title: "DataFast — our pick for revenue"
     blurb: "Choose it when Business-plan revenue tracking is the feature you would have paid Plausible for, and you want that job to be the product."
-    cta: "Visit DataFast — affiliate"
+    cta: "Visit DataFast"
     placement: plausible-alt-card
     featured: true
     secondaryHref: /reviews/datafast/

@@ -21,6 +21,9 @@ const { cards } = Astro.props;
 <section class="band band-cream" aria-labelledby="tools-title">
   <div class="article-wide">
     <h2 id="tools-title">Tools worth a closer look</h2>
+    {cards.some((card) => tools[card.id].affiliate) && (
+      <p class="affiliate-note">DataFast buttons on this page are affiliate links. We may earn a commission if you subscribe, at no extra cost. <a href="/affiliate-disclosure/">Affiliate disclosure</a>.</p>
+    )}
     <div class="tool-cards">
       {cards.map((card) => {
         const tool = tools[card.id];
@@ -34,7 +37,7 @@ const { cards } = Astro.props;
             </div>
             <div class="card-actions">
               {affiliate ? (
-                <AffiliateLink path="/" placement={card.placement ?? "article-card"} class="btn btn-primary btn-sm">{card.cta}</AffiliateLink>
+                <AffiliateLink path="/" placement={card.placement ?? "article-card"}>{card.cta}</AffiliateLink>
               ) : (
                 <a class="btn btn-secondary btn-sm" href={href}>{card.cta}</a>
               )}

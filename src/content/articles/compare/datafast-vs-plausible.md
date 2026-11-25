@@ -33,7 +33,7 @@ tools:
   - id: datafast
     title: "DataFast — if revenue is the product"
     blurb: "Starter from $9 a month at 10,000 events. The button is an affiliate link."
-    cta: "Visit DataFast — affiliate"
+    cta: "Visit DataFast"
     placement: datafast-vs-plausible-card
     featured: true
     secondaryHref: /pricing/datafast/

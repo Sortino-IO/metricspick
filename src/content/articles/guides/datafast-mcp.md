@@ -32,7 +32,7 @@ tools:
   - id: datafast
     title: "DataFast — open API / MCP settings"
     blurb: "The token is created in the account, not on this page. The button is an affiliate link."
-    cta: "Visit DataFast — affiliate"
+    cta: "Visit DataFast"
     placement: datafast-mcp-card
     featured: true
     secondaryHref: /reviews/datafast/

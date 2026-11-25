@@ -128,6 +128,31 @@ a:focus-visible, summary:focus-visible { outline: 2px solid var(--blue); outline
 .btn-secondary { background: var(--yellow); color: var(--navy); }
 .btn-secondary:hover { color: var(--navy); }
 .btn-sm { padding: 0.42rem 0.9rem; font-size: 0.82rem; border-width: 2px; box-shadow: 3px 3px 0 0 var(--navy); }
+a.datafast-cta {
+  border-radius: 999px;
+  color: #fff;
+  max-width: 100%;
+  text-align: center;
+  white-space: normal;
+  line-height: 1.2;
+}
+a.datafast-cta:hover,
+a.datafast-cta:focus,
+a.datafast-cta:focus-visible {
+  color: #fff;
+  text-decoration: none;
+}
+a.datafast-cta:focus-visible {
+  outline: 3px solid var(--navy);
+  outline-offset: 3px;
+}
+.affiliate-note {
+  margin: 0 0 0.9rem;
+  color: var(--navy);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+.pick-card .affiliate-note { margin: 0.15rem 0 0; font-size: 0.8rem; font-weight: 600; color: var(--faint); }
 
 .disclosure-bar { background: var(--yellow); border-bottom: 3px solid var(--navy); font-size: 0.82rem; color: var(--navy); padding: 0.7rem 0; font-weight: 600; }
 .disclosure-bar p { margin: 0; }
@@ -730,4 +755,23 @@ table.compare { width: 100%; border-collapse: collapse; font-size: 0.9rem; min-w
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .btn, .hub { transition: none; }
+}
+
+@media (max-width: 720px) {
+  a.datafast-cta {
+    min-height: 44px;
+    padding: 0.65rem 1.15rem;
+    font-size: 1rem;
+  }
+  .tool-card .card-actions {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+  .tool-card .card-actions .btn { width: 100%; }
+  .pick-card .card-links {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .pick-card .card-links .datafast-cta { width: 100%; }
 }

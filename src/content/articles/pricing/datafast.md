@@ -22,7 +22,7 @@ tools:
   - id: datafast
     title: "DataFast — see the live cards"
     blurb: "The homepage is where the slider lives. The button is an affiliate link."
-    cta: "Visit DataFast — affiliate"
+    cta: "Visit DataFast"
     placement: datafast-pricing-card
     featured: true
     secondaryHref: /reviews/datafast/
