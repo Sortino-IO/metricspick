@@ -3,11 +3,11 @@ export const AFFILIATE_URL = "https://datafa.st/?via=sortino";
 
 export const AFFILIATE_VIA = "sortino";
 
-/** Leave empty to omit the tag. Example format: GTM-XXXXXXX */
-export const GTM_ID = "";
+/** Google Tag Manager container. Empty string omits the snippet. No direct gtag; GA4 loads through this container. */
+export const GTM_ID = "GTM-PJ8GQK6B";
 
-/** Leave empty to omit the meta tag. Paste the Google Search Console token only. */
-export const GSC_VERIFICATION = "";
+/** Google Search Console verification token. Empty string omits the meta tag. */
+export const GSC_VERIFICATION = "nywhuH-iVzOk2VJ4R3JUdPii4tMdLSR8IuWDuw0tpwE";
 
 export const SITE_URL = "https://metricspick.com";
 export const SITE_NAME = "metricspick";

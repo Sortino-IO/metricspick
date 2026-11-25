@@ -3,16 +3,16 @@ import Simple from "../layouts/Simple.astro";
 ---
 <Simple
   title="Privacy"
-  description="metricspick is a static site. It does not set its own cookies. Affiliate clicks are stored in a browser dataLayer and are not sent on unless Tag Manager is configured."
+  description="metricspick is a static site. It does not set its own cookies. Affiliate clicks are pushed to a dataLayer that Google Tag Manager can read."
   kicker="Privacy"
   lede="This is a static website. We do not ask you to create an account, and the pages do not set a MetricsPick cookie."
   crumbs={[{ href: "/", label: "Home" }, { label: "Privacy" }]}
 >
   <h2>What the site itself does</h2>
   <p>Pages are HTML, CSS, and self-hosted fonts. There is no comment form, no account, and no MetricsPick analytics cookie. Fonts are served from this site’s own files. The pages do not request Google Fonts.</p>
-  <p>A small inline script listens for clicks on links to datafa.st. When one is clicked, the script pushes an event named <code>affiliate_click</code> onto <code>window.dataLayer</code>, with the link URL, the visible link text, the current path, and a placement label such as <code>home-pick</code>. The array lives in the browser tab. This build does not load Google Tag Manager, because the container id in the site config is empty. Nothing in that array is transmitted to Google, or to us, by the script itself.</p>
-  <h2>If Tag Manager is turned on later</h2>
-  <p>The config has an empty slot for a container id. If a real id is added, the standard Tag Manager snippet will load and can read the dataLayer. The privacy page would then need to name that container and whatever tags it fires. Until that happens, the slot stays empty and the snippet is not rendered. There is also an empty slot for a Google Search Console verification meta tag. An empty value is not printed.</p>
+  <p>A small inline script listens for clicks on links to datafa.st. When one is clicked, the script pushes an event named <code>affiliate_click</code> onto <code>window.dataLayer</code>, with the link URL, the visible link text, the current path, and a placement label such as <code>home-pick</code>.</p>
+  <h2>Google Tag Manager</h2>
+  <p>Every page loads Google Tag Manager container <code>GTM-PJ8GQK6B</code>. The container can read that dataLayer, including affiliate clicks, and send them to tags configured inside Tag Manager. Analytics such as GA4 are loaded through that container. This site does not embed a separate gtag.js snippet. What Tag Manager actually fires depends on the tags in the container, which are managed in Google’s interface rather than in this repository. Tag Manager may set cookies according to those tags.</p>
   <h2>Hosting and outbound links</h2>
   <p>The site is built to be hosted on Vercel. A host can see ordinary request logs, such as IP address and user agent, under its own policy. Outbound links to DataFast, Google, PostHog, Mixpanel, Amplitude, Plausible, and Fathom are subject to those companies’ sites once you leave. DataFast links are affiliate links, described on the <a href="/affiliate-disclosure/">affiliate disclosure</a>.</p>
   <h2>Contact</h2>
