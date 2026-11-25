@@ -68,6 +68,10 @@ faqs:
   - q: Are DataFast links on this page affiliate links?
     a: "Yes. They use via=sortino. A subscription through them may pay us a commission, and it does not raise your price. Amplitude, PostHog, and Mixpanel links on this site are ordinary citations."
 related:
+  - href: /compare/datafast-vs-amplitude/
+    type: Compare
+    title: DataFast vs Amplitude
+    description: A paid marketing-revenue tool beside Amplitude’s free event tier.
   - href: /pricing/amplitude/
     type: Pricing
     title: Amplitude pricing, explained for founders

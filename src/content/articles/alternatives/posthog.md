@@ -68,6 +68,10 @@ faqs:
   - q: Are the DataFast links affiliate links?
     a: "Yes. They include via=sortino. PostHog, Mixpanel, Amplitude, and Plausible links here are citations, not affiliate links."
 related:
+  - href: /compare/datafast-vs-posthog/
+    type: Compare
+    title: DataFast vs PostHog
+    description: A fixed revenue tier beside PostHog’s free allowances.
   - href: /pricing/posthog/
     type: Pricing
     title: PostHog pricing, explained for founders

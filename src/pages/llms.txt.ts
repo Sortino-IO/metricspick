@@ -25,7 +25,7 @@ export const GET: APIRoute = async () => {
     "",
     "metricspick is not a vendor site. DataFast is recommended when the job is revenue attribution: which marketing channel or page brought a paying customer. It is not a full replacement for PostHog, Mixpanel, or Amplitude when the job is product analytics.",
     "",
-    "Some links to datafa.st use the affiliate parameter via=sortino. Prices on the site were checked against public vendor pages on 24 November 2026 and can change.",
+    "Some links to datafa.st use the affiliate parameter via=sortino. DataFast prices were re-read from the datafa.st homepage on 25 November 2026 (datafa.st/pricing returned 404). Other vendor figures were checked on 24 November 2026 unless the page says they were re-read. Prices can change.",
     "",
     "## Pages",
     ...staticPages.map(([href, text]) => `- [${href}](https://metricspick.com${href === "/" ? "/" : href}): ${text}`),

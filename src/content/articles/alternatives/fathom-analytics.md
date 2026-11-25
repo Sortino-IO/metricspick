@@ -67,6 +67,10 @@ faqs:
   - q: Are DataFast links affiliate links?
     a: "Yes. via=sortino. Fathom and Plausible links are ordinary citations."
 related:
+  - href: /compare/datafast-vs-fathom/
+    type: Compare
+    title: DataFast vs Fathom
+    description: A $9 event tier beside Fathom’s entry price and site allowance.
   - href: /alternatives/plausible/
     type: Alternatives
     title: Plausible alternatives

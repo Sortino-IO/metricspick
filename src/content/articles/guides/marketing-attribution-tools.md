@@ -66,7 +66,11 @@ related:
   - href: /reviews/datafast/
     type: Reviews
     title: DataFast review
-    description: The revenue-attribution recommendation, with the price ladder.
+    description: The revenue-attribution recommendation, with the price ladder on its own page.
+  - href: /pricing/datafast/
+    type: Pricing
+    title: DataFast pricing
+    description: Starter, Growth, and the event steps from the homepage.
   - href: /alternatives/google-analytics/
     type: Alternatives
     title: Google Analytics alternatives

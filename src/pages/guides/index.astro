@@ -8,13 +8,13 @@ const articles = (await getCollection("articles", ({ data }) => data.section ===
 ---
 <Simple
   title="Analytics guides"
-  description="Practical guides to marketing attribution tools and cookieless analytics, written for founders choosing a stack."
+  description="Practical guides to marketing attribution, cookieless analytics, and DataFast MCP, written for founders choosing a stack."
   kicker="Guides"
   lede="These guides explain a decision, then compare the tools that can carry it. They are not a single ranked list of logos."
   crumbs={[{ href: "/", label: "Home" }, { label: "Guides" }]}
 >
-  <p>Attribution is the question of which visit should get credit for a payment. Cookieless analytics is the question of how stable that credit can be if you refuse a long-lived browser identifier. The two guides here answer them separately, because a cookieless script and a revenue report pull in opposite directions once a sale takes weeks instead of minutes.</p>
-  <p>Both guides link to the tool pages on this site, including the <a href="/reviews/datafast/">DataFast review</a>, the <a href="/alternatives/google-analytics/">GA4 alternatives</a>, and the <a href="/pricing/posthog/">PostHog pricing notes</a>. Claims stay tied to vendor documentation checked on 24 November 2026.</p>
+  <p>Attribution is the question of which visit should get credit for a payment. Cookieless analytics is the question of how stable that credit can be if you refuse a long-lived browser identifier. Those two guides answer them separately, because a cookieless script and a revenue report pull in opposite directions once a sale takes weeks instead of minutes.</p>
+  <p>The <a href="/guides/datafast-mcp/">DataFast MCP</a> guide is a third job: connecting an assistant to an account you already have at datafa.st. It is not a pricing page and not a review. The <a href="/reviews/datafast/">DataFast review</a>, the <a href="/pricing/datafast/">DataFast pricing</a> ladder, and the <a href="/alternatives/google-analytics/">GA4 alternatives</a> are the neighboring pages. MCP steps were read from DataFast’s docs on 25 November 2026. The attribution and cookieless guides cite vendor pages checked on 24 November 2026 unless a sentence says otherwise.</p>
   <section slot="wide" class="band band-yellow">
     <div class="article-wide">
       <h2>Guides</h2>
