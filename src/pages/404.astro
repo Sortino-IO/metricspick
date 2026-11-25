@@ -1,5 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
+import Button from "../components/Button.astro";
 ---
 <Base title="Page not found" description="That page is not on metricspick." noindex={true}>
   <main id="main">
@@ -9,8 +10,8 @@ import Base from "../layouts/Base.astro";
         <h1>That page is not here</h1>
         <p class="lede">The link may be old, or the guide may live under a section path such as /alternatives/ or /pricing/.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="/">Back home</a>
-          <a class="btn btn-secondary" href="/alternatives/">Browse alternatives</a>
+          <Button href="/">Back home</Button>
+          <Button href="/alternatives/" variant="secondary">Browse alternatives</Button>
         </div>
       </div>
     </header>

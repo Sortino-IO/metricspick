@@ -1,6 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import AffiliateLink from "../components/AffiliateLink.astro";
+import Button from "../components/Button.astro";
 import GuideList from "../components/GuideList.astro";
 import { tools, rows, comparisons } from "../data/catalog";
 
@@ -18,8 +19,8 @@ const description =
           <h1>Pick the tool that shows <span class="grad">what actually brings revenue</span></h1>
           <p class="lede">Independent comparisons of analytics tools for founders, indie hackers and SaaS owners. We rank products by how clearly they attribute revenue, and we keep product analytics in its own category.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#picks">See this month’s top picks</a>
-            <a class="btn btn-secondary" href="/alternatives/google-analytics/">GA4 alternatives</a>
+            <Button href="#picks">See this month’s top picks</Button>
+            <Button href="/alternatives/google-analytics/" variant="secondary">GA4 alternatives</Button>
           </div>
           <p class="compared">Compared in this guide: <strong>DataFast, Plausible, Fathom, PostHog, GA4, Mixpanel</strong></p>
         </div>
@@ -55,38 +56,38 @@ const description =
             <p class="price">{tools.datafast.priceLabel}</p>
             <p class="card-links">
               <AffiliateLink placement="home-pick">Visit DataFast</AffiliateLink>
-              <a class="btn-link" href="/reviews/datafast/">Read the review</a>
+              <Button href="/reviews/datafast/" variant="secondary" size="sm">Read the review</Button>
             </p>
           </article>
           <article class="pick-card" data-tool="plausible">
             <div class="pick-top"><h3>Plausible</h3><span class="role">Best lightweight privacy analytics</span></div>
             <p>A clean, cookieless traffic picture. Revenue tracking sits on the Business plan, not on every tier.</p>
             <p class="price">{tools.plausible.priceLabel}</p>
-            <a class="btn-link" href="/alternatives/plausible/">Read the overview</a>
+            <p class="card-links"><Button href="/alternatives/plausible/" variant="secondary" size="sm">Read the overview</Button></p>
           </article>
           <article class="pick-card" data-tool="fathom">
             <div class="pick-top"><h3>Fathom</h3><span class="role">Best simple privacy-first analytics</span></div>
             <p>Minimal, fast, and easy to explain to a client. Fathom’s pricing page includes event and revenue tracking on every plan.</p>
             <p class="price">{tools.fathom.priceLabel}</p>
-            <a class="btn-link" href="/alternatives/fathom-analytics/">Read the overview</a>
+            <p class="card-links"><Button href="/alternatives/fathom-analytics/" variant="secondary" size="sm">Read the overview</Button></p>
           </article>
           <article class="pick-card" data-tool="posthog">
             <div class="pick-top"><h3>PostHog</h3><span class="role">Best product analytics suite</span></div>
             <p>Session replay, feature flags, funnels and events in one product suite. Right when you are instrumenting a product, not only a marketing site.</p>
             <p class="price">{tools.posthog.priceLabel}</p>
-            <a class="btn-link" href="/pricing/posthog/">See pricing notes</a>
+            <p class="card-links"><Button href="/pricing/posthog/" variant="secondary" size="sm">See pricing notes</Button></p>
           </article>
           <article class="pick-card" data-tool="ga4">
             <div class="pick-top"><h3>Google Analytics 4</h3><span class="role">Best if you already live in Google</span></div>
             <p>Free, everywhere, and deep if you invest the time. The cost is complexity, cookies, and a setup many small teams leave half finished.</p>
             <p class="price">{tools.ga4.priceLabel}</p>
-            <a class="btn-link" href="/alternatives/google-analytics/">GA4 alternatives</a>
+            <p class="card-links"><Button href="/alternatives/google-analytics/" variant="secondary" size="sm">GA4 alternatives</Button></p>
           </article>
           <article class="pick-card" data-tool="mixpanel">
             <div class="pick-top"><h3>Mixpanel</h3><span class="role">Best event analytics for product teams</span></div>
             <p>Strong event and cohort analysis for product usage. A heavy fit if you only need to know which campaign brought the last ten payments.</p>
             <p class="price">{tools.mixpanel.priceLabel}</p>
-            <a class="btn-link" href="/alternatives/mixpanel/">See alternatives</a>
+            <p class="card-links"><Button href="/alternatives/mixpanel/" variant="secondary" size="sm">See alternatives</Button></p>
           </article>
         </div>
       </div>

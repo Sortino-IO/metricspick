@@ -1,5 +1,6 @@
 ---
 import AffiliateLink from "./AffiliateLink.astro";
+import Button from "./Button.astro";
 import { tools, type ToolId } from "../data/catalog";
 
 interface Card {
@@ -36,10 +37,10 @@ const { cards } = Astro.props;
               {affiliate ? (
                 <AffiliateLink path="/" placement={card.placement ?? "article-card"}>{card.cta}</AffiliateLink>
               ) : (
-                <a class="btn btn-secondary btn-sm" href={href}>{card.cta}</a>
+                <Button href={href ?? "/"} variant="secondary" size="sm">{card.cta}</Button>
               )}
               {card.secondaryHref && card.secondaryCta && (
-                <a class="btn btn-secondary btn-sm" href={card.secondaryHref}>{card.secondaryCta}</a>
+                <Button href={card.secondaryHref} variant="secondary" size="sm">{card.secondaryCta}</Button>
               )}
             </div>
           </article>

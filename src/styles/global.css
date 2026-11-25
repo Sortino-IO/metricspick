@@ -112,40 +112,34 @@ a:focus-visible, summary:focus-visible { outline: 2px solid var(--blue); outline
 .nav-toggle { display: none; }
 .nav-menu { display: flex; align-items: center; gap: 0.2rem 1.25rem; }
 .nav-menu a { color: var(--navy); text-decoration: none; font-size: 0.92rem; font-weight: 700; }
+.nav-menu a.btn { flex-shrink: 0; font-weight: 800; }
 .nav-menu a:hover { color: var(--coral-deep); }
 
 .btn {
   display: inline-flex; align-items: center; justify-content: center;
-  padding: 0.78rem 1.2rem; border-radius: 14px;
-  font-family: var(--font-d); font-size: 0.95rem; font-weight: 800;
-  letter-spacing: -0.02em; text-decoration: none; border: 3px solid var(--navy);
+  max-width: 100%;
+  padding: 0.78rem 1.2rem; border-radius: 999px;
+  font-family: var(--font-d); font-size: 0.95rem; font-weight: 800; line-height: 1.2;
+  letter-spacing: -0.02em; text-align: center; text-decoration: none; white-space: normal;
+  border: 3px solid var(--navy);
   box-shadow: var(--chunk);
   transition: transform 0.15s var(--ease), box-shadow 0.15s var(--ease);
 }
 .btn:hover { text-decoration: none; transform: translate(-1px, -1px); box-shadow: 6px 6px 0 0 var(--navy); }
-.btn-primary { background: var(--coral-btn); color: #fff; }
+.btn:focus-visible { outline: 3px solid var(--navy); outline-offset: 3px; }
+.btn-primary,
+a.btn-primary { background: var(--coral-btn); color: #fff; }
+a.btn-primary:hover,
+a.btn-primary:focus,
+a.btn-primary:focus-visible,
 .btn-primary:hover { color: #fff; }
-.btn-secondary { background: var(--yellow); color: var(--navy); }
+.btn-secondary,
+a.btn-secondary { background: var(--yellow); color: var(--navy); }
+a.btn-secondary:hover,
+a.btn-secondary:focus,
+a.btn-secondary:focus-visible,
 .btn-secondary:hover { color: var(--navy); }
-.btn-sm { padding: 0.42rem 0.9rem; font-size: 0.82rem; border-width: 2px; box-shadow: 3px 3px 0 0 var(--navy); }
-a.datafast-cta {
-  border-radius: 999px;
-  color: #fff;
-  max-width: 100%;
-  text-align: center;
-  white-space: normal;
-  line-height: 1.2;
-}
-a.datafast-cta:hover,
-a.datafast-cta:focus,
-a.datafast-cta:focus-visible {
-  color: #fff;
-  text-decoration: none;
-}
-a.datafast-cta:focus-visible {
-  outline: 3px solid var(--navy);
-  outline-offset: 3px;
-}
+.btn-sm { padding: 0.55rem 1rem; font-size: 0.92rem; border-width: 2px; box-shadow: 3px 3px 0 0 var(--navy); }
 
 .disclosure-bar { background: var(--yellow); border-bottom: 3px solid var(--navy); font-size: 0.82rem; color: var(--navy); padding: 0.7rem 0; font-weight: 600; }
 .disclosure-bar p { margin: 0; }
@@ -284,8 +278,6 @@ table.compare { width: 100%; border-collapse: collapse; font-size: 0.9rem; min-w
 .guide:focus-visible {
   text-decoration: none;
   color: var(--text);
-  transform: translate(-2px, -2px);
-  box-shadow: 4px 4px 0 0 var(--navy);
 }
 .guide h3 {
   margin: 0;
@@ -296,8 +288,6 @@ table.compare { width: 100%; border-collapse: collapse; font-size: 0.9rem; min-w
   line-height: 1.25;
   color: var(--navy);
 }
-.guide:hover h3,
-.guide:focus-visible h3 { color: var(--coral-deep); }
 .guide p {
   margin: 0;
   color: var(--muted);
@@ -309,17 +299,7 @@ table.compare { width: 100%; border-collapse: collapse; font-size: 0.9rem; min-w
   line-clamp: 2;
   overflow: hidden;
 }
-.guide .more {
-  margin-top: auto;
-  padding-top: 0.45rem;
-  font-family: var(--font-d);
-  font-size: 0.84rem;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  color: var(--blue);
-}
-.guide:hover .more,
-.guide:focus-visible .more { color: var(--coral-deep); }
+.guide .btn { align-self: flex-start; margin-top: auto; }
 @media (prefers-reduced-motion: reduce) {
   .guide { transition: none; }
   .guide:hover, .guide:focus-visible { transform: none; }
@@ -751,20 +731,16 @@ table.compare { width: 100%; border-collapse: collapse; font-size: 0.9rem; min-w
 }
 
 @media (max-width: 720px) {
-  a.datafast-cta {
-    min-height: 44px;
-    padding: 0.65rem 1.15rem;
-    font-size: 1rem;
-  }
-  .tool-card .card-actions {
+  .btn { min-height: 44px; }
+  .hero-actions,
+  .tool-card .card-actions,
+  .pick-card .card-links {
     flex-direction: column;
     align-items: stretch;
     justify-content: flex-start;
   }
-  .tool-card .card-actions .btn { width: 100%; }
-  .pick-card .card-links {
-    flex-direction: column;
-    align-items: stretch;
-  }
-  .pick-card .card-links .datafast-cta { width: 100%; }
+  .hero-actions .btn,
+  .tool-card .card-actions .btn,
+  .pick-card .card-links .btn,
+  .guide .btn { width: 100%; }
 }
