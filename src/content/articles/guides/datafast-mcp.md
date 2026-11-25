@@ -59,10 +59,18 @@ related:
     type: Reviews
     title: DataFast review
     description: The product the MCP server is attached to.
+  - href: /guides/datafast-api/
+    type: Guides
+    title: DataFast API and docs
+    description: The HTTP surface MCP is wrapping, including goals and payments.
   - href: /pricing/datafast/
     type: Pricing
     title: DataFast pricing
     description: Starter and Growth, including the API, CLI, and MCP tick.
+  - href: /alternatives/datafast/
+    type: Alternatives
+    title: DataFast alternatives
+    description: When an assistant on a different product is the real request.
   - href: /guides/marketing-attribution-tools/
     type: Guides
     title: Marketing attribution tools
@@ -118,4 +126,4 @@ Revoke a token by deleting or rolling it, and revoke an OAuth connection in Conn
 
 On the 10,000-event homepage cards, both Starter and Growth include the “API, CLI & MCP” line. Starter at that step is $9 a month. Growth is $19. The [pricing page](/pricing/datafast/) has the volume steps above that. The July 2026 changelog says the server is available to everyone. “Everyone” still means a DataFast account. The intro’s first requirement is API access on that account. If a future plan card removes the tick, the card wins over this paragraph.
 
-MCP does not make DataFast a product-analytics suite. The tools query DataFast’s model: visits, revenue, goals, funnels, bots. They do not add session replay or feature flags. If that is the assistant workflow you wanted, the comparison is [DataFast vs PostHog](/compare/datafast-vs-posthog/), not a second MCP URL.
+MCP does not make DataFast a product-analytics suite. The tools query DataFast’s model: visits, revenue, goals, funnels, bots. They do not add session replay or feature flags. If that is the assistant workflow you wanted, the comparison is [DataFast vs PostHog](/compare/datafast-vs-posthog/), not a second MCP URL. Sending the events that an assistant later reads is the [API guide](/guides/datafast-api/), which is also the map of the DataFast docs. The [pricing page](/pricing/datafast/) is the plan that includes the MCP tick, and the [alternatives](/alternatives/datafast/) page is the exit if you wanted a different product’s assistant.

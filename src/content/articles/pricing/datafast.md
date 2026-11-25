@@ -1,9 +1,9 @@
 ---
 title: "DataFast pricing"
-seoTitle: "DataFast pricing"
-description: "DataFast pricing from the datafa.st homepage: Starter from $9 a month, Growth from $19, yearly billing at ten times monthly, and what the plan cards include. Checked 25 November 2026."
+seoTitle: "DataFast pricing: the datafa.st pricing cards"
+description: "DataFast pricing, the datafa.st pricing list on the homepage: Starter from $9 a month, Growth from $19, yearly billing at ten times monthly. Checked 25 November 2026."
 kicker: Pricing
-lede: "DataFast does not publish a working /pricing URL. The homepage plan cards are the price list: Starter from $9 a month and Growth from $19, stepping up with monthly events. This page is that list."
+lede: "DataFast pricing is not on a working /pricing URL. The datafa.st pricing cards live on the homepage: Starter from $9 a month and Growth from $19, stepping up with monthly events."
 accent: "DataFast pricing"
 updated: 2026-11-25
 section: pricing
@@ -71,6 +71,14 @@ related:
     type: Pricing
     title: PostHog pricing
     description: The usage card to read if you needed a suite instead.
+  - href: /alternatives/datafast/
+    type: Alternatives
+    title: DataFast alternatives
+    description: When a different analytics product is the honest buy.
+  - href: /guides/datafast-api/
+    type: Guides
+    title: DataFast API
+    description: API, CLI, and MCP are on both plan cards. This is what they do.
 sources:
   - label: DataFast homepage plan cards and pricing bundle
     href: https://datafa.st/
@@ -80,7 +88,7 @@ sources:
 
 DataFast pricing is a volume ladder, not a seat fee. Checked on 25 November 2026, the public homepage embeds monthly USD prices for two plan types, Starter and Growth, at nine event steps. The path `datafa.st/pricing` returned a 404 that day, as it did on 24 November. The cards on the homepage are what a buyer sees. The numbers in the table above are those embedded prices. They match the 24 November reading. Nothing in the dollar column moved.
 
-This page is only the analytics plans for the product at datafa.st, Marc Lou’s web analytics tool. It is not a price list for DataFast Networks in Arizona or for Datafast S.A. in Ecuador. The [review](/reviews/datafast/) separates those names. Links to datafa.st on this page are affiliate links.
+This page is only the analytics plans for the product at datafa.st, Marc Lou’s web analytics tool. It is not a price list for DataFast Networks in Arizona or for Datafast S.A. in Ecuador. The [review](/reviews/datafast/) separates those names. If the price is right and the job is not, the [alternatives](/alternatives/datafast/) page is the shortlist, and the [Plausible](/compare/datafast-vs-plausible/) and [GA4](/compare/datafast-vs-google-analytics/) comparisons are the two closest forks. Links to datafa.st on this page are affiliate links.
 
 ## The monthly ladder
 

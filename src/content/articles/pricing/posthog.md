@@ -53,7 +53,7 @@ faqs:
   - q: Are events cheaper if users are anonymous?
     a: "PostHog’s anonymous-versus-identified doc says anonymous events can be up to four times cheaper because they skip the person profile. The first million events are free either way. Use anonymous events for a marketing site if you do not need person profiles."
   - q: When is DataFast the cheaper question?
-    a: "When you do not want the suite. DataFast Starter is $9 a month at 10,000 events. It will not give you PostHog’s replay and flags. The [review](/reviews/datafast/) is the scoped recommendation."
+    a: "When you do not want the suite. DataFast Starter is $9 a month at 10,000 events. It will not give you PostHog’s replay and flags. The [pricing ladder](/pricing/datafast/), the [DataFast vs PostHog](/compare/datafast-vs-posthog/) comparison, and the [alternatives](/alternatives/datafast/) page are the cluster around that recommendation. The [review](/reviews/datafast/) keeps the scope tight."
 related:
   - href: /alternatives/posthog/
     type: Alternatives
@@ -109,7 +109,7 @@ Mixpanel Free is 1 million events, then Growth packs. At 1.5 million events Mixp
 
 GA4’s standard product is free. You pay in cookies, complexity, and the absence of PostHog’s replay and flags. The [comparison](/compare/posthog-vs-google-analytics/) is the right page if GA4 is the other bid.
 
-DataFast is a fixed tier, Starter from $9 a month at 10,000 events, for revenue attribution. It is the wrong comparison if you need PostHog. It is the right comparison if PostHog’s bill is coming from marketing pageviews you never needed as product events. The [review](/reviews/datafast/) keeps that scope tight. Affiliate links to DataFast are labeled and do not change the PostHog rates above.
+DataFast is a fixed tier, Starter from $9 a month at 10,000 events, for revenue attribution. It is the wrong comparison if you need PostHog. It is the right comparison if PostHog’s bill is coming from marketing pageviews you never needed as product events. The [DataFast pricing](/pricing/datafast/) page is the ladder, [DataFast vs PostHog](/compare/datafast-vs-posthog/) is the job split, and the [DataFast alternatives](/alternatives/datafast/) page is the shortlist if you are leaving DataFast rather than arriving. The [review](/reviews/datafast/) keeps that scope tight. Affiliate links to DataFast are labeled and do not change the PostHog rates above.
 
 ## How to avoid a surprise
 

@@ -7,19 +7,19 @@ import { tools, rows, comparisons } from "../data/catalog";
 const home = comparisons["ga-alternatives"];
 const table = rows(home.ids, home.highlight);
 const description =
-  "Independent comparisons of analytics tools for founders. We rank products by how clearly they attribute revenue, and we say when PostHog or Mixpanel is the better fit.";
+  "A DataFast review, pricing, and comparisons for founders. We say when datafa.st is the revenue tool to trial, and when Plausible, Fathom, GA4, or PostHog is the better fit.";
 ---
-<Base title="Best analytics tools, compared by what actually pays" description={description}>
+<Base title="DataFast review, pricing, and comparisons for founders" description={description}>
   <main id="main">
     <section class="hero">
       <div class="wrap hero-grid">
         <div>
-          <p class="kicker">Web analytics, compared</p>
-          <h1>Pick the tool that shows <span class="grad">what actually brings revenue</span></h1>
-          <p class="lede">Independent comparisons of analytics tools for founders, indie hackers and SaaS owners. We rank products by how clearly they attribute revenue, and we keep product analytics in its own category.</p>
+          <p class="kicker">DataFast, compared with the alternatives</p>
+          <h1>DataFast review, pricing, and <span class="grad">comparisons for founders</span></h1>
+          <p class="lede">Independent notes on DataFast, the revenue analytics tool at datafa.st, for founders, indie hackers, and SaaS owners. We rank it by whether it shows which channel brings paying customers, and we say when a different tool is the honest fit.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#picks">See this month’s top picks</a>
-            <a class="btn btn-secondary" href="/alternatives/google-analytics/">GA4 alternatives</a>
+            <a class="btn btn-primary" href="/reviews/datafast/">Read the DataFast review</a>
+            <a class="btn btn-secondary" href="/pricing/datafast/">DataFast pricing</a>
           </div>
           <p class="compared">Compared in this guide: <strong>DataFast, Plausible, Fathom, PostHog, GA4, Mixpanel</strong></p>
         </div>
@@ -142,11 +142,59 @@ const description =
       </div>
     </section>
 
+    <section class="section s-cluster" id="datafast" aria-labelledby="datafast-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="datafast-title">The DataFast cluster</h2>
+          <p>Start here if the question is DataFast itself: what it is, what datafa.st charges, how the API and MCP work, and how it compares with Plausible and GA4. The broader guides sit below this list.</p>
+        </div>
+        <GuideList
+          items={[
+            {
+              href: "/reviews/datafast/",
+              title: "DataFast analytics review",
+              description: "What the tool at datafa.st is, what Marc Lou’s homepage claims, and when not to buy it.",
+            },
+            {
+              href: "/pricing/datafast/",
+              title: "DataFast pricing",
+              description: "The datafa.st homepage ladder: Starter from $9 a month and Growth from $19.",
+            },
+            {
+              href: "/guides/datafast-api/",
+              title: "DataFast API and docs",
+              description: "How the docs say to send goal events and revenue, plus the CLI and MCP.",
+            },
+            {
+              href: "/guides/datafast-mcp/",
+              title: "DataFast MCP",
+              description: "The remote server at datafa.st/api/mcp, and what an assistant still cannot do.",
+            },
+            {
+              href: "/alternatives/datafast/",
+              title: "DataFast alternatives",
+              description: "Plausible, Fathom, GA4, PostHog, and when staying with DataFast is the better call.",
+            },
+            {
+              href: "/compare/datafast-vs-plausible/",
+              title: "DataFast vs Plausible",
+              description: "Revenue attribution beside a cookieless traffic dashboard. Both can start at $9.",
+            },
+            {
+              href: "/compare/datafast-vs-google-analytics/",
+              title: "DataFast vs Google Analytics",
+              description: "A paid revenue report next to free GA4, and when founders keep both.",
+            },
+          ]}
+        />
+      </div>
+    </section>
+
     <section class="section s-guides" id="guides" aria-labelledby="guides-title">
       <div class="wrap">
         <div class="section-head">
-          <h2 id="guides-title">Featured guides</h2>
-          <p>Starting points from the first content batch. Each one compares several tools and links the sources.</p>
+          <h2 id="guides-title">More guides</h2>
+          <p>Broader starting points, after the DataFast pages above. Each one compares several tools and links the sources.</p>
         </div>
         <GuideList
           items={[

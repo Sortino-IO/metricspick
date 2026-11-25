@@ -53,7 +53,7 @@ faqs:
   - q: Is there a startup discount?
     a: "Amplitude’s startup page offers one year of Growth at no cost for startups with fewer than 20 employees and less than $10 million raised. The docs describe the meter as up to 100 million events a month or 200,000 MTUs. Separate partner tracks exist. Email the address they publish if you are near the line."
   - q: Should I compare this with DataFast’s $9 plan?
-    a: "Only if the job is revenue attribution rather than product analytics. DataFast is not a full Amplitude replacement. See the [review](/reviews/datafast/) and the [alternatives](/alternatives/amplitude/)."
+    a: "Only if the job is revenue attribution rather than product analytics. DataFast is not a full Amplitude replacement. See the [DataFast pricing](/pricing/datafast/) ladder, [DataFast vs Amplitude](/compare/datafast-vs-amplitude/), the [DataFast alternatives](/alternatives/datafast/), the [review](/reviews/datafast/), and the [Amplitude alternatives](/alternatives/amplitude/)."
 related:
   - href: /alternatives/amplitude/
     type: Alternatives
@@ -107,7 +107,7 @@ That gap is intentional in how we write. A made-up Plus price would look helpful
 
 If the report you need is revenue by marketing channel, Amplitude’s event meter is a costly way to store pageviews. DataFast publishes Starter at $9 a month for 10,000 events and is built for that report. It will not give you 20 behavioral cohorts. GA4 is free if the channel is Google Ads. Plausible and Fathom publish site-analytics prices and do not ask you to design a tracking plan first.
 
-Pay Amplitude when a person on the team will use product analytics. The free tier is large enough that “we should look at alternatives” can wait until the event chart or a missing Plus feature forces the issue. The [DataFast review](/reviews/datafast/) is the revenue path. It is an affiliate link. It is not an Amplitude coupon.
+Pay Amplitude when a person on the team will use product analytics. The free tier is large enough that “we should look at alternatives” can wait until the event chart or a missing Plus feature forces the issue. The revenue path is a different price: the [DataFast pricing](/pricing/datafast/) ladder, the [DataFast vs Amplitude](/compare/datafast-vs-amplitude/) comparison, and the [DataFast alternatives](/alternatives/datafast/) page if Amplitude is not the job you are leaving. The [DataFast review](/reviews/datafast/) is the product note. The DataFast link is an affiliate link. It is not an Amplitude coupon.
 
 ## What to write down before you add a card
 

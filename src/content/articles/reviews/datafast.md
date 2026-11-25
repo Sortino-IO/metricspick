@@ -1,10 +1,10 @@
 ---
-title: "DataFast review"
-seoTitle: "DataFast review: Marc Lou’s web analytics tool"
-description: "What DataFast is: Marc Lou’s revenue analytics product at datafa.st, not the Arizona IT company or the Ecuador payments brand. Features, a short price summary, and when it is worth it."
+title: "DataFast analytics review"
+seoTitle: "DataFast analytics review: the tool at datafa.st"
+description: "What DataFast analytics is: Marc Lou’s analytics tool at datafa.st, the platform features, a short price summary, and when it is worth it."
 kicker: Review
-lede: "DataFast, at datafa.st, is Marc Lou’s web analytics product for founders who want to see which channel or page brought a payment. It is not the Arizona IT company and it is not the Ecuador card-payments brand that share the name."
-accent: "DataFast review"
+lede: "The DataFast analytics tool at datafa.st is Marc Lou’s product for founders who want to see which channel or page brought a payment. It is not the Arizona IT company and it is not the Ecuador card-payments brand that share the name."
+accent: "DataFast analytics"
 updated: 2026-11-25
 section: reviews
 breadcrumb: DataFast
@@ -87,10 +87,18 @@ related:
     type: Guides
     title: Cookieless analytics
     description: The salt, the gap, and the reason the default script exists.
+  - href: /guides/datafast-api/
+    type: Guides
+    title: DataFast API and docs
+    description: How the official docs say to send events and revenue.
   - href: /guides/datafast-mcp/
     type: Guides
     title: DataFast MCP
     description: How the analytics account connects to an MCP client.
+  - href: /alternatives/datafast/
+    type: Alternatives
+    title: DataFast alternatives
+    description: When Plausible, Fathom, GA4, or PostHog is the better fit.
 sources:
   - label: DataFast homepage story and plan cards
     href: https://datafa.st/
@@ -100,7 +108,7 @@ sources:
     href: https://datafast.com.ec/Nosotros/SobreNosotros
 ---
 
-DataFast, the product this site reviews, is the analytics app at [datafa.st](https://datafa.st/). The homepage says a founder should be able to see which marketing channel brings paying customers. The docs are organized around installation, payment providers, UTMs, goals, funnels, and a revenue-attribution guide. The recommendation stops there. This DataFast is not a full replacement for PostHog, Mixpanel, or Amplitude, and it is not a reason to delete GA4 if Google Ads is how you buy customers.
+DataFast analytics, the product this site reviews, is the tool at [datafa.st](https://datafa.st/). The homepage says a founder should be able to see which marketing channel brings paying customers. The docs are organized around installation, payment providers, UTMs, goals, funnels, and a revenue-attribution guide. The recommendation stops there. This DataFast is not a full replacement for PostHog, Mixpanel, or Amplitude, and it is not a reason to delete GA4 if Google Ads is how you buy customers.
 
 Two other businesses use the same name and are easy to land on from a search. They are not this product. The next sections separate them, then cover Marc Lou, the analytics features, and a short price summary. The dollar table is on the [DataFast pricing](/pricing/datafast/) page so this URL does not compete with that one.
 
@@ -124,9 +132,9 @@ Datafast S.A. is an electronic-payments company in Ecuador, at datafast.com.ec. 
 
 If you need a Phoenix help desk or an Ecuadorian card terminal, leave this review. The pages linked in the sources are theirs.
 
-## DataFast and Marc Lou
+## DataFast, Marc Lou, and the homepage story
 
-The homepage story section is written in the first person. The portrait’s alt text reads “Marc Lou — Product Hunt Maker of the Year 2023.” The paragraph beside it says, “I’m Marc, the creator of DataFast.” He also writes that he has built 24 startups and earned $2M+ online. Those are his claims on that page. We did not audit them. The footer line is “Made with ☕️ and 🥐 by Marc” and “Built with ShipFast.”
+If you looked up DataFast Marc Lou, this is that person: the homepage says he created the analytics tool, and the story section is written in the first person. The portrait’s alt text reads “Marc Lou — Product Hunt Maker of the Year 2023.” The paragraph beside it says, “I’m Marc, the creator of DataFast.” He also writes that he has built 24 startups and earned $2M+ online. Those are his claims on that page. We did not audit them. The footer line is “Made with ☕️ and 🥐 by Marc” and “Built with ShipFast.”
 
 The three reasons he gives for building the product are the product brief: find channels that drive paying customers rather than pageviews, see what makes people buy, and make decisions from revenue. That is the job this review is willing to recommend. A personal biography is not a feature list.
 
@@ -144,7 +152,7 @@ Goals, funnels, and journeys are the conversion layer. The homepage says you can
 
 Live visitor intelligence is the real-time view. The homepage says you can watch visitors, see who is likely to buy, and use the API to act. We did not sit in a live account, so this is their description, not a timed test.
 
-The 10,000-event plan cards, on both Starter and Growth, list API, CLI, and MCP as included, plus 100,000 AI bot requests per billing cycle. The homepage FAQ says there is an API, a CLI aimed at coding agents, an MCP server, a React Native SDK, and mobile apps for iOS and Android. Cross-subdomain tracking and cross-domain hostnames are also answered as yes on that FAQ. The [MCP guide](/guides/datafast-mcp/) is the setup page. Social mentions on X and Reddit, and X link attribution, are marked off on the Starter card and on for Growth.
+The 10,000-event plan cards, on both Starter and Growth, list API, CLI, and MCP as included, plus 100,000 AI bot requests per billing cycle. The homepage FAQ says there is an API, a CLI aimed at coding agents, an MCP server, a React Native SDK, and mobile apps for iOS and Android. Cross-subdomain tracking and cross-domain hostnames are also answered as yes on that FAQ. The [API guide](/guides/datafast-api/) is how the docs say to send events and revenue. The [MCP guide](/guides/datafast-mcp/) is the setup page. The [alternatives](/alternatives/datafast/) page is the shortlist when this feature list is the wrong job. Social mentions on X and Reddit, and X link attribution, are marked off on the Starter card and on for Growth.
 
 Two scripts ship. The default script uses cookies and is the one the DPA we read is written for. The cookieless script hashes a visitor id from IP, user agent, domain, and a salt that rotates about every 24 hours. DataFast says long journeys and revenue attribution get worse in that mode. The [cookieless guide](/guides/cookieless-analytics/) is the longer explanation. The homepage FAQ says you may need a cookie banner for the default script, depending on jurisdiction and setup.
 
