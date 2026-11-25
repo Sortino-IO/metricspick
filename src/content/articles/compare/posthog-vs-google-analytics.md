@@ -8,7 +8,7 @@ accent: "PostHog vs Google Analytics"
 updated: 2026-11-24
 section: compare
 breadcrumb: PostHog vs GA4
-order: 10
+order: 80
 tldr:
   - "Choose GA4 when Google Ads, a finished GA4 practice, or a BigQuery export is the thing you would miss."
   - "Choose PostHog when the product needs events, replay, flags, or experiments, and you want that suite on a usage bill."

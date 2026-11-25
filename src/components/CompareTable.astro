@@ -1,5 +1,6 @@
 ---
 import type { CompareRow } from "../data/catalog";
+import VisitTool from "./VisitTool.astro";
 
 interface Props {
   rows: CompareRow[];
@@ -25,7 +26,10 @@ const { rows, note, title = "How the tools compare" } = Astro.props;
         <tbody>
           {rows.map((row) => (
             <tr class={row.highlight ? "is-pick" : undefined}>
-              <td data-label="Tool"><strong>{row.name}</strong></td>
+              <td data-label="Tool">
+                <strong>{row.name}</strong>
+                <div class="visit-row"><VisitTool id={row.id} placement="compare-table" /></div>
+              </td>
               <td data-label="Best for">{row.bestFor}</td>
               <td data-label="Attribution" class={row.attributionTone}>{row.attribution}</td>
               <td data-label="Cookies">{row.cookies}</td>

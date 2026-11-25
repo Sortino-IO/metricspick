@@ -1,26 +1,41 @@
 ---
 import Button from "./Button.astro";
+import VisitTool from "./VisitTool.astro";
+import type { ToolId } from "../data/catalog";
 
 interface Item {
   href: string;
   title: string;
   description: string;
+  visits?: ToolId[];
 }
 interface Props {
   items: Item[];
 }
 const { items } = Astro.props;
+const seen = new Set<ToolId>();
+const listed = items.map((item) => ({
+  ...item,
+  visits: (item.visits ?? []).filter((id) => {
+    if (seen.has(id)) return false;
+    seen.add(id);
+    return true;
+  }),
+}));
 ---
 <ul class="guides">
   {
-    items.map((item) => (
+    listed.map((item) => (
       <li>
         <article class="guide">
           <h3>{item.title}</h3>
           <p>{item.description}</p>
-          <Button href={item.href} variant="secondary" size="sm" label={`Read guide: ${item.title}`}>
-            Read guide
-          </Button>
+          <div class="visit-row">
+            {item.visits?.map((id) => <VisitTool id={id} placement="guide-list" />)}
+            <Button href={item.href} variant="secondary" size="sm" label={`Read guide: ${item.title}`}>
+              Read guide
+            </Button>
+          </div>
         </article>
       </li>
     ))

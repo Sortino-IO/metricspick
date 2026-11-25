@@ -1,6 +1,6 @@
 ---
-import AffiliateLink from "./AffiliateLink.astro";
 import Button from "./Button.astro";
+import VisitTool from "./VisitTool.astro";
 import { tools, type ToolId } from "../data/catalog";
 
 interface Card {
@@ -26,21 +26,19 @@ const { cards } = Astro.props;
       {cards.map((card) => {
         const tool = tools[card.id];
         const affiliate = Boolean(tool.affiliate);
-        const href = card.href ?? (affiliate ? undefined : tool.href);
+        const secondaryHref = card.secondaryHref ?? (affiliate ? undefined : (card.href ?? tool.href));
+        const secondaryCta = card.secondaryCta ?? (affiliate ? undefined : card.cta);
         return (
           <article class:list={["tool-card", card.featured && "is-featured"]}>
             <div>
               <h3>{card.title ?? tool.name}</h3>
-              <p>{card.blurb} <strong>{tool.priceLabel}.</strong></p>
+              <p>{card.blurb}</p>
+              {tool.priceLabel && <p class="price">{tool.priceLabel}</p>}
             </div>
             <div class="card-actions">
-              {affiliate ? (
-                <AffiliateLink path="/" placement={card.placement ?? "article-card"}>{card.cta}</AffiliateLink>
-              ) : (
-                <Button href={href ?? "/"} variant="secondary" size="sm">{card.cta}</Button>
-              )}
-              {card.secondaryHref && card.secondaryCta && (
-                <Button href={card.secondaryHref} variant="secondary" size="sm">{card.secondaryCta}</Button>
+              <VisitTool id={card.id} placement={card.placement ?? "article-card"} />
+              {secondaryHref && secondaryCta && (
+                <Button href={secondaryHref} variant="secondary" size="sm">{secondaryCta}</Button>
               )}
             </div>
           </article>

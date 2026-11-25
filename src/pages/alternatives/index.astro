@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import GuideList from "../../components/GuideList.astro";
 import Simple from "../../layouts/Simple.astro";
+import { visitIdsForArticle } from "../../data/catalog";
 
 const articles = (await getCollection("articles", ({ data }) => data.section === "alternatives")).sort(
   (a, b) => a.data.order - b.data.order,
@@ -27,6 +28,7 @@ const description =
           href: `/${article.id}/`,
           title: article.data.title,
           description: article.data.description,
+          visits: visitIdsForArticle(article.id),
         }))}
       />
     </div>

@@ -2,20 +2,20 @@
 import { getCollection } from "astro:content";
 import GuideList from "../../components/GuideList.astro";
 import Simple from "../../layouts/Simple.astro";
+import { visitIdsForArticle } from "../../data/catalog";
 
 const articles = (await getCollection("articles", ({ data }) => data.section === "compare")).sort(
   (a, b) => a.data.order - b.data.order,
 );
 ---
 <Simple
-  title="Compare analytics tools"
+  title="Analytics Tools Compared Side by Side"
   description="Side-by-side comparisons of analytics tools, including DataFast against Plausible, Fathom, Google Analytics, PostHog, Mixpanel, and Amplitude."
   kicker="Compare"
-  lede="A comparison is a decision between two jobs. If the jobs differ, the honest result is often to keep both tools, or to keep the one you already run well."
+  lede="Compare DataFast with Plausible, Fathom, Google Analytics, PostHog, Mixpanel, and Amplitude. Each page covers pricing, features, and which tool fits your site."
   crumbs={[{ href: "/", label: "Home" }, { label: "Compare" }]}
 >
-  <p>PostHog and Google Analytics 4 overlap on pageviews and diverge on ads, warehouses, session replay, and feature flags. DataFast is a different comparison: revenue by channel, not a suite. The matchups below put datafa.st next to Plausible, Fathom, GA4, PostHog, Mixpanel, and Amplitude. Prices on those pages are as of 25 November 2026.</p>
-  <p>The <a href="/reviews/datafast/">DataFast review</a> covers what the product is, including the companies that are not it. The <a href="/pricing/datafast/">DataFast pricing</a> page holds the event ladder so the comparisons can stay about the job. The <a href="/alternatives/">alternatives</a> hub is the shortlist when you are leaving a tool rather than pairing two logos.</p>
+  <p>Prices on these pages are as of 25 November 2026. The <a href="/reviews/datafast/">DataFast review</a> explains the product. The <a href="/pricing/datafast/">DataFast pricing</a> page lists the plans. The <a href="/alternatives/">alternatives</a> hub is where to start when you want to leave a tool.</p>
   <section slot="wide" class="band band-yellow">
     <div class="article-wide">
       <h2>Comparisons</h2>
@@ -24,6 +24,7 @@ const articles = (await getCollection("articles", ({ data }) => data.section ===
           href: `/${article.id}/`,
           title: article.data.title,
           description: article.data.description,
+          visits: visitIdsForArticle(article.id),
         }))}
       />
     </div>

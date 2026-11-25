@@ -1,5 +1,6 @@
 ---
 import GuideList from "./GuideList.astro";
+import { visitIdsForArticle, type ToolId } from "../data/catalog";
 
 interface Item {
   href: string;
@@ -11,10 +12,20 @@ interface Props {
   items: Item[];
 }
 const { items } = Astro.props;
+const seen = new Set<ToolId>();
+const listed = items.map((item) => {
+  const id = item.href.replace(/^\/|\/$/g, "");
+  const visits = visitIdsForArticle(id).filter((toolId) => {
+    if (seen.has(toolId)) return false;
+    seen.add(toolId);
+    return true;
+  });
+  return { href: item.href, title: item.title, description: item.description, visits };
+});
 ---
 <section class="band band-blue" aria-labelledby="related-title">
   <div class="article-wide">
     <h2 id="related-title">Related guides</h2>
-    <GuideList items={items} />
+    <GuideList items={listed} />
   </div>
 </section>
