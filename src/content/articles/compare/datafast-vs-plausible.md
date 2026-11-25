@@ -3,7 +3,7 @@ title: "DataFast vs Plausible"
 seoTitle: "DataFast vs Plausible for founders"
 description: "DataFast vs Plausible: revenue attribution against a cookieless pageview dashboard, with both entry prices at $9 a month and the meter each one actually bills."
 kicker: Compare
-lede: "DataFast and Plausible can both start at $9 a month. They do not bill the same unit, and they do not put revenue in the same place. DataFast is built around the payment. Plausible is a cookieless traffic product that keeps revenue tracking on Business."
+lede: "DataFast and Plausible both have a published starting price of $9 a month. They do not bill the same unit, and they do not put revenue in the same place. DataFast is built around the payment. Plausible is a cookieless traffic product that keeps revenue tracking on Business."
 accent: "DataFast vs Plausible"
 updated: 2026-11-25
 section: compare
@@ -53,7 +53,7 @@ honesty: |
   A 10,000-event DataFast month and a 10,000-pageview Plausible month are not the same traffic. DataFast counts pageviews, payments, trial signups, and custom goals as events. Plausible’s slider is labeled in pageviews. Matching the logos at $9 does not mean the invoices stay matched after you add goals.
 faqs:
   - q: Is DataFast or Plausible cheaper?
-    a: "At the first published step, both Starter plans are $9 a month: DataFast for 10,000 events, Plausible for 10,000 pageviews. Plausible Growth at that step is $14 and Business is $19. DataFast Growth at 10,000 events is $19. Yearly billing on both homepages is ten times the monthly price. The [DataFast pricing](/pricing/datafast/) page lists every DataFast step. Plausible’s ladder is on the [Plausible alternatives](/alternatives/plausible/) page."
+    a: "At the first published step, DataFast Starter is $9 a month and Plausible Starter is $9 a month. Both figures are published starting prices: DataFast for 10,000 events, Plausible for 10,000 pageviews. Plausible Growth at that step is $14 and Business is $19. DataFast Growth at 10,000 events is $19. Yearly billing on both homepages is ten times the monthly price. The [DataFast pricing](/pricing/datafast/) page lists every DataFast step. Plausible’s ladder is on the [Plausible alternatives](/alternatives/plausible/) page."
   - q: Which one tracks revenue?
     a: "DataFast’s product is the payment join, on the plans above, once you connect a provider. Choose Plausible Business if you need revenue tracking, funnels, journeys, custom properties, the Stats API, or Data Studio. Starter and Growth are the site and team plans, not the revenue plan."
   - q: Which one is cookieless?
@@ -100,11 +100,11 @@ If the sentence you care about is “no cookie banner for the analytics script,�
 
 As of 25 November 2026, Plausible’s homepage slider lists monthly USD prices from 10,000 through 10 million pageviews. At 10,000: Starter $9, Growth $14, Business $19. At 100,000: $19, $29, and $39. Yearly billing is ten times the monthly price.
 
-DataFast lists Starter at $9 and Growth at $19 for 10,000 events. At 100,000 events those numbers are $19 and $39. The full ladder is on the [pricing page](/pricing/datafast/). `datafa.st/pricing` returns 404, so the homepage is the source.
+DataFast lists Starter at $9 and Growth at $19. Both figures are published starting prices for 10,000 monthly events. At 100,000 events the prices are $19 and $39. The full ladder is on the [pricing page](/pricing/datafast/). `datafa.st/pricing` returns 404, so the homepage is the source.
 
 The overlap at $9 is real and it is the least useful fact. DataFast’s terms count pageviews, payment events, trial signups, and custom goals as events, across every site, each month. Plausible’s slider is pageviews. A store that sends a payment event and a custom goal will consume DataFast events faster than Plausible pageviews, on the same traffic. Compare the unit, then the feature gate.
 
-Revenue makes the gate obvious. On DataFast, connecting a documented provider is how you get the report the product is sold on. On Plausible, the plan docs put revenue tracking on Business. At 10,000 pageviews, that Business plan is $19, the same dollar as DataFast Growth at 10,000 events, and not the same feature set. DataFast Growth is the 30-site, 30-seat plan with social mentions. Plausible Business is the revenue and funnel plan. Read the card you would actually tick.
+Revenue makes the gate obvious. On DataFast, connecting a documented provider is how you get the report the product is sold on. On Plausible, the plan docs put revenue tracking on Business. At 10,000 pageviews, Plausible Business is $19. DataFast Growth is $19 at 10,000 events. Both figures match. The plans do not. DataFast Growth is the 30-site, 30-seat plan with social mentions. Plausible Business is the revenue and funnel plan. Read the card you would actually tick.
 
 ## When to keep Plausible
 

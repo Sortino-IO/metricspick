@@ -40,7 +40,7 @@ tools:
     href: /pricing/posthog/
   - id: amplitude
     title: Amplitude
-    blurb: "Free for 2 million events a month. Plus starts at $0 when you need the paid feature list."
+    blurb: "Free for 2 million events a month. Plus has a published starting price of $0 when you need the paid feature list."
     cta: Amplitude alternatives
     href: /alternatives/amplitude/
   - id: datafast
@@ -60,7 +60,7 @@ honesty: |
   Keep Mixpanel if the event dictionary is already clean, if Growth’s multi-touch attribution is the feature you bought, or if a move would throw away cohorts the team uses. DataFast can be added for the marketing site. It should not be sold internally as the new Mixpanel.
 faqs:
   - q: How much is Mixpanel before I switch?
-    a: "Free covers up to 1 million events a month and Growth starts at $0 with that million included. At 1.5 million events, yearly billing is $100 a month and monthly billing is $140. The [Mixpanel pricing](/pricing/mixpanel/) guide has more of the pack table. Prices for Group Analytics and Data Pipelines are not publicly listed."
+    a: "Free covers up to 1 million events a month. Growth’s published starting price is $0, with that million included. At 1.5 million events, yearly billing is $100 a month and monthly billing is $140. Both figures are published prices for that step. The [Mixpanel pricing](/pricing/mixpanel/) guide has more of the pack table. Prices for Group Analytics and Data Pipelines are not publicly listed."
   - q: Is DataFast a Mixpanel alternative?
     a: "It is an alternative for a different job. Mixpanel analyzes product events. DataFast joins marketing traffic to payments. DataFast is not a full replacement for Mixpanel, PostHog, or Amplitude. The [review](/reviews/datafast/) covers what DataFast includes."
   - q: Does Mixpanel include multi-touch attribution?
@@ -90,7 +90,7 @@ related:
     description: Prices, providers, and the limits of the revenue pick.
 ---
 
-As of 24 November 2026, Mixpanel sells three plans: Free, Growth, and Enterprise. Free is up to 1 million events a month, 10,000 session replays, up to 10 active feature flags, up to 1,000 monthly experiment users, and funnels and retention, with unlimited seats and no card. Growth starts at $0, includes that first million, and then sells packs. On yearly billing, 1.5 million events is $100 a month and 2 million is $185. On monthly billing, those steps are $140 and $259. Enterprise is a conversation, up to a published ceiling of a trillion events, which means call them.
+As of 24 November 2026, Mixpanel sells three plans: Free, Growth, and Enterprise. Free is up to 1 million events a month, 10,000 session replays, up to 10 active feature flags, up to 1,000 monthly experiment users, and funnels and retention, with unlimited seats and no card. Growth’s published starting price is $0. It includes that first million, and then sells packs. On yearly billing, 1.5 million events is $100 a month and 2 million is $185. On monthly billing, those steps are $140 and $259. Enterprise is quote-only, up to a published ceiling of a trillion events.
 
 A startup program on the same page offers the first year free to companies founded less than five years ago, with up to $8 million in funding, that have not redeemed another offer. The included volumes on that offer are large. Read the current page before you plan around them. Programs change.
 
@@ -112,7 +112,7 @@ PostHog and Amplitude are the alternatives that stay in category.
 
 PostHog is the wider suite: replay allowances, flags, experiments, and a public rate card with billing limits. It is also more product than Mixpanel in places you may not want to operate. The [PostHog alternatives](/alternatives/posthog/) page is there if you arrive and want to leave again. The [PostHog vs GA4](/compare/posthog-vs-google-analytics/) page is there if the other tool is Google.
 
-Amplitude is the larger free event tier and a Plus plan that starts at $0 with a card, custom events, a limited number of behavioral cohorts, and two years of retention. Growth is quoted. The startup year of Growth has its own eligibility rules, which are not the same as Mixpanel’s startup rules. Do not assume a yes from one program is a yes from the other.
+Amplitude is the larger free event tier and a Plus plan with a published starting price of $0, a card, custom events, a limited number of behavioral cohorts, and two years of retention. Growth is quoted. The startup year of Growth has its own eligibility rules, which are not the same as Mixpanel’s startup rules. Do not assume a yes from one program is a yes from the other.
 
 Moving between these three is a tracking-plan move. Budget a week to confirm the same five events arrive with the same names, and another week before anyone trusts a funnel. The reports that matter are the ones a human opens. Recreate those first.
 
@@ -120,9 +120,9 @@ Moving between these three is a tracking-plan move. Budget a week to confirm the
 
 Mixpanel can represent a purchase as an event. Growth adds multi-touch attribution. Free does not. Campaign reporting is listed on the plans more broadly. That is real product surface. It is still an event system. Someone has to decide what a campaign property looks like and keep it on the events.
 
-DataFast is the tool this site recommends when you want that answer without adopting a product-analytics practice. Starter starts at $9 per month for 10,000 events. The docs connect common payment providers. The [review](/reviews/datafast/) lists the ladder, the 14-day trial, and the rule that the dashboard locks at 100 percent of the event allowance while tracking continues. DataFast is not a full replacement for Mixpanel. Cohorts of feature usage, replay of a broken screen, and experiment users are Mixpanel’s neighborhood. If you use them, keep a product tool and add DataFast only on the marketing host.
+DataFast is the tool this site recommends when you want that answer without adopting a product-analytics practice. The published starting price is $9 a month for 10,000 events. The docs connect common payment providers. The [review](/reviews/datafast/) lists the ladder, the 14-day trial, and the rule that the dashboard locks at 100 percent of the event allowance while tracking continues. DataFast is not a full replacement for Mixpanel. Cohorts of feature usage, replay of a broken screen, and experiment users are Mixpanel’s neighborhood. If you use them, keep a product tool and add DataFast only on the marketing host.
 
-Fathom includes event and revenue tracking on every paid plan and starts at $15 for up to 100,000 pageviews. Plausible puts revenue tracking on the Business plan. GA4 is free and is the ads-shaped answer. The [attribution guide](/guides/marketing-attribution-tools/) lines these up. They do not compute the same credit model, and this page does not rank them on accuracy.
+Fathom includes event and revenue tracking on every paid plan. The published starting price is $15, for up to 100,000 pageviews. Plausible puts revenue tracking on the Business plan. GA4 is free and is the ads-shaped answer. The [attribution guide](/guides/marketing-attribution-tools/) lines these up. They do not compute the same credit model, and this page does not rank them on accuracy.
 
 ## If Mixpanel was only on the marketing site
 

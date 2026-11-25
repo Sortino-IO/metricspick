@@ -3,7 +3,7 @@ title: "DataFast vs Amplitude"
 seoTitle: "DataFast vs Amplitude for founders"
 description: "DataFast vs Amplitude: a $9 revenue-attribution plan against Amplitude’s free product analytics, including 2 million events a month with no credit card."
 kicker: Compare
-lede: "Amplitude’s free plan includes 2 million events a month and is not a trial. DataFast starts at $9 a month and answers which marketing source brought a payment. The tools belong in different meetings."
+lede: "Amplitude’s free plan includes 2 million events a month and is not a trial. DataFast’s published starting price is $9 a month. It answers which marketing source brought a payment. The tools belong in different meetings."
 accent: "DataFast vs Amplitude"
 updated: 2026-11-25
 section: compare
@@ -101,7 +101,7 @@ If your volume fits inside 2 million events and the team uses the product report
 
 ## DataFast’s paid, narrower job
 
-DataFast Starter is $9 a month at 10,000 events. Growth is $19. The ladder continues with volume. Yearly billing is ten times monthly. The 14-day trial does not require a card. Details and the lock at 100 percent of the event cap are on the [pricing page](/pricing/datafast/).
+DataFast Starter is $9 a month. Growth is $19. Both figures are published starting prices for 10,000 monthly events. The ladder continues with volume. Yearly billing is ten times monthly. The 14-day trial does not require a card. Details and the lock at 100 percent of the event cap are on the [pricing page](/pricing/datafast/).
 
 The product is revenue attribution for a site: install the script, connect Stripe, Lemon Squeezy, Polar, Shopify, or the Payment API, and read which source paid. The default script uses cookies. The cookieless script is less accurate for long journeys. API, CLI, and MCP are included on the entry plan cards. Session replay and a product event taxonomy are not what those cards sell.
 

@@ -3,7 +3,7 @@ title: "DataFast vs Google Analytics"
 seoTitle: "DataFast vs Google Analytics for founders"
 description: "DataFast vs Google Analytics: a paid revenue-attribution tool against free GA4, and when founders keep both instead of deleting the Google tag."
 kicker: Compare
-lede: "Google Analytics 4 is free of charge and tied to Google’s ad stack. DataFast starts at $9 a month and is built to show which channel brought a paying customer. Replacing GA4 with DataFast deletes the ads report. Adding DataFast beside GA4 is often the honest setup."
+lede: "Google Analytics 4 is free and tied to Google’s ad stack. DataFast’s published starting price is $9 a month. It is built to show which channel brought a paying customer. Replacing GA4 with DataFast deletes the ads report. Adding DataFast beside GA4 is often the right setup."
 accent: "DataFast vs Google Analytics"
 updated: 2026-11-25
 section: compare
@@ -99,7 +99,7 @@ GA4’s standard web tag uses cookies. Leaving GA4 for a privacy pitch is a real
 
 ## What DataFast adds, and what it costs
 
-DataFast’s homepage sells one report: which marketing channels bring paying customers. You install a script and connect a payment provider. The homepage FAQ names Stripe, Lemon Squeezy, Polar, and Shopify, plus a Payment API. Starter is $9 a month at 10,000 events. Growth is $19 at that step. The [pricing page](/pricing/datafast/) has the rest of the ladder, the 14-day trial, and the point at which the dashboard locks. There is no ongoing free plan in the terms.
+DataFast’s homepage sells one report: which marketing channels bring paying customers. You install a script and connect a payment provider. The homepage FAQ names Stripe, Lemon Squeezy, Polar, and Shopify, plus a Payment API. Starter is $9 a month. Growth is $19. Both figures are published starting prices for 10,000 monthly events. The [pricing page](/pricing/datafast/) has the rest of the ladder, the 14-day trial, and the point at which the dashboard locks. There is no ongoing free plan in the terms.
 
 That $9 is worth it when GA4’s explorations are not showing you the payment and you are willing to connect the provider. It is not worth it as a way to stop paying for GA4, because standard GA4 is not a bill. You would be adding a bill to get a different report. The [“Is DataFast worth it?”](/reviews/datafast/) answer on the review is the short form of that test.
 

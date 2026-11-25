@@ -162,7 +162,7 @@ The homepage FAQ also lists a Payment API next to the native integrations. That 
 
 ## What it costs
 
-API access has no separate public price. As of 25 November 2026 both 10,000-event cards included the API, the CLI, and MCP. Starter at that step was $9 a month. Growth was $19. The [DataFast pricing](/pricing/datafast/) page has the steps above 10,000 events, the yearly rule (ten times the monthly price), and the trial. Sending events still consumes the event allowance. Pageviews, payment events, and custom goals all count as events. A busy server can climb the ladder without a change in plan type.
+API access has no separate public price. As of 25 November 2026 both 10,000-event cards included the API, the CLI, and MCP. Starter was $9 a month. Growth was $19. Both figures are the published prices for 10,000 monthly events. The [DataFast pricing](/pricing/datafast/) page has the steps above 10,000 events, the yearly rule (ten times the monthly price), and the trial. Sending events still consumes the event allowance. Pageviews, payment events, and custom goals all count as events. A busy server can climb the ladder without a change in plan type.
 
 Rate limits exist. The getting-started error table includes 429, and it shows a sample body with a limit of 60. That sample illustrates the error shape, including `X-RateLimit-*` headers. It is not a published ceiling of 60 for every token. Read the headers on your own response.
 

@@ -3,7 +3,7 @@ title: "Amplitude pricing, explained for founders"
 seoTitle: "Amplitude pricing explained for founders"
 description: "Amplitude pricing for founders: the free 2 million events, Plus starting at $0, Growth and Enterprise quotes, and the startup year."
 kicker: Pricing
-lede: "Amplitude publishes a free plan and a Plus plan that starts at $0. It does not publish one dollar rate for every event after that. This page lists the published plans, and what you still have to estimate."
+lede: "Amplitude publishes a free plan and a Plus plan with a starting price of $0. It does not publish one dollar rate for every event after that. This page lists the published plans, and what you still have to estimate."
 accent: "Amplitude pricing"
 updated: 2026-11-24
 section: pricing
@@ -11,7 +11,7 @@ breadcrumb: Amplitude
 order: 20
 tldr:
   - "Free is 2 million events per month, no card, and it is not a trial."
-  - "Plus starts at $0, requires a card, includes the first 2 million events, and scales up to 70 million."
+  - "Plus has a published starting price of $0. It requires a card, includes the first 2 million events, and scales up to 70 million."
   - "Growth and Enterprise are event-based quotes. Qualifying startups can get one year of Growth free."
   - "If you only need marketing revenue, a product-analytics price is the wrong price to pay."
 tldrNote: "Plans as of 24 November 2026, from amplitude.com/pricing and Amplitude’s plan docs."
@@ -49,7 +49,7 @@ faqs:
   - q: Does Amplitude have a free plan?
     a: "Yes. The Free plan includes 2 million events per month, no credit card, and no time limit. It includes product analytics, 10,000 monthly session replays, and limited experiments, guides, and surveys. Free retention is 1 year."
   - q: What is the first paid plan?
-    a: "Plus starts at $0 and includes the first 2 million events. A card is required. Plus scales to 70 million events, with custom events, 20 behavioral cohorts, alerts, heatmaps, and 2 years of retention. Growth and Enterprise are quoted."
+    a: "Plus has a published starting price of $0 and includes the first 2 million events. A card is required. Plus scales to 70 million events, with custom events, 20 behavioral cohorts, alerts, heatmaps, and 2 years of retention. Growth and Enterprise are quoted."
   - q: Is there a startup discount?
     a: "Amplitude’s startup page offers one year of Growth at no cost for startups with fewer than 20 employees and less than $10 million raised. The docs describe the meter as up to 100 million events a month or 200,000 MTUs. Separate partner tracks exist. Email the address they publish if you are near the line."
   - q: Should I compare this with DataFast’s $9 plan?
@@ -81,9 +81,9 @@ Free is for individuals getting started. It includes 2 million events per month,
 
 If your volume is under 2 million events and you can work inside those limits, the price is $0. Looking at alternatives to save money, below that line, is a category error. The [alternatives guide](/alternatives/amplitude/) says the same thing from the other direction.
 
-## Plus, which starts at zero and then does not
+## Plus has a $0 starting price
 
-Plus is the self-serve paid tier. It starts at $0, the first 2 million events are free, a credit card is required, and it scales to 70 million events. The added list is custom events and formulas, 20 behavioral cohorts, alerts, heatmaps, and two years of retention. The Plus page points at the pricing calculator to estimate the bill.
+Plus is the self-serve paid tier. The published starting price is $0. The first 2 million events are free. A credit card is required. It scales to 70 million events. The added list is custom events and formulas, 20 behavioral cohorts, alerts, heatmaps, and two years of retention. The Plus page points at the pricing calculator to estimate the bill.
 
 That calculator is an estimate, not a list price. There is no single published “Plus costs $X at 5 million events.” If the decision needs that figure, run the estimator and save the result in the buying doc.
 
@@ -111,7 +111,7 @@ Pay Amplitude when a person on the team will use product analytics. The free tie
 
 ## What to write down before you add a card
 
-Plus asks for a card even though it starts at $0. That is the moment a free plan becomes a plan that can bill you. Before you add the card, save three numbers from the product you already have, or from a week of the free plan: monthly events, monthly replay recordings, and whether you need more than the free cohort behavior. Free includes 10,000 replays. If you are under that and under 2 million events, the card is optional. Custom events, saved behavioral cohorts, alerts, and heatmaps are on Plus, and the card is the gate even before the volume is.
+Plus asks for a card even though the starting price is $0. That is the moment a free plan becomes a plan that can bill you. Before you add the card, save three numbers from the product you already have, or from a week of the free plan: monthly events, monthly replay recordings, and whether you need more than the free cohort behavior. Free includes 10,000 replays. If you are under that and under 2 million events, the card is optional. Custom events, saved behavioral cohorts, alerts, and heatmaps are on Plus, and the card is the gate even before the volume is.
 
 Ask whoever owns finance which renewal they prefer once Plus is no longer $0. Renewal can be monthly or annual. An annual commitment is harder to undo if the estimator was optimistic. A monthly plan is easier to leave and, on many vendors including the ones with printed packs, more expensive per month. Amplitude does not publish a monthly-versus-annual discount comparable to Mixpanel’s. The estimator or the contract is the source.
 

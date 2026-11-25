@@ -3,7 +3,7 @@ title: "Mixpanel pricing, explained for founders"
 seoTitle: "Mixpanel pricing explained for founders"
 description: "Mixpanel pricing for founders: the free million events, Growth packs from the official pricing page, and which features sit on Free versus Growth."
 kicker: Pricing
-lede: "Mixpanel’s free plan covers a million events a month. Growth starts at $0 and then sells event packs, with a visible jump at 1.5 million events. Here is the table, and here is what it does not include."
+lede: "Mixpanel’s free plan covers a million events a month. Growth’s published starting price is $0. It then sells event packs, with a visible jump at 1.5 million events. The table below is what is published."
 accent: "Mixpanel pricing"
 updated: 2026-11-24
 section: pricing
@@ -49,7 +49,7 @@ faqs:
   - q: Is Mixpanel free?
     a: "Yes, inside the free plan: up to 1 million events a month, 10,000 replays, up to 10 feature flags, up to 1,000 experiment MEUs, funnels and retention, and unlimited seats. Querying pauses when a free project goes over the event limit, while collection continues, until you upgrade."
   - q: What is the first paid step?
-    a: "Growth starts at $0 with 1 million events included. The next published yearly step is 1.5 million events at $100 per month ($1,200 per year). Monthly billing at 1.5 million is $140. At 2 million events the page shows $185 yearly or $259 monthly."
+    a: "Growth’s published starting price is $0, with 1 million events included. The next yearly step is 1.5 million events at $100 a month ($1,200 a year). Monthly billing at 1.5 million is $140. Both figures are published prices for that step. At 2 million events the prices are $185 yearly or $259 monthly."
   - q: Does the free plan include attribution?
     a: "Campaign reporting is listed on Free. Multi-touch attribution is listed as not available on Free and available on Growth and Enterprise. If that line is why you would pay, it belongs in the decision."
   - q: How does DataFast’s price compare?
@@ -83,7 +83,7 @@ The pricing docs describe the overage behavior. On Free, Mixpanel keeps collecti
 
 ## Growth packs
 
-Growth starts at $0. The first million events sit inside that base. Yearly billing:
+Growth’s published starting price is $0. The first million events sit inside that base. Yearly billing:
 
 1 million, $0. 1.5 million, $100 a month. 2 million, $185. 3 million, $270. 5 million, $438. 10 million, $840. 20 million, $1,635.
 

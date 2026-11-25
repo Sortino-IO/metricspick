@@ -120,7 +120,7 @@ sources:
 
 A DataFast alternative has to replace a specific report, not a logo. The product at [datafa.st](https://datafa.st/) is Marc Lou’s analytics tool for seeing which marketing channel brings paying customers. If that sentence is the report you open, most “alternatives” are a different category. If it is not, DataFast is the wrong default and this page is the shortlist.
 
-This is an independent page. Some links to datafa.st are affiliate links. The other products are here because a founder might confuse their job with DataFast. As of 25 November 2026, Starter is $9 a month at 10,000 events and Growth is $19. `datafa.st/pricing` returns 404. The [pricing page](/pricing/datafast/) is the full ladder. The [review](/reviews/datafast/) is the product, the maker, and the other companies that share the name.
+This is an independent page. Some links to datafa.st are affiliate links. The other products are here because a founder might confuse their job with DataFast. As of 25 November 2026, Starter is $9 a month and Growth is $19. Both figures are published starting prices for 10,000 monthly events. `datafa.st/pricing` returns 404. The [pricing page](/pricing/datafast/) is the full ladder. The [review](/reviews/datafast/) is the product, the maker, and the other companies that share the name.
 
 ## When staying is the alternative
 

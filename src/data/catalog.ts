@@ -277,7 +277,7 @@ export const ladders: Record<string, Ladder> = {
   fathom: {
     title: "Fathom prices at 100,000 pageviews",
     intro:
-      "As of 24 November 2026, plans start at $15/month for up to 100,000 monthly pageviews and 50 sites. At that step, Standard is $15/month and Business is $39/month.",
+      "As of 24 November 2026, the published starting price is $15/month for up to 100,000 monthly pageviews and 50 sites. At that step, Standard is $15/month and Business is $39/month. Both figures are published prices for that step.",
     columns: ["At up to 100k pageviews", "Monthly", "What it adds"],
     rows: [
       ["Standard", "$15", "Every analytics feature, 50 sites, email support"],
@@ -305,7 +305,7 @@ export const ladders: Record<string, Ladder> = {
   mixpanel: {
     title: "Mixpanel Growth event packs",
     intro:
-      "As of 24 November 2026, Mixpanel’s free plan covers up to 1 million events per month. Growth starts at $0 with that first million included. These are the published Growth packs.",
+      "As of 24 November 2026, Mixpanel’s free plan covers up to 1 million events per month. Growth’s published starting price is $0, with that first million included. These are the published Growth packs.",
     columns: ["Events / month", "Yearly billing", "Monthly billing"],
     rows: [
       ["1M", "$0", "$0"],
@@ -325,7 +325,7 @@ export const ladders: Record<string, Ladder> = {
     columns: ["Plan", "Published price", "Events"],
     rows: [
       ["Free", "$0, no card", "2 million / month"],
-      ["Plus", "Starts at $0, card required", "First 2 million free, scales to 70 million"],
+      ["Plus", "Starting price $0, card required", "First 2 million free, scales to 70 million"],
       ["Growth", "Event-based, quoted", "Custom"],
       ["Enterprise", "Event-based, quoted", "Custom"],
     ],

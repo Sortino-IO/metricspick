@@ -3,7 +3,7 @@ title: "DataFast vs Fathom"
 seoTitle: "DataFast vs Fathom for founders"
 description: "DataFast vs Fathom: a $9 revenue-attribution plan against Fathom’s $15 entry price, 50 sites, cookieless analytics, and revenue tracking listed on the plans."
 kicker: Compare
-lede: "Fathom starts at $15 a month for up to 100,000 pageviews and 50 sites, and it lists revenue tracking on the product. DataFast starts at $9 a month for 10,000 events and is built around which source brought the payment. The cheaper logo depends on site count and on how the sale is attributed."
+lede: "Fathom’s published starting price is $15 a month, for up to 100,000 pageviews and 50 sites, and revenue tracking is on the product. DataFast’s published starting price is $9 a month, for 10,000 events. It is built around which source brought the payment. The cheaper choice depends on site count and on how the sale is attributed."
 accent: "DataFast vs Fathom"
 updated: 2026-11-25
 section: compare
@@ -53,7 +53,7 @@ honesty: |
   Fathom includes event and revenue tracking on its plans. DataFast documents a payment-provider join and a revenue-attribution guide. Both are called revenue. They are not the same report. Send a test payment in the trial you start before you cancel the other tool.
 faqs:
   - q: Is DataFast cheaper than Fathom?
-    a: "DataFast Starter is $9 a month at 10,000 events and $19 at 100,000 events. Fathom starts at $15 a month for up to 100,000 monthly pageviews and 50 sites. At that step, Standard is $15 and Business is $39. Fathom includes far more sites at that entry price. DataFast Starter is one website. The [pricing page](/pricing/datafast/) has the rest of the DataFast ladder."
+    a: "DataFast Starter is $9 a month at 10,000 events and $19 at 100,000 events. Fathom’s published starting price is $15 a month, for up to 100,000 monthly pageviews and 50 sites. At that step, Standard is $15 and Business is $39. Both figures are published prices for up to 100,000 monthly pageviews. Fathom includes far more sites at that entry price. DataFast Starter is one website. The [pricing page](/pricing/datafast/) has the rest of the DataFast ladder."
   - q: Does Fathom already track revenue?
     a: "Fathom includes event and revenue tracking, plus UTM campaigns, and does not require a cookie banner. Business, at $39 beside the 100,000-pageview plan, adds seats, roles, an audit log, and a higher API limit. It is not the plan that unlocks revenue."
   - q: Does Fathom have a free plan?
@@ -88,9 +88,9 @@ Figures below are as of 25 November 2026. DataFast means the analytics app at da
 
 ## The entry invoices
 
-Fathom plans start at $15 a month for up to 100,000 monthly pageviews and 50 sites. Standard, at $15 a month, is the plan for measuring sites. Business is $39 a month, for teams and for companies that build on the analytics through the API or AI reporting. The Business checkout at that step is `business_monthly_100k`. Business includes everything in Standard, plus 10 team seats besides you, roles, a team audit log, and higher API limits. Traffic from 100,000 to 25 million pageviews does not by itself force a move from Standard to Business. There is no free plan. Extra site packs of 50 are $10 a month or $100 a year. The pageview slider continues upward. Prices above the $15 and $39 entry step are not listed here.
+Fathom’s published starting price is $15 a month, for up to 100,000 monthly pageviews and 50 sites. At that step, Standard is $15 a month and Business is $39. Both figures are published prices for up to 100,000 monthly pageviews. Standard is the plan for measuring sites. Business is for teams, and for companies that use the API or AI reporting. The Business checkout at that step is `business_monthly_100k`. It includes everything in Standard, plus 10 team seats besides you, roles, a team audit log, and higher API limits. Traffic from 100,000 to 25 million pageviews does not by itself force a move from Standard to Business. There is no free plan. Extra site packs of 50 are $10 a month or $100 a year. The pageview slider continues upward. Prices above those two entry figures are not listed here.
 
-DataFast Starter is $9 a month at 10,000 events and $19 at 100,000. Growth is $19 and $39 at those steps. Starter is 1 website and 1 team member. Growth is 30 websites and 30 team members. The [pricing page](/pricing/datafast/) has the full event ladder through 10 million plus. At 100,000 events, DataFast Starter is $19 against Fathom Standard at $15, and Fathom includes 50 sites at that $15. DataFast is the lower invoice only while you are on a small event step with one site. A client roster reverses it.
+At 10,000 events, DataFast Starter is $9 a month and Growth is $19. Both figures are published starting prices for that step. At 100,000 events, Starter is $19 and Growth is $39. Starter is 1 website and 1 team member. Growth is 30 websites and 30 team members. The [pricing page](/pricing/datafast/) has the full event ladder through 10 million plus. At 100,000 events, DataFast Starter is $19 and Fathom Standard is $15. Fathom includes 50 sites at that $15. DataFast is the lower invoice only on a small event step with one site. A client roster reverses it.
 
 ## Revenue and cookies
 

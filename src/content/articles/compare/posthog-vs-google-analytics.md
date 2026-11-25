@@ -99,7 +99,7 @@ Keep GA4 if someone on the team uses Google Ads reporting, if a BigQuery export 
 
 ## What PostHog is for
 
-PostHog’s pricing page lists a free monthly bucket: 1 million analytics events, 5,000 session recordings, 1 million feature-flag requests, 100,000 exceptions, 1,500 survey responses, and more. The free plan is one project and one year of event retention, and it stops at the limits instead of billing you. Pay-as-you-go keeps the bucket and bills the rest, with six projects and two years of retention. Anonymous events past the first million start at $0.00005 on the published card. The [pricing guide](/pricing/posthog/) does the arithmetic and points at the identified-event caveat.
+PostHog’s pricing page lists a free monthly bucket: 1 million analytics events, 5,000 session recordings, 1 million feature-flag requests, 100,000 exceptions, 1,500 survey responses, and more. The free plan is one project and one year of event retention, and it stops at the limits instead of billing you. Pay-as-you-go keeps the bucket and bills the rest, with six projects and two years of retention. Past the first million, the published starting rate for anonymous events is $0.00005. The [pricing guide](/pricing/posthog/) does the arithmetic and points at the identified-event caveat.
 
 You adopt PostHog when a developer will send events, when someone will watch a replay, or when flags and experiments are part of shipping. You can also point it at a marketing site. Doing only that, with identified events, is an expensive way to redraw GA4. Use [anonymous events](https://posthog.com/docs/data/anonymous-vs-identified-events) when you do not need a person profile. They can cost up to four times less than identified events.
 

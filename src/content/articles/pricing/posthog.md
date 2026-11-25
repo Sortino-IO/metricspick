@@ -31,7 +31,7 @@ tools:
     href: /pricing/mixpanel/
   - id: amplitude
     title: Amplitude
-    blurb: "Free for 2 million events. Plus starts at $0 and then scales."
+    blurb: "Free for 2 million events. Plus has a published starting price of $0, then it scales."
     cta: Amplitude pricing
     href: /pricing/amplitude/
   - id: datafast

@@ -13,7 +13,7 @@ order: 10
 tldr:
   - "This page is about datafa.st, the analytics product Marc Lou created. It is not DataFast Networks in Arizona, and it is not Datafast S.A. in Ecuador."
   - "Buy it when the weekly question is which marketing source brought paying customers. Do not buy it as a session-replay suite, a feature-flag tool, or a Google Ads replacement."
-  - "Starter starts at $9 per month for 10,000 events. Growth starts at $19. The full ladder is on the pricing page. Figures are from the homepage on 25 November 2026."
+  - "Starter is $9 a month. Growth is $19. Both figures are published starting prices for 10,000 monthly events. The full ladder is on the pricing page. Figures are from the homepage on 25 November 2026."
   - "The default script uses cookies. The cookieless script does not, and attribution gets weaker."
 tldrNote: "Public product details as of 25 November 2026. Links to DataFast are affiliate links. The dollar table lives on the pricing page so this URL stays a review."
 jobs:
@@ -59,7 +59,7 @@ honesty: |
   Say no if you need replay, feature flags, or product cohorts. Say no if you will not connect a payment provider and you only want pageviews; Plausible or Fathom may be the calmer buy. Say no if you need Google Ads reporting that you already get from GA4. Say no to the cookieless mode if the sale takes weeks and the first touch is the whole point, unless you have read DataFast’s accuracy section and still accept it. Say no if you were looking for IT support in Phoenix or a card terminal in Ecuador. Those are different companies.
 faqs:
   - q: Is DataFast worth it?
-    a: "It is worth a trial when you sell from a site, you can connect a payment provider DataFast documents, and the question you will open every week is which channel, campaign, or page showed up on a paying customer. It is not worth it as a substitute for PostHog, Mixpanel, or Amplitude, and it is not worth it if you only want a quiet pageview dashboard or a Google Ads report. Starter starts at $9 a month. The [pricing page](/pricing/datafast/) has the ladder. The comparisons with [Plausible](/compare/datafast-vs-plausible/), [Fathom](/compare/datafast-vs-fathom/), [GA4](/compare/datafast-vs-google-analytics/), [PostHog](/compare/datafast-vs-posthog/), [Mixpanel](/compare/datafast-vs-mixpanel/), and [Amplitude](/compare/datafast-vs-amplitude/) are the job splits."
+    a: "It is worth a trial when you sell from a site, you can connect a payment provider DataFast documents, and the question you will open every week is which channel, campaign, or page showed up on a paying customer. It is not worth it as a substitute for PostHog, Mixpanel, or Amplitude, and it is not worth it if you only want a quiet pageview dashboard or a Google Ads report. The published starting price is $9 a month. The [pricing page](/pricing/datafast/) has the ladder. The comparisons with [Plausible](/compare/datafast-vs-plausible/), [Fathom](/compare/datafast-vs-fathom/), [GA4](/compare/datafast-vs-google-analytics/), [PostHog](/compare/datafast-vs-posthog/), [Mixpanel](/compare/datafast-vs-mixpanel/), and [Amplitude](/compare/datafast-vs-amplitude/) are the job splits."
   - q: What is DataFast?
     a: "On this site, DataFast means the web analytics product at datafa.st. The homepage is written in Marc Lou’s voice and calls him the creator. The product joins traffic to payments. It is not DataFast Networks, the Arizona IT company at datafast.net, and it is not Datafast S.A., the electronic-payments company at datafast.com.ec."
   - q: Who makes DataFast?
@@ -162,7 +162,7 @@ The feature list does not include session replay, feature flags, or a Google Ads
 
 There is still no reliable `/pricing` URL. On 25 November 2026 it returned a 404, the same as the day before. Prices are on the homepage.
 
-Starter at 10,000 events is $9 a month. Growth at the same step is $19. The top published step, “10M+”, is $199 on Starter and $399 on Growth. Yearly billing is ten times the monthly price, which the homepage labels as two months free. A 10,000-event Starter year is $90, not $108. Bot traffic above the included 100,000 requests is a separate $9 per extra million requests per month, not a plan upgrade.
+Starter is $9 a month. Growth is $19. Both figures are published starting prices for 10,000 monthly events. The top published step, “10M+”, is $199 on Starter and $399 on Growth. Yearly billing is ten times the monthly price, which the homepage labels as two months free. A 10,000-event Starter year is $90, not $108. Bot traffic above the included 100,000 requests is a separate $9 per extra million requests per month, not a plan upgrade.
 
 The [DataFast pricing](/pricing/datafast/) page has every step, the plan-card limits, the trial, and the lock. An optional AI visibility product appears in the same homepage code. Those prices are separate from this review. This review is the analytics product.
 

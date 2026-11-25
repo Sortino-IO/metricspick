@@ -101,7 +101,7 @@ That structure matters. A marketing site that only needs pageviews can stay insi
 
 ## DataFast’s fixed tier
 
-DataFast Starter is $9 a month at 10,000 events. Growth is $19. Events include pageviews, payments, trial signups, and custom goals, counted equally, across sites, every month. The homepage plan cards include API, CLI, and MCP on both of those 10,000-event cards. They do not include session replay or feature flags. The [pricing page](/pricing/datafast/) is the full ladder. The trial is 14 days. The terms do not describe a permanent free plan.
+DataFast Starter is $9 a month. Growth is $19. Both figures are published starting prices for 10,000 monthly events. Events include pageviews, payments, trial signups, and custom goals. They count equally, across sites, every month. The homepage plan cards include API, CLI, and MCP on both of those 10,000-event cards. They do not include session replay or feature flags. The [pricing page](/pricing/datafast/) is the full ladder. The trial is 14 days. The terms do not describe a permanent free plan.
 
 The thing you are paying for, if you are paying on purpose, is the packaged revenue join: Stripe, Lemon Squeezy, Polar, Shopify, or the Payment API, then a view of which source showed up on the payment. PostHog can receive a payment event if you send one. That is instrumentation. It is not the same as a homepage that is organized around that join and a doc called a revenue-attribution guide.
 

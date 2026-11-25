@@ -10,7 +10,7 @@ section: pricing
 breadcrumb: DataFast
 order: 5
 tldr:
-  - "Starter is $9 a month at 10,000 events. Growth is $19 at the same step. The top step, 10 million plus, is $199 and $399."
+  - "Starter is $9 a month. Growth is $19. Both figures are published starting prices for 10,000 monthly events. The top step, 10 million plus, is $199 and $399."
   - "Yearly billing is ten times the monthly price. The homepage calls that two months free. A 10,000-event Starter year is $90."
   - "Both 10,000-event cards include API, CLI, MCP, and 100,000 AI bot requests. Social mentions and X link attribution are Growth only."
   - "There is a 14-day trial and no card is required. There is no ongoing free tier in the terms."
@@ -29,7 +29,7 @@ tools:
     secondaryCta: Read the review
   - id: plausible
     title: Plausible
-    blurb: "A pageview ladder that also starts at $9. Revenue tracking is a Business feature."
+    blurb: "A pageview ladder with the same $9 starting price. Revenue tracking is a Business feature."
     cta: DataFast vs Plausible
     href: /compare/datafast-vs-plausible/
   - id: fathom

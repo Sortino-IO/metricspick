@@ -3,7 +3,7 @@ title: "DataFast vs Mixpanel"
 seoTitle: "DataFast vs Mixpanel for founders"
 description: "DataFast vs Mixpanel: revenue by marketing source against Mixpanel’s event analytics, including the free million events and the first paid Growth pack."
 kicker: Compare
-lede: "Mixpanel analyzes product events and publishes a free plan up to 1 million events a month. DataFast joins marketing traffic to payments and starts at $9 a month. One is a product-analytics system. The other is a channel-revenue tool."
+lede: "Mixpanel analyzes product events and publishes a free plan up to 1 million events a month. DataFast joins marketing traffic to payments. Its published starting price is $9 a month. One is a product-analytics system. The other is a channel-revenue tool."
 accent: "DataFast vs Mixpanel"
 updated: 2026-11-25
 section: compare
@@ -101,7 +101,7 @@ Multi-touch attribution is on the paid plans. The [Mixpanel alternatives](/alter
 
 ## DataFast’s side of the invoice
 
-DataFast has no million-event free tier. The terms describe a 14-day trial. Starter is $9 a month at 10,000 events, $19 at 100,000, and on up to $199 at 10 million plus. Growth starts at $19. The [pricing page](/pricing/datafast/) is the full grid. Events are pageviews plus payments, trial signups, and custom goals. A product that already emits a dense Mixpanel stream would be a poor thing to mirror, event for event, into a DataFast plan that starts at ten thousand.
+DataFast has no million-event free tier. The terms describe a 14-day trial. Starter is $9 a month at 10,000 events, $19 at 100,000, and $199 at 10 million plus. Growth’s published starting price is $19. The [pricing page](/pricing/datafast/) is the full grid. Events are pageviews plus payments, trial signups, and custom goals. A product that already emits a dense Mixpanel stream would be a poor thing to mirror, event for event, into a DataFast plan whose allowance begins at 10,000 events.
 
 The feature you would be buying is the provider join and the channel view, on a plan card that also includes API, CLI, and MCP, and that does not list Mixpanel’s replay and flags. Payment providers named on the DataFast homepage FAQ are Stripe, Lemon Squeezy, Polar, and Shopify, plus a Payment API.
 
