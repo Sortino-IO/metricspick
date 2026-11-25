@@ -1,0 +1,19 @@
+---
+import AffiliateLink from "./AffiliateLink.astro";
+import Button from "./Button.astro";
+import { tools, type ToolId } from "../data/catalog";
+
+interface Props {
+  id: ToolId;
+  placement?: string;
+  size?: "md" | "sm";
+}
+const { id, placement = "visit", size = "sm" } = Astro.props;
+const tool = tools[id];
+const label = `Visit ${tool.name}`;
+---
+{tool.affiliate ? (
+  <AffiliateLink placement={placement} size={size}>{label}</AffiliateLink>
+) : tool.site ? (
+  <Button href={tool.site} size={size} rel="nofollow noopener" target="_blank">{label}</Button>
+) : null}

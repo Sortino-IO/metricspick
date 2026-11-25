@@ -18,6 +18,8 @@ export interface ToolFact {
   attributionTone?: "yes" | "partial";
   cookies: string;
   href: string;
+  /** Official marketing homepage. Affiliate tools are linked through AffiliateLink instead. */
+  site?: string;
   affiliate?: boolean;
 }
 
@@ -42,6 +44,7 @@ export const tools: Record<ToolId, ToolFact> = {
     attributionTone: "partial",
     cookies: "Cookieless",
     href: "/alternatives/plausible/",
+    site: "https://plausible.io/",
   },
   fathom: {
     id: "fathom",
@@ -52,6 +55,7 @@ export const tools: Record<ToolId, ToolFact> = {
     attributionTone: "partial",
     cookies: "Cookieless",
     href: "/alternatives/fathom-analytics/",
+    site: "https://usefathom.com/",
   },
   posthog: {
     id: "posthog",
@@ -62,6 +66,7 @@ export const tools: Record<ToolId, ToolFact> = {
     attributionTone: "partial",
     cookies: "Configurable",
     href: "/pricing/posthog/",
+    site: "https://posthog.com/",
   },
   ga4: {
     id: "ga4",
@@ -72,6 +77,7 @@ export const tools: Record<ToolId, ToolFact> = {
     attributionTone: "partial",
     cookies: "Cookies",
     href: "/alternatives/google-analytics/",
+    site: "https://marketingplatform.google.com/about/analytics/",
   },
   mixpanel: {
     id: "mixpanel",
@@ -82,6 +88,7 @@ export const tools: Record<ToolId, ToolFact> = {
     attributionTone: "partial",
     cookies: "Depends on setup",
     href: "/pricing/mixpanel/",
+    site: "https://mixpanel.com/",
   },
   amplitude: {
     id: "amplitude",
@@ -92,10 +99,56 @@ export const tools: Record<ToolId, ToolFact> = {
     attributionTone: "partial",
     cookies: "Depends on setup",
     href: "/pricing/amplitude/",
+    site: "https://amplitude.com/",
   },
 };
 
+const mentionedTools: { id: ToolId; pattern: RegExp }[] = [
+  { id: "datafast", pattern: /\bDataFast\b/ },
+  { id: "plausible", pattern: /\bPlausible\b/ },
+  { id: "fathom", pattern: /\bFathom\b/ },
+  { id: "posthog", pattern: /\bPostHog\b/ },
+  { id: "ga4", pattern: /\bGA4\b|\bGoogle Analytics\b/ },
+  { id: "mixpanel", pattern: /\bMixpanel\b/ },
+  { id: "amplitude", pattern: /\bAmplitude\b/ },
+];
+
+/** Catalog tools named in a short recommendation line, in catalog order. */
+export function toolsNamedIn(text: string): ToolId[] {
+  return mentionedTools.filter((tool) => tool.pattern.test(text)).map((tool) => tool.id);
+}
+
+const articleVisits: Record<string, ToolId[]> = {
+  "alternatives/amplitude": ["amplitude"],
+  "alternatives/datafast": ["datafast"],
+  "alternatives/fathom-analytics": ["fathom"],
+  "alternatives/google-analytics": ["ga4"],
+  "alternatives/mixpanel": ["mixpanel"],
+  "alternatives/plausible": ["plausible"],
+  "alternatives/posthog": ["posthog"],
+  "pricing/amplitude": ["amplitude"],
+  "pricing/datafast": ["datafast"],
+  "pricing/mixpanel": ["mixpanel"],
+  "pricing/posthog": ["posthog"],
+  "reviews/datafast": ["datafast"],
+  "compare/datafast-vs-amplitude": ["datafast", "amplitude"],
+  "compare/datafast-vs-fathom": ["datafast", "fathom"],
+  "compare/datafast-vs-google-analytics": ["datafast", "ga4"],
+  "compare/datafast-vs-mixpanel": ["datafast", "mixpanel"],
+  "compare/datafast-vs-plausible": ["datafast", "plausible"],
+  "compare/datafast-vs-posthog": ["datafast", "posthog"],
+  "compare/posthog-vs-google-analytics": ["posthog", "ga4"],
+  "guides/datafast-api": ["datafast"],
+  "guides/datafast-mcp": ["datafast"],
+};
+
+/** Tools a hub or guide-list entry is specifically about. Empty when the entry is not one vendor or one matchup. */
+export function visitIdsForArticle(id: string): ToolId[] {
+  return articleVisits[id] ?? [];
+}
+
 export interface CompareRow {
+  id: ToolId;
   name: string;
   bestFor: string;
   attribution: string;
@@ -109,6 +162,7 @@ export function rows(ids: ToolId[], highlight: ToolId): CompareRow[] {
   return ids.map((id) => {
     const tool = tools[id];
     return {
+      id,
       name: tool.name,
       bestFor: tool.bestFor,
       attribution: tool.attribution,

@@ -1,4 +1,7 @@
 ---
+import VisitTool from "./VisitTool.astro";
+import { toolsNamedIn, type ToolId } from "../data/catalog";
+
 interface Job {
   title: string;
   body: string;
@@ -8,17 +11,31 @@ interface Props {
   jobs: Job[];
 }
 const { jobs } = Astro.props;
+const seen = new Set<ToolId>();
+const cards = jobs.map((job) => {
+  const visits = toolsNamedIn(job.who).filter((id) => {
+    if (seen.has(id)) return false;
+    seen.add(id);
+    return true;
+  });
+  return { ...job, visits };
+});
 ---
 <section class="band band-blue" aria-labelledby="jobs-title">
   <div class="article-wide">
     <h2 id="jobs-title">Pick by the job, not the brand</h2>
     <p class="band-lede">A short way to shortlist. The bars under the cards are an illustration of where founders get stuck, not a survey.</p>
     <div class="jobs">
-      {jobs.map((job) => (
+      {cards.map((job) => (
         <article class="job">
           <h3>{job.title}</h3>
           <p>{job.body}</p>
           <span class="who">{job.who}</span>
+          {job.visits.length > 0 && (
+            <div class="visit-row">
+              {job.visits.map((id) => <VisitTool id={id} placement="pick-job" />)}
+            </div>
+          )}
         </article>
       ))}
     </div>

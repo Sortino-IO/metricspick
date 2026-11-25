@@ -1,13 +1,19 @@
 ---
-import { ladders } from "../data/catalog";
+import VisitTool from "./VisitTool.astro";
+import { ladders, tools, type ToolId } from "../data/catalog";
 
 interface Props {
   ids: string[];
 }
 const { ids } = Astro.props;
-const blocks = ids.map((id) => ladders[id]).filter(Boolean);
+const blocks = ids.flatMap((id) => {
+  const ladder = ladders[id];
+  if (!ladder) return [];
+  const toolId = id in tools ? (id as ToolId) : undefined;
+  return [{ ladder, toolId }];
+});
 ---
-{blocks.map((ladder) => (
+{blocks.map(({ ladder, toolId }) => (
   <section class="band band-cream">
     <div class="article-wide">
       <h2>{ladder.title}</h2>
@@ -33,6 +39,11 @@ const blocks = ids.map((id) => ladders[id]).filter(Boolean);
         </table>
       </div>
       <p class="table-note">{ladder.note}</p>
+      {toolId && (
+        <div class="visit-row">
+          <VisitTool id={toolId} placement="price-ladder" />
+        </div>
+      )}
     </div>
   </section>
 ))}
