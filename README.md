@@ -20,7 +20,9 @@ npm run preview
 
 `src/config/site.ts` holds the DataFast affiliate URL (`https://datafa.st/?via=sortino`). Every DataFast link, including docs, keeps `via=sortino`.
 
-`GTM_ID` is `GTM-PJ8GQK6B`. The standard Tag Manager head snippet and the noscript iframe render on every page. GA4 is loaded through that container, not through a direct gtag snippet. `GSC_VERIFICATION` is the Search Console token rendered as a meta tag. Leave either value empty to omit its markup.
+`GTM_ID` is `GTM-PJ8GQK6B`. The standard Tag Manager head snippet and the noscript iframe render on every page. GA4 is loaded through that container, not through a direct gtag.js file. Consent Mode v2 defaults to denied in the EEA, the UK, and Switzerland, and granted elsewhere. `GSC_VERIFICATION` is the Search Console token rendered as a meta tag. Leave either value empty to omit its markup.
+
+`script-src` includes `'unsafe-inline'` because the Consent Mode stub, the Tag Manager bootstrap, the cookie banner, the affiliate click listener, and the address reveal are inline and have to stay in the document. A static response cannot set a per-request nonce, and a hash would change when the HTML is minified. `style-src` is `'self'` only. The editorial address is assembled in the browser from separate parts and is not written as a mailto link in the HTML.
 
 ## Content
 

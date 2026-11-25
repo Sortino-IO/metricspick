@@ -11,7 +11,8 @@ const staticPages = [
   ["/about/", "What metricspick is, and what it is independent from."],
   ["/how-we-test/", "How prices and product claims are checked."],
   ["/affiliate-disclosure/", "How DataFast affiliate links work."],
-  ["/privacy/", "What the static site stores and what it does not."],
+  ["/privacy/", "Cookies, Consent Mode, and Tag Manager."],
+  ["/accessibility/", "WCAG 2.1 AA commitment and known limits."],
   ["/contact/", "How to reach the editors."],
 ];
 

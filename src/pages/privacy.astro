@@ -3,18 +3,22 @@ import Simple from "../layouts/Simple.astro";
 ---
 <Simple
   title="Privacy"
-  description="metricspick is a static site. It does not set its own cookies. Affiliate clicks are pushed to a dataLayer that Google Tag Manager can read."
+  description="How metricspick loads Google Analytics 4 through Tag Manager, when analytics cookies are set in the EEA, the UK, and Switzerland, and how to change your choice."
   kicker="Privacy"
-  lede="This is a static website. We do not ask you to create an account, and the pages do not set a MetricsPick cookie."
+  lede="Your cookie choice is saved in this browser for six months. In the EEA, the UK, and Switzerland, Google Analytics cookies stay off until you accept."
   crumbs={[{ href: "/", label: "Home" }, { label: "Privacy" }]}
 >
-  <h2>What the site itself does</h2>
-  <p>Pages are HTML, CSS, and self-hosted fonts. There is no comment form, no account, and no MetricsPick analytics cookie. Fonts are served from this site’s own files. The pages do not request Google Fonts.</p>
-  <p>A small inline script listens for clicks on links to datafa.st. When one is clicked, the script pushes an event named <code>affiliate_click</code> onto <code>window.dataLayer</code>, with the link URL, the visible link text, the current path, and a placement label such as <code>home-pick</code>.</p>
-  <h2>Google Tag Manager</h2>
-  <p>Every page loads Google Tag Manager container <code>GTM-PJ8GQK6B</code>. The container can read that dataLayer, including affiliate clicks, and send them to tags configured inside Tag Manager. Analytics such as GA4 are loaded through that container. This site does not embed a separate gtag.js snippet. What Tag Manager actually fires depends on the tags in the container, which are managed in Google’s interface rather than in this repository. Tag Manager may set cookies according to those tags.</p>
+  <h2>What the site itself stores</h2>
+  <p>Pages are HTML, CSS, and self-hosted fonts. There is no account and no comment form. Fonts are served from this site’s own files. The pages do not request Google Fonts.</p>
+  <p>If you use the cookie banner or Cookie settings, the choice (accept or reject) is stored in <code>localStorage</code> under <code>metricspick-consent</code> for six months. That record lives in this browser. Clearing site data removes it, and the banner can ask again. Cookie settings in the footer reopens the choice at any time, including to withdraw consent.</p>
+  <p>A small inline script listens for clicks on links to datafa.st. When one is clicked, the script pushes an event named <code>affiliate_click</code> onto <code>window.dataLayer</code>, with the link URL, the visible link text, the current path, and a placement label such as <code>home-pick</code>. Choosing a cookie option pushes <code>consent_update</code> the same way.</p>
+  <h2>Google Analytics and consent</h2>
+  <p>Every page loads Google Tag Manager container <code>GTM-PJ8GQK6B</code>. Google Analytics 4 is loaded through that container. This site does not embed a separate gtag.js file. Before Tag Manager loads, the page sets Consent Mode v2.</p>
+  <p>For visitors Google locates in the EEA (the EU countries plus Iceland, Liechtenstein, and Norway), the UK, or Switzerland, the default is denied for <code>analytics_storage</code>, <code>ad_storage</code>, <code>ad_user_data</code>, and <code>ad_personalization</code>. In those places, GA4 sets analytics cookies such as <code>_ga</code> and <code>_ga_*</code> only after you choose Accept. Reject leaves that storage denied. Ads data redaction is on, and URL passthrough is off.</p>
+  <p>Outside those regions the default is granted, so the tag may set those cookies without the banner. The banner itself is shown only when you have no saved choice and your browser timezone looks like those regions: a <code>Europe/…</code> zone, or Atlantic/Reykjavik, Atlantic/Faroe, Atlantic/Canary, Atlantic/Azores, Atlantic/Madeira, or Arctic/Longyearbyen. That timezone check can disagree with Google’s location of the request. Cookie settings in the footer works everywhere, and a new choice updates consent immediately.</p>
+  <p>Which tags the container fires is managed in Google’s interface, not in this repository. Tag Manager and GA4 are Google services once they run.</p>
   <h2>Hosting and outbound links</h2>
   <p>The site is built to be hosted on Vercel. A host can see ordinary request logs, such as IP address and user agent, under its own policy. Outbound links to DataFast, Google, PostHog, Mixpanel, Amplitude, Plausible, and Fathom are subject to those companies’ sites once you leave. DataFast links are affiliate links, described on the <a href="/affiliate-disclosure/">affiliate disclosure</a>.</p>
   <h2>Contact</h2>
-  <p>Privacy questions can go to the address on the <a href="/contact/">contact</a> page. That mailbox is the public editorial address for this new site and should be confirmed before you rely on a reply.</p>
+  <p>Questions go to the address on the <a href="/contact/">contact</a> page. The page builds that address in the browser, so the message source does not contain a mailto link. The <a href="/accessibility/">accessibility statement</a> uses the same address.</p>
 </Simple>

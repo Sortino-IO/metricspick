@@ -1,0 +1,33 @@
+---
+import EmailAddress from "../components/EmailAddress.astro";
+import Simple from "../layouts/Simple.astro";
+---
+<Simple
+  title="Accessibility"
+  description="metricspick aims to conform to WCAG 2.1 Level AA, the practical bar for Israeli Standard IS 5568. This page lists what we do, known limits, and how to reach us."
+  kicker="Accessibility"
+  lede="We want these pages to be usable with a keyboard, a screen reader, and without relying on color alone. This statement was written on 25 November 2026."
+  crumbs={[{ href: "/", label: "Home" }, { label: "Accessibility" }]}
+>
+  <h2>Commitment</h2>
+  <p>metricspick aims to conform to the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA. That is also the practical target behind Israeli Standard IS 5568, which adopts the Web Content Accessibility Guidelines for websites. We do not claim a formal certification or a completed third-party audit.</p>
+  <h2>Measures</h2>
+  <ul>
+    <li>Pages use semantic headings, landmarks, and a skip link.</li>
+    <li>Links and buttons have visible keyboard focus.</li>
+    <li>The cookie bar is a dialog with a name, and Accept and Reject are the same size and weight.</li>
+    <li>Text and button colors were checked against WCAG contrast. A few brand colors were deepened so small text and white-on-coral buttons pass AA.</li>
+    <li>The cookie bar does not cover the page as a blocking interstitial.</li>
+    <li>Comparison tables keep their headers, and on small screens each row is restated with a label.</li>
+    <li>Motion is reduced when the browser asks for it.</li>
+  </ul>
+  <h2>Known limitations</h2>
+  <ul>
+    <li>We have not commissioned an external accessibility audit.</li>
+    <li>Google Tag Manager and Google Analytics are third-party scripts. Their cookies and iframes are outside this site’s markup, and we cannot promise they meet WCAG.</li>
+    <li>The cookie bar is shown from a timezone guess. It can miss someone who should see it, or show for someone outside the EEA. Cookie settings in the footer opens it on every page.</li>
+    <li>Some older pages linked from this site belong to other companies. Their accessibility is theirs.</li>
+  </ul>
+  <h2>Contact</h2>
+  <p>If a page blocks you, email <EmailAddress />. Include the page address and what you were trying to do. We aim to reply with what we can change in the markup. The same address is on the <a href="/contact/">contact</a> page.</p>
+</Simple>
