@@ -53,7 +53,7 @@ faqs:
   - q: Does the free plan include attribution?
     a: "Campaign reporting is listed on Free. Multi-touch attribution is listed as not available on Free and available on Growth and Enterprise. If that line is why you would pay, it belongs in the decision."
   - q: How does DataFast’s price compare?
-    a: "DataFast Starter is $9 a month at 10,000 events for a different job. It does not include Mixpanel’s cohort product. See the [review](/reviews/datafast/)."
+    a: "DataFast Starter is $9 a month at 10,000 events for a different job. It does not include Mixpanel’s cohort product. See the [pricing ladder](/pricing/datafast/), [DataFast vs Mixpanel](/compare/datafast-vs-mixpanel/), the [alternatives](/alternatives/datafast/), and the [review](/reviews/datafast/)."
 related:
   - href: /alternatives/mixpanel/
     type: Alternatives
@@ -105,7 +105,7 @@ Replay, experiments, and flags can dominate a Mixpanel or PostHog bill even when
 
 ## If the price you want is a marketing price
 
-Mixpanel’s packs are product-analytics prices. A content site that only needs referrers should not buy 1.5 million product events to see them. Plausible and Fathom publish pageview prices. GA4 is free. DataFast publishes Starter at $9 a month for 10,000 events when the report is revenue by channel, and the [review](/reviews/datafast/) explains the cap and the affiliate link.
+Mixpanel’s packs are product-analytics prices. A content site that only needs referrers should not buy 1.5 million product events to see them. Plausible and Fathom publish pageview prices. GA4 is free. DataFast publishes Starter at $9 a month for 10,000 events when the report is revenue by channel. The [pricing page](/pricing/datafast/) is that ladder, [DataFast vs Mixpanel](/compare/datafast-vs-mixpanel/) is the job split, and the [DataFast alternatives](/alternatives/datafast/) page is where to go if the channel report is not what you wanted. The [review](/reviews/datafast/) explains the cap and the affiliate link.
 
 Multi-touch on Mixpanel Growth is a product-analytics feature. It is not automatically the same report as DataFast’s channel revenue or GA4’s ads attribution. The [attribution guide](/guides/marketing-attribution-tools/) separates those meanings so a pricing page does not do it by accident.
 

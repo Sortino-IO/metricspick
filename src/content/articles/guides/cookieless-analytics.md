@@ -101,7 +101,7 @@ The cookieless mechanics, from that doc: no long-lived visitor cookie, possible 
 
 The doc’s revenue paragraph is the one founders should read twice. DataFast’s value is tying revenue to traffic sources. Without a stable key, multi-touch and delayed conversions attribute less completely. Daily aggregates can still mean something. A story that needs the first touch from last quarter will not survive the rotating salt. They also say this limit is shared by cookieless products generally, and that teams who need long-cycle accuracy should use the default script and plan for consent.
 
-That is as clear as vendor writing gets. The [DataFast review](/reviews/datafast/) treats the default script as the one that matches the revenue recommendation, and the cookieless script as a conscious downgrade when the banner is the binding constraint. Starter still starts at $9 per month either way. The mode does not change the invoice. It changes the memory. Our link to the doc carries the affiliate parameter `via=sortino`.
+That is as clear as vendor writing gets. The [DataFast review](/reviews/datafast/) treats the default script as the one that matches the revenue recommendation, and the cookieless script as a conscious downgrade when the banner is the binding constraint. Starter still starts at $9 per month either way. The mode does not change the invoice. It changes the memory. The [pricing page](/pricing/datafast/) is that invoice, [DataFast vs Plausible](/compare/datafast-vs-plausible/) is the cookieless neighbor, and the [alternatives](/alternatives/datafast/) page is the wider shortlist if the cookie trade means you should leave. Our link to the doc carries the affiliate parameter `via=sortino`.
 
 ## Plausible and Fathom, which start from cookieless
 
