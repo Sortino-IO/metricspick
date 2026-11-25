@@ -188,6 +188,11 @@ export const comparisons: Record<string, { highlight: ToolId; ids: ToolId[]; not
     ids: ["mixpanel", "posthog", "amplitude", "datafast", "ga4"],
     note: priceNote,
   },
+  "datafast-alternatives": {
+    highlight: "datafast",
+    ids: ["datafast", "plausible", "fathom", "posthog", "ga4", "mixpanel"],
+    note: "DataFast prices were re-read from the datafa.st homepage bundle on 25 November 2026. datafa.st/pricing returned 404. Neighbor prices are the figures dated on the linked pages. Simple Analytics and Umami are discussed in the article and are not rows in this table.",
+  },
   "datafast-pricing": {
     highlight: "datafast",
     ids: ["datafast", "plausible", "fathom", "posthog", "ga4"],
