@@ -15,8 +15,8 @@ const links = [...extra, ...priceSources].filter((link) => {
 ---
 <section class="band band-cream">
   <div class="article-body">
-    <h2>Sources checked for this page</h2>
-    <p>Every price and product claim above points at a public vendor page. DataFast links include our affiliate parameter.</p>
+    <h2>Sources</h2>
+    <p>Prices and product details link to the vendor pages below. DataFast links include the affiliate parameter.</p>
     <ul class="sources">
       {links.map((link) => {
         const href = withAffiliate(link.href);

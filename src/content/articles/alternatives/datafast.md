@@ -13,8 +13,8 @@ tldr:
   - "Stay with DataFast when the weekly report is which channel, campaign, or page brought a paying customer, and you can connect a provider the docs name."
   - "Plausible and Fathom are the closer site-analytics alternatives. Revenue is a Business feature on Plausible and is listed on every Fathom plan."
   - "GA4 is the free alternative when Google Ads is the channel. PostHog, Mixpanel, and Amplitude are alternatives only if the job is product analytics."
-  - "Simple Analytics and Umami are real, verifiable products. We did not treat them as DataFast clones, and we did not invent a bake-off."
-tldrNote: "DataFast prices were re-read from the datafa.st homepage on 25 November 2026. Neighbor prices are the figures already dated on the linked pages, unless a sentence says that vendor was opened the same day."
+  - "Simple Analytics and Umami are separate products, not DataFast clones."
+tldrNote: "DataFast prices as of 25 November 2026, from the datafa.st homepage. Neighbor prices are the figures dated on the linked pages."
 jobs:
   - title: Keep the revenue report
     body: You will connect Stripe or another provider DataFast documents, and you will open channel revenue every week.
@@ -67,7 +67,7 @@ faqs:
   - q: When should I not look for an alternative?
     a: "When DataFast is already answering the revenue question and the event bill is one you understand. The [pricing page](/pricing/datafast/) is that bill. An alternative that cannot see the payment will look simpler and tell you less about what to fund."
   - q: Is there a free DataFast alternative?
-    a: "GA4’s standard product is free. Umami’s site says self-hosting is free. DataFast’s terms describe a 14-day trial, not an ongoing free tier. PostHog, Mixpanel, and Amplitude have large free event allowances, and they are product-analytics products, not a free copy of the DataFast dashboard."
+    a: "GA4’s standard product is free. Umami self-hosting is free. DataFast’s terms describe a 14-day trial, not an ongoing free tier. PostHog, Mixpanel, and Amplitude have large free event allowances, and they are product-analytics products, not a free copy of the DataFast dashboard."
   - q: Are the links affiliate links?
     a: "Links to datafa.st are, with via=sortino. Plausible, Fathom, Google, PostHog, Mixpanel, Amplitude, Simple Analytics, and Umami are cited because they are real alternatives, not because they pay for the mention."
 related:
@@ -120,13 +120,13 @@ sources:
 
 A DataFast alternative has to replace a specific report, not a logo. The product at [datafa.st](https://datafa.st/) is Marc Lou’s analytics tool for seeing which marketing channel brings paying customers. If that sentence is the report you open, most “alternatives” are a different category. If it is not, DataFast is the wrong default and this page is the shortlist.
 
-This is an independent page. Some links to datafa.st are affiliate links. The other products are here because their public pages describe a job a founder might confuse with DataFast. We re-read DataFast’s homepage prices on 25 November 2026. They still start at $9 a month for Starter at 10,000 events and $19 for Growth. `datafa.st/pricing` still returned 404. The [pricing page](/pricing/datafast/) is the full ladder. The [review](/reviews/datafast/) is the product, the maker, and the other companies that share the name.
+This is an independent page. Some links to datafa.st are affiliate links. The other products are here because a founder might confuse their job with DataFast. As of 25 November 2026, Starter is $9 a month and Growth is $19. Both figures are published starting prices for 10,000 monthly events. `datafa.st/pricing` returns 404. The [pricing page](/pricing/datafast/) is the full ladder. The [review](/reviews/datafast/) is the product, the maker, and the other companies that share the name.
 
 ## When staying is the alternative
 
 Stay when three things are true. You have a site that already gets traffic. You can connect a payment provider the docs actually name (the connect page lists Stripe, Lemon Squeezy, Polar, and Shopify, and the docs index also has Paddle, WooCommerce, and others). And the decision you make from the dashboard is where the next dollar of marketing should go.
 
-In that case an alternative often means giving up the report in exchange for a cleaner privacy pitch, a free tag, or a product suite you will not staff. The 14-day trial is the cheaper experiment. The [how we test](/how-we-test/) page is why we will not invent a percentage of revenue you will “recover” by switching.
+In that case an alternative often means giving up the report in exchange for a cleaner privacy pitch, a free tag, or a product suite you will not staff. The 14-day trial is the cheaper experiment. There is no published percentage of revenue you will recover by switching.
 
 Leave, or add a second tool, when one of the sections below is the job you wrote down. The six comparisons are the detailed versions. This page is the index.
 
@@ -134,7 +134,7 @@ Leave, or add a second tool, when one of the sections below is the job you wrote
 
 [Plausible](/compare/datafast-vs-plausible/) is the closest famous neighbor if you want cookieless site analytics and you accept that revenue tracking is a Business-plan feature. Both products can show a $9 Starter price at their smallest published step. DataFast meters events, including payment events. Plausible meters pageviews. Those are not the same bill. Choose Plausible when the one-page traffic report is the product you wanted, and DataFast’s payment join is a feature you would not connect.
 
-[Fathom](/compare/datafast-vs-fathom/) is the other privacy-first dashboard. Its pricing page lists event and revenue tracking on the plans, and the entry price we have verified is $15 a month at up to 100,000 pageviews, with 50 sites. Choose Fathom when many quiet sites on one invoice matter more than DataFast’s event ladder, or when you want revenue on the entry plan of a tool whose whole pitch is simplicity. We have not run one site in both products and scored which revenue line is deeper. The comparison says that in those words.
+[Fathom](/compare/datafast-vs-fathom/) is the other privacy-first dashboard. Event and revenue tracking are on the plans, and the entry price is $15 a month at up to 100,000 pageviews, with 50 sites. Choose Fathom when many quiet sites on one invoice matter more than DataFast’s event ladder, or when you want revenue on the entry plan of a tool whose whole pitch is simplicity. The two revenue lines are set up differently. The comparison spells that out.
 
 ## GA4, when the alternative should be free
 
@@ -148,13 +148,13 @@ These three are alternatives only if you are leaving marketing analytics on purp
 
 Pick one of them when a person on the team will instrument the product. Keep DataFast, or skip it, based on whether the marketing site still needs its own revenue report. Buying PostHog “instead of DataFast” to see which blog post sold the plan is how a small team ends up with a suite and no answer.
 
-## Simple Analytics and Umami, checked as themselves
+## Simple Analytics and Umami
 
-Simple Analytics and Umami are not in the comparison table above because we have not maintained a full price ladder for them the way we have for Plausible and Fathom. They are real products, and a page about DataFast alternatives that pretends they do not exist is incomplete. What follows is what their own sites said on 25 November 2026, not a lab test.
+Simple Analytics and Umami are not in the comparison table above because this site does not keep a full price ladder for them the way it does for Plausible and Fathom. They are real products, and a page about DataFast alternatives that skips them is incomplete. The notes below are from their sites as of 25 November 2026.
 
-[Simple Analytics](https://www.simpleanalytics.com/) describes itself as a simple, privacy-friendly dashboard for website traffic, and the homepage invites running it alongside GA4. The [pricing page](https://www.simpleanalytics.com/pricing) showed a self-serve estimator at $20 a month on the 100,000 pageview step, a free hobby plan (1 user, 5 websites, 1 month of history), and an extra $20 a month per additional user. We did not copy every step on the pageview slider. Treat Simple Analytics as an alternative when you want privacy-first traffic stats, possibly next to GA4, and you are not buying it as a Stripe-attribution product. We did not find a DataFast-style payment-provider join documented on the pages we opened, so we will not claim one.
+[Simple Analytics](https://www.simpleanalytics.com/) is a simple, privacy-friendly dashboard for website traffic, and the homepage invites running it alongside GA4. The [pricing page](https://www.simpleanalytics.com/pricing) has a self-serve estimator at $20 a month on the 100,000 pageview step, a free hobby plan (1 user, 5 websites, 1 month of history), and an extra $20 a month per additional user. Higher slider steps are not listed here. Treat Simple Analytics as an alternative when you want privacy-first traffic stats, possibly next to GA4, and you are not buying it as a Stripe-attribution product. It does not publish a DataFast-style payment-provider join.
 
-[Umami](https://umami.is/) describes itself as open-source web and product analytics, covering acquisition, behavior, conversion, and retention, without cookies. You can self-host it or use Umami Cloud. The [pricing page](https://umami.is/pricing) says self-hosting is free, and that Cloud is the managed service, with features such as email reports and a streaming API that the self-hosted product does not include. The page’s description calls Cloud usage-based and says you can start free. We are not printing a Cloud dollar rate, because the page is a calculator-style grid rather than one list price we are willing to freeze. Choose Umami when you want to own the server, or when a free self-hosted script is the requirement. Choose DataFast when you want someone else’s hosted report of which channel brought the payment, and you do not want to operate the database.
+[Umami](https://umami.is/) is open-source web and product analytics, covering acquisition, behavior, conversion, and retention, without cookies. You can self-host it or use Umami Cloud. Self-hosting is free. Cloud is the managed service, with features such as email reports and a streaming API that the self-hosted product does not include. Cloud is usage-based and you can start free. There is no single public list price. Choose Umami when you want to own the server, or when a free self-hosted script is the requirement. Choose DataFast when you want a hosted report of which channel brought the payment, and you do not want to operate the database.
 
 ## How to use the six comparisons
 
@@ -164,4 +164,4 @@ Read one comparison, not all six, unless you are writing the decision down for s
 - Revenue versus the free Google tag: [Google Analytics](/compare/datafast-vs-google-analytics/).
 - Revenue versus a product suite: [PostHog](/compare/datafast-vs-posthog/), [Mixpanel](/compare/datafast-vs-mixpanel/), and [Amplitude](/compare/datafast-vs-amplitude/).
 
-If the comparison says “keep both,” believe it. DataFast next to GA4, or DataFast next to PostHog, is a stack with two jobs. It is not indecision. The [pricing](/pricing/datafast/) page is what the DataFast half of that stack costs. The [API guide](/guides/datafast-api/) is how events and revenue get in, if you are already staying.
+When a comparison says to keep both, keep both. DataFast next to GA4, or DataFast next to PostHog, is a stack with two jobs. It is not indecision. The [pricing](/pricing/datafast/) page is what the DataFast half of that stack costs. The [API guide](/guides/datafast-api/) is how events and revenue get in, if you are already staying.

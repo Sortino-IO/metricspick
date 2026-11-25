@@ -14,7 +14,7 @@ tldr:
   - "DataFast is the alternative when the question is revenue by channel, not replay and flags."
   - "GA4, Plausible, and Fathom are the alternatives when PostHog was only ever a marketing-site tag."
   - "PostHog’s first million analytics events each month are free. Check your volume before you leave to save money."
-tldrNote: "Public pages checked 24 November 2026. DataFast is not offered here as a full PostHog replacement."
+tldrNote: "Prices and allowances as of 24 November 2026. DataFast is not a full PostHog replacement."
 jobs:
   - title: Another product suite
     body: You use funnels, replay, or flags, and you want a different vendor for that same job.
@@ -40,7 +40,7 @@ tools:
     href: /alternatives/mixpanel/
   - id: amplitude
     title: Amplitude
-    blurb: "A larger published free event tier, at 2 million events a month, and a Plus plan that starts at $0."
+    blurb: "A larger published free event tier, at 2 million events a month, and a Plus plan with a starting price of $0."
     cta: Amplitude pricing
     href: /pricing/amplitude/
   - id: datafast
@@ -90,15 +90,15 @@ related:
     description: Published prices, payment providers, and the cookieless limit.
 ---
 
-PostHog’s pricing page is unusually direct. It says most companies use the product for free, lists a monthly allowance for each product, and then publishes usage rates. On 24 November 2026 those allowances included 1 million analytics events, 5,000 session recordings, 1 million feature-flag requests, 100,000 error-tracking exceptions, and 1,500 survey responses. The free plan is one project and one year of event retention, and usage stops at the limits so you are not surprised by a bill. Pay-as-you-go keeps the same free bucket, adds a card, and bills what you use beyond it, with six projects and two years of retention.
+PostHog publishes a monthly allowance for each product, then usage rates. As of 24 November 2026 those allowances included 1 million analytics events, 5,000 session recordings, 1 million feature-flag requests, 100,000 error-tracking exceptions, and 1,500 survey responses. Most companies use the product for free. The free plan is one project and one year of event retention, and usage stops at the limits so you are not surprised by a bill. Pay-as-you-go keeps the same free bucket, adds a card, and bills what you use beyond it, with six projects and two years of retention.
 
-Anonymous product-analytics events above 1 million start at $0.00005 each for the next million and step down from there. The full card is on the [PostHog pricing](/pricing/posthog/) page. Identified events add a person-profile charge. PostHog says anonymous events can be up to four times cheaper. That is the product people mean when they search for a PostHog alternative: a suite with a real free tier and a usage curve, not a single dashboard.
+Above 1 million anonymous events, the published starting rate is $0.00005 each for the next million. The rate then steps down. The full card is on the [PostHog pricing](/pricing/posthog/) page. Identified events add a person-profile charge. Anonymous events can cost up to four times less. That is the product people mean when they search for a PostHog alternative: a suite with a real free tier and a usage curve, not a single dashboard.
 
 ## Name the part you actually use
 
 PostHog is easy to install as “our analytics” and then use as three different products.
 
-If the weekly habit is session replay and feature flags, an alternative has to cover that habit. Mixpanel’s current pricing page includes replay on Free, Growth, and Enterprise, with 10,000 replays on Free and a much higher ceiling on Growth. Amplitude’s pricing page includes replay on the plans it lists, with 10,000 recordings on Free. Neither copy is a promise that the replay product feels like PostHog’s. It is a promise that you are still shopping in the suite aisle.
+If the weekly habit is session replay and feature flags, an alternative has to cover that habit. Mixpanel includes replay on Free, Growth, and Enterprise, with 10,000 replays on Free and a much higher ceiling on Growth. Amplitude includes replay on the plans it lists, with 10,000 recordings on Free. That does not mean the replay product feels like PostHog’s. It means you are still shopping in the suite aisle.
 
 If the weekly habit is a funnel of product events, Mixpanel and Amplitude are the direct alternatives. Both are event tools. Both will feel familiar the week you have to rename an event. The [Mixpanel alternatives](/alternatives/mixpanel/) and [Amplitude alternatives](/alternatives/amplitude/) pages compare their published allowances. Amplitude’s free tier is 2 million events. PostHog’s analytics free tier is 1 million. Mixpanel’s free tier is 1 million. A team at 1.5 million anonymous events should do the arithmetic before calling any of them the cheap option.
 
@@ -106,25 +106,25 @@ If the weekly habit is “which page made money,” you are not using the suite.
 
 ## DataFast for the revenue question
 
-DataFast is the recommendation on this site when the job is revenue attribution. It is not a full replacement for PostHog. The homepage asks which marketing channels drive paying customers. The docs show how to connect Stripe, Lemon Squeezy, Polar, and Paddle. Starter is $9 per month at 10,000 events. Growth is $19 at the same allowance, with more sites, more seats, longer retention, social mentions, and link attribution. The [review](/reviews/datafast/) has the rest of the ladder.
+DataFast is the recommendation on this site when the job is revenue attribution. It is not a full replacement for PostHog. The homepage asks which marketing channels drive paying customers. The docs show how to connect Stripe, Lemon Squeezy, Polar, and Paddle. Starter is $9 a month. Growth is $19. Both figures are published starting prices for 10,000 monthly events. Growth adds sites, seats, longer retention, social mentions, and link attribution. The [review](/reviews/datafast/) has the rest of the ladder.
 
 What you lose by leaving PostHog for DataFast is the suite: replay, flags, experiments, error tracking, the warehouse-shaped features. What you gain, if those were idle, is a product whose terms and docs talk about payments as events and about channels as the thing the dashboard is for. The default script uses cookies. The cookieless script trades away long-horizon identity. DataFast writes that trade-off down. Read it in the [cookieless guide](/guides/cookieless-analytics/) if a banner is the reason you want to leave PostHog’s cookie choices.
 
-PostHog’s persistence is configurable. This page does not pretend there is one PostHog cookie story for every install. If your reason for leaving is privacy paperwork, read PostHog’s privacy docs for the install you have, then read DataFast’s cookieless doc, then decide. A logo swap does not finish a privacy review.
+PostHog’s persistence is configurable. There is no single cookie story for every install. If your reason for leaving is privacy paperwork, read PostHog’s privacy docs for the install you have, then read DataFast’s cookieless doc, then decide. A logo swap does not finish a privacy review.
 
 ## Mixpanel and Amplitude if you still want events
 
-Mixpanel Growth starts at $0 and then steps up in published packs. At 1.5 million events the yearly price on the pricing page is $100 per month, and the monthly price is $140. Multi-touch attribution is a Growth feature. If you adopted PostHog partly for “attribution” and you meant multi-touch product attribution, Mixpanel’s matrix is the one to read. If you meant “the blog post that sold the annual plan,” you are back to DataFast or to GA4’s ads reports.
+Mixpanel Growth has a published starting price of $0, then steps up in published packs. At 1.5 million events, yearly billing is $100 a month and monthly billing is $140. Both figures are published prices for that step. Multi-touch attribution is a Growth feature. If you adopted PostHog partly for “attribution” and you meant multi-touch product attribution, Mixpanel’s matrix is the one to read. If you meant “the blog post that sold the annual plan,” you are back to DataFast or to GA4’s ads reports.
 
-Amplitude Plus starts at $0 after a free 2 million events. The page does not give a single dollar rate for the steps above that. It tells you to estimate. We did not invent the estimate. The [Amplitude pricing](/pricing/amplitude/) guide lists what is published: retention lengths, the Plus feature list, and the startup year of Growth for companies under the stated size and funding caps.
+Amplitude Plus has a published starting price of $0 after a free 2 million events. There is no single dollar rate for the steps above that. You estimate. The [Amplitude pricing](/pricing/amplitude/) guide lists what is published: retention lengths, the Plus feature list, and the startup year of Growth for companies under the stated size and funding caps.
 
-Choose Mixpanel or Amplitude when a person on the team will own the event plan. Choose to stay on PostHog when that person already owns the PostHog project and the invoice is inside a billing limit you set. PostHog’s pricing FAQ says you can set billing limits on most products and that hitting the limit drops additional events rather than charging past it. That control is part of the product. An alternative that lacks it can be a worse deal at the same per-event price.
+Choose Mixpanel or Amplitude when a person on the team will own the event plan. Choose to stay on PostHog when that person already owns the PostHog project and the invoice is inside a billing limit you set. You can set billing limits on most products, and hitting the limit drops additional events rather than charging past it. That control is part of the product. An alternative that lacks it can be a worse deal at the same per-event price.
 
 ## Marketing-site alternatives
 
-Plausible’s homepage is a cookieless analytics product with a slider from $9 a month. Revenue tracking is described in the docs as a reason to choose Business. Fathom starts at $15 a month for up to 100,000 pageviews and lists event and revenue tracking on all plans. GA4 is free and is the tool to keep if Google Ads is the spend. The [GA4 alternatives](/alternatives/google-analytics/) page is the long version, and it is the right page if PostHog was never inside the app.
+Plausible’s homepage is a cookieless analytics product with a slider from $9 a month. Revenue tracking is described in the docs as a reason to choose Business. Fathom’s published starting price is $15 a month, for up to 100,000 pageviews, with event and revenue tracking on all plans. GA4 is free and is the tool to keep if Google Ads is the spend. The [GA4 alternatives](/alternatives/google-analytics/) page is the long version, and it is the right page if PostHog was never inside the app.
 
-A sensible pattern for a small SaaS company is two tools on purpose. PostHog, Mixpanel, or Amplitude on the product host. DataFast, Plausible, Fathom, or GA4 on the marketing host. The mistake is one tool forced to answer both questions badly. PostHog can ingest the marketing site. It can also become a bill of identified pageviews you did not need person profiles for. Anonymous events are the cheaper PostHog path for a content site. Their docs say so. Use that setting if you stay.
+A sensible pattern for a small SaaS company is two tools on purpose. PostHog, Mixpanel, or Amplitude on the product host. DataFast, Plausible, Fathom, or GA4 on the marketing host. The mistake is one tool forced to answer both questions badly. PostHog can ingest the marketing site. It can also become a bill of identified pageviews you did not need person profiles for. Anonymous events are the cheaper PostHog path for a content site. Use that setting if you stay.
 
 ## A leaving checklist
 
@@ -132,4 +132,4 @@ Write the three PostHog screens someone opened in the last month. If the list is
 
 Do not delete the PostHog project in the same afternoon. PostHog retains events for a year on the free plan and two years on pay-as-you-go. Your history is part of the value. Run the new tool in parallel until one real question has been answered twice.
 
-The [how we test](/how-we-test/) page records what we did not do: we did not replay your project, and we did not receive a PostHog invoice. The rates above are the public card. Your mix of anonymous and identified events will not match a stranger’s example, including the $25 illustration on the pricing page, which assumes 1.5 million anonymous events and no other product.
+The rates above are the public card. Your mix of anonymous and identified events will not match a stranger’s example, including the $25 illustration on the pricing page, which assumes 1.5 million anonymous events and no other product.

@@ -14,7 +14,7 @@ tldr:
   - "You lose a stable browser identity across long gaps, which is exactly what delayed revenue attribution wants."
   - "Plausible and Fathom lead with cookieless designs. DataFast offers cookieless as a mode, and documents the accuracy cost."
   - "GA4’s standard tag uses cookies. Switching to it is not a cookieless move."
-tldrNote: "Behavior described from vendor pages on 24 November 2026, especially DataFast’s cookieless doc."
+tldrNote: "Product behavior as of 24 November 2026, including DataFast’s cookieless doc."
 jobs:
   - title: Avoid a banner
     body: The priority is a script you can explain without a consent dialog for that tool.
@@ -32,12 +32,12 @@ comparison: cookieless
 tools:
   - id: plausible
     title: Plausible
-    blurb: "Homepage position: no cookies, and no cookie banner required. Revenue features sit on Business."
+    blurb: "No cookies, and no cookie banner required. Revenue features sit on Business."
     cta: Plausible overview
     href: /alternatives/plausible/
   - id: fathom
     title: Fathom
-    blurb: "Pricing page: no cookie banner required, and revenue tracking listed on every plan."
+    blurb: "No cookie banner required, and revenue tracking on every plan."
     cta: Fathom overview
     href: /alternatives/fathom-analytics/
   - id: datafast
@@ -54,12 +54,12 @@ tools:
     href: /alternatives/google-analytics/
 honestyTitle: Cookieless is not anonymous in every legal sense
 honesty: |
-  A script can avoid cookies and still process IP addresses or similar signals. DataFast’s cookieless doc says the customer remains responsible for privacy notices and lawful basis. This page is not legal advice. It is a product comparison.
+  A script can avoid cookies and still process IP addresses or similar signals. The customer remains responsible for privacy notices and lawful basis. This page is not legal advice. It is a product comparison.
 faqs:
   - q: What does cookieless mean here?
-    a: "It means the analytics script does not set a cookie to remember the browser. It does not mean the vendor stores nothing. DataFast describes a hashed id built from signals such as IP, user agent, domain, and a rotating salt. Plausible and Fathom describe cookieless products in their own marketing. Read each privacy page before you promise customers a legal outcome."
+    a: "It means the analytics script does not set a cookie to remember the browser. It does not mean the vendor stores nothing. DataFast builds a hashed id from signals such as IP, user agent, domain, and a rotating salt. Plausible and Fathom are cookieless products. Read each privacy page before you promise customers a legal outcome."
   - q: Will I still see referrers?
-    a: "Yes, in the ordinary case. The loss shows up when you need the same browser to be the same person next week. Aggregates for a day can look fine. A 30-day path to payment looks worse. DataFast writes this explicitly."
+    a: "Yes, in the ordinary case. The loss shows up when you need the same browser to be the same person next week. Aggregates for a day can look fine. A 30-day path to payment looks worse."
   - q: Which DataFast script should I use?
     a: "Use the default cookie script if attribution across days is the reason you bought it and your consent setup allows it. Use the cookieless script if avoiding that cookie is the constraint. The [review](/reviews/datafast/) links the doc. The choice is a setting, not two products."
   - q: Do product-analytics tools avoid this trade-off?
@@ -85,7 +85,7 @@ related:
 
 Cookieless analytics is usually sold as relief. No banner, a short script, a dashboard that still shows pages and sources. The relief is real for a content site whose decisions are “which post worked this week.” The relief is expensive for a business whose payment arrives two weeks after the first visit, because the thing a cookie was doing was remembering that gap.
 
-This guide explains the trade with the products we cover. It is not a legal memo. Privacy law depends on where you and your visitors are, and on what else your site stores. A vendor’s “no cookie banner” sentence is their description of their script, not a certificate for your whole page.
+This guide explains the trade with the products on this site. It is not a legal memo. Privacy law depends on where you and your visitors are, and on what else your site stores. A vendor’s “no cookie banner” line describes that script, not your whole page.
 
 ## What a cookie was doing in analytics
 
@@ -93,21 +93,21 @@ A first-party analytics cookie gives the browser a stable id. The next visit can
 
 Remove the cookie and the vendor has to either forget the browser at the end of a short window or rebuild a guess from other signals. Both approaches show up in the market. The guess is where privacy reviews get serious, because an IP address plus a user agent is still a signal even when it is hashed.
 
-## DataFast’s two scripts, in their own terms
+## DataFast’s two scripts
 
-DataFast documents a default script and a cookieless script. The default uses cookies for visitor identification and is described as the higher-accuracy option, including for long and multi-touch journeys. Depending on your setup, that script may need a cookie banner. The cookieless script does not use cookies for the visitor id. DataFast says it is designed so you usually do not need a banner for DataFast itself.
+DataFast documents a default script and a cookieless script. The default uses cookies for visitor identification and is the higher-accuracy option, including for long and multi-touch journeys. Depending on your setup, that script may need a cookie banner. The cookieless script does not use cookies for the visitor id, and it is designed so you usually do not need a banner for DataFast itself.
 
-The cookieless mechanics, from that doc: no long-lived visitor cookie, possible session storage for the current tab session, and a server-side pseudonymous id hashed from signals such as IP address, browser user agent, your domain, and a salt that rotates about every 24 hours. The same person on a later day is not linked as one long-lived profile. Cross-domain linking is off. Returning-visitor breakdowns, visit-count filters, and the user or journey tabs are unavailable or less reliable. Identify features used with the default script are not applied the same way.
+The cookieless mechanics: no long-lived visitor cookie, possible session storage for the current tab session, and a server-side pseudonymous id hashed from signals such as IP address, browser user agent, your domain, and a salt that rotates about every 24 hours. The same person on a later day is not linked as one long-lived profile. Cross-domain linking is off. Returning-visitor breakdowns, visit-count filters, and the user or journey tabs are unavailable or less reliable. Identify features used with the default script are not applied the same way.
 
-The doc’s revenue paragraph is the one founders should read twice. DataFast’s value is tying revenue to traffic sources. Without a stable key, multi-touch and delayed conversions attribute less completely. Daily aggregates can still mean something. A story that needs the first touch from last quarter will not survive the rotating salt. They also say this limit is shared by cookieless products generally, and that teams who need long-cycle accuracy should use the default script and plan for consent.
+The revenue limit is the one founders should read twice. DataFast’s value is tying revenue to traffic sources. Without a stable key, multi-touch and delayed conversions attribute less completely. Daily aggregates can still mean something. A story that needs the first touch from last quarter will not survive the rotating salt. That limit is shared by cookieless products generally. Teams who need long-cycle accuracy should use the default script and plan for consent.
 
-That is as clear as vendor writing gets. The [DataFast review](/reviews/datafast/) treats the default script as the one that matches the revenue recommendation, and the cookieless script as a conscious downgrade when the banner is the binding constraint. Starter still starts at $9 per month either way. The mode does not change the invoice. It changes the memory. The [pricing page](/pricing/datafast/) is that invoice, [DataFast vs Plausible](/compare/datafast-vs-plausible/) is the cookieless neighbor, and the [alternatives](/alternatives/datafast/) page is the wider shortlist if the cookie trade means you should leave. Our link to the doc carries the affiliate parameter `via=sortino`.
+The [DataFast review](/reviews/datafast/) treats the default script as the one that matches the revenue recommendation, and the cookieless script as a conscious downgrade when the banner is the binding constraint. The published starting price is still $9 a month either way. The mode does not change the invoice. It changes the memory. The [pricing page](/pricing/datafast/) is that invoice, [DataFast vs Plausible](/compare/datafast-vs-plausible/) is the cookieless neighbor, and the [alternatives](/alternatives/datafast/) page is the wider shortlist if the cookie trade means you should leave. The link to the doc carries the affiliate parameter `via=sortino`.
 
 ## Plausible and Fathom, which start from cookieless
 
-Plausible’s homepage says there are no cookies and that a cookie banner is not required for their script. The product is positioned as a Google Analytics alternative that respects visitor privacy, made and hosted in the EU. You should expect the same class of limit DataFast describes, even though Plausible’s marketing does not use the salt paragraph we quoted. A cookieless design does not reconstruct a six-week committee purchase. Plausible’s revenue features, per their plan docs, are a reason to choose Business, not a promise that cookieless revenue is long-horizon multi-touch. The [Plausible alternatives](/alternatives/plausible/) page has the prices: Starter from $9 a month at 10,000 pageviews.
+Plausible uses no cookies, and a cookie banner is not required for the script. The product is a Google Analytics alternative that respects visitor privacy, made and hosted in the EU. Expect the same class of limit DataFast documents. A cookieless design does not reconstruct a six-week committee purchase. Revenue features are a reason to choose Business, not a promise that cookieless revenue is long-horizon multi-touch. The [Plausible alternatives](/alternatives/plausible/) page has the prices: Starter from $9 a month at 10,000 pageviews.
 
-Fathom’s pricing page says a cookie banner is not required and lists event and revenue tracking on every plan, from $15 a month at up to 100,000 pageviews. Again, the presence of a revenue feature is not a measurement of how far back a first touch survives. We did not test that distance. We can say the feature is on the price list, and we can say the privacy pitch is cookieless. The [Fathom page](/alternatives/fathom-analytics/) keeps those claims separate.
+Fathom does not require a cookie banner, and event and revenue tracking are on every plan, from $15 a month at up to 100,000 pageviews. A revenue feature on the price list is not a measurement of how far back a first touch survives. The privacy design is cookieless. The [Fathom page](/alternatives/fathom-analytics/) keeps those two facts separate.
 
 If your sales cycle is a same-day checkout, both products can show a source on a payment often enough to be useful. If your sales cycle is a quarter, ask the vendor, in writing, how a first visit is stored, before you promise the board a first-touch chart. That question is more useful than another logo comparison.
 
@@ -123,4 +123,4 @@ If you publish a content site and you look at yesterday’s referrers, pick a co
 
 If you sell with a delay, and the first article is the thing you are trying to fund, use a stable id. On DataFast that means the default script plus whatever consent you owe. On your own database it might mean storing the first-touch UTM on the customer when they sign up, which survives even if the analytics cookie later disappears. That database field is often more honest than any analytics product, cookieless or not.
 
-If you are not sure of the delay, look at ten recent payments and write down the days since the first visit you know about. A cluster of zeros and ones supports a cookieless tool. A cluster of twenties supports a cookie, a login, or a field in your own app. The [how we test](/how-we-test/) page is why this guide stops before pretending we timed those ten payments for you.
+If you are not sure of the delay, look at ten recent payments and write down the days since the first visit you know about. A cluster of zeros and ones supports a cookieless tool. A cluster of twenties supports a cookie, a login, or a field in your own app.
