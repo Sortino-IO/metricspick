@@ -188,6 +188,41 @@ export const comparisons: Record<string, { highlight: ToolId; ids: ToolId[]; not
     ids: ["mixpanel", "posthog", "amplitude", "datafast", "ga4"],
     note: priceNote,
   },
+  "datafast-pricing": {
+    highlight: "datafast",
+    ids: ["datafast", "plausible", "fathom", "posthog", "ga4"],
+    note: "DataFast monthly prices were re-read from the datafa.st homepage bundle on 25 November 2026. datafa.st/pricing returned 404. Neighbor headline figures on this page were re-read the same day. Confirm the current rate before you buy.",
+  },
+  "datafast-vs-plausible": {
+    highlight: "datafast",
+    ids: ["datafast", "plausible", "fathom"],
+    note: "DataFast prices re-read from the homepage bundle on 25 November 2026. Plausible’s pageview ladder was re-read from plausible.io the same day. The full DataFast ladder is on the DataFast pricing page.",
+  },
+  "datafast-vs-fathom": {
+    highlight: "datafast",
+    ids: ["datafast", "fathom", "plausible"],
+    note: "DataFast prices re-read from the homepage bundle on 25 November 2026. Fathom’s entry price is from usefathom.com/pricing the same day. The full DataFast ladder is on the DataFast pricing page.",
+  },
+  "datafast-vs-ga": {
+    highlight: "datafast",
+    ids: ["datafast", "ga4", "plausible", "posthog"],
+    note: "DataFast prices re-read from the homepage bundle on 25 November 2026. Standard GA4 was still described as free of charge on Google’s analytics page the same day.",
+  },
+  "datafast-vs-posthog": {
+    highlight: "datafast",
+    ids: ["datafast", "posthog", "mixpanel", "ga4"],
+    note: "DataFast prices re-read from the homepage bundle on 25 November 2026. PostHog’s free analytics allowance and anonymous event rates were re-read from posthog.com the same day.",
+  },
+  "datafast-vs-mixpanel": {
+    highlight: "datafast",
+    ids: ["datafast", "mixpanel", "posthog", "amplitude"],
+    note: "DataFast prices re-read from the homepage bundle on 25 November 2026. Mixpanel’s free cap and the 1.5 million event pack were re-read from mixpanel.com/pricing the same day.",
+  },
+  "datafast-vs-amplitude": {
+    highlight: "datafast",
+    ids: ["datafast", "amplitude", "posthog", "mixpanel"],
+    note: "DataFast prices re-read from the homepage bundle on 25 November 2026. Amplitude’s free plan of 2 million events a month was re-read from amplitude.com/pricing the same day.",
+  },
 };
 
 export interface Ladder {
@@ -202,7 +237,7 @@ export const ladders: Record<string, Ladder> = {
   datafast: {
     title: "DataFast monthly prices",
     intro:
-      "These are the monthly USD prices embedded in the public DataFast homepage on 24 November 2026. Yearly billing is ten times the monthly price (the homepage stores a 12-month anchor and a 10-month charge). There is no /pricing URL; that path returned 404.",
+      "These are the monthly USD prices in the public DataFast homepage bundle, re-read on 25 November 2026. The dollar steps match the 24 November reading. Yearly billing is ten times the monthly price (the homepage stores a 12-month anchor and a 10-month charge). datafa.st/pricing returned 404. The plan cards live on the homepage.",
     columns: ["Monthly events", "Starter", "Growth"],
     rows: [
       ["10k", "$9", "$19"],
@@ -215,7 +250,7 @@ export const ladders: Record<string, Ladder> = {
       ["10M", "$169", "$339"],
       ["10M+", "$199", "$399"],
     ],
-    note: "Starter is 1 website, 1 team member, and 3 years of retention. Growth is 30 websites, 30 team members, 5+ years of retention, social mentions, and link attribution. A 14-day trial does not require a card. Optional bot-traffic capacity above the included 100,000 requests is $9 per extra million requests per month.",
+    note: "On the 10,000-event cards, both plans include 100,000 AI bot requests and API, CLI, and MCP. Starter is 1 website, 1 team member, and 3 years of retention. Social mentions and X link attribution are marked off on Starter. Growth is 30 websites, 30 team members, and 5+ years of retention, and those two features are marked on. A 14-day trial does not require a card. Extra bot-traffic capacity is $9 per extra million requests per month. A separate AI visibility product is priced in the same code and is not listed in this table.",
   },
   plausible: {
     title: "Plausible monthly prices",
@@ -301,8 +336,10 @@ export interface SourceLink {
 export const priceSources: SourceLink[] = [
   { label: "DataFast homepage (plan prices and limits)", href: "https://datafa.st/" },
   { label: "DataFast terms (events, trial, plan limits)", href: "https://datafa.st/tos" },
+  { label: "DataFast data processing agreement", href: "https://datafa.st/dpa" },
   { label: "DataFast cookieless tracking", href: "https://datafa.st/docs/gdpr-cookieless-tracking" },
   { label: "DataFast revenue attribution guide", href: "https://datafa.st/docs/revenue-attribution-guide" },
+  { label: "DataFast MCP introduction", href: "https://datafa.st/docs/mcp-introduction" },
   { label: "Plausible homepage pricing slider", href: "https://plausible.io/" },
   { label: "Plausible subscription plans", href: "https://plausible.io/docs/subscription-plans" },
   { label: "Fathom pricing", href: "https://usefathom.com/pricing" },

@@ -67,6 +67,10 @@ faqs:
   - q: Which links are affiliate links?
     a: "Only DataFast links, via via=sortino. Plausible, Fathom, Google, and PostHog are cited without an affiliate parameter."
 related:
+  - href: /compare/datafast-vs-plausible/
+    type: Compare
+    title: DataFast vs Plausible
+    description: Revenue attribution beside Plausible’s cookieless traffic plans.
   - href: /alternatives/fathom-analytics/
     type: Alternatives
     title: Fathom alternatives

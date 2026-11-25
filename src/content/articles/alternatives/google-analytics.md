@@ -66,6 +66,10 @@ faqs:
   - q: Are your DataFast links affiliate links?
     a: "Yes. Links to datafa.st include via=sortino. We may earn a commission if you subscribe, at no extra cost to you. Plausible, Fathom, PostHog, Mixpanel, Amplitude, and Google are covered without an affiliate link on this site."
 related:
+  - href: /compare/datafast-vs-google-analytics/
+    type: Compare
+    title: DataFast vs Google Analytics
+    description: When the revenue tool sits beside GA4 instead of replacing it.
   - href: /guides/marketing-attribution-tools/
     type: Guides
     title: Marketing attribution tools, compared

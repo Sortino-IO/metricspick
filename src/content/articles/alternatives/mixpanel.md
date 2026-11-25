@@ -68,6 +68,10 @@ faqs:
   - q: Which links are affiliate links?
     a: "DataFast links, with via=sortino. Other vendor links on this page are citations."
 related:
+  - href: /compare/datafast-vs-mixpanel/
+    type: Compare
+    title: DataFast vs Mixpanel
+    description: Channel revenue beside Mixpanel’s event packs.
   - href: /pricing/mixpanel/
     type: Pricing
     title: Mixpanel pricing, explained for founders

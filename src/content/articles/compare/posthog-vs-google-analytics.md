@@ -79,6 +79,10 @@ related:
     type: Reviews
     title: DataFast review
     description: The revenue pick, scoped so it does not swallow this comparison.
+  - href: /compare/datafast-vs-posthog/
+    type: Compare
+    title: DataFast vs PostHog
+    description: The revenue tool beside PostHog, when GA4 is not the other name.
 ---
 
 PostHog versus Google Analytics is a popular comparison because both can tell you that a page was viewed. That overlap is real and it is the smallest part of either product. GA4 is Google’s free measurement product for sites and apps, connected to Google’s advertising tools. PostHog is a product suite that prices analytics, replay, flags, experiments, and other meters separately, with a large monthly free tier. Choosing between them as if they were two themes for the same dashboard is how teams delete the report they still need.
