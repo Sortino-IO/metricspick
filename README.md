@@ -20,7 +20,7 @@ npm run preview
 
 `src/config/site.ts` holds the DataFast affiliate URL (`https://datafa.st/?via=sortino`). Every DataFast link, including docs, keeps `via=sortino`.
 
-`GTM_ID` and `GSC_VERIFICATION` are empty. The Tag Manager snippet and the Search Console meta tag render only when those values are set.
+`GTM_ID` is `GTM-PJ8GQK6B`. The standard Tag Manager head snippet and the noscript iframe render on every page. GA4 is loaded through that container, not through a direct gtag snippet. `GSC_VERIFICATION` is the Search Console token rendered as a meta tag. Leave either value empty to omit its markup.
 
 ## Content
 
