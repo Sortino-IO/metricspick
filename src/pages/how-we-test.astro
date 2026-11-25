@@ -1,0 +1,21 @@
+---
+import Simple from "../layouts/Simple.astro";
+---
+<Simple
+  title="How we test"
+  description="How metricspick checks analytics tools: public pricing pages and docs, a dated review, no invented benchmarks, and a narrow recommendation for DataFast."
+  kicker="Method"
+  lede="We read the vendor’s own pages, write down the date, and separate a published price from a guess. We do not publish scores we did not measure."
+  crumbs={[{ href: "/", label: "Home" }, { label: "How we test" }]}
+>
+  <h2>What a page on this site is allowed to claim</h2>
+  <p>A price is allowed when it appears on the vendor’s pricing page, homepage, or official docs, and we name the date we read it. A product behavior is allowed when the vendor’s docs or terms describe it. A recommendation is allowed when it follows from that public record and from the job the reader described. A benchmark, a quote, a star rating, or a “we measured X percent” line is not allowed unless we actually ran that test and can show the method. This version of the site does not include original lab tests.</p>
+  <h2>How the 24 November 2026 check was done</h2>
+  <p>PostHog, Mixpanel, Amplitude, Fathom, and Google Analytics were read from their public pricing or product pages. Plausible’s monthly ladder was read from the pricing slider data on plausible.io. DataFast does not publish a working /pricing URL (it returned 404). The monthly and yearly amounts were read from the pricing data the homepage itself loads, and the plan limits were read from the homepage FAQ and the terms. Bot-traffic overage pricing was read from the homepage and DataFast’s changelog. Cookieless behavior was read from DataFast’s own tracking doc.</p>
+  <p>Where a number was not on the page, it is absent here. That includes Fathom’s dollar steps above 100,000 pageviews, PostHog’s identified-event rate card, PostHog platform-package fees, Amplitude’s Plus calculator steps, Mixpanel add-on fees, and any list price for Google Analytics 360.</p>
+  <h2>How a recommendation is scoped</h2>
+  <p>DataFast is recommended for revenue attribution. The product is built to join traffic to payments. It is not recommended as a full replacement for PostHog, Mixpanel, or Amplitude, which are product-analytics suites with replay, experiments, or feature flags. If a reader’s acquisition is mostly Google Ads, or GA4 already feeds a warehouse they use, the guides say to stay. Affiliate links do not move a tool into a job it does not do.</p>
+  <h2>What we did not do</h2>
+  <p>We did not subscribe to every paid plan, interview customers, or run the same site through every tool for a month. A sentence that would require that work is left out. Readers who want a live feel of a product should use the vendor’s trial: DataFast documents 14 days without a card, Plausible documents 30 days without a card, and Fathom documents 7 days with a card.</p>
+  <p>The <a href="/affiliate-disclosure/">affiliate disclosure</a> and <a href="/about/">about</a> page sit next to this one. Corrections can be sent from the <a href="/contact/">contact</a> page.</p>
+</Simple>

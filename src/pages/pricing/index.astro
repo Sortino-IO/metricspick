@@ -1,0 +1,36 @@
+---
+import { getCollection } from "astro:content";
+import Simple from "../../layouts/Simple.astro";
+
+const articles = (await getCollection("articles", ({ data }) => data.section === "pricing")).sort(
+  (a, b) => a.data.order - b.data.order,
+);
+---
+<Simple
+  title="Analytics pricing"
+  description="PostHog, Amplitude, and Mixpanel pricing explained for founders, with the free allowances and the first paid steps taken from each vendor’s own pricing page."
+  kicker="Pricing"
+  lede="Product analytics prices are usage prices. A free tier can be enough for a year, then a small step up in events can change the bill. These guides show the published steps."
+  crumbs={[{ href: "/", label: "Home" }, { label: "Pricing" }]}
+>
+  <p>Seat-based “from $49 a month” pricing is mostly gone from PostHog, Mixpanel, and Amplitude. Each one publishes a free event allowance and then charges for volume, with extra products such as replay and experiments on their own meters. The useful question is what the first paid step costs at your volume, not what the logo costs in the abstract.</p>
+  <p>Marketing analytics is priced differently. DataFast and Plausible sell event or pageview tiers with a published monthly dollar amount. Fathom starts at $15 a month for up to 100,000 pageviews. GA4’s standard product is free. Those figures are compared on the <a href="/alternatives/">alternatives hub</a> and in the <a href="/reviews/datafast/">DataFast review</a>.</p>
+  <p>Numbers below were checked on 24 November 2026. Where a vendor only publishes “starts at $0” or a calculator, the guide says so and does not invent a rate.</p>
+  <section slot="wide" class="band band-yellow">
+    <div class="article-wide">
+      <h2>Pricing guides</h2>
+      <div class="guides">
+        {articles.map((article) => (
+          <a class="guide" href={`/${article.id}/`}>
+            <span class="type">Pricing</span>
+            <div>
+              <h3>{article.data.title}</h3>
+              <p>{article.data.description}</p>
+            </div>
+            <span class="meta">{`/${article.id}/`}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</Simple>

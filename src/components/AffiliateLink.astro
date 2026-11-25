@@ -1,0 +1,14 @@
+---
+import { datafastUrl } from "../config/site";
+
+interface Props {
+  path?: string;
+  placement: string;
+  class?: string;
+}
+const { path = "/", placement, class: className } = Astro.props;
+const href = datafastUrl(path);
+---
+<a href={href} class={className} rel="sponsored nofollow noopener" target="_blank" data-placement={placement}>
+  <slot />
+</a>

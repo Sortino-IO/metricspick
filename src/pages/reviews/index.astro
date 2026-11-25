@@ -1,0 +1,35 @@
+---
+import { getCollection } from "astro:content";
+import Simple from "../../layouts/Simple.astro";
+
+const articles = (await getCollection("articles", ({ data }) => data.section === "reviews")).sort(
+  (a, b) => a.data.order - b.data.order,
+);
+---
+<Simple
+  title="Analytics reviews"
+  description="Independent reviews of analytics products. The first review is DataFast, a revenue-attribution tool, with the limits written next to the strengths."
+  kicker="Reviews"
+  lede="A review on this site is a reading of the public product: pricing, docs, terms, and the job the tool is built for. It is not a disguised benchmark."
+  crumbs={[{ href: "/", label: "Home" }, { label: "Reviews" }]}
+>
+  <p>DataFast is the first review because it is the tool we recommend for one specific job, and because some links to it earn a commission. The review says what the homepage and the docs actually publish, including the cookieless accuracy trade-off and the point at which the dashboard locks. It also says when PostHog, Mixpanel, or Amplitude is the better buy.</p>
+  <p>Other products are covered in the <a href="/alternatives/">alternatives</a> and <a href="/pricing/">pricing</a> sections. A later review can be added by dropping a Markdown file in the reviews collection.</p>
+  <section slot="wide" class="band band-yellow">
+    <div class="article-wide">
+      <h2>Reviews</h2>
+      <div class="guides">
+        {articles.map((article) => (
+          <a class="guide" href={`/${article.id}/`}>
+            <span class="type">Reviews</span>
+            <div>
+              <h3>{article.data.title}</h3>
+              <p>{article.data.description}</p>
+            </div>
+            <span class="meta">{`/${article.id}/`}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</Simple>

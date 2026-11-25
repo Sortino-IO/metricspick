@@ -1,0 +1,29 @@
+---
+interface Item {
+  href: string;
+  type: string;
+  title: string;
+  description: string;
+}
+interface Props {
+  items: Item[];
+}
+const { items } = Astro.props;
+---
+<section class="band band-blue" aria-labelledby="related-title">
+  <div class="article-wide">
+    <h2 id="related-title">Related guides</h2>
+    <div class="guides">
+      {items.map((item) => (
+        <a class="guide" href={item.href}>
+          <span class="type">{item.type}</span>
+          <div>
+            <h3>{item.title}</h3>
+            <p>{item.description}</p>
+          </div>
+          <span class="meta">{item.href}</span>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>

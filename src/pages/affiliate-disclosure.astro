@@ -1,0 +1,17 @@
+---
+import AffiliateLink from "../components/AffiliateLink.astro";
+import Simple from "../layouts/Simple.astro";
+---
+<Simple
+  title="Affiliate disclosure"
+  description="metricspick earns a commission on some DataFast subscriptions. The link uses via=sortino, the price is not higher, and other tools are reviewed without an affiliate program."
+  kicker="Disclosure"
+  lede="If a link goes to datafa.st, it is an affiliate link. The parameter is via=sortino. You do not pay extra if you subscribe."
+  crumbs={[{ href: "/", label: "Home" }, { label: "Affiliate disclosure" }]}
+>
+  <p>metricspick participates in DataFast’s affiliate program. Links to datafa.st, including links to documentation and the homepage, include <code>via=sortino</code>. If you start a paid DataFast subscription through one of those links, we may earn a commission. DataFast’s own pages describe the customer price. The commission is not added on top.</p>
+  <p>A typical link looks like this: <AffiliateLink placement="disclosure-page">datafa.st with our affiliate parameter</AffiliateLink>. Deeper pages keep the same parameter, for example the cookieless-tracking doc. Each affiliate link is marked <code>rel="sponsored"</code> and opens in a new tab.</p>
+  <p>We do not run affiliate programs for Google Analytics, PostHog, Mixpanel, Amplitude, Plausible, or Fathom in this version of the site. Those products are still compared, and a page can recommend one of them when the job calls for it. The DataFast recommendation is limited to revenue attribution. It is not a claim that DataFast replaces a product-analytics suite.</p>
+  <p>Clicks on datafa.st links are recorded in a <code>dataLayer</code> array in your browser, with the link URL, the link text, the page path, and a placement name. That array stays in the page unless a Google Tag Manager container is later added in the site config. No container is set in this build, so the click is not sent to Google by this site. Details are on the <a href="/privacy/">privacy</a> page.</p>
+  <p>Editorial pages are not for sale. A vendor cannot pay to rewrite a con, delete a price, or change a job-to-be-done. The method is on <a href="/how-we-test/">how we test</a>. The <a href="/reviews/datafast/">DataFast review</a> repeats this disclosure near the top of the page, as do the other money pages.</p>
+</Simple>

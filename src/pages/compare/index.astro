@@ -1,0 +1,35 @@
+---
+import { getCollection } from "astro:content";
+import Simple from "../../layouts/Simple.astro";
+
+const articles = (await getCollection("articles", ({ data }) => data.section === "compare")).sort(
+  (a, b) => a.data.order - b.data.order,
+);
+---
+<Simple
+  title="Compare analytics tools"
+  description="Side-by-side comparisons of analytics tools, starting with PostHog vs Google Analytics, written for founders who need a job-based shortlist."
+  kicker="Compare"
+  lede="A comparison is a decision between two jobs. If the jobs differ, the honest result is often to keep both tools, or to keep the one you already run well."
+  crumbs={[{ href: "/", label: "Home" }, { label: "Compare" }]}
+>
+  <p>PostHog and Google Analytics 4 are the pair founders ask about most, because one feels like a product suite and the other is already installed. They overlap on pageviews and funnels, and they diverge on ads, BigQuery, session replay, and feature flags. The guide spells out which overlap is real.</p>
+  <p>More matchups will live in this folder as new files are added to the compare collection. Until then, the <a href="/alternatives/">alternatives</a>, <a href="/pricing/">pricing</a>, and <a href="/guides/">guides</a> hubs cover Plausible, Fathom, Mixpanel, Amplitude, and DataFast. The <a href="/reviews/datafast/">DataFast review</a> is the revenue-attribution reference.</p>
+  <section slot="wide" class="band band-yellow">
+    <div class="article-wide">
+      <h2>Comparisons</h2>
+      <div class="guides">
+        {articles.map((article) => (
+          <a class="guide" href={`/${article.id}/`}>
+            <span class="type">Compare</span>
+            <div>
+              <h3>{article.data.title}</h3>
+              <p>{article.data.description}</p>
+            </div>
+            <span class="meta">{`/${article.id}/`}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</Simple>

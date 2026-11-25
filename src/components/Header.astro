@@ -1,0 +1,35 @@
+---
+import Logo from "./Logo.astro";
+
+const path = Astro.url.pathname;
+const links = [
+  { href: "/#picks", label: "Top picks", match: "" },
+  { href: "/alternatives/", label: "Alternatives", match: "/alternatives/" },
+  { href: "/pricing/", label: "Pricing", match: "/pricing/" },
+  { href: "/compare/", label: "Compare", match: "/compare/" },
+  { href: "/guides/", label: "Guides", match: "/guides/" },
+];
+---
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="/">
+      <Logo />
+      <span class="wordmark-text">metrics<span class="pick">pick</span></span>
+    </a>
+    <details class="nav-toggle">
+      <summary>Menu</summary>
+      <nav class="nav-menu" aria-label="Primary">
+        {links.map((link) => (
+          <a href={link.href} aria-current={link.match && path.startsWith(link.match) ? "page" : undefined}>{link.label}</a>
+        ))}
+        <a class="btn btn-primary btn-sm" href="/#picks">See top picks</a>
+      </nav>
+    </details>
+    <nav class="nav-menu" aria-label="Primary">
+      {links.map((link) => (
+        <a href={link.href} aria-current={link.match && path.startsWith(link.match) ? "page" : undefined}>{link.label}</a>
+      ))}
+      <a class="btn btn-primary btn-sm" href="/#picks">See top picks</a>
+    </nav>
+  </div>
+</header>

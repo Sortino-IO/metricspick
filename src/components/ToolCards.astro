@@ -1,0 +1,50 @@
+---
+import AffiliateLink from "./AffiliateLink.astro";
+import { tools, type ToolId } from "../data/catalog";
+
+interface Card {
+  id: ToolId;
+  title?: string;
+  blurb: string;
+  cta: string;
+  href?: string;
+  placement?: string;
+  featured?: boolean;
+  secondaryHref?: string;
+  secondaryCta?: string;
+}
+interface Props {
+  cards: Card[];
+}
+const { cards } = Astro.props;
+---
+<section class="band band-cream" aria-labelledby="tools-title">
+  <div class="article-wide">
+    <h2 id="tools-title">Tools worth a closer look</h2>
+    <div class="tool-cards">
+      {cards.map((card) => {
+        const tool = tools[card.id];
+        const affiliate = Boolean(tool.affiliate);
+        const href = card.href ?? (affiliate ? undefined : tool.href);
+        return (
+          <article class:list={["tool-card", card.featured && "is-featured"]}>
+            <div>
+              <h3>{card.title ?? tool.name}</h3>
+              <p>{card.blurb} <strong>{tool.priceLabel}.</strong></p>
+            </div>
+            <div class="card-actions">
+              {affiliate ? (
+                <AffiliateLink path="/" placement={card.placement ?? "article-card"} class="btn btn-primary btn-sm">{card.cta}</AffiliateLink>
+              ) : (
+                <a class="btn btn-secondary btn-sm" href={href}>{card.cta}</a>
+              )}
+              {card.secondaryHref && card.secondaryCta && (
+                <a class="btn btn-secondary btn-sm" href={card.secondaryHref}>{card.secondaryCta}</a>
+              )}
+            </div>
+          </article>
+        );
+      })}
+    </div>
+  </div>
+</section>

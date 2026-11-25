@@ -1,0 +1,18 @@
+---
+interface Props {
+  items: string[];
+  note?: string;
+}
+const { items, note } = Astro.props;
+---
+<section class="band band-cream">
+  <div class="article-body">
+    <aside class="tldr" aria-labelledby="tldr-title">
+      <h2 id="tldr-title">TL;DR</h2>
+      <ul>
+        {items.map((item) => <li set:html={item} />)}
+      </ul>
+      {note && <p class="tldr-note">{note}</p>}
+    </aside>
+  </div>
+</section>

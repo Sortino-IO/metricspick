@@ -1,0 +1,16 @@
+---
+import Simple from "../layouts/Simple.astro";
+---
+<Simple
+  title="About metricspick"
+  description="metricspick is an independent English site that compares web and product analytics tools for founders. It is not owned by DataFast or any other vendor."
+  kicker="About"
+  lede="We publish comparisons so a founder can match a tool to a job, with the affiliate relationship labeled and the sources linked."
+  crumbs={[{ href: "/", label: "Home" }, { label: "About" }]}
+>
+  <p>metricspick.com compares web analytics and product analytics for founders, indie hackers, and small SaaS teams. The writing is in English. The site is static. There is no account, no dashboard, and no vendor sponsorship that lets a company edit a page.</p>
+  <p>DataFast, built by Marc Lou, is the product we recommend when the job is revenue attribution: which channel, campaign, or page showed up on a payment. That recommendation is narrow on purpose. PostHog, Mixpanel, and Amplitude answer a different question, about what people do inside a product, and we link to them when that is the honest fit. Plausible, Fathom, and Google Analytics 4 stay in the set because they are the tools founders actually compare.</p>
+  <p>Some links to DataFast use an affiliate parameter. The commission, if a reader subscribes, does not change the price the reader pays. The relationship is described on the <a href="/affiliate-disclosure/">affiliate disclosure</a>. The checking process is described on <a href="/how-we-test/">how we test</a>.</p>
+  <p>Pages are written by MetricsPick editors. We do not invent a named reviewer, a star score, or a lab result. If a sentence gives a price, a limit, or a product behavior, it should point at a vendor page and a check date. The first check date for this version of the site is 24 November 2026.</p>
+  <p>The site is organized by content type: <a href="/alternatives/">alternatives</a>, <a href="/pricing/">pricing</a>, <a href="/compare/">compare</a>, <a href="/guides/">guides</a>, and <a href="/reviews/">reviews</a>. New articles are Markdown files in those collections, so the hubs, breadcrumbs, and sitemap pick them up on the next build.</p>
+</Simple>

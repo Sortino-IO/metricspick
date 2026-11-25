@@ -1,0 +1,38 @@
+---
+import { priceSources, type SourceLink } from "../data/catalog";
+import { isDatafastHref, withAffiliate } from "../config/site";
+
+interface Props {
+  extra?: SourceLink[];
+}
+const { extra = [] } = Astro.props;
+const seen = new Set<string>();
+const links = [...extra, ...priceSources].filter((link) => {
+  if (seen.has(link.href)) return false;
+  seen.add(link.href);
+  return true;
+});
+---
+<section class="band band-cream">
+  <div class="article-body">
+    <h2>Sources checked for this page</h2>
+    <p>Every price and product claim above points at a public vendor page. DataFast links include our affiliate parameter.</p>
+    <ul class="sources">
+      {links.map((link) => {
+        const href = withAffiliate(link.href);
+        const affiliate = isDatafastHref(link.href);
+        return (
+          <li>
+            <a
+              href={href}
+              rel={affiliate ? "sponsored nofollow noopener" : "noopener"}
+              target="_blank"
+              data-placement={affiliate ? "article-source" : undefined}
+            >{link.label}</a>
+          </li>
+        );
+      })}
+      <li><a href="/how-we-test/">How MetricsPick checks pages</a></li>
+    </ul>
+  </div>
+</section>

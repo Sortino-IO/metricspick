@@ -1,0 +1,38 @@
+---
+import { ladders } from "../data/catalog";
+
+interface Props {
+  ids: string[];
+}
+const { ids } = Astro.props;
+const blocks = ids.map((id) => ladders[id]).filter(Boolean);
+---
+{blocks.map((ladder) => (
+  <section class="band band-cream">
+    <div class="article-wide">
+      <h2>{ladder.title}</h2>
+      <p class="band-lede">{ladder.intro}</p>
+      <div class="table-scroll">
+        <table class="compare">
+          <thead>
+            <tr>
+              {ladder.columns.map((column) => <th>{column}</th>)}
+            </tr>
+          </thead>
+          <tbody>
+            {ladder.rows.map((row) => (
+              <tr>
+                {row.map((cell, index) => (
+                  <td data-label={ladder.columns[index]} class={index === 0 ? undefined : "price"}>
+                    {index === 0 ? <strong>{cell}</strong> : cell}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="table-note">{ladder.note}</p>
+    </div>
+  </section>
+))}
