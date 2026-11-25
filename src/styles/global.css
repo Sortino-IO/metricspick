@@ -146,13 +146,6 @@ a.datafast-cta:focus-visible {
   outline: 3px solid var(--navy);
   outline-offset: 3px;
 }
-.affiliate-note {
-  margin: 0 0 0.9rem;
-  color: var(--navy);
-  font-size: 0.85rem;
-  font-weight: 700;
-}
-.pick-card .affiliate-note { margin: 0.15rem 0 0; font-size: 0.8rem; font-weight: 600; color: var(--faint); }
 
 .disclosure-bar { background: var(--yellow); border-bottom: 3px solid var(--navy); font-size: 0.82rem; color: var(--navy); padding: 0.7rem 0; font-weight: 600; }
 .disclosure-bar p { margin: 0; }
