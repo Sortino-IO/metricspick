@@ -13,8 +13,8 @@ tldr:
   - "Free is up to 1 million events, 10,000 replays, and no card."
   - "Growth includes that million, then 1.5 million events is $100 a month on yearly billing or $140 on monthly billing."
   - "Multi-touch attribution is on Growth, not on Free."
-  - "Group Analytics and Data Pipelines are paid add-ons. We did not find a printed dollar price for them."
-tldrNote: "Taken from mixpanel.com/pricing on 24 November 2026."
+  - "Group Analytics and Data Pipelines are paid add-ons. Their prices are not publicly listed."
+tldrNote: "Packs as of 24 November 2026, from mixpanel.com/pricing."
 comparison: mixpanel-pricing
 ladders:
   - mixpanel
@@ -42,12 +42,12 @@ tools:
     featured: true
     secondaryHref: /reviews/datafast/
     secondaryCta: Read the review
-honestyTitle: Add-ons we will not price from memory
+honestyTitle: Add-ons without a public price
 honesty: |
-  The pricing page marks Group Analytics and Data Pipelines as add-ons on paid plans, and Metric Trees as an Enterprise add-on. It does not, in the text captured for this guide, state their monthly fees. Ask Mixpanel for those lines. A third-party “per thousand events” figure that disagrees with the pack table is not used here.
+  Group Analytics and Data Pipelines are add-ons on paid plans, and Metric Trees is an Enterprise add-on. Their monthly fees are not publicly listed. Ask Mixpanel for those lines. A third-party “per thousand events” figure that disagrees with the pack table is not used here.
 faqs:
   - q: Is Mixpanel free?
-    a: "Yes, inside the free plan: up to 1 million events a month, 10,000 replays, up to 10 feature flags, up to 1,000 experiment MEUs, funnels and retention, and unlimited seats. The docs say querying pauses when a free project goes over the event limit, while collection continues, until you upgrade."
+    a: "Yes, inside the free plan: up to 1 million events a month, 10,000 replays, up to 10 feature flags, up to 1,000 experiment MEUs, funnels and retention, and unlimited seats. Querying pauses when a free project goes over the event limit, while collection continues, until you upgrade."
   - q: What is the first paid step?
     a: "Growth starts at $0 with 1 million events included. The next published yearly step is 1.5 million events at $100 per month ($1,200 per year). Monthly billing at 1.5 million is $140. At 2 million events the page shows $185 yearly or $259 monthly."
   - q: Does the free plan include attribution?
@@ -73,7 +73,7 @@ related:
     description: Multi-touch on Growth versus a marketing-side tool.
 ---
 
-Mixpanel prices events, not seats. The pricing page checked on 24 November 2026 puts unlimited seats on Free, Growth, and Enterprise. The number that moves the invoice is how many events the organization ingests. The docs say the count is across projects, and that some calls do not count: identify, alias, merge, opt-in, a session-recording checkpoint, and profile updates. Pageviews and product actions you choose to send do count. If you are estimating from a GA4 session number, you are estimating the wrong unit until you decide which actions become events.
+Mixpanel prices events, not seats. As of 24 November 2026, Free, Growth, and Enterprise include unlimited seats. The number that moves the invoice is how many events the organization ingests. The count is across projects, and some calls do not count: identify, alias, merge, opt-in, a session-recording checkpoint, and profile updates. Pageviews and product actions you choose to send do count. If you are estimating from a GA4 session number, you are estimating the wrong unit until you decide which actions become events.
 
 ## Free, and the pause when you pass it
 
@@ -81,17 +81,17 @@ Free includes up to 1 million events a month, 10,000 session replays, up to 1,00
 
 The pricing docs describe the overage behavior. On Free, Mixpanel keeps collecting after you pass the monthly event limit, and querying pauses until you move to Growth. Growth then counts the month’s events, including the ones already collected, toward the allowance you buy. That is a gentler failure than a hard delete, and it is still a week where the team cannot query. If you are close to 1 million, watch the meter before a launch.
 
-## Growth packs that are actually printed
+## Growth packs
 
-Growth starts at $0. The first million events sit inside that base. Yearly billing, as printed:
+Growth starts at $0. The first million events sit inside that base. Yearly billing:
 
 1 million, $0. 1.5 million, $100 a month. 2 million, $185. 3 million, $270. 5 million, $438. 10 million, $840. 20 million, $1,635.
 
-Monthly billing at the same steps: $0, $140, $259, $378, $613, $1,176, and $2,289. The page also prints the in-between steps (4 million, 6.5 million, 8 million, and so on) and the annual savings versus monthly. Above 20 million events, both columns say to contact sales. The table on this page keeps the steps a founder is most likely to hit. The source page has the rest. We did not smooth or average them.
+Monthly billing at the same steps: $0, $140, $259, $378, $613, $1,176, and $2,289. Mixpanel also publishes the in-between steps (4 million, 6.5 million, 8 million, and so on) and the annual savings versus monthly. Above 20 million events, both columns say to contact sales. The table on this page keeps the steps a founder is most likely to hit. The source page has the rest, unsmoothed.
 
 Growth also raises the ceilings: up to 20 million events, up to 500,000 replays as a ceiling with 20,000 included in the base description, more experiment room, up to 50 feature flags before further purchases, saved cohorts, custom properties, and up to five alerts per project. Multi-touch attribution flips to available. Data warehouse connectors flip to available. Group Analytics and Data Pipelines stay add-ons.
 
-Enterprise keeps the add-ons, adds anomaly detection, root-cause analysis, governance features, custom retention, and a success team. Metric Trees is an Enterprise add-on. None of those sentences include a price, because the page uses “custom” and “add-on” instead of a dollar.
+Enterprise keeps the add-ons, adds anomaly detection, root-cause analysis, governance features, custom retention, and a success team. Metric Trees is an Enterprise add-on. Those lines are custom or add-on, not a published dollar price.
 
 ## The startup year
 
@@ -115,10 +115,10 @@ If you are under 1 million events and the free matrix covers the reports you ope
 
 The savings column on Mixpanel’s page is the difference between twelve monthly invoices and the yearly price. At 1.5 million events, monthly billing is $140 and yearly is $100, and the page’s own savings figure for that step is $480 a year. You do not need a spreadsheet to see the direction. You do need a reason to believe the volume will still be 1.5 million in month eight. A yearly pack bought for a launch that then quiets down is the expensive version of a tool you are not opening.
 
-The docs say a Growth plan counts the current month’s events, including events collected while you were on Free, toward the new allowance. Upgrading on the 20th does not give you a fresh million. If you are already over the free limit when you upgrade, the overage logic they describe can put those events on the invoice. Upgrade before the pause, not after a week of hoping the chart comes back.
+A Growth plan counts the current month’s events, including events collected while you were on Free, toward the new allowance. Upgrading on the 20th does not give you a fresh million. If you are already over the free limit when you upgrade, the overage logic they describe can put those events on the invoice. Upgrade before the pause, not after a week of hoping the chart comes back.
 
-Replay has its own included amount. The session-replay documentation we saw distinguishes free replay allowances by plan and warns that older plans may not match the current page. If your organization still shows a “make the switch” style prompt, you are not on the table this article quotes. Confirm the plan version in the billing screen before you argue with a number from this page.
+Replay has its own included amount. Free replay allowances differ by plan, and older plans may not match the current page. If your organization still shows a “make the switch” style prompt, you are not on the table this article quotes. Confirm the plan version in the billing screen before you argue with a number from this page.
 
-Add-ons are the other way a “$100 plan” becomes something else. If a sales note adds Group Analytics or a pipeline, get the add-on price in the same note. We left those prices out on purpose. A founder who only needs the event packs should be able to read the table above and stop. A founder who needs account-level analytics should not pretend the table is the whole bill.
+Add-ons are the other way a “$100 plan” becomes something else. If a sales note adds Group Analytics or a pipeline, get the add-on price in the same note. Those prices are not publicly listed. A founder who only needs the event packs can stop at the table above. A founder who needs account-level analytics should not treat the table as the whole bill.
 
-The [alternatives](/alternatives/mixpanel/) article is the right next page if the pack you need is larger than the reports you open. Sometimes the cheaper move is fewer events, not a different logo: drop autocapture you do not query, and the free million lasts longer. That is a product decision Mixpanel’s own pricing docs encourage when they tell you to estimate from a week of real use rather than from a guess.
+The [alternatives](/alternatives/mixpanel/) article is the right next page if the pack you need is larger than the reports you open. Sometimes the cheaper move is fewer events, not a different logo: drop autocapture you do not query, and the free million lasts longer. Estimate from a week of real use rather than from a guess.

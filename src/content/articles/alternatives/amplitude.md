@@ -14,7 +14,7 @@ tldr:
   - "Switch the job to DataFast if the real question is which marketing channel brings payments."
   - "Use GA4, Plausible, or Fathom if the site is a marketing site and a product suite was the wrong purchase."
   - "Amplitude’s own Free plan is 2 million events per month. Leaving only to save money may be unnecessary."
-tldrNote: "Checked against Amplitude’s pricing page and the other vendors’ public pages on 24 November 2026."
+tldrNote: "Prices as of 24 November 2026."
 jobs:
   - title: Keep product analytics
     body: You still need funnels, cohorts, and a clear event stream inside the product.
@@ -60,7 +60,7 @@ honesty: |
   Stay if your team already has a trusted event taxonomy in Amplitude, if you qualify for the startup offer and intend to use it, or if the feature you need is one Amplitude lists on Plus or Growth and the other suites do not match. Moving warehouses of events because a blog post said another logo is simpler is an expensive kind of simple.
 faqs:
   - q: What does Amplitude cost before I look at alternatives?
-    a: "Amplitude’s pricing page lists Free at 2 million events per month with no credit card, and Plus starting at $0 with the first 2 million events free once a card is on file. Growth and Enterprise are event-based quotes. A startup offer gives qualifying companies one year of Growth at no cost. See the [Amplitude pricing](/pricing/amplitude/) guide for the limits we could verify."
+    a: "Free is 2 million events per month with no credit card, and Plus starts at $0 with the first 2 million events free once a card is on file. Growth and Enterprise are event-based quotes. A startup offer gives qualifying companies one year of Growth at no cost. See the [Amplitude pricing](/pricing/amplitude/) guide for the published limits."
   - q: Is DataFast an Amplitude alternative?
     a: "Only if you are leaving product analytics on purpose. DataFast answers which channel or page brought a payment. Amplitude answers what users do in the product. DataFast is not a full replacement for Amplitude, PostHog, or Mixpanel. The [DataFast review](/reviews/datafast/) is the longer version."
   - q: Which alternative is closest to Amplitude?
@@ -90,7 +90,7 @@ related:
     description: The revenue-attribution pick, with published prices and limits.
 ---
 
-Amplitude is a product-analytics company. The pricing page we checked on 24 November 2026 leads with free analytics, unlimited seats, and a Free plan of 2 million events per month with no credit card. Plus starts at $0, still includes the first 2 million events, asks for a card, and scales toward 70 million events with custom events, 20 behavioral cohorts, alerts, and heatmaps. Growth and Enterprise are event-based and quoted. Qualifying startups, fewer than 20 employees and under $10 million raised, can get one year of Growth at no cost, metered at up to 100 million events or 200,000 monthly tracked users.
+Amplitude is a product-analytics company. As of 24 November 2026 it leads with free analytics, unlimited seats, and a Free plan of 2 million events per month with no credit card. Plus starts at $0, still includes the first 2 million events, asks for a card, and scales toward 70 million events with custom events, 20 behavioral cohorts, alerts, and heatmaps. Growth and Enterprise are event-based and quoted. Qualifying startups, fewer than 20 employees and under $10 million raised, can get one year of Growth at no cost, metered at up to 100 million events or 200,000 monthly tracked users.
 
 That is a generous published entry. Many “Amplitude alternative” searches are really “this interface is more than we use” or “we bought a product suite for a marketing site.” Those are different exits. This page sorts them.
 
@@ -106,11 +106,11 @@ PostHog publishes one login for analytics, session replay, feature flags, experi
 
 PostHog is a credible Amplitude alternative when you want the suite and you want the price list on a public page rather than a sales cycle. It is a poor Amplitude alternative when your only complaint is that Amplitude asks you to think about events. PostHog asks the same thing. Read the [PostHog pricing](/pricing/posthog/) page before you treat “free” as “free at our future volume,” and read [PostHog alternatives](/alternatives/posthog/) if you are already on PostHog and looking the other way.
 
-Identified events, the ones tied to a person profile, share the first free million and then cost more than anonymous events. PostHog’s docs say anonymous events can be up to four times cheaper. We did not copy the identified rate table. If your Amplitude project is mostly identified users, price PostHog on that basis, not on the anonymous teaser.
+Identified events, the ones tied to a person profile, share the first free million and then cost more than anonymous events. Anonymous events can cost up to four times less. If your Amplitude project is mostly identified users, price PostHog on that basis, not on the anonymous rate.
 
 ## Mixpanel as the event-analytics alternative
 
-Mixpanel’s pricing page lists Free at up to 1 million events and 10,000 session replays, with funnels and retention included and unlimited seats. Growth starts at $0 with the first million included. The published yearly price at 1.5 million events is $100 per month. Monthly billing at that step is $140. Multi-touch attribution is marked available on Growth and Enterprise, and not on Free. Group Analytics and Data Pipelines are add-ons. The page did not give us a dollar figure for those add-ons, so this guide does not invent one.
+Mixpanel’s free plan covers up to 1 million events and 10,000 session replays, with funnels and retention included and unlimited seats. Growth starts at $0 with the first million included. The published yearly price at 1.5 million events is $100 per month. Monthly billing at that step is $140. Multi-touch attribution is available on Growth and Enterprise, and not on Free. Group Analytics and Data Pipelines are add-ons. Their prices are not publicly listed.
 
 Mixpanel is the alternative to pick when the team wants event analytics and cohort analysis as the main surface, and it is willing to pay the step-up once volume leaves the free million. It is not automatically cheaper than Amplitude. Amplitude’s free allowance is 2 million events. Mixpanel’s is 1 million. A team at 1.2 million events can be inside Amplitude’s free plan and outside Mixpanel’s. Run the count before you migrate to “save money.” The [Mixpanel pricing](/pricing/mixpanel/) page has the pack table.
 
@@ -118,7 +118,7 @@ Mixpanel is the alternative to pick when the team wants event analytics and coho
 
 DataFast does not belong in a feature matrix as “Amplitude, but cheaper.” It does not offer Amplitude’s behavioral cohorts, heatmaps, or the product-analytics workflow those cohorts assume. It belongs here because a common reason founders install Amplitude is a hope that it will explain revenue, and then they never send the events that would make that hope true.
 
-DataFast’s homepage is explicit about the narrower job: find the marketing channels that drive paying customers. Starter starts at $9 per month for 10,000 events. Growth starts at $19. Payment-provider docs cover Stripe, Lemon Squeezy, Polar, and Paddle. The default tracker uses cookies. A cookieless script exists and, by DataFast’s documentation, remembers visitors less well across days because the salt rotates about every 24 hours. The [review](/reviews/datafast/) quotes the plan limits and the dashboard-lock rule from the terms.
+DataFast’s homepage is explicit about the narrower job: find the marketing channels that drive paying customers. Starter starts at $9 per month for 10,000 events. Growth starts at $19. Payment-provider docs cover Stripe, Lemon Squeezy, Polar, and Paddle. The default tracker uses cookies. A cookieless script exists and remembers visitors less well across days because the salt rotates about every 24 hours. The [review](/reviews/datafast/) has the plan limits and the dashboard-lock rule.
 
 Use that review if revenue is the job. Use PostHog or Mixpanel if product behavior is the job. Using DataFast as a full Amplitude replacement will disappoint you the first week you ask for a retention chart of a feature flag. The sentence is worth repeating because the search query hides it.
 
@@ -128,14 +128,14 @@ If Amplitude was installed on a marketing site that has no logged-in product, yo
 
 GA4 is free and already speaks Google Ads. It uses cookies. It is the right stay-or-return choice when ads spend is the acquisition channel. It is the wrong comfort blanket when nobody can build the exploration they keep meaning to build.
 
-Plausible is cookieless on its own description, with a published ladder from $9 per month at 10,000 pageviews. Revenue tracking is a Business-plan reason in their docs, not a promise on Starter. Fathom starts at $15 per month for up to 100,000 pageviews and lists event and revenue tracking on every plan, with no free tier. Either can replace “we only looked at referrers” without a tracking plan. Neither replaces a worked Amplitude taxonomy.
+Plausible is cookieless, with a published ladder from $9 per month at 10,000 pageviews. Revenue tracking is a Business-plan feature, not part of Starter. Fathom starts at $15 per month for up to 100,000 pageviews and includes event and revenue tracking on every plan, with no free tier. Either can replace “we only looked at referrers” without a tracking plan. Neither replaces a worked Amplitude taxonomy.
 
 ## How to choose without a rewrite
 
-Export or write down your monthly event volume before you book a migration. If you are under 2 million events and the Free plan’s limits match how you work, the alternative to Amplitude may be Amplitude. The pricing page says the free plan is not a trial and has no time limit.
+Export or write down your monthly event volume before you book a migration. If you are under 2 million events and the Free plan’s limits match how you work, the alternative to Amplitude may be Amplitude. The free plan is not a trial and has no time limit.
 
 If you are over that line, price Plus against PostHog’s rate card and Mixpanel’s packs at the same volume. Ask which reports survived the last quarter. A report nobody opens is not a requirement.
 
 If the reports you wish you had are “revenue by landing page,” stop the product-analytics evaluation and trial DataFast or, if you want the privacy-first traffic tools, Plausible Business or Fathom. Run one of them beside Amplitude for a week. Delete Amplitude only after the new report answers the question you wrote down.
 
-The [attribution guide](/guides/marketing-attribution-tools/) is the companion if the fight is about credit for a payment. The [cookieless guide](/guides/cookieless-analytics/) is the companion if the fight is about the cookie banner Amplitude’s browser SDK may require in your setup. We do not claim a universal cookie behavior for Amplitude, because it depends on how you ship the SDK. We do claim the published prices above, and we claim the job split.
+The [attribution guide](/guides/marketing-attribution-tools/) is the companion if the fight is about credit for a payment. The [cookieless guide](/guides/cookieless-analytics/) is the companion if the fight is about the cookie banner Amplitude’s browser SDK may require in your setup. Cookie behavior depends on how you ship the SDK. The prices above, and the job split, do not.

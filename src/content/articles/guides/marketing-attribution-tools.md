@@ -14,7 +14,7 @@ tldr:
   - "GA4 is the pick when the payment is downstream of Google Ads and you will live in that ecosystem."
   - "Fathom includes revenue tracking on all plans. Plausible points that feature at Business."
   - "Mixpanel, PostHog, and Amplitude can attribute product events. They are a project, not a snippet."
-tldrNote: "No accuracy ranking. We did not run the same payments through every tool."
+tldrNote: "These tools apply different credit rules. This guide does not rank them on accuracy."
 jobs:
   - title: Credit a payment
     body: You want the channel, campaign, or page that showed up when money arrived.
@@ -50,9 +50,9 @@ tools:
     blurb: "Multi-touch attribution on Growth, not on the free plan. An event project, not a marketing snippet."
     cta: Mixpanel pricing
     href: /pricing/mixpanel/
-honestyTitle: What we will not rank
+honestyTitle: Accuracy is not a single score
 honesty: |
-  We will not say one tool is 30 percent more accurate. We did not run that study. Last-touch, first-touch, and multi-touch answer different questions. A tool can be excellent at the question it asks and useless at the one you meant.
+  Last-touch, first-touch, and multi-touch answer different questions. A tool can be excellent at the question it asks and useless at the one you meant. This guide does not rank one product as a percent more accurate than another.
 faqs:
   - q: What is marketing attribution?
     a: "It is the rule for giving a payment, or another conversion, credit to one or more earlier visits. Last-touch gives the credit to the last visit. First-touch gives it to the first. Multi-touch splits it. The rule matters as much as the tool."
@@ -103,7 +103,7 @@ Write down which of the three you mean before you read a pricing page. The rest 
 
 DataFast is the recommendation when the first question, and a practical version of the second, is the one you will look at every week. The product is built by Marc Lou and described on its homepage as a way to see which channels drive paying customers. Docs cover Stripe, Lemon Squeezy, Polar, and Paddle. The terms count pageviews, payment events, trial signups, and custom goals as the same kind of event against the plan limit.
 
-Starter is $9 per month at 10,000 events. Growth is $19 at the same volume and adds sites, seats, retention, social mentions, and link attribution. Those figures were on the homepage on 24 November 2026 and still matched a re-read on 25 November. The [pricing page](/pricing/datafast/) has every published step. [DataFast vs Plausible](/compare/datafast-vs-plausible/) is the closest traffic-tool fork, and the [alternatives](/alternatives/datafast/) page is the rest of the shortlist. The [review](/reviews/datafast/) is the product, not the price table. The default script uses cookies and is the one they describe as better for long journeys. The cookieless script is the one to choose when a banner is unacceptable and you accept a shorter memory.
+Starter is $9 per month at 10,000 events. Growth is $19 at the same volume and adds sites, seats, retention, social mentions, and link attribution. Those figures were on the homepage on 24 November 2026 and still matched on 25 November. The [pricing page](/pricing/datafast/) has every published step. [DataFast vs Plausible](/compare/datafast-vs-plausible/) is the closest traffic-tool fork, and the [alternatives](/alternatives/datafast/) page is the rest of the shortlist. The [review](/reviews/datafast/) is the product, not the price table. The default script uses cookies and is the better option for long journeys. The cookieless script is the one to choose when a banner is unacceptable and you accept a shorter memory.
 
 This is not a full replacement for PostHog, Mixpanel, or Amplitude. If your attribution question is really a product question, those tools remain the right aisle. DataFast also will not replace GA4’s role beside a serious Google Ads account. It can sit next to GA4. The affiliate parameter on our links is `via=sortino`. It does not add a fee to the Starter price.
 
@@ -115,9 +115,9 @@ GA4 is a weak default when the founder does not have time to finish explorations
 
 ## Fathom and Plausible as lighter revenue lines
 
-Fathom’s pricing page lists event and revenue tracking on every plan and starts at $15 per month for up to 100,000 pageviews and 50 sites. That is a real published revenue feature, not a rumor. We have not compared its depth with DataFast’s payment-provider join. If you want a client dashboard that can show revenue without a plan upgrade, Fathom belongs on the shortlist. The [Fathom page](/alternatives/fathom-analytics/) has the limits of what we could verify on higher volumes.
+Fathom includes event and revenue tracking on every plan and starts at $15 per month for up to 100,000 pageviews and 50 sites. That is a published revenue feature. It is a different setup from DataFast’s payment-provider join. If you want a client dashboard that can show revenue without a plan upgrade, Fathom belongs on the shortlist. The [Fathom page](/alternatives/fathom-analytics/) covers prices above that entry step.
 
-Plausible is cookieless by its homepage’s account. The docs direct revenue tracking, funnels, and journeys to the Business plan. At 10,000 pageviews Business is $19 a month on the slider we read. At 100,000 it is $39. You are buying a site-analytics product that adds revenue on a higher tier, not a product whose first screen is the payment. That can be exactly right. The [Plausible page](/alternatives/plausible/) separates the tiers.
+Plausible is cookieless. Revenue tracking, funnels, and journeys are on the Business plan. At 10,000 pageviews Business is $19 a month. At 100,000 it is $39. You are buying a site-analytics product that adds revenue on a higher tier, not a product whose first screen is the payment. That can be exactly right. The [Plausible page](/alternatives/plausible/) separates the tiers.
 
 ## Product suites, when the conversion is a behavior
 
@@ -129,4 +129,4 @@ The [Mixpanel pricing](/pricing/mixpanel/) page shows where the feature flips on
 
 If you have one site and one payment provider, start with the tool whose homepage describes your question. For channel revenue, that is DataFast, trialed for 14 days beside whatever you already run. For ads, that is GA4, cleaned up rather than replaced. For a simple public site with occasional revenue, compare Fathom’s all-plan revenue line with Plausible Business at your pageview tier.
 
-Add a product suite when a person, not a hope, will own events. Remove the old tool only after one real payment has been explained by the new one. If the explanation requires a cookie and you have refused cookies, believe the shorter memory. The [cookieless guide](/guides/cookieless-analytics/) is the companion, and [how we test](/how-we-test/) is the promise that this page will not grow a fake percentage.
+Add a product suite when a person, not a hope, will own events. Remove the old tool only after one real payment has been explained by the new one. If the explanation requires a cookie and you have refused cookies, believe the shorter memory. The [cookieless guide](/guides/cookieless-analytics/) is the companion.

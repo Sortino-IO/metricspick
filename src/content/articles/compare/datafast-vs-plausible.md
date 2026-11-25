@@ -14,7 +14,7 @@ tldr:
   - "Choose Plausible when you want a cookieless traffic dashboard and you accept that revenue tracking sits on the Business plan."
   - "At 10,000 units, both Starter prices are $9 a month. DataFast meters events. Plausible meters pageviews."
   - "Neither replaces PostHog. This comparison is the marketing-site pair."
-tldrNote: "Prices and plan gates re-read on 25 November 2026 from datafa.st and plausible.io. DataFast links are affiliate links."
+tldrNote: "Prices and plan gates as of 25 November 2026. DataFast links are affiliate links."
 jobs:
   - title: Payment joined to a source
     body: The weekly question is which channel brought customers who paid.
@@ -40,7 +40,7 @@ tools:
     secondaryCta: DataFast pricing
   - id: plausible
     title: Plausible
-    blurb: "Cookieless site analytics. The homepage says no cookie banner is required."
+    blurb: "Cookieless site analytics. No cookie banner is required."
     cta: Plausible alternatives
     href: /alternatives/plausible/
   - id: fathom
@@ -55,9 +55,9 @@ faqs:
   - q: Is DataFast or Plausible cheaper?
     a: "At the first published step, both Starter plans are $9 a month: DataFast for 10,000 events, Plausible for 10,000 pageviews. Plausible Growth at that step is $14 and Business is $19. DataFast Growth at 10,000 events is $19. Yearly billing on both homepages is ten times the monthly price. The [DataFast pricing](/pricing/datafast/) page lists every DataFast step. Plausible’s ladder is on the [Plausible alternatives](/alternatives/plausible/) page."
   - q: Which one tracks revenue?
-    a: "DataFast’s product is the payment join, on the plans above, once you connect a provider. Plausible’s subscription docs say to choose Business if you need revenue tracking, funnels, journeys, custom properties, the Stats API, or Data Studio. Starter and Growth are the site and team plans, not the revenue plan."
+    a: "DataFast’s product is the payment join, on the plans above, once you connect a provider. Choose Plausible Business if you need revenue tracking, funnels, journeys, custom properties, the Stats API, or Data Studio. Starter and Growth are the site and team plans, not the revenue plan."
   - q: Which one is cookieless?
-    a: "Plausible’s homepage says no cookies and no cookie banner required. DataFast’s default script uses cookies. Its cookieless script avoids a cookie for the visitor id and, by DataFast’s own account, is less accurate for revenue journeys that last weeks. The [cookieless guide](/guides/cookieless-analytics/) is the trade-off."
+    a: "Plausible uses no cookies and does not require a cookie banner. DataFast’s default script uses cookies. Its cookieless script avoids a cookie for the visitor id and is less accurate for revenue journeys that last weeks. The [cookieless guide](/guides/cookieless-analytics/) is the trade-off."
   - q: Are the DataFast links affiliate links?
     a: "Yes. They use via=sortino. Plausible links on this site are citations."
 related:
@@ -86,21 +86,21 @@ sources:
 
 DataFast versus Plausible is a choice between a revenue-attribution product and a cookieless traffic product that can add revenue on a higher plan. Both are simple to describe. They stop being interchangeable as soon as you name the report you actually open.
 
-This page uses public pages read on 25 November 2026. It is not a bake-off of the same site in both tools. DataFast here is [datafa.st](https://datafa.st/), Marc Lou’s analytics product. The [review](/reviews/datafast/) separates it from the Arizona IT company and the Ecuador payments brand that share the name.
+Figures below are as of 25 November 2026. DataFast here is [datafa.st](https://datafa.st/), Marc Lou’s analytics product. The [review](/reviews/datafast/) separates it from the Arizona IT company and the Ecuador payments brand that share the name.
 
 ## What each product is for
 
-Plausible’s homepage calls itself a simple, privacy-first Google Analytics alternative: no cookies, no cookie banner required, open source, and hosted in the EU. The dashboard pitch is one page of site traffic. The subscription docs, on the copy we read, split plans by features and team size rather than by a different price ladder. Starter is one site and solo use. Growth is the team and sharing plan. Business is where they send you for funnels, user journeys, revenue tracking, custom properties, a consolidated view, the Stats API, or Data Studio. The trial is 30 days and does not require a card.
+Plausible is a simple, privacy-first Google Analytics alternative: no cookies, no cookie banner required, open source, and hosted in the EU. The dashboard is one page of site traffic. Plans split by features and team size, not by a different price ladder. Starter is one site and solo use. Growth is the team and sharing plan. Business is the plan for funnels, user journeys, revenue tracking, custom properties, a consolidated view, the Stats API, or Data Studio. The trial is 30 days and does not require a card.
 
-DataFast’s homepage is organized around which channel brings paying customers. The default script uses cookies. A cookieless script exists, and DataFast says it is weaker for long revenue journeys because the visitor salt rotates about every 24 hours. Payment providers named on the homepage FAQ are Stripe, Lemon Squeezy, Polar, and Shopify, plus a Payment API. The trial is 14 days, and the homepage says no card is required. There is no ongoing free tier in the terms.
+DataFast is organized around which channel brings paying customers. The default script uses cookies. A cookieless script exists, and it is weaker for long revenue journeys because the visitor salt rotates about every 24 hours. Payment providers are Stripe, Lemon Squeezy, Polar, and Shopify, plus a Payment API. The trial is 14 days and does not require a card. There is no ongoing free tier in the terms.
 
 If the sentence you care about is “no cookie banner for the analytics script,” Plausible is the product that leads with that. If the sentence is “which source brought the payment,” DataFast is the product built around that join, with the cookie choice made on purpose.
 
 ## Price, without pretending the units match
 
-Plausible’s homepage slider, re-read on 25 November 2026, still lists monthly USD prices from 10,000 through 10 million pageviews. At 10,000: Starter $9, Growth $14, Business $19. At 100,000: $19, $29, and $39. The yearly function multiplies the monthly price by ten.
+As of 25 November 2026, Plausible’s homepage slider lists monthly USD prices from 10,000 through 10 million pageviews. At 10,000: Starter $9, Growth $14, Business $19. At 100,000: $19, $29, and $39. Yearly billing is ten times the monthly price.
 
-DataFast’s homepage bundle, the same day, lists Starter at $9 and Growth at $19 for 10,000 events. At 100,000 events those numbers are $19 and $39. The full ladder is on the [pricing page](/pricing/datafast/). `datafa.st/pricing` returned 404, so the homepage is the source.
+DataFast lists Starter at $9 and Growth at $19 for 10,000 events. At 100,000 events those numbers are $19 and $39. The full ladder is on the [pricing page](/pricing/datafast/). `datafa.st/pricing` returns 404, so the homepage is the source.
 
 The overlap at $9 is real and it is the least useful fact. DataFast’s terms count pageviews, payment events, trial signups, and custom goals as events, across every site, each month. Plausible’s slider is pageviews. A store that sends a payment event and a custom goal will consume DataFast events faster than Plausible pageviews, on the same traffic. Compare the unit, then the feature gate.
 

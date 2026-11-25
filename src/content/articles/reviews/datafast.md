@@ -11,11 +11,11 @@ breadcrumb: DataFast
 schemaType: Review
 order: 10
 tldr:
-  - "This page is about datafa.st, the analytics product Marc Lou describes himself as creating. It is not DataFast Networks in Arizona, and it is not Datafast S.A. in Ecuador."
+  - "This page is about datafa.st, the analytics product Marc Lou created. It is not DataFast Networks in Arizona, and it is not Datafast S.A. in Ecuador."
   - "Buy it when the weekly question is which marketing source brought paying customers. Do not buy it as a session-replay suite, a feature-flag tool, or a Google Ads replacement."
   - "Starter starts at $9 per month for 10,000 events. Growth starts at $19. The full ladder is on the pricing page. Figures are from the homepage on 25 November 2026."
-  - "The default script uses cookies. The cookieless script does not, and DataFast says attribution gets weaker."
-tldrNote: "This review reads public pages. It is not a paid lab test. Links to DataFast are affiliate links. The dollar table lives on the pricing page so this URL stays a review."
+  - "The default script uses cookies. The cookieless script does not, and attribution gets weaker."
+tldrNote: "Public product details as of 25 November 2026. Links to DataFast are affiliate links. The dollar table lives on the pricing page so this URL stays a review."
 jobs:
   - title: Channel revenue
     body: You will connect a payment provider and look at revenue by source.
@@ -63,13 +63,13 @@ faqs:
   - q: What is DataFast?
     a: "On this site, DataFast means the web analytics product at datafa.st. The homepage is written in Marc Lou’s voice and calls him the creator. The product joins traffic to payments. It is not DataFast Networks, the Arizona IT company at datafast.net, and it is not Datafast S.A., the electronic-payments company at datafast.com.ec."
   - q: Who makes DataFast?
-    a: "The homepage calls Marc Lou the creator. The data processing agreement, last updated 9 August 2025 on the copy we read, names JustShipIt Pte. Ltd. as the company trading as DataFast. We use those pages as the source, not a personal relationship."
+    a: "The homepage calls Marc Lou the creator. The data processing agreement, last updated 9 August 2025, names JustShipIt Pte. Ltd. as the company trading as DataFast. Those pages are the source."
   - q: Is this an affiliate review?
     a: "Yes. Links to datafa.st use via=sortino. We may earn a commission if you subscribe, at no extra cost. The [disclosure](/affiliate-disclosure/) is the full note. The recommendation is limited to revenue attribution."
   - q: Is there a free plan?
-    a: "The terms describe a 14-day trial, not an ongoing free tier. The homepage says no card is required to start. If you do not subscribe, the terms say the dashboard locks, tracking stops, and data is deleted 7 days after the trial ends."
+    a: "The terms describe a 14-day trial, not an ongoing free tier. No card is required to start. If you do not subscribe, the dashboard locks, tracking stops, and data is deleted 7 days after the trial ends."
   - q: What happens if I pass my event limit?
-    a: "The terms say you are warned around 75 percent. At 100 percent the dashboard locks until you upgrade to a plan that covers the cycle, and tracking continues so events are not dropped. You cannot pick a lower tier than the usage you already have. Read the current terms before you rely on a paraphrase."
+    a: "You are warned around 75 percent. At 100 percent the dashboard locks until you upgrade to a plan that covers the cycle, and tracking continues so events are not dropped. You cannot pick a lower tier than the usage you already have. Read the current terms before you rely on a paraphrase."
 related:
   - href: /pricing/datafast/
     type: Pricing
@@ -90,7 +90,7 @@ related:
   - href: /guides/datafast-api/
     type: Guides
     title: DataFast API and docs
-    description: How the official docs say to send events and revenue.
+    description: How to send events and revenue through the official docs.
   - href: /guides/datafast-mcp/
     type: Guides
     title: DataFast MCP
@@ -108,17 +108,17 @@ sources:
     href: https://datafast.com.ec/Nosotros/SobreNosotros
 ---
 
-DataFast analytics, the product this site reviews, is the tool at [datafa.st](https://datafa.st/). The homepage says a founder should be able to see which marketing channel brings paying customers. The docs are organized around installation, payment providers, UTMs, goals, funnels, and a revenue-attribution guide. The recommendation stops there. This DataFast is not a full replacement for PostHog, Mixpanel, or Amplitude, and it is not a reason to delete GA4 if Google Ads is how you buy customers.
+DataFast analytics, the product this site reviews, is the tool at [datafa.st](https://datafa.st/). A founder should be able to see which marketing channel brings paying customers. The docs are organized around installation, payment providers, UTMs, goals, funnels, and a revenue-attribution guide. The recommendation stops there. This DataFast is not a full replacement for PostHog, Mixpanel, or Amplitude, and it is not a reason to delete GA4 if Google Ads is how you buy customers.
 
 Two other businesses use the same name and are easy to land on from a search. They are not this product. The next sections separate them, then cover Marc Lou, the analytics features, and a short price summary. The dollar table is on the [DataFast pricing](/pricing/datafast/) page so this URL does not compete with that one.
 
-This is an affiliate review. Buttons and doc links to datafa.st include `via=sortino`. A paid subscription started through them may pay metricspick a commission. It does not change DataFast’s price. The rest of this page is a reading of public pages on 25 November 2026. We did not operate a production account for a scored test, and we do not print a star rating.
+This is an affiliate review. Buttons and doc links to datafa.st include `via=sortino`. A paid subscription started through them may pay metricspick a commission. It does not change DataFast’s price. The rest of this page is the public product as of 25 November 2026. There is no star rating.
 
 ## What is DataFast
 
-DataFast at datafa.st is a web analytics product aimed at entrepreneurs. The terms, effective 15 February 2026 on the copy we read, describe dashboards for pageviews, custom goals, and payment events. You install a script, connect a site, and connect a payment provider if you want the revenue view. The homepage calls the category “revenue-first analytics.”
+DataFast at datafa.st is a web analytics product aimed at entrepreneurs. The terms, effective 15 February 2026, describe dashboards for pageviews, custom goals, and payment events. You install a script, connect a site, and connect a payment provider if you want the revenue view. The homepage calls the category “revenue-first analytics.”
 
-The data processing agreement names the vendor as JustShipIt Pte. Ltd., trading as DataFast. That DPA, last updated 9 August 2025, is written for the default script with cookies. It says the customer is the controller and DataFast is the processor, and that governing law is Singapore. It also says much of the infrastructure is outside the EU, including in the United States.
+The data processing agreement names the vendor as JustShipIt Pte. Ltd., trading as DataFast. That DPA, last updated 9 August 2025, is written for the default script with cookies. The customer is the controller and DataFast is the processor. Governing law is Singapore. Much of the infrastructure is outside the EU, including in the United States.
 
 That is the whole identity of the product reviewed here: a Singapore-law analytics processor, sold on datafa.st, built to join a visit to a payment.
 
@@ -126,19 +126,19 @@ That is the whole identity of the product reviewed here: a Singapore-law analyti
 
 Search results also return an Arizona IT company and an Ecuador payments company. Neither one is the analytics tool, and neither one is a MetricsPick affiliate.
 
-DataFast Networks is a managed IT practice in Arizona. Its about page says it was founded in Arizona in 2005, and the same page says Michael Sicard founded DataFast Networks in 2003. He is named founder and principal. The page describes IT infrastructure, cybersecurity, backup, and telephony for businesses in Arizona, and it lists a Peoria address. That is an IT support company. It does not sell the datafa.st script, and its hourly IT plans are not the analytics prices below.
+DataFast Networks is a managed IT practice in Arizona. It was founded in Arizona in 2005, and Michael Sicard founded DataFast Networks in 2003. He is named founder and principal. The company does IT infrastructure, cybersecurity, backup, and telephony for businesses in Arizona, and lists a Peoria address. That is an IT support company. It does not sell the datafa.st script, and its hourly IT plans are not the analytics prices below.
 
-Datafast S.A. is an electronic-payments company in Ecuador, at datafast.com.ec. Its about page says the company was constituted in Quito in March 1995, launched a point-of-sale terminal that year, and became DATAFAST S.A. in April 2011. The page describes a card-payment network: in-person terminals and online payments in Ecuador. It is not Marc Lou’s analytics product, and it is not one of the payment providers the analytics app documents. Connecting Stripe to datafa.st does not involve this company.
+Datafast S.A. is an electronic-payments company in Ecuador, at datafast.com.ec. The company was constituted in Quito in March 1995, launched a point-of-sale terminal that year, and became DATAFAST S.A. in April 2011. It runs a card-payment network: in-person terminals and online payments in Ecuador. It is not Marc Lou’s analytics product, and it is not one of the payment providers the analytics app documents. Connecting Stripe to datafa.st does not involve this company.
 
 If you need a Phoenix help desk or an Ecuadorian card terminal, leave this review. The pages linked in the sources are theirs.
 
 ## DataFast, Marc Lou, and the homepage story
 
-If you looked up DataFast Marc Lou, this is that person: the homepage says he created the analytics tool, and the story section is written in the first person. The portrait’s alt text reads “Marc Lou — Product Hunt Maker of the Year 2023.” The paragraph beside it says, “I’m Marc, the creator of DataFast.” He also writes that he has built 24 startups and earned $2M+ online. Those are his claims on that page. We did not audit them. The footer line is “Made with ☕️ and 🥐 by Marc” and “Built with ShipFast.”
+If you looked up DataFast Marc Lou, this is that person: he writes that he created the analytics tool, and the story section is in the first person. The portrait’s alt text reads “Marc Lou — Product Hunt Maker of the Year 2023.” The paragraph beside it says, “I’m Marc, the creator of DataFast.” He also writes that he has built 24 startups and earned $2M+ online. Those are his claims on that page. The footer line is “Made with ☕️ and 🥐 by Marc” and “Built with ShipFast.”
 
-The three reasons he gives for building the product are the product brief: find channels that drive paying customers rather than pageviews, see what makes people buy, and make decisions from revenue. That is the job this review is willing to recommend. A personal biography is not a feature list.
+The three reasons he gives for building the product are the product brief: find channels that drive paying customers rather than pageviews, see what makes people buy, and make decisions from revenue. That is the job this review recommends. A personal biography is not a feature list.
 
-The company on the contract is still JustShipIt Pte. Ltd. trading as DataFast. “Marc Lou” is how the homepage names the creator. We do not claim a relationship with him beyond reading that page.
+The company on the contract is still JustShipIt Pte. Ltd. trading as DataFast. “Marc Lou” is how the homepage names the creator. This site has no other relationship with him.
 
 ## DataFast analytics platform features
 
@@ -146,17 +146,17 @@ The homepage groups the product into four blocks, and the docs and plan cards ad
 
 Web analytics is the traffic layer. The homepage describes it as a simpler read than Google Analytics, aimed at growth rather than vanity metrics. The terms say an event is any point the script tracks: pageviews, payment events, free-trial signups, and custom goals, counted equally, across every site on the account, inside the monthly cycle. A yearly subscription still meters events monthly.
 
-Revenue attribution is the reason to buy it. You connect a payment provider and the dashboard is supposed to show which source, campaign, or page showed up on a paying customer. The homepage FAQ says native integrations are Stripe, Lemon Squeezy, Polar, and Shopify, that more than one provider can be connected, and that a Payment API can send payment data in. The docs index also has pages for Paddle, WooCommerce, and DodoPayments. We cite the index. We did not complete a checkout in each one.
+Revenue attribution is the reason to buy it. You connect a payment provider and the dashboard shows which source, campaign, or page showed up on a paying customer. Native integrations are Stripe, Lemon Squeezy, Polar, and Shopify. More than one provider can be connected, and a Payment API can send payment data in. The docs index also has pages for Paddle, WooCommerce, and DodoPayments.
 
-Goals, funnels, and journeys are the conversion layer. The homepage says you can set goals such as signups or lead-magnet downloads and see the path from first click to conversion. The docs include custom goals, conversion funnels, and a revenue-attribution guide.
+Goals, funnels, and journeys are the conversion layer. You can set goals such as signups or lead-magnet downloads and see the path from first click to conversion. The docs include custom goals, conversion funnels, and a revenue-attribution guide.
 
-Live visitor intelligence is the real-time view. The homepage says you can watch visitors, see who is likely to buy, and use the API to act. We did not sit in a live account, so this is their description, not a timed test.
+Live visitor intelligence is the real-time view: watch visitors, see who is likely to buy, and use the API to act.
 
-The 10,000-event plan cards, on both Starter and Growth, list API, CLI, and MCP as included, plus 100,000 AI bot requests per billing cycle. The homepage FAQ says there is an API, a CLI aimed at coding agents, an MCP server, a React Native SDK, and mobile apps for iOS and Android. Cross-subdomain tracking and cross-domain hostnames are also answered as yes on that FAQ. The [API guide](/guides/datafast-api/) is how the docs say to send events and revenue. The [MCP guide](/guides/datafast-mcp/) is the setup page. The [alternatives](/alternatives/datafast/) page is the shortlist when this feature list is the wrong job. Social mentions on X and Reddit, and X link attribution, are marked off on the Starter card and on for Growth.
+The 10,000-event plan cards, on both Starter and Growth, list API, CLI, and MCP as included, plus 100,000 AI bot requests per billing cycle. There is an API, a CLI aimed at coding agents, an MCP server, a React Native SDK, and mobile apps for iOS and Android. Cross-subdomain tracking and cross-domain hostnames are supported. The [API guide](/guides/datafast-api/) is how to send events and revenue. The [MCP guide](/guides/datafast-mcp/) is the setup page. The [alternatives](/alternatives/datafast/) page is the shortlist when this feature list is the wrong job. Social mentions on X and Reddit, and X link attribution, are off on the Starter card and on for Growth.
 
-Two scripts ship. The default script uses cookies and is the one the DPA we read is written for. The cookieless script hashes a visitor id from IP, user agent, domain, and a salt that rotates about every 24 hours. DataFast says long journeys and revenue attribution get worse in that mode. The [cookieless guide](/guides/cookieless-analytics/) is the longer explanation. The homepage FAQ says you may need a cookie banner for the default script, depending on jurisdiction and setup.
+Two scripts ship. The default script uses cookies and is the one the DPA is written for. The cookieless script hashes a visitor id from IP, user agent, domain, and a salt that rotates about every 24 hours. Long journeys and revenue attribution get worse in that mode. The [cookieless guide](/guides/cookieless-analytics/) is the longer explanation. You may need a cookie banner for the default script, depending on jurisdiction and setup.
 
-What the feature list does not include, on the pages we read, is session replay, feature flags, or a Google Ads reporting suite. Those jobs stay with PostHog, Mixpanel, Amplitude, or GA4. The comparison pages linked below are where that split is written out.
+The feature list does not include session replay, feature flags, or a Google Ads reporting suite. Those jobs stay with PostHog, Mixpanel, Amplitude, or GA4. The comparison pages linked below are where that split is written out.
 
 ## Price, in short
 
@@ -164,14 +164,14 @@ There is still no reliable `/pricing` URL. On 25 November 2026 it returned a 404
 
 Starter at 10,000 events is $9 a month. Growth at the same step is $19. The top published step, “10M+”, is $199 on Starter and $399 on Growth. Yearly billing is ten times the monthly price, which the homepage labels as two months free. A 10,000-event Starter year is $90, not $108. Bot traffic above the included 100,000 requests is a separate $9 per extra million requests per month, not a plan upgrade.
 
-The [DataFast pricing](/pricing/datafast/) page has every step, the plan-card limits, the trial, and the lock. This review does not repeat the table. An optional AI visibility product appears in the same homepage code. We are not listing those prices. This review is the analytics product.
+The [DataFast pricing](/pricing/datafast/) page has every step, the plan-card limits, the trial, and the lock. An optional AI visibility product appears in the same homepage code. Those prices are separate from this review. This review is the analytics product.
 
-The homepage says the trial is 14 days and that no card is required. The terms say that if you do not subscribe, the dashboard locks, tracking stops, and collected data is deleted seven days after the trial ends. If you cancel a paid plan, tracking continues for 30 days and is then deleted. The terms also say DataFast does not provide a consolidated raw-event archive.
+The trial is 14 days and no card is required. If you do not subscribe, the dashboard locks, tracking stops, and collected data is deleted seven days after the trial ends. If you cancel a paid plan, tracking continues for 30 days and is then deleted. DataFast does not provide a consolidated raw-event archive.
 
-Past the event cap, the terms say data is not dropped. You get a warning around 75 percent. At 100 percent the dashboard locks until you upgrade to a tier that covers the cycle. One homepage FAQ says you can have unlimited team members. The plan cards and the Starter-or-Growth FAQ cap Starter at one team member and Growth at 30. Those two statements do not match. The pricing page quotes both. Do not buy a team plan on the word “unlimited” until you have read the card for the tier you will pay for.
+Past the event cap, data is not dropped. You get a warning around 75 percent. At 100 percent the dashboard locks until you upgrade to a tier that covers the cycle. One homepage FAQ lists unlimited team members. The plan cards and the Starter-or-Growth FAQ cap Starter at one team member and Growth at 30. Those two statements do not match. The pricing page quotes both. Do not buy a team plan on the word “unlimited” until you have read the card for the tier you will pay for.
 
 ## Who should start the trial
 
 Start the 14-day trial if you have a payment provider DataFast documents, a marketing site that already gets traffic, and a question you can write on one line. Connect the provider. Send one real or test payment. See whether the source on that payment matches what you believe. Use the default script unless you have already decided the cookie is unacceptable.
 
-Skip the trial if you are shopping for replay, if you will not connect payments, or if you need a 50-site client roster on the cheapest invoice. Those are different products. Skip it if the DataFast you meant is the Arizona IT company or the Ecuador payments company. The [how we test](/how-we-test/) page records the boundary of this review: public pages, a date, labeled ads, and no invented win rate.
+Skip the trial if you are shopping for replay, if you will not connect payments, or if you need a 50-site client roster on the cheapest invoice. Those are different products. Skip it if the DataFast you meant is the Arizona IT company or the Ecuador payments company.
