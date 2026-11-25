@@ -1,4 +1,5 @@
 ---
+import EmailAddress from "../components/EmailAddress.astro";
 import Simple from "../layouts/Simple.astro";
 ---
 <Simple
@@ -8,7 +9,7 @@ import Simple from "../layouts/Simple.astro";
   lede="The useful notes are corrections: a price that changed, a doc we misread, or a job we assigned to the wrong tool."
   crumbs={[{ href: "/", label: "Home" }, { label: "Contact" }]}
 >
-  <p>Email the editors at <a href="mailto:hello@metricspick.com">hello@metricspick.com</a>. This is the address reserved for the site. If you write before the mailbox is fully confirmed, include a link to the page and the sentence you are questioning so the note is still usable.</p>
-  <p>There is no form on this page, and the page does not run client-side JavaScript beyond the site-wide affiliate click listener described in the <a href="/privacy/">privacy</a> note. A correction about a price should point at the vendor’s current page. Our method and the 24 November 2026 check are explained in <a href="/how-we-test/">how we test</a>.</p>
+  <p>Email the editors at <EmailAddress />. Include a link to the page and the sentence you are questioning.</p>
+  <p>A correction about a price should point at the vendor’s current page. Our method and the 24 November 2026 check are explained in <a href="/how-we-test/">how we test</a>. Accessibility barriers can also go to the address on the <a href="/accessibility/">accessibility statement</a>.</p>
   <p>We do not offer setup calls, migrations, or paid placement. Product questions about DataFast itself belong with DataFast. Questions about a comparison belong here. The <a href="/affiliate-disclosure/">affiliate disclosure</a> explains the DataFast links.</p>
 </Simple>

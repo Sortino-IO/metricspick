@@ -79,6 +79,38 @@ const graph: Record<string, unknown>[] = [
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogUrl} />
     <JsonLd data={graph} />
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("consent", "default", {
+        ad_storage: "denied",
+        ad_user_data: "denied",
+        ad_personalization: "denied",
+        analytics_storage: "denied",
+        wait_for_update: 500,
+        region: ["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","GB","CH"]
+      });
+      gtag("consent", "default", {
+        ad_storage: "granted",
+        ad_user_data: "granted",
+        ad_personalization: "granted",
+        analytics_storage: "granted"
+      });
+      gtag("set", "ads_data_redaction", true);
+      gtag("set", "url_passthrough", false);
+      try {
+        var saved = JSON.parse(localStorage.getItem("metricspick-consent") || "null");
+        if (saved && (saved.choice === "accepted" || saved.choice === "rejected") && saved.exp > Date.now()) {
+          var state = saved.choice === "accepted" ? "granted" : "denied";
+          gtag("consent", "update", {
+            ad_storage: state,
+            ad_user_data: state,
+            ad_personalization: state,
+            analytics_storage: state
+          });
+        }
+      } catch (e) {}
+    </script>
     {gtm && (
       <script is:inline define:vars={{ gtm }}>
         (function (w, d, s, l, i) {
@@ -97,7 +129,7 @@ const graph: Record<string, unknown>[] = [
   <body>
     {gtm && (
       <noscript>
-        <iframe src={`https://www.googletagmanager.com/ns.html?id=${gtm}`} height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe>
+        <iframe class="gtm-noscript" src={`https://www.googletagmanager.com/ns.html?id=${gtm}`} height="0" width="0" title="Google Tag Manager"></iframe>
       </noscript>
     )}
     <a class="skip" href="#main">Skip to content</a>
@@ -105,6 +137,56 @@ const graph: Record<string, unknown>[] = [
     <Disclosure />
     <slot />
     <Footer />
+    <div id="consent-banner" class="consent-banner" role="dialog" aria-label="Cookie consent" hidden>
+      <p>Analytics cookies stay off in the EEA, the UK, and Switzerland until you choose. Your choice is saved in this browser for six months.</p>
+      <div class="consent-actions">
+        <a href="/privacy/">Privacy policy</a>
+        <button type="button" class="btn consent-choice" id="consent-reject">Reject</button>
+        <button type="button" class="btn consent-choice" id="consent-accept">Accept</button>
+      </div>
+    </div>
+    <script is:inline>
+      (function () {
+        var KEY = "metricspick-consent";
+        var TTL = 183 * 24 * 60 * 60 * 1000;
+        var banner = document.getElementById("consent-banner");
+        var accept = document.getElementById("consent-accept");
+        var reject = document.getElementById("consent-reject");
+        var opener = document.getElementById("cookie-settings");
+        function read() {
+          try {
+            var data = JSON.parse(localStorage.getItem(KEY) || "null");
+            if (!data || (data.choice !== "accepted" && data.choice !== "rejected") || typeof data.exp !== "number" || Date.now() > data.exp) return null;
+            return data.choice;
+          } catch (e) { return null; }
+        }
+        function needsBanner() {
+          var tz = "";
+          try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ""; } catch (e) { return true; }
+          if (!tz) return true;
+          if (tz.indexOf("Europe/") === 0) return true;
+          return tz === "Atlantic/Reykjavik" || tz === "Atlantic/Faroe" || tz === "Atlantic/Canary" || tz === "Atlantic/Azores" || tz === "Atlantic/Madeira" || tz === "Arctic/Longyearbyen";
+        }
+        function show(focus) {
+          if (!banner) return;
+          banner.hidden = false;
+          if (focus && reject) reject.focus();
+        }
+        function choose(choice) {
+          var state = choice === "accepted" ? "granted" : "denied";
+          var update = { ad_storage: state, ad_user_data: state, ad_personalization: state, analytics_storage: state };
+          window.dataLayer = window.dataLayer || [];
+          if (typeof gtag === "function") gtag("consent", "update", update);
+          try { localStorage.setItem(KEY, JSON.stringify({ choice: choice, exp: Date.now() + TTL })); } catch (e) {}
+          window.dataLayer.push({ event: "consent_update", consent_choice: choice });
+          if (banner) banner.hidden = true;
+        }
+        if (!read() && needsBanner()) show(false);
+        if (accept) accept.addEventListener("click", function () { choose("accepted"); });
+        if (reject) reject.addEventListener("click", function () { choose("rejected"); });
+        if (opener) opener.addEventListener("click", function () { show(true); });
+      })();
+    </script>
     <script is:inline>
       (function () {
         document.addEventListener("click", function (event) {
@@ -123,6 +205,11 @@ const graph: Record<string, unknown>[] = [
           });
         });
       })();
+      document.querySelectorAll("[data-email-user]").forEach(function (el) {
+        var addr = el.getAttribute("data-email-user") + "@" + el.getAttribute("data-email-host") + "." + el.getAttribute("data-email-tld");
+        el.textContent = addr;
+        el.setAttribute("href", "mailto:" + addr);
+      });
     </script>
   </body>
 </html>
