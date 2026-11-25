@@ -8,7 +8,7 @@ import { tools, rows, comparisons } from "../data/catalog";
 const home = comparisons["ga-alternatives"];
 const table = rows(home.ids, home.highlight);
 const description =
-  "A DataFast review, pricing, and comparisons for founders. DataFast is the revenue tool to trial when the question is which channel brings paying customers, and Plausible, Fathom, GA4, or PostHog when a different job fits.";
+  "An independent DataFast review for founders, with pricing and comparisons to Plausible, Fathom, GA4, and PostHog. See which tool fits the questions you want to answer.";
 ---
 <Base title="DataFast review, pricing, and comparisons for founders" description={description}>
   <main id="main">
@@ -17,7 +17,7 @@ const description =
         <div>
           <p class="kicker">DataFast, compared with the alternatives</p>
           <h1>DataFast review, pricing, and <span class="grad">comparisons for founders</span></h1>
-          <p class="lede">Independent notes on DataFast, the revenue analytics tool at datafa.st, for founders, indie hackers, and SaaS owners. The ranking follows one question: which channel brings paying customers. A different tool is the fit when the question is different.</p>
+          <p class="lede">Our independent review of DataFast, the revenue analytics tool at datafa.st, is for founders, indie hackers, and SaaS owners. We compare tools by how well they show which marketing channels bring in paying customers. We also explain when another tool makes more sense.</p>
           <div class="hero-actions">
             <Button href="/reviews/datafast/">Read the DataFast review</Button>
             <Button href="/pricing/datafast/" variant="secondary">DataFast pricing</Button>
@@ -30,7 +30,7 @@ const description =
             <span class="sticker">Example</span>
           </div>
           <p class="pick-label">DataFast</p>
-          <p class="pick-role">Best when you want to see which marketing channel brings paying customers.</p>
+          <p class="pick-role">Our choice for seeing which marketing channels bring in paying customers.</p>
           <div class="bars">
             <div class="bar-row"><span class="name">Organic</span><div class="track"><div class="fill w48"></div></div><span class="amt">48%</span></div>
             <div class="bar-row"><span class="name">X / social</span><div class="track"><div class="fill w24"></div></div><span class="amt">24%</span></div>
@@ -45,14 +45,14 @@ const description =
     <section class="section s-picks" id="picks" aria-labelledby="picks-title">
       <div class="wrap">
         <div class="section-head">
-          <h2 id="picks-title">Top picks, by job to be done</h2>
-          <p>One tool rarely wins every job. DataFast is the pick when the question is which channel brings paying customers. It is not a full replacement for PostHog, Mixpanel, or Amplitude. <a href="/alternatives/amplitude/">Amplitude has its own guide</a>.</p>
+          <h2 id="picks-title">Our top picks for different analytics needs</h2>
+          <p>We recommend DataFast for finding out which channels bring in paying customers. If you need a full product analytics suite, consider PostHog, Mixpanel, or Amplitude. <a href="/alternatives/amplitude/">Amplitude has its own guide</a>.</p>
         </div>
         <div class="picks">
           <article class="pick-card" data-tool="datafast">
             <span class="pick-badge">Our pick for revenue</span>
             <div class="pick-top"><h3>DataFast</h3><span class="role">Revenue-first web analytics</span></div>
-            <p>Best when you want a simple view of which marketing channel brings paying customers, joined to Stripe and the other payment tools DataFast documents.</p>
+            <p>DataFast connects to Stripe and the other payment tools listed in its docs. You can see which marketing channels bring in paying customers in one dashboard.</p>
             <p class="price">{tools.datafast.priceLabel}</p>
             <p class="card-links">
               <AffiliateLink placement="home-pick">Visit DataFast</AffiliateLink>
@@ -61,31 +61,31 @@ const description =
           </article>
           <article class="pick-card" data-tool="plausible">
             <div class="pick-top"><h3>Plausible</h3><span class="role">Best lightweight privacy analytics</span></div>
-            <p>A clean, cookieless traffic picture. Revenue tracking sits on the Business plan, not on every tier.</p>
+            <p>Plausible gives you a clear view of site traffic without cookies. Revenue tracking requires the Business plan.</p>
             <p class="price">{tools.plausible.priceLabel}</p>
             <p class="card-links"><Button href="/alternatives/plausible/" variant="secondary" size="sm">Read the overview</Button></p>
           </article>
           <article class="pick-card" data-tool="fathom">
             <div class="pick-top"><h3>Fathom</h3><span class="role">Best simple privacy-first analytics</span></div>
-            <p>Minimal, fast, and easy to explain to a client. Fathom’s pricing page includes event and revenue tracking on every plan.</p>
+            <p>Fathom has a simple, fast dashboard that’s easy to walk clients through. Its pricing page lists event and revenue tracking on every plan.</p>
             <p class="price">{tools.fathom.priceLabel}</p>
             <p class="card-links"><Button href="/alternatives/fathom-analytics/" variant="secondary" size="sm">Read the overview</Button></p>
           </article>
           <article class="pick-card" data-tool="posthog">
             <div class="pick-top"><h3>PostHog</h3><span class="role">Best product analytics suite</span></div>
-            <p>Session replay, feature flags, funnels and events in one product suite. Right when you are instrumenting a product, not only a marketing site.</p>
+            <p>PostHog brings session replay, feature flags, funnels, and event tracking together. It’s a good fit when you want to track how people use your product.</p>
             <p class="price">{tools.posthog.priceLabel}</p>
             <p class="card-links"><Button href="/pricing/posthog/" variant="secondary" size="sm">See pricing notes</Button></p>
           </article>
           <article class="pick-card" data-tool="ga4">
-            <div class="pick-top"><h3>Google Analytics 4</h3><span class="role">Best if you already live in Google</span></div>
-            <p>Free, everywhere, and deep if you invest the time. The cost is complexity, cookies, and a setup many small teams leave half finished.</p>
+            <div class="pick-top"><h3>Google Analytics 4</h3><span class="role">Best if you already use Google’s tools</span></div>
+            <p>GA4 is free, widely used, and capable of detailed analysis. It uses cookies and takes time to configure, so many small teams leave the setup unfinished.</p>
             <p class="price">{tools.ga4.priceLabel}</p>
             <p class="card-links"><Button href="/alternatives/google-analytics/" variant="secondary" size="sm">GA4 alternatives</Button></p>
           </article>
           <article class="pick-card" data-tool="mixpanel">
             <div class="pick-top"><h3>Mixpanel</h3><span class="role">Best event analytics for product teams</span></div>
-            <p>Strong event and cohort analysis for product usage. A heavy fit if you only need to know which campaign brought the last ten payments.</p>
+            <p>Mixpanel is strong at analyzing product events and comparing groups of users over time. It may be more than you need if you just want to see which campaign drove the last ten payments.</p>
             <p class="price">{tools.mixpanel.priceLabel}</p>
             <p class="card-links"><Button href="/alternatives/mixpanel/" variant="secondary" size="sm">See alternatives</Button></p>
           </article>
@@ -96,8 +96,8 @@ const description =
     <section class="section s-compare" id="compare" aria-labelledby="compare-title">
       <div class="wrap">
         <div class="section-head">
-          <h2 id="compare-title">Quick compare</h2>
-          <p>A snapshot of focus, revenue attribution, and cookies. Starting prices as of 24 November 2026.</p>
+          <h2 id="compare-title">Compare tools at a glance</h2>
+          <p>See what each tool is best for, how it handles revenue attribution, and whether it uses cookies. Starting prices are as of 24 November 2026.</p>
         </div>
         <div class="table-scroll">
           <table class="compare">
@@ -131,14 +131,14 @@ const description =
       <div class="wrap">
         <div class="section-head">
           <h2 id="hubs-title">Explore by topic</h2>
-          <p>Every guide lives under a content-type path, with a hub page and breadcrumbs.</p>
+          <p>Browse reviews, pricing breakdowns, side-by-side comparisons, and practical guides.</p>
         </div>
         <div class="hubs">
-          <a class="hub" href="/alternatives/"><h3>Alternatives</h3><p>Tools like GA4, PostHog or Mixpanel, ranked by the job they actually do.</p><span class="go">/alternatives/</span></a>
-          <a class="hub" href="/pricing/"><h3>Pricing</h3><p>What a plan actually costs as events, seats or sites grow.</p><span class="go">/pricing/</span></a>
-          <a class="hub" href="/compare/"><h3>Compare</h3><p>Side-by-side matchups, starting with PostHog and Google Analytics.</p><span class="go">/compare/</span></a>
-          <a class="hub" href="/reviews/"><h3>Reviews</h3><p>Hands-on reading of public docs, including where a tool falls short.</p><span class="go">/reviews/</span></a>
-          <a class="hub" href="/guides/"><h3>Guides</h3><p>Attribution, cookieless tracking, and how to choose a stack.</p><span class="go">/guides/</span></a>
+          <a class="hub" href="/alternatives/"><h3>Alternatives</h3><p>Find alternatives to tools like GA4, PostHog, and Mixpanel based on what you need to measure.</p><span class="go">/alternatives/</span></a>
+          <a class="hub" href="/pricing/"><h3>Pricing</h3><p>See how pricing changes as you track more events, add team members, or manage more sites.</p><span class="go">/pricing/</span></a>
+          <a class="hub" href="/compare/"><h3>Compare</h3><p>Compare tools side by side, starting with PostHog and Google Analytics.</p><span class="go">/compare/</span></a>
+          <a class="hub" href="/reviews/"><h3>Reviews</h3><p>See what each tool does well and where it falls short, based on its public documentation.</p><span class="go">/reviews/</span></a>
+          <a class="hub" href="/guides/"><h3>Guides</h3><p>Learn about attribution and cookieless tracking, and how to choose the tools you need.</p><span class="go">/guides/</span></a>
         </div>
       </div>
     </section>
@@ -146,20 +146,20 @@ const description =
     <section class="section s-cluster" id="datafast" aria-labelledby="datafast-title">
       <div class="wrap">
         <div class="section-head">
-          <h2 id="datafast-title">The DataFast cluster</h2>
-          <p>Start here if the question is DataFast itself: what it is, what datafa.st charges, how the API and MCP work, and how it compares with Plausible and GA4. The broader guides sit below this list.</p>
+          <h2 id="datafast-title">DataFast reviews, pricing, and guides</h2>
+          <p>Start here to learn what DataFast does, what it costs, and how its API and MCP work. You can also compare it directly with Plausible and GA4.</p>
         </div>
         <GuideList
           items={[
             {
               href: "/reviews/datafast/",
               title: "DataFast analytics review",
-              description: "What the tool at datafa.st is, who makes it, and when not to buy it.",
+              description: "What the tool at datafa.st does, who makes it, and when another tool would serve you better.",
             },
             {
               href: "/pricing/datafast/",
               title: "DataFast pricing",
-              description: "The datafa.st homepage ladder: Starter from $9 a month and Growth from $19.",
+              description: "Pricing from the DataFast homepage, with Starter from $9 a month and Growth from $19.",
             },
             {
               href: "/guides/datafast-api/",
@@ -169,22 +169,22 @@ const description =
             {
               href: "/guides/datafast-mcp/",
               title: "DataFast MCP",
-              description: "The remote server at datafa.st/api/mcp, and what an assistant still cannot do.",
+              description: "How to connect to the remote server at datafa.st/api/mcp and what an assistant can do once connected.",
             },
             {
               href: "/alternatives/datafast/",
               title: "DataFast alternatives",
-              description: "Plausible, Fathom, GA4, PostHog, and when staying with DataFast is the better call.",
+              description: "Compare Plausible, Fathom, GA4, and PostHog, and see when it makes sense to stick with DataFast.",
             },
             {
               href: "/compare/datafast-vs-plausible/",
               title: "DataFast vs Plausible",
-              description: "Revenue attribution beside a cookieless traffic dashboard. Both have a published starting price of $9.",
+              description: "Compare DataFast’s revenue attribution with Plausible’s cookieless traffic dashboard. Both have a published starting price of $9.",
             },
             {
               href: "/compare/datafast-vs-google-analytics/",
               title: "DataFast vs Google Analytics",
-              description: "A paid revenue report next to free GA4, and when founders keep both.",
+              description: "Compare DataFast’s paid revenue reporting with free GA4 and see when it makes sense to use both.",
             },
           ]}
         />
@@ -195,24 +195,24 @@ const description =
       <div class="wrap">
         <div class="section-head">
           <h2 id="guides-title">More guides</h2>
-          <p>Broader starting points, after the DataFast pages above. Each one compares several tools and links out to the vendors.</p>
+          <p>Explore broader analytics questions. Each guide compares several tools and links to their vendors.</p>
         </div>
         <GuideList
           items={[
             {
               href: "/alternatives/google-analytics/",
               title: "The best Google Analytics alternatives for founders",
-              description: "When GA4 is more dashboard than answer, and which lighter tools actually show revenue.",
+              description: "When a simpler tool might suit you better than GA4, and which options track revenue.",
             },
             {
               href: "/guides/marketing-attribution-tools/",
               title: "Marketing attribution tools, compared",
-              description: "How to tell a click from a customer without standing up a full enterprise stack.",
+              description: "How to see which clicks turn into customers without setting up enterprise analytics.",
             },
             {
               href: "/guides/cookieless-analytics/",
               title: "Cookieless analytics: what you gain and lose",
-              description: "Privacy-friendly scripts, rotating identifiers, and the trade-off for long revenue journeys.",
+              description: "How privacy-friendly scripts and rotating identifiers affect your ability to track purchases over time.",
             },
           ]}
         />
@@ -223,16 +223,16 @@ const description =
       <div class="wrap">
         <div class="section-head">
           <h2 id="method-title">How we test, and how we get paid</h2>
-          <p>Independence is the product. Affiliate relationships are labeled, never hidden.</p>
+          <p>We make our recommendations independently and clearly label affiliate relationships.</p>
         </div>
         <div class="trust">
           <article class="trust-card">
             <h3>How we test</h3>
-            <p>Prices and product behavior come from public docs and pricing pages, dated when they were current. Limits sit next to strengths. There are no invented benchmark scores. <a href="/how-we-test/">Read the method</a>.</p>
+            <p>We use public documentation and pricing pages to explain how tools work and what they cost. We date our findings and cover both strengths and limitations. We don’t publish invented benchmark scores. <a href="/how-we-test/">Read the method</a>.</p>
           </article>
           <article class="trust-card">
             <h3>Independence</h3>
-            <p>metricspick is not a DataFast site. Recommendations follow the job to be done. If a heavier tool like PostHog is the honest fit, we say so. <a href="/about/">About the site</a>.</p>
+            <p>MetricsPick operates independently of DataFast. We recommend tools based on what you need to measure, whether that calls for a simple dashboard or a more comprehensive tool like PostHog. <a href="/about/">About the site</a>.</p>
           </article>
           <article class="trust-card">
             <h3>Affiliate disclosure</h3>
