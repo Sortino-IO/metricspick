@@ -17,6 +17,7 @@ const articles = defineCollection({
     schemaType: z.enum(["Article", "Review"]).default("Article"),
     order: z.number().default(50),
     tldr: z.array(z.string()),
+    tldrTitle: z.string().optional(),
     tldrNote: z.string().optional(),
     jobs: z
       .array(z.object({ title: z.string(), body: z.string(), who: z.string() }))
@@ -58,6 +59,10 @@ const articles = defineCollection({
       }),
     ),
     sources: z.array(z.object({ label: z.string(), href: z.string() })).optional(),
+    /** When true, the sources list is only this article's links. */
+    sourcesExclusive: z.boolean().optional(),
+    /** When true, the document title is the SEO title with no brand suffix. */
+    exactTitle: z.boolean().optional(),
   }),
 });
 

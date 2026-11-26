@@ -1,16 +1,24 @@
 ---
+import { renderMarkdown } from "../lib/markdown";
+
 interface Props {
   items: string[];
   note?: string;
+  title?: string;
 }
-const { items, note } = Astro.props;
+const { items, note, title = "TL;DR" } = Astro.props;
+const headingId = title === "TL;DR" ? "tldr-title" : title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+
+function inline(source: string): string {
+  return renderMarkdown(source).trim().replace(/^<p>|<\/p>$/g, "");
+}
 ---
 <section class="band band-cream">
   <div class="article-body">
-    <aside class="tldr" aria-labelledby="tldr-title">
-      <h2 id="tldr-title">TL;DR</h2>
+    <aside class="tldr" aria-labelledby={headingId}>
+      <h2 id={headingId}>{title}</h2>
       <ul>
-        {items.map((item) => <li set:html={item} />)}
+        {items.map((item) => <li set:html={inline(item)} />)}
       </ul>
       {note && <p class="tldr-note">{note}</p>}
     </aside>

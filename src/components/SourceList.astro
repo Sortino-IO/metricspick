@@ -4,19 +4,21 @@ import { isDatafastHref, withAffiliate } from "../config/site";
 
 interface Props {
   extra?: SourceLink[];
+  /** Show only this article's links, not the shared price catalog. */
+  exclusive?: boolean;
 }
-const { extra = [] } = Astro.props;
+const { extra = [], exclusive = false } = Astro.props;
 const seen = new Set<string>();
-const links = [...extra, ...priceSources].filter((link) => {
+const links = (exclusive ? extra : [...extra, ...priceSources]).filter((link) => {
   if (seen.has(link.href)) return false;
   seen.add(link.href);
   return true;
 });
 ---
-<section class="band band-cream">
+<section class="band band-cream" aria-labelledby="sources-title">
   <div class="article-body">
-    <h2>Sources</h2>
-    <p>Prices and product details link to the vendor pages below. DataFast links include the affiliate parameter.</p>
+    <h2 id="sources-title">Sources</h2>
+    {!exclusive && <p>Prices and product details link to the vendor pages below. DataFast links include the affiliate parameter.</p>}
     <ul class="sources">
       {links.map((link) => {
         const href = withAffiliate(link.href);
@@ -32,7 +34,7 @@ const links = [...extra, ...priceSources].filter((link) => {
           </li>
         );
       })}
-      <li><a href="/how-we-test/">How MetricsPick checks pages</a></li>
+      {!exclusive && <li><a href="/how-we-test/">How MetricsPick checks pages</a></li>}
     </ul>
   </div>
 </section>

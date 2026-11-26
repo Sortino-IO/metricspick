@@ -18,16 +18,18 @@ interface Props {
   ogType?: "website" | "article";
   noindex?: boolean;
   jsonLd?: Record<string, unknown>[];
+  /** Use the title as the document title, without the brand suffix. */
+  exactTitle?: boolean;
 }
 
-const { title, description, ogType = "website", noindex = false, jsonLd = [] } = Astro.props;
+const { title, description, ogType = "website", noindex = false, jsonLd = [], exactTitle = false } = Astro.props;
 const path = Astro.url.pathname.endsWith("/") || /\.[a-z0-9]+$/i.test(Astro.url.pathname)
   ? Astro.url.pathname
   : `${Astro.url.pathname}/`;
 const canonical = new URL(path, Astro.site).href;
 const og = await getImage({ src: ogImage, width: 1200, height: 630, format: "png" });
 const ogUrl = new URL(og.src, Astro.site).href;
-const fullTitle = title.includes("metricspick") ? title : `${title} — metricspick`;
+const fullTitle = exactTitle || title.includes("metricspick") ? title : `${title} — metricspick`;
 const gtm = GTM_ID.trim();
 const gsc = GSC_VERIFICATION.trim();
 
