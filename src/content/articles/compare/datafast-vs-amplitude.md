@@ -1,112 +1,112 @@
 ---
 title: "DataFast vs Amplitude"
-seoTitle: "DataFast vs Amplitude for founders"
-description: "DataFast vs Amplitude: a $9 revenue-attribution plan against Amplitude’s free product analytics, including 2 million events a month with no credit card."
+seoTitle: "DataFast vs Amplitude"
+description: "DataFast vs Amplitude: a $9 revenue plan against 2 million free events. See who should stay on product analytics and who should track channel payments."
 kicker: Compare
-lede: "Amplitude’s free plan includes 2 million events a month and is not a trial. DataFast’s published starting price is $9 a month. It answers which marketing source brought a payment. The tools belong in different meetings."
+lede: "Stay on Amplitude if you use product analytics and you are inside the free 2 million events, or you qualify for the startup year. Choose DataFast if the report you need is which marketing source brought a payment. Amplitude's free plan is not a trial. DataFast's published starting price is $9 a month."
 accent: "DataFast vs Amplitude"
-updated: 2026-11-25
+updated: 2026-11-26
 section: compare
 breadcrumb: DataFast vs Amplitude
 order: 70
 tldr:
-  - "Choose Amplitude when the work is product analytics and the free 2 million events still fit."
-  - "Choose DataFast when the work is revenue by channel or page and you will connect a payment provider."
-  - "Amplitude’s free plan needs no credit card and has no time limit. DataFast’s terms describe a 14-day trial, then a paid plan."
-  - "DataFast does not replace Amplitude’s product reports. It can sit on the marketing site beside them."
-tldrNote: "Amplitude’s free plan and DataFast’s homepage prices as of 25 November 2026. DataFast links are affiliate links."
+  - "Amplitude Free is 2 million events a month, with no card and no time limit."
+  - "Plus has a published starting price of $0, requires a card, and scales toward 70 million events."
+  - "DataFast is from $9 a month at 10,000 events, for revenue by channel."
+  - "Qualifying startups can get one year of Amplitude Growth at no cost."
+tldrNote: "Plans as of 26 November 2026. DataFast links are affiliate links."
 jobs:
-  - title: Product analytics
-    body: You need events, cohorts, and a team that already lives in Amplitude.
-    who: Stay on Amplitude
-  - title: Channel revenue
-    body: The marketing question is which source brought paying customers.
+  - title: Product analytics under 2 million events
+    body: The free plan's feature list covers the reports you open.
+    who: Amplitude Free
+  - title: Channel revenue, not cohorts
+    body: You will connect payments and you do not need behavioral cohorts.
     who: DataFast
-  - title: A larger free tier than Mixpanel or PostHog
-    body: Two million events a month is the published free cap.
-    who: Amplitude’s free plan is the one to price first
-  - title: You do not have product events
-    body: A marketing site with a checkout is DataFast’s shape, not Amplitude’s.
-    who: DataFast, or a lighter site tool
+  - title: A startup year of Growth
+    body: Fewer than 20 employees and less than $10 million raised.
+    who: Apply on Amplitude's site
+  - title: A printed pack instead of an estimator
+    body: Mixpanel publishes dollar packs after its free million.
+    who: Read DataFast vs Mixpanel
 comparison: datafast-vs-amplitude
 tools:
   - id: datafast
-    title: "DataFast — marketing revenue, not product analytics"
-    blurb: "Starter from $9 a month. The button is an affiliate link."
+    title: "DataFast, for channel revenue"
+    blurb: "Starter from $9 a month. Not an Amplitude feature match. The button is an affiliate link."
     cta: "Visit DataFast"
     placement: datafast-vs-amplitude-card
     featured: true
-    secondaryHref: /reviews/datafast/
-    secondaryCta: Read the review
+    secondaryHref: /pricing/datafast/
+    secondaryCta: DataFast pricing
   - id: amplitude
     title: Amplitude
-    blurb: "Free for 2 million events a month, with no card and no time limit."
+    blurb: "Free for 2 million events. Plus has a published starting price of $0 and needs a card."
     cta: Amplitude pricing
     href: /pricing/amplitude/
   - id: posthog
     title: PostHog
-    blurb: "The other suite, with replay and flags beside a free million events."
+    blurb: "A public per-event card after 1 million events."
     cta: DataFast vs PostHog
     href: /compare/datafast-vs-posthog/
   - id: mixpanel
     title: Mixpanel
-    blurb: "Event analytics with a free million and published packs after that."
+    blurb: "Published dollar packs after the first million events."
     cta: DataFast vs Mixpanel
     href: /compare/datafast-vs-mixpanel/
-honestyTitle: Free and $9 are not on the same axis
+honestyTitle: Saving money below 2 million events is the wrong reason to leave
 honesty: |
-  Amplitude can be $0 and still be the wrong tool for a one-page question about which blog post sold the plan. DataFast can be $9 and still be the wrong tool for a product team’s retention chart. Compare the meeting each tool is in. The invoice is the second sentence.
+  If your volume is under 2 million events and the free feature list is enough, Amplitude's price is $0. A $9 plan does not undercut that. It answers a different question. Leave Amplitude when the missing report is marketing revenue, or when a Plus feature you need is the reason to add a card.
 faqs:
-  - q: Is DataFast an Amplitude alternative?
-    a: "No, if you still need product analytics. Amplitude’s pricing page is that category, with a free plan of 2 million events a month. DataFast answers which channel or page brought a payment. It is not a full replacement for Amplitude, PostHog, or Mixpanel. [Amplitude alternatives](/alternatives/amplitude/) is the page for leaving Amplitude. The [DataFast review](/reviews/datafast/) is the page for the revenue job."
-  - q: What does Amplitude cost before I look at DataFast?
-    a: "As of 25 November 2026 the free plan is free, with no credit card, no time limit, and 2 million events a month, plus session replay, feature flags, and the other products listed with it. Plus, Growth, and Enterprise are on the [Amplitude pricing](/pricing/amplitude/) guide. Dollar steps above free are not a single public list price."
-  - q: When is DataFast the thing to add?
-    a: "When Amplitude, or any product tool, is answering in-app behavior and the marketing site’s revenue sources are still opaque. DataFast Starter is $9 a month at 10,000 events. Connect a documented payment provider during the 14-day trial and see if the source on a payment matches what you believe."
-  - q: Are DataFast links affiliate links?
-    a: "Yes. They include via=sortino. Amplitude links on this site are citations."
+  - q: Does Amplitude have a free plan?
+    a: "Yes. Free includes 2 million events a month, no credit card, and no time limit. Amplitude lists product analytics, 10,000 monthly session replays, and limited experiments, guides, and surveys. Retention on Free is 1 year. Details are on the [Amplitude pricing](/pricing/amplitude/) page."
+  - q: What is the first paid Amplitude plan?
+    a: "Plus has a published starting price of $0, includes the first 2 million events, and requires a card. It scales up to 70 million events. Growth and Enterprise are quoted. Dollar amounts above the free allowance come from Amplitude's calculator, not a single public rate."
+  - q: When is DataFast the relevant comparison?
+    a: "When the report is revenue by channel rather than product analytics. Starter is $9 a month at 10,000 events. See the [pricing ladder](/pricing/datafast/), the [Amplitude alternatives](/alternatives/amplitude/), and the [review](/reviews/datafast/)."
+  - q: Are the DataFast links affiliate links?
+    a: "Yes. They use via=sortino. Amplitude links on this site do not."
 related:
   - href: /pricing/amplitude/
     type: Pricing
     title: Amplitude pricing
-    description: Free, Plus, and the limits from the public pricing page.
+    description: Free, Plus, Growth, and the startup year.
   - href: /alternatives/amplitude/
     type: Alternatives
     title: Amplitude alternatives
-    description: PostHog and Mixpanel, and when DataFast is the wrong exit.
+    description: PostHog, Mixpanel, and the marketing-site options.
   - href: /pricing/datafast/
     type: Pricing
     title: DataFast pricing
-    description: The paid ladder for the marketing-revenue add-on.
+    description: The fixed monthly tiers.
   - href: /compare/datafast-vs-mixpanel/
     type: Compare
     title: DataFast vs Mixpanel
-    description: The same category split, with Mixpanel’s event packs.
+    description: The other event-analytics comparison, with printed packs.
 sources:
   - label: Amplitude pricing
     href: https://amplitude.com/pricing
+  - label: Amplitude for startups
+    href: https://amplitude.com/startups
 ---
 
-DataFast versus Amplitude is a search that usually means “we have a product-analytics tool and a marketing question.” Amplitude is the product-analytics tool. DataFast is one answer to the marketing question. Treating them as two bids for the same contract produces a migration that deletes the chart someone still uses.
+DataFast vs Amplitude puts a narrow paid revenue tool next to a product-analytics platform with a large free tier. They belong in different meetings. Use this page to decide which meeting you are in.
 
-Figures below are as of 25 November 2026. Amplitude’s free plan includes session replay. DataFast is the analytics product at datafa.st. Other companies named DataFast are identified in the [review](/reviews/datafast/).
+Figures below are as of 26 November 2026.
 
-## Amplitude’s free plan
+## Amplitude's free plan
 
-Amplitude’s free plan is completely free, with no credit card required. It includes 2 million events per month, plus out-of-the-box analytics, session replay, unlimited feature flags, web experimentation, activation, guides and surveys, unlimited AI agents, MCP, and AI feedback. It is not a trial and there is no time limit. You can use it free as long as it fits.
+Amplitude Free is for individuals getting started. It includes 2 million events a month, no credit card, and no time limit. The plan card lists product analytics, one-time cohort syncs, 2,000 AI feedback records, 10,000 monthly session replays, and limited experiments, guides, and surveys. The pricing page also lists unlimited feature flags on the free plan. Retention is one year. Custom behavioral cohorts need Plus or higher.
 
-That is a large free tier next to DataFast, which does not have one. It is also a list of product-analytics surfaces. The [Amplitude pricing](/pricing/amplitude/) page on this site records Plus, the startup offer, and the limits from the broader pricing page. Dollar steps above free are quotes and estimators, not a single public ladder. Plus has no single published price.
+Plus has a published starting price of $0. The first 2 million events are free, a card is required, and the plan scales to 70 million events. Added items include custom events, 20 behavioral cohorts, alerts, heatmaps, and two years of retention. There is no single published "Plus costs $X at 5 million events." Use Amplitude's calculator. Growth and Enterprise are quotes.
 
-If your volume fits inside 2 million events and the team uses the product reports, DataFast is not a cost-saving replacement. There is no DataFast invoice to be smaller than $0 while you still need Amplitude.
+Startups with fewer than 20 employees and less than $10 million raised can get one year of Growth at no cost, with no card for that year, metered at up to 100 million events or 200,000 monthly tracked users. Apply on Amplitude's site. This site has no role in the approval. The [pricing guide](/pricing/amplitude/) has the plan split.
 
-## DataFast’s paid, narrower job
+## DataFast's narrower product
 
-DataFast Starter is $9 a month. Growth is $19. Both figures are published starting prices for 10,000 monthly events. The ladder continues with volume. Yearly billing is ten times monthly. The 14-day trial does not require a card. Details and the lock at 100 percent of the event cap are on the [pricing page](/pricing/datafast/).
-
-The product is revenue attribution for a site: install the script, connect Stripe, Lemon Squeezy, Polar, Shopify, or the Payment API, and read which source paid. The default script uses cookies. The cookieless script is less accurate for long journeys. API, CLI, and MCP are included on the entry plan cards. Session replay and a product event taxonomy are not what those cards sell.
-
-Amplitude also includes MCP. That is Amplitude’s assistant connection, not DataFast’s. The [DataFast MCP](/guides/datafast-mcp/) guide is only the datafa.st server.
+DataFast's published starting price is $9 a month, for 10,000 events. Growth at that step is $19 a month. Both figures are published starting prices for that allowance. The product joins marketing traffic to payments. It will not give you 20 behavioral cohorts, session replay, or Amplitude's experiment tools. The [pricing page](/pricing/datafast/) is the ladder. The [review](/reviews/datafast/) explains the cap.
 
 ## How to place them
 
-Use Amplitude for the product. Use DataFast, GA4, Plausible, or Fathom for the marketing site, depending on whether the marketing question is revenue by source, ads, or a cookieless traffic page. Cancel Amplitude for DataFast only when product analytics is no longer a requirement. The closest substitutes for that product job, in this site’s set, are PostHog and Mixpanel, compared on their own pages.
+If a person on the team will use product analytics and you are under 2 million events, start on Amplitude Free. Add a card only when a Plus feature or the volume forces it. If the events you would send are marketing pageviews, a site-analytics price is the closer comparison: GA4 is free, and Plausible and Fathom publish pageview prices.
+
+Choose DataFast when you will connect a payment provider and the weekly question is which channel brought customers who paid. The [Amplitude alternatives](/alternatives/amplitude/) page is the wider shortlist. [Mixpanel](/compare/datafast-vs-mixpanel/) is the comparison if you want printed event packs instead of an estimator.

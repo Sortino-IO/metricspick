@@ -1,36 +1,36 @@
 ---
 title: "DataFast MCP"
-seoTitle: "DataFast MCP: connect an assistant to your analytics"
-description: "DataFast MCP is the remote server at datafa.st/api/mcp. How OAuth and account tokens work, what an agent can read, and what stays in the dashboard. As of 25 November 2026."
+seoTitle: "DataFast MCP Guide"
+description: "DataFast MCP connects an assistant to your analytics. See the server URL, OAuth and account tokens, what an agent can change, and what stays in the dashboard."
 kicker: Guides
-lede: "DataFast MCP is a remote server on datafa.st that lets an MCP client ask about your analytics in plain language. It is included on the entry plan cards. It is not a way to connect payments, and it is not a public dataset."
+lede: "Use DataFast MCP if you already have an account and you want an assistant to ask about your analytics in plain language. It is not a way to connect payments, and it is not a public dataset. The server is https://datafa.st/api/mcp. Both entry plans include it."
 accent: "DataFast MCP"
-updated: 2026-11-25
+updated: 2026-11-26
 section: guides
 breadcrumb: DataFast MCP
 order: 30
 tldr:
   - "The server URL in the docs is https://datafa.st/api/mcp. You need a DataFast account with API access."
-  - "The 10,000-event Starter and Growth cards both include API, CLI, and MCP. The changelog dated 18 July 2026 makes the server available to everyone."
-  - "Connect with OAuth, or with an account token that starts with dft_. The docs tell you to keep that token out of source control."
-  - "Website deletion and connecting payment providers stay in the dashboard. MCP cannot do those."
-tldrNote: "Setup as of 25 November 2026, from DataFast’s MCP docs and changelog. Links to datafa.st are affiliate links. This guide does not include a live token."
+  - "The 10,000-event Starter and Growth cards both include API, CLI, and MCP."
+  - "Connect with OAuth, or with an account token that starts with dft_. Keep that token out of source control."
+  - "MCP cannot delete websites, and it cannot connect or disconnect payment providers."
+tldrNote: "Checked against DataFast's MCP docs on 26 November 2026. Links to datafa.st are affiliate links. This guide does not include a live token."
 jobs:
-  - title: Ask an assistant about your own sites
-    body: You already have a DataFast account and you want traffic or revenue answers in Cursor, Claude Code, Codex, or another MCP client.
+  - title: Ask an assistant about your sites
+    body: You already have a DataFast account and you want answers in Cursor, Claude Code, Codex, or another MCP client.
     who: DataFast MCP
   - title: You do not have an account yet
     body: The server does not answer anonymous questions about the public web.
     who: Start the trial, then connect
-  - title: You meant a different DataFast
+  - title: A different DataFast
     body: The Arizona IT company and the Ecuador payments company are not this server.
     who: The review separates the names
-  - title: You need replay or flags via chat
-    body: MCP exposes DataFast’s analytics tools, not a product suite.
-    who: PostHog or another suite, if that is the job
+  - title: Replay or flags in chat
+    body: MCP exposes DataFast's analytics, not a product suite.
+    who: PostHog, if that is the suite you need
 tools:
   - id: datafast
-    title: "DataFast — open API / MCP settings"
+    title: "DataFast, open API and MCP settings"
     blurb: "The token is created in the account, not on this page. The button is an affiliate link."
     cta: "Visit DataFast"
     placement: datafast-mcp-card
@@ -44,86 +44,70 @@ tools:
     href: /compare/datafast-vs-posthog/
 honestyTitle: A token is a secret
 honesty: |
-  Both connection methods end in a Bearer credential. Anyone who has a valid token can use whatever that token was allowed to do, until it expires or you revoke it. Do not paste a dft_ value into a repository, a chat log, or this website. The examples below use the environment-variable pattern from DataFast’s docs and a placeholder, not a working key.
+  Both connection methods end in a credential. Anyone who has a valid token can do whatever that token was allowed to do, until you revoke it. Do not paste a dft_ value into a repository, a chat log, or this website. Use an environment variable and a placeholder in examples.
 faqs:
   - q: What is DataFast MCP?
-    a: "It is DataFast’s remote MCP server, documented at datafa.st, URL https://datafa.st/api/mcp. An MCP client uses it to query your DataFast account and, if you allow writes, to change goals, funnels, alerts, and other account objects. It is part of the analytics product at datafa.st, not a service from the Arizona IT company or the Ecuador payments company that share the DataFast name."
-  - q: Does DataFast MCP cost extra?
-    a: "The homepage plan cards at 10,000 events include “API, CLI & MCP” on both Starter ($9 a month) and Growth ($19). The changelog of 18 July 2026 makes the server available to everyone. You need an account with API access. There is no separate MCP line item on those cards. Plan limits still apply to the data the tools return."
-  - q: OAuth or an API token?
-    a: "Use OAuth for clients that offer it, including Codex and Claude Code. You approve websites and permissions in the browser, and the client stores the connection. Use an account token, prefix dft_, when the client asks for a Bearer token. Cursor’s pattern is an mcp.json entry that reads the token from the environment. OAuth tokens expire after one hour, with refresh, and need fresh consent after at most 90 days. Dashboard account tokens last until you roll or delete them."
-  - q: What can the agent not do?
-    a: "Dashboard-only operations stay in the dashboard. MCP cannot delete websites or connect and disconnect payment providers. Write tools require confirmation. A token scoped to one website cannot read another. Revoking a connection blocks later requests. It does not delete data the client already received."
+    a: "It is DataFast's remote MCP server at https://datafa.st/api/mcp. An MCP client uses it to query your account and, if you allow writes, to change goals, funnels, alerts, and other account objects. It belongs to the analytics product at datafa.st, not to the Arizona IT company or the Ecuador payments company."
+  - q: How do I connect?
+    a: "OAuth, when the client can open a browser sign-in, or an account token that starts with dft_, sent as a Bearer token. The docs name Codex, Claude Code, and Cursor as clients. Read [the MCP introduction](https://datafa.st/docs/mcp-introduction) for the exact client flags. Sending the events an assistant later reads is the [API guide](/guides/datafast-api/)."
+  - q: What can it not do?
+    a: "DataFast's docs say dashboard-only operations stay in the dashboard. MCP cannot delete websites or connect and disconnect payment providers. An assistant can query revenue after a person connects a provider."
+  - q: What does it cost?
+    a: "On the 10,000-event cards, Starter is $9 a month and Growth is $19. Both figures include API, CLI, and MCP. There is no separate MCP fee on those cards. The [pricing page](/pricing/datafast/) has the higher steps."
 related:
+  - href: /guides/datafast-api/
+    type: Guides
+    title: DataFast API
+    description: Keys, goals, and payments, which MCP does not replace.
   - href: /reviews/datafast/
     type: Reviews
     title: DataFast review
-    description: The product the MCP server is attached to.
-  - href: /guides/datafast-api/
-    type: Guides
-    title: DataFast API and docs
-    description: The HTTP surface MCP is wrapping, including goals and payments.
+    description: What the account is, before you connect an assistant.
   - href: /pricing/datafast/
     type: Pricing
     title: DataFast pricing
-    description: Starter and Growth, including the API, CLI, and MCP tick.
+    description: The plans that include the MCP line.
   - href: /alternatives/datafast/
     type: Alternatives
     title: DataFast alternatives
-    description: When an assistant on a different product is the real request.
+    description: If you wanted a different product's assistant.
   - href: /guides/marketing-attribution-tools/
     type: Guides
     title: Marketing attribution tools
     description: The report an assistant would be querying.
-  - href: /compare/datafast-vs-posthog/
-    type: Compare
-    title: DataFast vs PostHog
-    description: When the assistant you want is attached to a product suite instead.
 sources:
   - label: DataFast MCP introduction
     href: https://datafa.st/docs/mcp-introduction
-  - label: DataFast MCP tool reference
-    href: https://datafa.st/docs/mcp-tools
-  - label: DataFast MCP changelog, 18 July 2026
-    href: https://datafa.st/changelog/datafast-mcp-server
-  - label: DataFast homepage plan cards
-    href: https://datafa.st/
 ---
 
-DataFast MCP is how the analytics product at [datafa.st](https://datafa.st/) exposes your account to an MCP client. The docs call the server URL `https://datafa.st/api/mcp`. The client can ask about traffic, revenue, and goals, and it can change account objects you authorize. It cannot see websites you did not grant, and it is not a general web-analytics search engine. No DataFast account means no data.
+DataFast MCP is a remote server that lets an MCP client ask about your own analytics. It is included on the entry plan cards. It does not connect Stripe for you, and it does not answer questions about sites you do not own.
 
-The name collides with other companies. This server belongs to the analytics app Marc Lou’s homepage describes, operated as JustShipIt Pte. Ltd. trading as DataFast. It is not a remote-management tool from DataFast Networks in Arizona, and it is not an API from Datafast S.A. in Ecuador. The [review](/reviews/datafast/) is that separation. This page is the connection.
-
-The steps below are from the MCP introduction, the tool reference, the 18 July 2026 changelog, and the homepage plan cards, as of 25 November 2026. Links to datafa.st are affiliate links. They do not change the price, and they are not a substitute for the docs if a step has moved.
+This guide was checked against the docs on 26 November 2026. DataFast means [datafa.st](https://datafa.st/). The [review](/reviews/datafast/) separates the other companies that use the name.
 
 ## What you can ask it to do
 
-You can connect Codex, Claude Code, Cursor, or another MCP client and ask, in plain language, about a traffic spike, visitors who reached a page, revenue sources, or a funnel. The surface covers querying analytics, visitors, sources, pages, revenue, and funnels; creating and updating goals, funnels, and alerts; managing websites, team members, tokens, and website API keys; and checking integrations. The tool reference is the inventory. Tool names are prefixed `datafast_` and mirror the account API and CLI. Analytics tools cover overview, timeseries, realtime, pages, referrers, campaigns, goals, and funnels, among others. Bot-traffic tools are a separate group. Changing paid bot capacity stays in the billing dashboard. MCP can report that state and does not charge the card.
-
-The changelog’s examples describe the surface. They are not a transcript of a session run from this site.
+Connect Codex, Claude Code, Cursor, or another MCP client and ask about traffic, pages, revenue sources, or a funnel. The docs describe tools for analytics, visitors, goals, funnels, websites, team members, and tokens. Writes stay limited to the permissions you grant. Changing paid bot capacity stays in billing. The tool reference on DataFast's site is the inventory. This page is not a transcript of a live session.
 
 ## Two ways to connect
 
-Both methods use Streamable HTTP, and you should pick one.
+The server URL is `https://datafa.st/api/mcp`.
 
-OAuth is the method to use when the client can open a browser sign-in. Codex and Claude Code are the examples. You add the server URL, sign in to datafa.st, choose websites, and review permissions. Read permissions start selected. Writes stay off unless you enable them. DataFast issues a connection token. Your password, dashboard session, and existing API keys are not shared with the client. An OAuth access token expires after one hour, refreshes for up to 30 days from issuance, and needs fresh consent after at most 90 days. Manage the connection under Settings, then API / MCP, then Connected apps.
+OAuth is the method when the client can open a browser sign-in. The docs use Codex and Claude Code as examples. You add the URL, sign in, choose websites, and review permissions. Read permissions start selected. Writes stay off unless you enable them. Your password and existing API keys are not shared with the client. The docs describe how long that connection stays valid. Read that section before you leave a client running unattended.
 
-An account token is the method when the client wants a Bearer token. In Account settings, under API / MCP, you create a token, limit it to specific websites if you can, and start with the read permissions you need. The value is shown once and begins with `dft_`. The docs’ Cursor example points `mcp.json` at `https://datafa.st/api/mcp` and sends `Authorization: Bearer ${env:DATAFAST_TOKEN}`. Put the real token in the environment the client reads. Do not commit it. Codex’s documented flag is `--bearer-token-env-var` pointed at that variable. Claude Code’s documented header is the same Bearer pattern. Clients that only speak local stdio need a bridge. DataFast names mcp-remote as an example of one.
+An account token is the method when the client wants a Bearer token. In account settings, under API / MCP, create a token, limit it to the websites you can, and start with read permissions. The value is shown once and begins with `dft_`. Put it in the environment the client reads. Do not commit it.
 
-A website API key, prefix `df_`, can also call the general MCP endpoint, scoped to that website. Check the authentication page for which operations it supports. Account tokens also work on the supported REST endpoints. OAuth tokens work only at the MCP endpoint they were issued for. They cannot be pasted into the public REST API or used to sign in to the dashboard.
+A website API key, prefix `df_`, can also be used in the ways the authentication page allows. Check that page before you assume a website key can do account-wide work. OAuth tokens are for the MCP endpoint they were issued for.
 
-## What the server will refuse
+## What stays in the dashboard
 
-Access is checked on the server: credential, permission, website, membership, and plan limits. A website id in a request is not proof that the token may read it. An OAuth grant for website A does not cover website B. A website created later, outside that grant, is not added automatically. A website created through an approved OAuth tool is added to that connection.
+Access is checked on the server: credential, permission, website, and plan limits. An OAuth grant for one website does not cover another.
 
-Writes are not silent. OAuth write tools require confirmation and a retry key, and API-token tools require confirmation for sensitive operations such as deleting data or issuing credentials. The tool reference marks irreversible or credential-issuing tools with a confirm flag. Those checks sit on top of whatever confirmation the client shows. They do not make an untrusted client safe.
+DataFast's MCP docs say dashboard-only operations stay in the dashboard. MCP cannot delete websites or connect and disconnect payment providers. Revenue attribution still depends on a provider a person connects, or on the payments API. An assistant can query revenue after that. It should not be the thing that links the Stripe account.
 
-Two operations stay in the dashboard even if you wanted them in chat. MCP cannot delete websites and cannot connect or disconnect payment providers. Revenue attribution still depends on a provider connected by a person in the product. An assistant can query revenue after that. It should not be the thing that links the Stripe account.
-
-Revoke a token by deleting or rolling it, and revoke an OAuth connection in Connected apps. A request already running may finish, and data already sent to the client is not pulled back.
+Revoke a token by deleting or rolling it, and revoke an OAuth connection under connected apps. Data already sent to the client is not pulled back.
 
 ## Price and fit
 
-On the 10,000-event homepage cards, both Starter and Growth include the “API, CLI & MCP” line. Starter is $9 a month. Growth is $19. Both figures are published prices for 10,000 monthly events. The [pricing page](/pricing/datafast/) has the volume steps above that. The July 2026 changelog makes the server available to everyone. “Everyone” still means a DataFast account. The first requirement is API access on that account. If a future plan card removes the tick, the card wins over this paragraph.
+On the 10,000-event cards, both Starter and Growth include API, CLI, and MCP. Starter is $9 a month. Growth is $19. Both figures are published prices for 10,000 monthly events. The [pricing page](/pricing/datafast/) has the steps above that. If a later plan card removes the tick, the card wins.
 
-MCP does not make DataFast a product-analytics suite. The tools query DataFast’s model: visits, revenue, goals, funnels, bots. They do not add session replay or feature flags. If that is the assistant workflow you wanted, the comparison is [DataFast vs PostHog](/compare/datafast-vs-posthog/), not a second MCP URL. Sending the events that an assistant later reads is the [API guide](/guides/datafast-api/), which is also the map of the DataFast docs. The [pricing page](/pricing/datafast/) is the plan that includes the MCP tick, and the [alternatives](/alternatives/datafast/) page is the exit if you wanted a different product’s assistant.
+MCP does not make DataFast a product suite. The tools query visits, revenue, goals, and funnels. They do not add session replay or feature flags. If that is the assistant workflow you wanted, the comparison is [DataFast vs PostHog](/compare/datafast-vs-posthog/). Sending the events an assistant later reads is the [API guide](/guides/datafast-api/). The [alternatives](/alternatives/datafast/) page is the exit if you wanted a different product. The [attribution guide](/guides/marketing-attribution-tools/) is the report those questions are about.

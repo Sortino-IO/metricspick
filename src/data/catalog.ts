@@ -174,7 +174,7 @@ export function rows(ids: ToolId[], highlight: ToolId): CompareRow[] {
   });
 }
 
-const priceNote = `Public list prices as of ${CHECKED_LABEL}. DataFast amounts are the monthly USD prices on the homepage (datafa.st/pricing returns 404). Plausible amounts are the monthly USD prices on the homepage slider. PostHog, Mixpanel, and Amplitude stay free inside a published allowance and bill usage after that. Confirm the current rate before you buy.`;
+const priceNote = `Public list prices as of ${CHECKED_LABEL}. DataFast amounts are the monthly USD prices on the DataFast homepage. Plausible amounts are the monthly USD prices on the Plausible homepage. PostHog, Mixpanel, and Amplitude stay free inside a published allowance and bill usage after that. Confirm the current rate before you buy.`;
 
 export const comparisons: Record<string, { highlight: ToolId; ids: ToolId[]; note: string }> = {
   "ga-alternatives": {
@@ -245,42 +245,42 @@ export const comparisons: Record<string, { highlight: ToolId; ids: ToolId[]; not
   "datafast-alternatives": {
     highlight: "datafast",
     ids: ["datafast", "plausible", "fathom", "posthog", "ga4", "mixpanel"],
-    note: "DataFast prices as of 25 November 2026 are the monthly USD amounts on the datafa.st homepage. datafa.st/pricing returns 404. Neighbor prices are the figures dated on the linked pages. Simple Analytics and Umami are discussed in the article and are not rows in this table.",
+    note: "DataFast prices as of 26 November 2026 are the monthly USD amounts on the DataFast homepage. Neighbor prices are the figures dated on the linked pages. Simple Analytics and Umami are discussed in the article and are not rows in this table.",
   },
   "datafast-pricing": {
     highlight: "datafast",
     ids: ["datafast", "plausible", "fathom", "posthog", "ga4"],
-    note: "DataFast monthly prices as of 25 November 2026 are the USD amounts on the datafa.st homepage. datafa.st/pricing returns 404. Neighbor headline figures are from the same day. Confirm the current rate before you buy.",
+    note: "DataFast monthly prices as of 26 November 2026 are the USD amounts on the DataFast homepage. Neighbor headline figures are from the same day. Confirm the current rate before you buy.",
   },
   "datafast-vs-plausible": {
     highlight: "datafast",
     ids: ["datafast", "plausible", "fathom"],
-    note: "DataFast prices as of 25 November 2026 are from the homepage. Plausible’s pageview ladder is from plausible.io the same day. The full DataFast ladder is on the DataFast pricing page.",
+    note: "DataFast prices as of 26 November 2026 are from the DataFast homepage. Plausible’s pageview ladder is from plausible.io the same day. The full DataFast ladder is on the DataFast pricing page.",
   },
   "datafast-vs-fathom": {
     highlight: "datafast",
     ids: ["datafast", "fathom", "plausible"],
-    note: "DataFast prices as of 25 November 2026 are from the homepage. Fathom’s entry price is from usefathom.com/pricing the same day. The full DataFast ladder is on the DataFast pricing page.",
+    note: "DataFast prices as of 26 November 2026 are from the DataFast homepage. Fathom’s prices are from usefathom.com/pricing the same day. The full DataFast ladder is on the DataFast pricing page.",
   },
   "datafast-vs-ga": {
     highlight: "datafast",
     ids: ["datafast", "ga4", "plausible", "posthog"],
-    note: "DataFast prices as of 25 November 2026 are from the homepage. Standard GA4 is free.",
+    note: "DataFast prices as of 26 November 2026 are from the DataFast homepage. Standard GA4 is free.",
   },
   "datafast-vs-posthog": {
     highlight: "datafast",
     ids: ["datafast", "posthog", "mixpanel", "ga4"],
-    note: "DataFast prices as of 25 November 2026 are from the homepage. PostHog’s free analytics allowance and anonymous event rates are from posthog.com the same day.",
+    note: "DataFast prices as of 26 November 2026 are from the DataFast homepage. PostHog’s free analytics allowance and anonymous event rates are from posthog.com the same day.",
   },
   "datafast-vs-mixpanel": {
     highlight: "datafast",
     ids: ["datafast", "mixpanel", "posthog", "amplitude"],
-    note: "DataFast prices as of 25 November 2026 are from the homepage. Mixpanel’s free cap and the 1.5 million event pack are from mixpanel.com/pricing the same day.",
+    note: "DataFast prices as of 26 November 2026 are from the DataFast homepage. Mixpanel’s free cap and the 1.5 million event pack are from mixpanel.com/pricing the same day.",
   },
   "datafast-vs-amplitude": {
     highlight: "datafast",
     ids: ["datafast", "amplitude", "posthog", "mixpanel"],
-    note: "DataFast prices as of 25 November 2026 are from the homepage. Amplitude’s free plan of 2 million events a month is from amplitude.com/pricing the same day.",
+    note: "DataFast prices as of 26 November 2026 are from the DataFast homepage. Amplitude’s free plan of 2 million events a month is from amplitude.com/pricing the same day.",
   },
 };
 
@@ -296,7 +296,7 @@ export const ladders: Record<string, Ladder> = {
   datafast: {
     title: "DataFast monthly prices",
     intro:
-      "Monthly USD prices on the DataFast homepage as of 25 November 2026. The dollar steps match the 24 November figures. Yearly billing is ten times the monthly price (the homepage stores a 12-month anchor and a 10-month charge). datafa.st/pricing returns 404. The plan cards are on the homepage.",
+      "Monthly USD prices on the DataFast homepage as of 26 November 2026. Yearly billing is ten times the monthly price. The homepage calls that two months free.",
     columns: ["Monthly events", "Starter", "Growth"],
     rows: [
       ["10k", "$9", "$19"],
@@ -314,7 +314,7 @@ export const ladders: Record<string, Ladder> = {
   plausible: {
     title: "Plausible monthly prices",
     intro:
-      "Monthly USD prices from the volume slider on plausible.io on 24 November 2026. The same script prices a year at ten times the monthly rate.",
+      "Monthly USD prices from the volume control on plausible.io on 26 November 2026. Yearly billing is ten times the monthly price.",
     columns: ["Monthly pageviews", "Starter", "Growth", "Business"],
     rows: [
       ["10k", "$9", "$14", "$19"],
@@ -329,29 +329,36 @@ export const ladders: Record<string, Ladder> = {
     note: "Plausible’s docs describe Starter as one site for solo use, Growth as the team and sharing plan (up to 3 sites and 3 members), and Business as the plan for funnels, journeys, revenue tracking, custom properties, the Stats API, and Data Studio. Enterprise is custom. Trials last 30 days and do not require a card. Usage counts pageviews and custom events across the sites in a team.",
   },
   fathom: {
-    title: "Fathom prices at 100,000 pageviews",
+    title: "Fathom monthly prices",
     intro:
-      "As of 24 November 2026, the published starting price is $15/month for up to 100,000 monthly pageviews and 50 sites. At that step, Standard is $15/month and Business is $39/month. Both figures are published prices for that step.",
-    columns: ["At up to 100k pageviews", "Monthly", "What it adds"],
+      "Monthly USD prices from the pageview control on usefathom.com/pricing as of 26 November 2026. Standard is the entry plan. Business adds team seats and a higher API limit. Both include the same analytics features.",
+    columns: ["Monthly pageviews", "Sites included", "Standard", "Business"],
     rows: [
-      ["Standard", "$15", "Every analytics feature, 50 sites, email support"],
-      ["Business", "$39", "10 seats plus you, roles, audit log, higher API limit"],
-      ["Custom", "Quote", "Above 25 million pageviews, invoicing, SLA"],
+      ["Up to 100k", "50", "$15", "$39"],
+      ["Up to 200k", "50", "$25", "$49"],
+      ["Up to 500k", "50", "$45", "$89"],
+      ["Up to 1M", "75", "$60", "$119"],
+      ["Up to 2M", "100", "$100", "$199"],
+      ["Up to 5M", "150", "$140", "$239"],
+      ["Up to 10M", "200", "$200", "$299"],
+      ["Up to 15M", "250", "$290", "$439"],
+      ["Up to 20M", "300", "$380", "$569"],
+      ["Up to 25M", "350", "$470", "$699"],
     ],
-    note: "Yearly plans cost 10 times the monthly price. Extra seats are $10/month or $100/year. Extra site packs of 50 are $10/month or $100/year. The pageview slider continues up to 25 million. Prices above 100,000 pageviews are not listed here. The trial is 7 days and requires a card. There is no free plan.",
+    note: "Yearly plans cost 10 times the monthly price. Above 25 million pageviews, Fathom quotes a custom plan. Extra seats are $10 a month or $100 a year, up to 50 seats. Extra site packs of 50 are $10 a month or $100 a year. The trial is 7 days and requires a card. There is no free plan. Event and revenue tracking are listed on every plan.",
   },
   posthog: {
     title: "PostHog product analytics rates",
     intro:
-      "PostHog publishes usage pricing rather than a seat fee. The free allowance and the anonymous-event rates below are from posthog.com/pricing and the product-analytics pricing doc, as of 24 November 2026.",
+      "PostHog publishes usage pricing rather than a seat fee. The free allowance and the anonymous-event rates below are from posthog.com/pricing and the product-analytics pricing doc, as of 26 November 2026.",
     columns: ["Anonymous events / month", "Price per event"],
     rows: [
       ["First 1 million", "$0"],
-      ["1–2 million", "$0.00005"],
-      ["2–15 million", "$0.0000343"],
-      ["15–50 million", "$0.0000295"],
-      ["50–100 million", "$0.0000218"],
-      ["100–250 million", "$0.000015"],
+      ["1 to 2 million", "$0.00005"],
+      ["2 to 15 million", "$0.0000343"],
+      ["15 to 50 million", "$0.0000295"],
+      ["50 to 100 million", "$0.0000218"],
+      ["100 to 250 million", "$0.000015"],
       ["250 million and above", "$0.000009"],
     ],
     note: "Other free monthly allowances: 5,000 session recordings, 1 million feature-flag requests, 100,000 exceptions, and 1,500 survey responses. The free plan includes 1 project and 1 year of event retention, and usage stops at the free limits. Pay-as-you-go keeps the same free allowance, then bills overage, with 6 projects and 2 years of retention. Identified events share the first 1 million free and then cost more. Anonymous events can cost up to 4 times less.",
@@ -359,7 +366,7 @@ export const ladders: Record<string, Ladder> = {
   mixpanel: {
     title: "Mixpanel Growth event packs",
     intro:
-      "As of 24 November 2026, Mixpanel’s free plan covers up to 1 million events per month. Growth’s published starting price is $0, with that first million included. These are the published Growth packs.",
+      "As of 26 November 2026, Mixpanel’s free plan covers up to 1 million events per month. Growth’s published starting price is $0, with that first million included. These are the published Growth packs.",
     columns: ["Events / month", "Yearly billing", "Monthly billing"],
     rows: [
       ["1M", "$0", "$0"],
@@ -375,7 +382,7 @@ export const ladders: Record<string, Ladder> = {
   amplitude: {
     title: "Amplitude plans with a published price",
     intro:
-      "As of 24 November 2026, Amplitude leads with free analytics and unlimited seats on every plan. Dollar amounts above the free allowance are not a single public list price.",
+      "As of 26 November 2026, Amplitude leads with free analytics and unlimited seats on every plan. Dollar amounts above the free allowance are not a single public list price.",
     columns: ["Plan", "Published price", "Events"],
     rows: [
       ["Free", "$0, no card", "2 million / month"],

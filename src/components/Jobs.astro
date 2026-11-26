@@ -21,10 +21,10 @@ const cards = jobs.map((job) => {
   return { ...job, visits };
 });
 ---
-<section class="band band-blue" aria-labelledby="jobs-title">
+<section class="band band-blue" aria-labelledby="which-tool-fits">
   <div class="article-wide">
-    <h2 id="jobs-title">Pick by the job, not the brand</h2>
-    <p class="band-lede">A short way to shortlist. The bars under the cards are an illustration of where founders get stuck, not a survey.</p>
+    <h2 id="which-tool-fits">Which tool fits</h2>
+    <p class="band-lede">A short way to shortlist. The bars under the cards show where the choice usually gets stuck. They are an illustration, not a survey.</p>
     <div class="jobs">
       {cards.map((job) => (
         <article class="job">
@@ -40,7 +40,7 @@ const cards = jobs.map((job) => {
       ))}
     </div>
     <div class="mini-bars">
-      <h3>Illustration — where the choice usually gets stuck</h3>
+      <h3>Where the choice usually gets stuck</h3>
       <div class="bars" aria-hidden="true">
         <div class="bar-row"><span class="name">Attribution</span><div class="track"><div class="fill w78"></div></div><span class="amt">Often</span></div>
         <div class="bar-row"><span class="name">Complexity</span><div class="track"><div class="fill w62"></div></div><span class="amt">GA4</span></div>

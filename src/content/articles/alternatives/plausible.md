@@ -1,128 +1,115 @@
 ---
-title: "Plausible alternatives for founders"
-seoTitle: "Best Plausible alternatives for founders"
-description: "Plausible alternatives compared on privacy, price, and revenue: Fathom, DataFast, GA4, and PostHog, using Plausible’s published pageview ladder."
+title: "Plausible alternatives"
+seoTitle: "Plausible Alternatives"
+description: "Plausible alternatives for cookieless analytics, more sites, or revenue on a lower plan. Compare Fathom, DataFast, GA4, and PostHog using published prices."
 kicker: Alternatives
-lede: "Plausible is a cookieless, privacy-first analytics product with a clear pageview ladder. Alternatives are worth it when you need revenue on a cheaper plan, more sites, or an entirely different job."
+lede: "Leave Plausible if you need revenue on a cheaper plan, more than a few sites, or a free product. Stay if the cookieless traffic dashboard is the report you open and Business is an acceptable price for funnels and revenue. Fathom is the nearest neighbor. DataFast fits when the payment join is the whole point."
 accent: "Plausible alternatives"
-updated: 2026-11-24
+updated: 2026-11-26
 section: alternatives
 breadcrumb: Plausible
-order: 50
+order: 40
 tldr:
-  - "Fathom is the closest alternative: cookieless positioning, revenue tracking on every plan, and 50 sites at the entry price."
-  - "DataFast is the alternative when revenue by channel is the whole job, not a Business-plan feature."
-  - "GA4 is the free alternative if you need Google Ads and you will accept cookies."
-  - "PostHog is the alternative only if you have outgrown site analytics and need a product suite."
-tldrNote: "Plausible’s slider as of 24 November 2026."
+  - "Fathom is the closest cookieless alternative, with revenue on every plan and 50 sites at the entry price."
+  - "DataFast fits revenue by channel from $9 a month, with cookies on the default script."
+  - "GA4 is the free option if you will live with cookies and Google's reports."
+  - "PostHog is a different product: a suite, not a one-page traffic dashboard."
+tldrNote: "Plausible prices as of 26 November 2026, from the homepage volume control."
 jobs:
-  - title: Same kind of tool
-    body: You want simple site analytics, a small script, and a privacy-first pitch.
+  - title: Same dashboard, more sites
+    body: Fifty sites on the entry plan matters more than a $9 sticker.
     who: Look at Fathom
-  - title: Revenue is the product
-    body: You want the payment join on the entry plan, with the limits written down.
-    who: Start with DataFast
-  - title: Stay free, stay in Google
-    body: Ads and a warehouse export matter more than a cookieless script.
-    who: Stay with or return to GA4
-  - title: You need the product suite
-    body: Funnels of in-app events, replay, or flags showed up in the requirements.
-    who: Look at PostHog
+  - title: Revenue without Business
+    body: You want the payment join on the entry analytics plan.
+    who: DataFast
+  - title: Free, already in Google
+    body: You will not pay for a traffic script, or ads reporting matters.
+    who: GA4
+  - title: The cookieless page is enough
+    body: You like the dashboard and you will pay the plan that matches the features.
+    who: Stay on Plausible
 comparison: plausible-alternatives
 ladders:
   - plausible
-  - fathom
 tools:
+  - id: plausible
+    title: Plausible
+    blurb: "Stay if the one-page traffic dashboard is the product you wanted."
+    cta: Compare with DataFast
+    href: /compare/datafast-vs-plausible/
   - id: fathom
     title: Fathom
-    blurb: "The nearest neighbor. Entry price $15 a month at up to 100,000 pageviews, with revenue tracking listed on all plans."
-    cta: Fathom overview
+    blurb: "Cookieless analytics with revenue on every plan, from $15 a month."
+    cta: Fathom alternatives
     href: /alternatives/fathom-analytics/
   - id: datafast
-    title: "DataFast — our pick for revenue"
-    blurb: "Choose it when Business-plan revenue tracking is the feature you would have paid Plausible for, and you want that job to be the product."
+    title: "DataFast, for channel revenue"
+    blurb: "From $9 a month at 10,000 events. The button is an affiliate link."
     cta: "Visit DataFast"
     placement: plausible-alt-card
     featured: true
-    secondaryHref: /reviews/datafast/
-    secondaryCta: Read the review
+    secondaryHref: /compare/datafast-vs-plausible/
+    secondaryCta: DataFast vs Plausible
   - id: ga4
-    blurb: "Free, cookie-based, and the practical choice when Google Ads is the acquisition channel."
+    title: Google Analytics 4
+    blurb: "Free, with cookies and Google Ads reporting."
     cta: GA4 alternatives
     href: /alternatives/google-analytics/
-  - id: posthog
-    blurb: "A product suite with a free million events. Too much tool if you only wanted Plausible’s one-page dashboard."
-    cta: PostHog alternatives
-    href: /alternatives/posthog/
-honestyTitle: When Plausible is the right stay
+honestyTitle: When you should stay
 honesty: |
-  Stay if the one-page dashboard is the point, if you want the open-source story Plausible tells on its homepage, or if your traffic fits a tier you already understand. Fathom and DataFast are alternatives for specific gaps, not a verdict that Plausible is a weak product.
+  Stay if EU hosting, the open-source story, or the one-page dashboard is why you bought Plausible, and the plan you need is one you will pay. Switching to save the difference between $9 and $15 is rarely worth a migration. Switch when revenue is stuck on Business and you will not pay it, or when site count is the bill.
 faqs:
-  - q: How much does Plausible cost?
-    a: "On 24 November 2026 the homepage slider listed monthly USD prices. At 10,000 pageviews: Starter $9, Growth $14, Business $19. At 100,000: $19, $29, and $39. Yearly billing in that script is ten times the monthly price. The price table on this page matches those steps through 10 million pageviews. Docs describe a 30-day trial with no card."
-  - q: Does Plausible track revenue?
-    a: "Choose Business if you need revenue tracking, funnels, journeys, custom properties, the Stats API, or Data Studio. That is different from Fathom, which includes event and revenue tracking on every plan, and from DataFast, which is built around the payment join."
-  - q: Is DataFast cookieless like Plausible?
-    a: "Plausible uses no cookies. DataFast offers a default cookie script and a separate cookieless script. The cookieless mode is weaker for long revenue journeys. Details are in the [cookieless guide](/guides/cookieless-analytics/)."
-  - q: Which links are affiliate links?
-    a: "Only DataFast links, via via=sortino. Plausible, Fathom, Google, and PostHog are cited without an affiliate parameter."
+  - q: What does Plausible cost?
+    a: "As of 26 November 2026, at 10,000 pageviews: Starter $9, Growth $14, Business $19. At 100,000: $19, $29, and $39. Yearly billing is ten times the monthly price. The trial is 30 days and does not require a card. The table on this page matches those steps through 10 million pageviews."
+  - q: Which Plausible alternative tracks revenue on the entry plan?
+    a: "Fathom lists event and revenue tracking on every plan, from $15 a month for up to 100,000 pageviews and 50 sites. DataFast is built around the payment join, from $9 a month for 10,000 events. Plausible keeps revenue tracking on Business. See [DataFast vs Plausible](/compare/datafast-vs-plausible/)."
+  - q: Is there a free Plausible alternative?
+    a: "Standard GA4 is free and uses cookies. PostHog, Mixpanel, and Amplitude have large free event allowances and are product-analytics products. The [Google Analytics alternatives](/alternatives/google-analytics/) guide starts from the free option."
+  - q: Are the DataFast links affiliate links?
+    a: "Yes. They use via=sortino. Plausible, Fathom, Google, and PostHog links on this site do not."
 related:
   - href: /compare/datafast-vs-plausible/
     type: Compare
     title: DataFast vs Plausible
-    description: Revenue attribution beside Plausible’s cookieless traffic plans.
+    description: Two $9 entry prices that meter different units.
   - href: /alternatives/fathom-analytics/
     type: Alternatives
-    title: Fathom alternatives
-    description: The same neighborhood, from Fathom’s side of the fence.
+    title: Fathom Analytics alternatives
+    description: The nearest cookieless neighbor.
   - href: /guides/cookieless-analytics/
     type: Guides
-    title: "Cookieless analytics: what you gain and lose"
-    description: What a cookieless script can and cannot remember.
+    title: Cookieless analytics
+    description: What you give up when the visitor id rotates.
   - href: /reviews/datafast/
     type: Reviews
     title: DataFast review
-    description: Prices, providers, and when not to pick it over Plausible.
-  - href: /alternatives/google-analytics/
-    type: Alternatives
-    title: Google Analytics alternatives
-    description: The wider shortlist, including Plausible.
+    description: When revenue attribution is the reason to switch.
 ---
 
-Plausible is a simple, privacy-friendly Google Analytics alternative. It uses no cookies, and the script is meant to stay small. The homepage also carries the price. A slider named `volumesWithPrices` lists monthly USD amounts for Starter, Growth, and Business, from 10,000 pageviews through 10 million. At 10,000 pageviews, Starter is $9, Growth is $14, and Business is $19. At 100,000 pageviews the prices are $19, $29, and $39. Yearly billing is ten times the monthly price, which is two months free. Above the top self-serve step, the button becomes a contact path.
+Plausible alternatives make sense when the cookieless dashboard is right and one limit is wrong: revenue locked to Business, a small site count, or a bill you will not pay. If none of those is true, staying is the reasonable move.
 
-Plans split by capability, not by a different price ladder. Every plan uses the same pageview tiers. Starter is one site and solo use. Growth is the team plan. At the 10,000 tier it includes up to three sites and three team members, plus shared links, embedded dashboards, shared segments, and shared annotations. Business is the plan for funnels, user journeys, revenue tracking, custom properties, a consolidated view, the Stats API, or Data Studio. Enterprise is custom: SSO, a sites API, a managed proxy, and raw exports. A 30-day trial does not require a card. The trial includes Business features, so you can see them before you choose.
+Prices below are as of 26 November 2026.
 
-Usage is pageviews plus custom events across the sites in a team. A single month over the tier does not create a surprise bill. Two consecutive months over the tier leads to an upgrade request, and dashboards can lock if you ignore it, while collection continues. It is milder than a hard stop on day one, and it is still a lock.
+## Plausible alternatives, by the limit you hit
 
-People look for Plausible alternatives when the Business jump is the feature they need, when they have many small sites, or when they want a free tool. The shortlist is Fathom, DataFast, GA4, and, only if the job changed, PostHog.
+Plausible is a cookieless, privacy-first analytics product. Starter is one site for solo use. Growth is up to 3 sites and 3 team members. Business is funnels, journeys, revenue tracking, custom properties, a consolidated view, the Stats API, and Data Studio. AI features (MCP) are listed on all plans. The traffic product is on every plan. The revenue product is why the docs tell you to buy Business.
+
+At 10,000 pageviews the monthly prices are $9, $14, and $19. At 100,000 they are $19, $29, and $39. Yearly billing is ten times the monthly price.
 
 ## Fathom, the nearest neighbor
 
-Fathom’s published starting price is $15 a month, for up to 100,000 monthly pageviews and 50 sites. At that step, Standard is $15 and Business is $39. Both figures are published prices for up to 100,000 monthly pageviews. Business is about seats and roles, not about unlocking analytics features. Every plan includes the same analytics features, including event and revenue tracking and UTM campaigns, and a cookie banner is not required. There is no free plan. The trial is 7 days and a card is required. Yearly billing is ten times monthly. Extra sites come in packs of 50 at $10 per month.
+Fathom is from $15 a month for up to 100,000 pageviews and 50 sites. Business at that step is $39 and adds seats and API room, not revenue. Event and revenue tracking are listed on every plan. The trial is 7 days and requires a card. There is no free plan. If 50 sites on the entry invoice is the reason you are shopping, Fathom is the first [alternative](/alternatives/fathom-analytics/) to price. The [cookieless guide](/guides/cookieless-analytics/) covers what both scripts remember across days.
 
-At 100,000 pageviews, Plausible Starter is $19 and Fathom Standard is $15. Both figures are published prices at that volume. Plausible Starter is one site. Fathom includes 50. If you run many small sites, Fathom’s entry plan is the one to price. If you run one site and you do not need revenue tracking, Plausible Starter at lower volumes is the cheaper published number: $9 versus Fathom’s $15 floor. The [Fathom alternatives](/alternatives/fathom-analytics/) page reverses the comparison.
+## DataFast when revenue is why you would buy Business
 
-Revenue is the sharper split. Fathom includes it on all plans. Plausible puts it on Business. A founder who wants revenue on the cheapest invoice should not assume the two logos match. Check both prices the week you buy. These figures are as of 24 November 2026.
+DataFast Starter is $9 a month and Growth is $19 a month. Both figures are published starting prices for 10,000 events. Connecting a documented payment provider is how you get channel revenue, on those plans, not on a higher analytics tier. You give up Plausible's default cookieless design unless you use DataFast's cookieless script, which is weaker for long journeys. The comparison is [DataFast vs Plausible](/compare/datafast-vs-plausible/). The [review](/reviews/datafast/) is the product note. The link is an affiliate link.
 
-## DataFast when revenue is the reason you would buy Business
+## GA4 and PostHog
 
-DataFast is this site’s pick for revenue attribution. It is not a Plausible clone and it is not a full replacement for PostHog or Mixpanel. Starter is $9 a month. Growth is $19. Both figures are published starting prices for 10,000 monthly events. Starter is one site, one seat, and three years of retention. Growth adds sites, seats, longer retention, social mentions, and link attribution. Events include pageviews and payment events, so a busy checkout counts toward the same cap as traffic. The [review](/reviews/datafast/) has the full ladder.
+GA4 is free and uses cookies. It fits if Google Ads is the channel, or if you want to stop paying for analytics. It is a poor fit if the reason you chose Plausible was the consent story. The [GA4 alternatives](/alternatives/google-analytics/) page is that decision from the other direction.
 
-Choose DataFast over Plausible Business when the dashboard you want is revenue by channel and page, the payment provider is one DataFast documents, and you accept either a cookie or the shorter memory of the cookieless script. Choose Plausible when you want the calm traffic page, the EU hosting story matters, and revenue is optional. Plausible is made and hosted in the EU. Much of DataFast’s infrastructure is outside the EU, including the United States. That difference matters for some buyers.
+PostHog is a product suite with a free million analytics events. It can collect pageviews. It is the alternative when you have outgrown a marketing dashboard and need replay, flags, or funnels in the product. The [PostHog pricing](/pricing/posthog/) guide is the bill.
 
-The affiliate link does not change this split. If Plausible Business is the better fit, stay there.
+## If you switch
 
-## GA4 and PostHog, which are not the same kind of alternative
-
-GA4 is free and uses cookies. It is the alternative when the thing you would miss about leaving Plausible is nothing, and the thing you would miss about leaving Google is Ads. It is a poor alternative if the cookieless posture was the purchase. You would be walking back the reason you chose Plausible. The [GA4 alternatives](/alternatives/google-analytics/) guide is the long way around that circle.
-
-PostHog is the alternative when site analytics turned out to be the wrong category. You need replay, flags, or a real event taxonomy inside an app. PostHog’s first million analytics events are free, and then you are on a usage card. Buying PostHog because Plausible’s Business plan felt expensive is how a simple site acquires an event bill. The [PostHog pricing](/pricing/posthog/) notes exist so that trade is visible. The [cookieless guide](/guides/cookieless-analytics/) explains what you give up when you refuse a long-lived id. Plausible’s design is cookieless on purpose. Do not expect it to reconstruct a 90-day buying committee. No cookieless product in this set can.
-
-## How to switch, if you do
-
-Export the Plausible numbers you quote in a meeting: top sources, top pages, and any goal that someone acts on. Trial the next tool for the documented trial length. Fathom’s is 7 days, DataFast’s is 14, and you can also run a second script without a trial if you are returning to GA4.
-
-Compare like with like. Plausible counts custom events toward the pageview tier. DataFast counts payment events toward the event tier. A checkout-heavy site can look “more expensive” on DataFast because the unit is different. Price the unit you will actually send.
-
-If you stay, pick the tier from the slider after a full month of the trial. The 10,000 pageview step is a common landing point and a bad fit for a site that already knows it does 80,000.
+Export or screenshot the referrers you trust, run the new script beside Plausible for a week, and compare. Move revenue only after a test payment lands on the channel you expect. If the week looks the same and the invoice is not the problem, stay.

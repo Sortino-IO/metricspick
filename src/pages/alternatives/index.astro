@@ -8,21 +8,21 @@ const articles = (await getCollection("articles", ({ data }) => data.section ===
   (a, b) => a.data.order - b.data.order,
 );
 const description =
-  "DataFast, Google Analytics, Amplitude, PostHog, Mixpanel, Plausible, and Fathom alternatives, compared by the job a founder actually needs done.";
+  "Analytics alternatives for founders leaving GA4, PostHog, Mixpanel, Plausible, Fathom, or Amplitude. See who should switch, who should stay, and the price.";
 ---
 <Simple
-  title="Analytics alternatives"
+  title="Analytics Alternatives"
   description={description}
   kicker="Alternatives"
-  lede="Each guide below compares several tools. DataFast is the pick when you need revenue attribution. It is not the pick when you need a product-analytics suite."
+  lede="Switch when the tool you have is not answering the question you open every week. Stay when it already does. DataFast fits revenue by channel. It does not fit a product analytics suite."
   crumbs={[{ href: "/", label: "Home" }, { label: "Alternatives" }]}
 >
-  <p>An “alternative” is only useful if you name the job you are leaving. Founders usually mean one of three jobs: a lighter report than GA4, a privacy-first traffic script, or a product suite that can replace Amplitude, Mixpanel, or PostHog. Those are different shortlists.</p>
-  <p>DataFast belongs on the first and second lists when the question is which channel or page brought a payment. PostHog, Mixpanel, and Amplitude belong on the third list. Plausible and Fathom belong on the privacy-first traffic list, with revenue features that are real but not the whole product. The guides below keep those lines visible. Public prices are as of 24 November 2026.</p>
-  <p>If the tool you have today is DataFast, start with the <a href="/alternatives/datafast/">DataFast alternatives</a>. That page covers when to stay, then links the six <a href="/compare/">DataFast comparisons</a> and the <a href="/pricing/datafast/">pricing ladder</a>. The <a href="/reviews/datafast/">DataFast review</a> is the product itself. The <a href="/compare/posthog-vs-google-analytics/">PostHog vs GA4 comparison</a> sits next to these pages on purpose.</p>
+  <p>People usually want one of three things: a lighter report than GA4, a privacy-first traffic script, or a product suite that can stand in for Amplitude, Mixpanel, or PostHog. Those are different shortlists.</p>
+  <p>DataFast belongs on the first two when the question is which channel or page brought a payment. PostHog, Mixpanel, and Amplitude belong on the third. Plausible and Fathom belong with privacy-first traffic, and their revenue features are real without being the whole product. Public prices are as of 26 November 2026.</p>
+  <p>If the tool you have today is DataFast, start with the <a href="/alternatives/datafast/">DataFast alternatives</a>. That page covers when to stay, then links the six <a href="/compare/">comparisons</a> and the <a href="/pricing/datafast/">pricing ladder</a>. The <a href="/reviews/datafast/">DataFast review</a> covers the product. The <a href="/compare/posthog-vs-google-analytics/">PostHog vs GA4 comparison</a> is the matchup for teams choosing between those two.</p>
   <section slot="wide" class="band band-yellow">
     <div class="article-wide">
-      <h2>Guides in this section</h2>
+      <h2>Analytics alternatives</h2>
       <GuideList
         items={articles.map((article) => ({
           href: `/${article.id}/`,

@@ -1,38 +1,38 @@
 ---
-title: "Cookieless analytics: what you gain and lose"
-seoTitle: "Cookieless analytics: what you gain and lose"
-description: "What cookieless analytics changes for founders: Plausible, Fathom, and DataFast’s cookieless script, and why long revenue journeys get harder without a stable visitor id."
+title: "Cookieless analytics"
+seoTitle: "Cookieless Analytics Guide"
+description: "Cookieless analytics for founders: what you gain and lose with Plausible, Fathom, and DataFast when a sale happens days after the first visit, not the same day."
 kicker: Guides
-lede: "A cookieless script can remove a banner and still tell you which pages were viewed today. It has a weaker memory across days. That trade is the whole decision."
+lede: "Choose cookieless analytics if you want a simpler consent story and you can accept a weaker memory across days. Keep a cookie, with consent handled, if a payment often happens days or weeks after the first visit and you need that first visit to stay attached. Plausible and Fathom start cookieless. DataFast offers it as a mode. GA4's standard tag uses cookies."
 accent: "Cookieless analytics"
-updated: 2026-11-24
+updated: 2026-11-26
 section: guides
 breadcrumb: Cookieless analytics
 order: 20
 tldr:
-  - "You gain a simpler consent story and, on several of these tools, a smaller public pitch about personal data."
-  - "You lose a stable browser identity across long gaps, which is exactly what delayed revenue attribution wants."
-  - "Plausible and Fathom lead with cookieless designs. DataFast offers cookieless as a mode, and documents the accuracy cost."
-  - "GA4’s standard tag uses cookies. Switching to it is not a cookieless move."
-tldrNote: "Product behavior as of 24 November 2026, including DataFast’s cookieless doc."
+  - "You gain a simpler consent story for the analytics script."
+  - "You lose a stable browser identity across long gaps, which delayed revenue credit wants."
+  - "Plausible and Fathom lead with cookieless designs. DataFast documents a cookieless mode and its limit."
+  - "GA4's standard tag uses cookies. Moving to it is not a cookieless move."
+tldrNote: "Product behavior as of 26 November 2026, including DataFast's cookieless documentation."
 jobs:
-  - title: Avoid a banner
-    body: The priority is a script you can explain without a consent dialog for that tool.
+  - title: Avoid a banner for this script
+    body: The priority is an analytics script you can explain without a consent dialog for that tool.
     who: Plausible, Fathom, or DataFast cookieless
-  - title: Protect long attribution
-    body: Sales take weeks, and you want the first visit to remain visible.
+  - title: Protect a long sales cycle
+    body: The purchase can happen days after the first visit.
     who: A cookie-based script, with consent handled
   - title: Stay in Google
-    body: Ads matter more than the banner. Accept GA4’s cookies or do the consent work.
+    body: Ads matter more than the banner.
     who: GA4
-  - title: Product identity
-    body: Logged-in users are the subject. A marketing cookie is the wrong debate.
-    who: PostHog, Mixpanel, or Amplitude, configured on purpose
+  - title: Logged-in product identity
+    body: The subject is a user account, not a marketing cookie.
+    who: PostHog, Mixpanel, or Amplitude
 comparison: cookieless
 tools:
   - id: plausible
     title: Plausible
-    blurb: "No cookies, and no cookie banner required. Revenue features sit on Business."
+    blurb: "No cookies, and no cookie banner required for the script. Revenue features sit on Business."
     cta: Plausible overview
     href: /alternatives/plausible/
   - id: fathom
@@ -41,86 +41,84 @@ tools:
     cta: Fathom overview
     href: /alternatives/fathom-analytics/
   - id: datafast
-    title: "DataFast — cookie or cookieless"
-    blurb: "Two scripts. The cookieless one is documented as less accurate for long revenue journeys."
+    title: DataFast
+    blurb: "Cookie by default. Cookieless is a mode with a shorter memory. The button is an affiliate link."
     cta: "Visit DataFast"
     placement: cookieless-card
     featured: true
     secondaryHref: /reviews/datafast/
     secondaryCta: Read the review
   - id: ga4
-    blurb: "The standard tag uses cookies. It is the comparison point, not a cookieless option."
+    title: Google Analytics 4
+    blurb: "The standard web tag uses a first-party _ga cookie."
     cta: GA4 alternatives
     href: /alternatives/google-analytics/
-honestyTitle: Cookieless is not anonymous in every legal sense
+honestyTitle: A banner you removed can be a sale you cannot explain
 honesty: |
-  A script can avoid cookies and still process IP addresses or similar signals. The customer remains responsible for privacy notices and lawful basis. This page is not legal advice. It is a product comparison.
+  Cookieless totals for today can still be useful. A story that says "this campaign paid off over 30 days" is weaker when the visitor id changes every day. If that story is why you bought analytics, do not turn the cookie off to make the footer quieter.
 faqs:
-  - q: What does cookieless mean here?
-    a: "It means the analytics script does not set a cookie to remember the browser. It does not mean the vendor stores nothing. DataFast builds a hashed id from signals such as IP, user agent, domain, and a rotating salt. Plausible and Fathom are cookieless products. Read each privacy page before you promise customers a legal outcome."
-  - q: Will I still see referrers?
-    a: "Yes, in the ordinary case. The loss shows up when you need the same browser to be the same person next week. Aggregates for a day can look fine. A 30-day path to payment looks worse."
-  - q: Which DataFast script should I use?
-    a: "Use the default cookie script if attribution across days is the reason you bought it and your consent setup allows it. Use the cookieless script if avoiding that cookie is the constraint. The [review](/reviews/datafast/) links the doc. The choice is a setting, not two products."
-  - q: Do product-analytics tools avoid this trade-off?
-    a: "They often identify logged-in users, which is a different identifier than a marketing cookie. PostHog, Mixpanel, and Amplitude can be configured in more than one way. That is a privacy review of your SDK, not a slogan. Their pricing guides are [PostHog](/pricing/posthog/), [Mixpanel](/pricing/mixpanel/), and [Amplitude](/pricing/amplitude/)."
+  - q: What is cookieless analytics?
+    a: "Analytics that does not store a long-lived identifier in a browser cookie. Plausible and Fathom are built that way. DataFast offers a cookieless script beside its default cookie script. You can still see pageviews. You are less able to treat a person as the same visitor across many days."
+  - q: Does DataFast work without cookies?
+    a: "Yes, with a separate script. It builds a visitor id from the IP address, user agent, site domain, and a salt that rotates about every 24 hours. The same person on a later day is not one long-lived profile. The default script uses cookies and is the more accurate option for long journeys. See the [review](/reviews/datafast/)."
+  - q: Which cookieless tool includes revenue?
+    a: "Fathom lists event and revenue tracking on every plan, from $15 a month. Plausible puts revenue tracking on Business. DataFast's revenue join works with either script, and the cookieless mode is the weaker one for delayed payments. Compare them in [DataFast vs Plausible](/compare/datafast-vs-plausible/)."
+  - q: Is GA4 cookieless?
+    a: "The standard web tag stores a client ID in a first-party cookie named _ga. Switching to GA4 is not how you leave cookies. The [GA4 alternatives](/alternatives/google-analytics/) guide is the wider map."
 related:
-  - href: /guides/marketing-attribution-tools/
-    type: Guides
-    title: Marketing attribution tools
-    description: Why the identifier exists in the first place.
-  - href: /reviews/datafast/
-    type: Reviews
-    title: DataFast review
-    description: Both scripts, the prices, and the job the product is for.
   - href: /alternatives/plausible/
     type: Alternatives
     title: Plausible alternatives
-    description: A cookieless-first product and its neighbors.
+    description: The cookieless traffic product and its neighbors.
   - href: /alternatives/fathom-analytics/
     type: Alternatives
-    title: Fathom alternatives
-    description: Another cookieless-first product, with revenue on all plans.
+    title: Fathom Analytics alternatives
+    description: Revenue on every plan, with a cookieless script.
+  - href: /guides/marketing-attribution-tools/
+    type: Guides
+    title: Marketing attribution tools
+    description: Which kind of credit you are trying to keep.
+  - href: /reviews/datafast/
+    type: Reviews
+    title: DataFast review
+    description: Default cookies, and the cookieless limit.
+sources:
+  - label: DataFast cookieless tracking
+    href: https://datafa.st/docs/gdpr-cookieless-tracking
+  - label: GA4 client ID
+    href: https://support.google.com/analytics/answer/11593727?hl=en
 ---
 
-Cookieless analytics is usually sold as relief. No banner, a short script, a dashboard that still shows pages and sources. The relief is real for a content site whose decisions are “which post worked this week.” The relief is expensive for a business whose payment arrives two weeks after the first visit, because the thing a cookie was doing was remembering that gap.
+Cookieless analytics can remove a banner and still tell you which pages were viewed today. It has a weaker memory across days. That tradeoff is the decision. If the sale happens in the same session, the loss is smaller. If the sale takes weeks, the loss is the attribution you bought the tool for.
 
-This guide explains the trade with the products on this site. It is not a legal memo. Privacy law depends on where you and your visitors are, and on what else your site stores. A vendor’s “no cookie banner” line describes that script, not your whole page.
+Details below are as of 26 November 2026.
 
-## What a cookie was doing in analytics
+## What a cookie was doing
 
-A first-party analytics cookie gives the browser a stable id. The next visit can be tied to the last one. New versus returning, a first-touch channel, and a payment that happens on a later day all lean on that stability. GA4’s standard web tag participates in this pattern. Google documents analytics cookies, including `_ga`. If you need consent before those cookies, the banner is the visible cost of the memory.
+A long-lived browser identifier lets the analytics tool treat Monday's visit and Thursday's payment as the same visitor. Without it, each day can look like a new person. Totals still add up. The path from first click to payment gets shorter than the real one.
 
-Remove the cookie and the vendor has to either forget the browser at the end of a short window or rebuild a guess from other signals. Both approaches show up in the market. The guess is where privacy reviews get serious, because an IP address plus a user agent is still a signal even when it is hashed.
+Consent rules still depend on your site, your region, and the other scripts you run. This guide is about the analytics script, not a legal opinion.
 
-## DataFast’s two scripts
+## DataFast's two scripts
 
-DataFast documents a default script and a cookieless script. The default uses cookies for visitor identification and is the higher-accuracy option, including for long and multi-touch journeys. Depending on your setup, that script may need a cookie banner. The cookieless script does not use cookies for the visitor id, and it is designed so you usually do not need a banner for DataFast itself.
+DataFast's default script uses cookies. The cookieless script does not use a cookie for the visitor id. The server builds an id from the IP address, user agent, the site domain, and a salt that rotates about every 24 hours (UTC). DataFast's own note says the same person on different days is not linked as one long-lived profile.
 
-The cookieless mechanics: no long-lived visitor cookie, possible session storage for the current tab session, and a server-side pseudonymous id hashed from signals such as IP address, browser user agent, your domain, and a salt that rotates about every 24 hours. The same person on a later day is not linked as one long-lived profile. Cross-domain linking is off. Returning-visitor breakdowns, visit-count filters, and the user or journey tabs are unavailable or less reliable. Identify features used with the default script are not applied the same way.
+Use the default script when the payment can happen days later and your consent setup allows the cookie. Use the cookieless script when avoiding that cookie is the constraint, and accept the shorter memory. Prices do not change with the script. Starter is still from $9 a month for 10,000 events. The [pricing page](/pricing/datafast/) is the ladder. The [review](/reviews/datafast/) is the product. The link is an affiliate link. The [alternatives](/alternatives/datafast/) page is the exit if the limit is unacceptable.
 
-The revenue limit is the one founders should read twice. DataFast’s value is tying revenue to traffic sources. Without a stable key, multi-touch and delayed conversions attribute less completely. Daily aggregates can still mean something. A story that needs the first touch from last quarter will not survive the rotating salt. That limit is shared by cookieless products generally. Teams who need long-cycle accuracy should use the default script and plan for consent.
+## Plausible and Fathom
 
-The [DataFast review](/reviews/datafast/) treats the default script as the one that matches the revenue recommendation, and the cookieless script as a conscious downgrade when the banner is the binding constraint. The published starting price is still $9 a month either way. The mode does not change the invoice. It changes the memory. The [pricing page](/pricing/datafast/) is that invoice, [DataFast vs Plausible](/compare/datafast-vs-plausible/) is the cookieless neighbor, and the [alternatives](/alternatives/datafast/) page is the wider shortlist if the cookie trade means you should leave. The link to the doc carries the affiliate parameter `via=sortino`.
+[Plausible](/alternatives/plausible/) uses no cookies and does not require a cookie banner for its script. Revenue tracking is on the Business plan. At 10,000 pageviews, Business is $19 a month. Starter is $9.
 
-## Plausible and Fathom, which start from cookieless
+[Fathom](/alternatives/fathom-analytics/) does not require a cookie banner for its script, and it lists event and revenue tracking on every plan. The entry price is $15 a month for up to 100,000 pageviews and 50 sites.
 
-Plausible uses no cookies, and a cookie banner is not required for the script. The product is a Google Analytics alternative that respects visitor privacy, made and hosted in the EU. Expect the same class of limit DataFast documents. A cookieless design does not reconstruct a six-week committee purchase. Revenue features are a reason to choose Business, not a promise that cookieless revenue is long-horizon multi-touch. The [Plausible alternatives](/alternatives/plausible/) page has the prices: Starter from $9 a month at 10,000 pageviews.
-
-Fathom does not require a cookie banner, and event and revenue tracking are on every plan, from $15 a month at up to 100,000 pageviews. A revenue feature on the price list is not a measurement of how far back a first touch survives. The privacy design is cookieless. The [Fathom page](/alternatives/fathom-analytics/) keeps those two facts separate.
-
-If your sales cycle is a same-day checkout, both products can show a source on a payment often enough to be useful. If your sales cycle is a quarter, ask the vendor, in writing, how a first visit is stored, before you promise the board a first-touch chart. That question is more useful than another logo comparison.
+Both can show traffic without a cookie. Neither promises a year-long anonymous browser identity. If revenue on the entry plan matters, Fathom is the closer of the two. If a $9 traffic plan matters, Plausible is. The comparison with DataFast is [DataFast vs Plausible](/compare/datafast-vs-plausible/).
 
 ## GA4 and the product suites
 
-Moving from Plausible to GA4 to “get better attribution” is a move back to cookies. It can be the right move when Google Ads is the channel and you will do the consent work. It is a contradictory move if the banner was the problem you paid to remove. The [GA4 alternatives](/alternatives/google-analytics/) page assumes that contradiction is possible and tells you when to stay on GA4 anyway.
+GA4's standard web tag uses a `_ga` cookie. It is the wrong destination if cookieless is the requirement. It is the right one if Google Ads is the requirement. The [GA4 alternatives](/alternatives/google-analytics/) guide starts from that split.
 
-PostHog, Mixpanel, and Amplitude are often used with logged-in identifiers. A user id your app already has is not a third-party marketing cookie, and it is also not “cookieless” as a moral category. It is personal data you chose to send, under your privacy notice. These tools can be configured with more or less browser persistence. Budget a privacy review of the SDK, not a slogan. Their value is product analytics. The [attribution guide](/guides/marketing-attribution-tools/) separates that job from channel revenue so the cookie debate does not swallow it.
+PostHog, Mixpanel, and Amplitude can be configured around a logged-in user id. That is a different identifier from a marketing cookie. If the subject is a product account, the cookie debate on the marketing site is the wrong argument. Their pricing is on the [PostHog](/pricing/posthog/), [Mixpanel](/pricing/mixpanel/), and [Amplitude](/pricing/amplitude/) pages.
 
-## How to choose the mode
+## How to choose
 
-If you publish a content site and you look at yesterday’s referrers, pick a cookieless-first tool and stop negotiating with yourself. Plausible and Fathom are the straight versions of that choice. DataFast’s cookieless mode is the version to pick if you also want its revenue screen and you accept the documented loss on long gaps.
-
-If you sell with a delay, and the first article is the thing you are trying to fund, use a stable id. On DataFast that means the default script plus whatever consent you owe. On your own database it might mean storing the first-touch UTM on the customer when they sign up, which survives even if the analytics cookie later disappears. That database field is often more honest than any analytics product, cookieless or not.
-
-If you are not sure of the delay, look at ten recent payments and write down the days since the first visit you know about. A cluster of zeros and ones supports a cookieless tool. A cluster of twenties supports a cookie, a login, or a field in your own app.
+If you need today's pages and sources, and a banner for this script is the problem, start with Plausible or Fathom. If you need a 30-day "this campaign paid" story, keep a cookie you have consent for, or accept that the cookieless number will under-explain the sale. The [attribution guide](/guides/marketing-attribution-tools/) is the credit question next to this one.

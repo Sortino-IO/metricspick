@@ -10,15 +10,15 @@ const articles = (await getCollection("articles", ({ data }) => data.section ===
 ---
 <Simple
   title="Analytics Tools Compared Side by Side"
-  description="Side-by-side comparisons of analytics tools, including DataFast against Plausible, Fathom, Google Analytics, PostHog, Mixpanel, and Amplitude."
+  description="Analytics tools compared side by side: DataFast, Plausible, Fathom, Google Analytics, PostHog, Mixpanel, and Amplitude, with pricing and who each one fits."
   kicker="Compare"
   lede="Compare DataFast with Plausible, Fathom, Google Analytics, PostHog, Mixpanel, and Amplitude. Each page covers pricing, features, and which tool fits your site."
   crumbs={[{ href: "/", label: "Home" }, { label: "Compare" }]}
 >
-  <p>Prices on these pages are as of 25 November 2026. The <a href="/reviews/datafast/">DataFast review</a> explains the product. The <a href="/pricing/datafast/">DataFast pricing</a> page lists the plans. The <a href="/alternatives/">alternatives</a> hub is where to start when you want to leave a tool.</p>
+  <p>Use a comparison when you are choosing between two products, not when you are leaving one without a replacement in mind. Prices on these pages are as of 26 November 2026. The <a href="/reviews/datafast/">DataFast review</a> explains that product. The <a href="/pricing/datafast/">DataFast pricing</a> page lists its plans. The <a href="/alternatives/">alternatives</a> hub is the place to start when you want to leave a tool.</p>
   <section slot="wide" class="band band-yellow">
     <div class="article-wide">
-      <h2>Comparisons</h2>
+      <h2>Analytics tools compared</h2>
       <GuideList
         items={articles.map((article) => ({
           href: `/${article.id}/`,

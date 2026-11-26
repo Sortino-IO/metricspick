@@ -9,17 +9,17 @@ const articles = (await getCollection("articles", ({ data }) => data.section ===
 );
 ---
 <Simple
-  title="Analytics guides"
-  description="Practical guides to marketing attribution, cookieless analytics, the DataFast API, and DataFast MCP, written for founders choosing a stack."
+  title="Analytics Guides"
+  description="Analytics guides on marketing attribution tools, cookieless analytics, and the DataFast API and MCP. Each guide says who should act and what the choice costs."
   kicker="Guides"
-  lede="These guides explain a decision, then compare the tools that can carry it. They are not a single ranked list of logos."
+  lede="These guides explain a decision, then compare the tools that can carry it. They are not one ranked list of logos."
   crumbs={[{ href: "/", label: "Home" }, { label: "Guides" }]}
 >
-  <p>Attribution is the question of which visit should get credit for a payment. Cookieless analytics is the question of how stable that credit can be if you refuse a long-lived browser identifier. Those two guides answer them separately, because a cookieless script and a revenue report pull in opposite directions once a sale takes weeks instead of minutes.</p>
-  <p>Two DataFast guides sit next to those decisions. The <a href="/guides/datafast-api/">DataFast API</a> page maps the official docs: website keys, goal events, revenue, the CLI, and where MCP fits. The <a href="/guides/datafast-mcp/">DataFast MCP</a> guide is the assistant connection for an account you already have at datafa.st. Neither one is a pricing page or a review. The <a href="/reviews/datafast/">DataFast review</a>, the <a href="/pricing/datafast/">DataFast pricing</a> ladder, the <a href="/alternatives/datafast/">DataFast alternatives</a>, and the <a href="/compare/datafast-vs-plausible/">DataFast vs Plausible</a> comparison are the neighboring pages. API and MCP steps are as of 25 November 2026. The attribution and cookieless guides use vendor details as of 24 November 2026 unless a sentence dates them later.</p>
+  <p>Marketing attribution asks which visit should get credit for a payment. Cookieless analytics asks how stable that credit can be without a long-lived browser identifier. Those guides stay separate, because a cookieless script and a long revenue journey pull in opposite directions once a sale takes weeks.</p>
+  <p>Two DataFast guides sit next to those decisions. The <a href="/guides/datafast-api/">DataFast API</a> page covers website keys, goal events, revenue, and the CLI. The <a href="/guides/datafast-mcp/">DataFast MCP</a> guide is the assistant connection for an account you already have. Neither one is a pricing page or a review. The <a href="/reviews/datafast/">DataFast review</a>, the <a href="/pricing/datafast/">DataFast pricing</a> ladder, the <a href="/alternatives/datafast/">DataFast alternatives</a>, and the <a href="/compare/datafast-vs-plausible/">DataFast vs Plausible</a> comparison are the neighboring pages. Details are as of 26 November 2026.</p>
   <section slot="wide" class="band band-yellow">
     <div class="article-wide">
-      <h2>Guides</h2>
+      <h2>Analytics guides</h2>
       <GuideList
         items={articles.map((article) => ({
           href: `/${article.id}/`,

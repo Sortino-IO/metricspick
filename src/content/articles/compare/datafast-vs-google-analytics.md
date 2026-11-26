@@ -1,38 +1,38 @@
 ---
 title: "DataFast vs Google Analytics"
-seoTitle: "DataFast vs Google Analytics for founders"
-description: "DataFast vs Google Analytics: a paid revenue-attribution tool against free GA4, and when founders keep both instead of deleting the Google tag."
+seoTitle: "DataFast vs Google Analytics"
+description: "DataFast vs Google Analytics for founders deciding whether to add a paid revenue tool beside free GA4, or to replace the Google tag and lose ads reporting."
 kicker: Compare
-lede: "Google Analytics 4 is free and tied to Google’s ad stack. DataFast’s published starting price is $9 a month. It is built to show which channel brought a paying customer. Replacing GA4 with DataFast deletes the ads report. Adding DataFast beside GA4 is often the right setup."
+lede: "Keep Google Analytics 4 if Google Ads, a warehouse export, or a finished reporting habit is why the tag is there. Add DataFast beside it when you still cannot see which channel brought a paying customer. Replacing GA4 with DataFast deletes the ads report. DataFast is from $9 a month. Standard GA4 is free."
 accent: "DataFast vs Google Analytics"
-updated: 2026-11-25
+updated: 2026-11-26
 section: compare
-breadcrumb: DataFast vs GA4
+breadcrumb: DataFast vs Google Analytics
 order: 40
 tldr:
-  - "Keep GA4 when Google Ads, a finished GA4 practice, or the free product is the thing you would miss."
-  - "Add DataFast when the missing report is revenue by channel or page and you will connect a payment provider."
+  - "GA4 stays when Google Ads or an export you already use is the report."
+  - "DataFast fits beside GA4 when the missing report is revenue by channel."
+  - "DataFast is not a free GA4 replacement and not a product suite."
   - "Standard GA4 is free. DataFast Starter is $9 a month at 10,000 events."
-  - "DataFast is not a full GA4 replacement. It is not a product suite either."
-tldrNote: "GA4 and DataFast prices as of 25 November 2026. DataFast links are affiliate links."
+tldrNote: "Prices as of 26 November 2026. DataFast links are affiliate links."
 jobs:
-  - title: Ads and the Google stack
-    body: Campaigns already run in Google Ads and the team trusts GA4.
-    who: Keep GA4
   - title: Which channel paid
-    body: You want the payment joined to a source without living in explorations.
+    body: You will connect a payment provider and read revenue by source.
     who: Add DataFast
-  - title: Leave GA4 entirely
-    body: You want a lighter traffic tool and you do not need ads reporting.
-    who: Plausible or Fathom may fit better than DataFast
-  - title: In-app product behavior
-    body: Replay, flags, or cohorts showed up in the requirements.
-    who: PostHog, Mixpanel, or Amplitude
+  - title: Google Ads is the channel
+    body: The ad account is already how you judge spend.
+    who: Keep GA4
+  - title: A lighter traffic page
+    body: You want referrers without GA4's setup, and revenue can wait.
+    who: Plausible or Fathom
+  - title: Product behavior
+    body: You need replay, flags, or cohorts inside the app.
+    who: PostHog, not this pair
 comparison: datafast-vs-ga
 tools:
   - id: datafast
-    title: "DataFast — beside GA4, not instead of ads"
-    blurb: "The revenue report GA4 is not sold as. The button is an affiliate link."
+    title: "DataFast, beside GA4 for revenue"
+    blurb: "Starter from $9 a month. The button is an affiliate link."
     cta: "Visit DataFast"
     placement: datafast-vs-ga-card
     featured: true
@@ -40,73 +40,73 @@ tools:
     secondaryCta: DataFast pricing
   - id: ga4
     title: Google Analytics 4
-    blurb: "Free, with Google Ads among the integrations."
+    blurb: "Free standard product, with cookies and Google Ads reporting."
     cta: GA4 alternatives
     href: /alternatives/google-analytics/
-  - id: posthog
-    title: PostHog
-    blurb: "The suite comparison, if DataFast vs GA4 is the wrong pair."
-    cta: PostHog vs GA4
-    href: /compare/posthog-vs-google-analytics/
   - id: plausible
     title: Plausible
-    blurb: "A cookieless GA alternative when the job is traffic, not the payment join."
+    blurb: "A cookieless traffic alternative if the ads report is not the reason you stay."
     cta: DataFast vs Plausible
     href: /compare/datafast-vs-plausible/
-honestyTitle: Deleting GA4 is a separate decision
+  - id: posthog
+    title: PostHog
+    blurb: "The suite comparison, if GA4 is not the other bid."
+    cta: PostHog vs GA4
+    href: /compare/posthog-vs-google-analytics/
+honestyTitle: Deleting the Google tag is the expensive part
 honesty: |
-  DataFast does not import a Google Ads account into a lighter skin. If the ad account is how you buy customers, keep GA4 or replace it with something that still answers the ads question. DataFast answers a different question. Running both is not indecision when the questions are both real.
+  The $9 plan is small next to a lost ads report. Run both for a couple of weeks. Write down the three GA4 reports someone actually opens. If one of them is an ads campaign, keep the tag until that report has another home.
 faqs:
-  - q: Is DataFast a Google Analytics alternative?
-    a: "For revenue by channel, it is a different instrument, and it can sit beside GA4. As a like-for-like swap it is not. GA4 is a free product for understanding customers across sites and apps, with Google Ads among the integrations. DataFast does not include that ads stack. The wider shortlist is [Google Analytics alternatives](/alternatives/google-analytics/)."
-  - q: Is Google Analytics free?
-    a: "Standard GA4 is free, for understanding the customer journey and improving marketing ROI. Analytics 360, the enterprise tier, is quote-only. DataFast is not free. Starter is $9 a month at 10,000 events, with a 14-day trial rather than an ongoing free tier."
-  - q: Can I use DataFast and GA4 together?
-    a: "Yes. A common split is GA4 for ads and the Google stack, and DataFast on the marketing site for the payment join. The default DataFast script uses cookies, so the consent setup has to cover it. The cookieless script avoids that cookie and weakens long attribution."
-  - q: Are DataFast links affiliate links?
-    a: "Yes. via=sortino. Google is cited without an affiliate parameter."
+  - q: Should I replace Google Analytics with DataFast?
+    a: "Not as a like-for-like swap. DataFast shows which channel or page brought a payment. It does not replace GA4's ads reports. Many teams keep both. The wider shortlist is the [Google Analytics alternatives](/alternatives/google-analytics/) guide."
+  - q: What does each one cost?
+    a: "Standard GA4 is free. Google Analytics 360 is quote-only. DataFast Starter is $9 a month and Growth is $19 a month. Both figures are published starting prices for 10,000 monthly events. The [pricing page](/pricing/datafast/) lists the higher steps. Figures are as of 26 November 2026."
+  - q: Do I need cookies?
+    a: "GA4's standard web tag stores a client ID in a first-party cookie named _ga. DataFast's default script also uses cookies. Its cookieless mode is weaker for sales that take weeks. Plausible and Fathom are the cookieless traffic options: [DataFast vs Plausible](/compare/datafast-vs-plausible/) and [DataFast vs Fathom](/compare/datafast-vs-fathom/)."
+  - q: Are the DataFast links affiliate links?
+    a: "Yes. They use via=sortino. Google links on this site do not."
 related:
   - href: /alternatives/google-analytics/
     type: Alternatives
     title: Google Analytics alternatives
-    description: Plausible, Fathom, PostHog, and DataFast in the GA4 shortlist.
-  - href: /pricing/datafast/
-    type: Pricing
-    title: DataFast pricing
-    description: The paid ladder next to a free GA4.
-  - href: /reviews/datafast/
-    type: Reviews
-    title: DataFast review
-    description: Features, the maker, and the names that are not this product.
+    description: The wider shortlist if GA4 is what you want to leave.
   - href: /compare/posthog-vs-google-analytics/
     type: Compare
     title: PostHog vs Google Analytics
-    description: The suite-versus-GA4 comparison, if that was the real question.
+    description: When the other option is a product suite, not a revenue tool.
+  - href: /pricing/datafast/
+    type: Pricing
+    title: DataFast pricing
+    description: The monthly event ladder.
+  - href: /reviews/datafast/
+    type: Reviews
+    title: DataFast review
+    description: What the product covers, and what it leaves out.
 sources:
   - label: Google Analytics
     href: https://marketingplatform.google.com/about/analytics/
+  - label: GA4 client ID cookie
+    href: https://support.google.com/analytics/answer/11593727?hl=en
 ---
 
-DataFast versus Google Analytics is usually asked by someone who is tired of GA4 and hopes a smaller tool will explain where the money came from. Sometimes that is the right hope. It is the wrong hope if the thing GA4 is doing is Google Ads. Standard GA4 is free. DataFast is a paid product with a narrow job. Those facts decide more installs than a feature checklist does.
+DataFast vs Google Analytics is usually a stack decision, not a winner. GA4 is free and tied to Google's ad products. DataFast is a paid tool for which channel brought a paying customer. Teams that feel forced to pick one often need both, for different reports.
 
-Figures below are as of 25 November 2026. DataFast means the analytics product at [datafa.st](https://datafa.st/). The [review](/reviews/datafast/) separates it from DataFast Networks in Arizona and from Datafast S.A., the payments company in Ecuador.
+Figures below are as of 26 November 2026. DataFast is [datafa.st](https://datafa.st/). The [review](/reviews/datafast/) covers the product and the other companies that share the name.
 
 ## What you would be deleting
 
-[GA4](https://marketingplatform.google.com/about/analytics/) is free, built to understand the customer journey and improve marketing ROI. Integrations include Google Ads, Search Ads 360, Display & Video 360, Google Cloud, and Search Console. That is the stack people mean when they say they already have analytics. Standard GA4 has no monthly list price because the standard product is free. Analytics 360, the enterprise tier, is quote-only.
+[GA4](https://marketingplatform.google.com/about/analytics/) is the free analytics product for smaller teams, with measurement across sites and apps and connections into Google advertising. Google Analytics 360 is the enterprise tier and is quoted. The standard web tag uses a first-party `_ga` cookie to tell users and sessions apart. If that tag needs a consent banner, the banner is part of the cost even though the product fee is zero.
 
-GA4’s standard web tag uses cookies. Leaving GA4 for a privacy pitch is a real project, and DataFast’s default script does not finish it, because that script uses cookies too. Plausible and Fathom lead with cookieless designs. They are the comparisons to read if the banner is the reason you want to leave, and revenue-by-provider is not.
+The other cost is time. Events, explorations, and attribution models are useful once someone has learned them, and easy to leave half finished. If nobody opens GA4 except to glance at sessions, you are paying in confusion.
+
+A move to a lighter tool removes Google Ads reporting. If that report is in use, keep the tag.
 
 ## What DataFast adds, and what it costs
 
-DataFast’s homepage sells one report: which marketing channels bring paying customers. You install a script and connect a payment provider. The homepage FAQ names Stripe, Lemon Squeezy, Polar, and Shopify, plus a Payment API. Starter is $9 a month. Growth is $19. Both figures are published starting prices for 10,000 monthly events. The [pricing page](/pricing/datafast/) has the rest of the ladder, the 14-day trial, and the point at which the dashboard locks. There is no ongoing free plan in the terms.
+DataFast is for founders who can see traffic and still cannot explain which source brought the payments. Starter is $9 a month and Growth is $19 a month. Both figures are published starting prices for 10,000 monthly events. You connect Stripe, Lemon Squeezy, Polar, Shopify, or send payments through the API. There is a 14-day trial and no card is required. The terms do not describe an ongoing free plan. The ladder is on the [pricing page](/pricing/datafast/).
 
-That $9 is worth it when GA4’s explorations are not showing you the payment and you are willing to connect the provider. It is not worth it as a way to stop paying for GA4, because standard GA4 is not a bill. You would be adding a bill to get a different report. The [“Is DataFast worth it?”](/reviews/datafast/) answer on the review is the short form of that test.
-
-The default DataFast script is the accurate one for long journeys, and it may need a cookie banner of its own. The cookieless script is weaker when the sale takes weeks. If you keep GA4 and add DataFast, you now have two cookie scripts unless you choose the cookieless DataFast mode and accept the attribution limit. Write that down before you install both.
+DataFast does not replace a product suite. If the gap is behavior inside a logged-in app, read [PostHog vs Google Analytics](/compare/posthog-vs-google-analytics/).
 
 ## When the pair is wrong
 
-If the real comparison was “product suite versus GA4,” read [PostHog vs Google Analytics](/compare/posthog-vs-google-analytics/). PostHog’s free allowances include 1 million analytics events, 5,000 session recordings, and 1 million feature-flag requests. DataFast does not sell that suite.
-
-If the real comparison was “lighter site analytics versus GA4,” [DataFast vs Plausible](/compare/datafast-vs-plausible/) and [DataFast vs Fathom](/compare/datafast-vs-fathom/) are the privacy-first pair. DataFast belongs in the GA4 conversation when the missing number is revenue by source, not when any non-Google logo would do.
+Skip DataFast if you will not connect payments. A pageview tool will not answer a revenue question, and a revenue tool you never connect will not either. [Plausible](/compare/datafast-vs-plausible/) and [Fathom](/compare/datafast-vs-fathom/) are the lighter traffic comparisons. The [GA4 alternatives](/alternatives/google-analytics/) guide groups the same tools by the report you are missing.

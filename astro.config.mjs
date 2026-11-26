@@ -20,7 +20,7 @@ function rewriteLinks() {
             }
           } else if (/^https?:\/\//.test(href)) {
             node.properties.target = "_blank";
-            node.properties.rel = "noopener";
+            node.properties.rel = "nofollow noopener";
           }
         } catch {
           /* leave the original href if it cannot be parsed */

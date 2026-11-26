@@ -9,17 +9,17 @@ const articles = (await getCollection("articles", ({ data }) => data.section ===
 );
 ---
 <Simple
-  title="Analytics reviews"
-  description="Independent reviews of analytics products. The first review is DataFast, a revenue-attribution tool, with the limits written next to the strengths."
+  title="Analytics Reviews"
+  description="Analytics reviews for founders, starting with DataFast. See what the product does, what it costs, and when Plausible, Fathom, GA4, or PostHog is the better fit."
   kicker="Reviews"
-  lede="A review on this site covers the public product: pricing, docs, terms, and the job the tool is built for."
+  lede="A review here covers the public product: price, docs, and who it is for. DataFast fits revenue by channel. It is a poor fit for session replay, feature flags, or Google Ads."
   crumbs={[{ href: "/", label: "Home" }, { label: "Reviews" }]}
 >
-  <p>DataFast is the first review because it is the tool we recommend for one specific job, and because some links to it earn a commission. The review is about datafa.st, Marc Lou’s analytics product. It is not the Arizona IT company and it is not the Ecuador payments brand that share the name. The dollar ladder lives on the <a href="/pricing/datafast/">DataFast pricing</a> page so this review can stay a review.</p>
-  <p>Other products are covered in the <a href="/alternatives/">alternatives</a>, <a href="/compare/">compare</a>, and <a href="/pricing/">pricing</a> sections. A later review can be added by dropping a Markdown file in the reviews collection.</p>
+  <p>DataFast is the first review because it is the revenue tool this site recommends, and because some links to it earn a commission. The review is about datafa.st, Marc Lou's analytics product. It is not the Arizona IT company and it is not the Ecuador payments company that share the name. The price ladder lives on the <a href="/pricing/datafast/">DataFast pricing</a> page.</p>
+  <p>Other products are covered in the <a href="/alternatives/">alternatives</a>, <a href="/compare/">compare</a>, and <a href="/pricing/">pricing</a> sections.</p>
   <section slot="wide" class="band band-yellow">
     <div class="article-wide">
-      <h2>Reviews</h2>
+      <h2>Analytics reviews</h2>
       <GuideList
         items={articles.map((article) => ({
           href: `/${article.id}/`,
