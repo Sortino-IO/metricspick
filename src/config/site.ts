@@ -11,8 +11,8 @@ export const GSC_VERIFICATION = "nywhuH-iVzOk2VJ4R3JUdPii4tMdLSR8IuWDuw0tpwE";
 
 export const SITE_URL = "https://metricspick.com";
 export const SITE_NAME = "metricspick";
-export const CHECKED_LABEL = "24 November 2026";
-export const CHECKED_ISO = "2026-11-24";
+export const CHECKED_LABEL = "26 November 2026";
+export const CHECKED_ISO = "2026-11-26";
 
 export function datafastUrl(path = "/"): string {
   const url = path.startsWith("http") ? new URL(path) : new URL(path, "https://datafa.st");

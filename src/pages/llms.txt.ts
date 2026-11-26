@@ -2,7 +2,7 @@ import type { APIRoute } from "astro";
 import { getCollection } from "astro:content";
 
 const staticPages = [
-  ["/", "Home. Job-based picks across DataFast, Plausible, Fathom, PostHog, GA4, and Mixpanel."],
+  ["/", "Home. Website analytics tools compared: DataFast, Plausible, Fathom, PostHog, GA4, and Mixpanel."],
   ["/alternatives/", "Hub of alternative guides."],
   ["/pricing/", "Hub of pricing guides."],
   ["/compare/", "Hub of side-by-side comparisons."],
@@ -24,9 +24,9 @@ export const GET: APIRoute = async () => {
     "",
     "> Independent English comparisons of web and product analytics tools for founders, indie hackers, and SaaS owners.",
     "",
-    "metricspick is not a vendor site. DataFast is recommended when the job is revenue attribution: which marketing channel or page brought a paying customer. It is not a full replacement for PostHog, Mixpanel, or Amplitude when the job is product analytics.",
+    "metricspick is not a vendor site. DataFast is recommended for revenue attribution: which marketing channel or page brought a paying customer. It is not a full replacement for PostHog, Mixpanel, or Amplitude when the question is product analytics.",
     "",
-    "Some links to datafa.st use the affiliate parameter via=sortino. DataFast prices as of 25 November 2026 are the homepage ladder (datafa.st/pricing returns 404): Starter from $9 and Growth from $19. Other vendor figures are as of 24 November 2026 unless a page dates them later. Prices can change.",
+    "Some links to datafa.st use the affiliate parameter via=sortino. DataFast prices as of 26 November 2026 are the monthly amounts on the DataFast homepage: Starter from $9 and Growth from $19 for 10,000 events. Other vendor figures on the site are as of 26 November 2026 unless a page dates them later. Prices can change.",
     "",
     "The DataFast cluster is the review (/reviews/datafast/), pricing (/pricing/datafast/), API and docs (/guides/datafast-api/), MCP (/guides/datafast-mcp/), alternatives (/alternatives/datafast/), and the /compare/datafast-vs-* pages.",
     "",

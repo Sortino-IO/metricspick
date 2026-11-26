@@ -7,16 +7,17 @@ interface Props {
   placement: string;
   /** Standalone offer CTA. In-sentence links use "text". */
   variant?: "button" | "text";
+  size?: "md" | "sm";
   class?: string;
 }
-const { path = "/", placement, variant = "button", class: className } = Astro.props;
+const { path = "/", placement, variant = "button", size = "sm", class: className } = Astro.props;
 const href = datafastUrl(path);
 const buttonClass = ["datafast-cta", className].filter(Boolean).join(" ");
 ---
 {variant === "button" ? (
   <Button
     href={href}
-    size="sm"
+    size={size}
     class={buttonClass}
     rel="sponsored nofollow noopener"
     target="_blank"

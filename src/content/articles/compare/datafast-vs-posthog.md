@@ -1,112 +1,110 @@
 ---
 title: "DataFast vs PostHog"
-seoTitle: "DataFast vs PostHog for founders"
-description: "DataFast vs PostHog: a fixed-price revenue-attribution tool against PostHog’s free allowances and usage pricing for product analytics, replay, and flags."
+seoTitle: "DataFast vs PostHog"
+description: "DataFast vs PostHog: fixed monthly revenue pricing against a free million events and usage rates. See who needs replay and flags, and who needs channel revenue."
 kicker: Compare
-lede: "PostHog is a product suite with a large free allowance and a usage bill after that. DataFast is a smaller, paid product for which marketing source brought a payment. They overlap on “analytics” and diverge on almost everything you would budget."
+lede: "Choose PostHog if you need product analytics, session replay, or feature flags, and the free allowances cover the month you actually have. Choose DataFast if the only missing report is which marketing source brought a payment. They overlap on the word analytics and diverge on the bill."
 accent: "DataFast vs PostHog"
-updated: 2026-11-25
+updated: 2026-11-26
 section: compare
 breadcrumb: DataFast vs PostHog
 order: 50
 tldr:
-  - "Choose PostHog when replay, feature flags, experiments, or in-app events are the weekly work."
-  - "Choose DataFast when the weekly work is revenue by channel and you do not want to assemble that report yourself."
-  - "PostHog’s pricing page lists 1 million analytics events, 5,000 replay recordings, and 1 million flag requests free. DataFast Starter is $9 a month at 10,000 events, with no ongoing free tier."
-  - "Using both is reasonable: DataFast on the marketing site, PostHog on the app."
-tldrNote: "PostHog allowances, the anonymous event card, and DataFast prices as of 25 November 2026. DataFast links are affiliate links."
+  - "PostHog fits a product suite. The first million analytics events each month are free."
+  - "DataFast fits revenue by channel, from $9 a month at 10,000 events."
+  - "PostHog's free plan drops usage past the allowance. Pay-as-you-go bills the overage."
+  - "Anonymous events can be up to 4× cheaper than identified events, PostHog says."
+tldrNote: "Prices as of 26 November 2026. DataFast links are affiliate links."
 jobs:
-  - title: The product suite
-    body: Replay, flags, and product funnels are why the tool is installed.
+  - title: Replay, flags, or funnels in the app
+    body: Someone on the team will use the suite, not only a traffic chart.
     who: PostHog
-  - title: Channel revenue
-    body: You want a payment joined to a page or campaign without a suite.
+  - title: Which channel paid
+    body: You will connect a payment provider and skip the suite.
     who: DataFast
-  - title: Stay inside a free allowance
-    body: A million analytics events a month covers the traffic you have.
-    who: PostHog’s free tier can be enough
-  - title: Marketing site only
-    body: You do not have an app to instrument.
-    who: DataFast, Plausible, or Fathom
+  - title: Stay free at low volume
+    body: You are inside 1 million analytics events and do not need a fixed tier.
+    who: PostHog's free allowance
+  - title: Google Ads is the other report
+    body: A revenue tool does not replace the ads tag.
+    who: Keep GA4 as well
 comparison: datafast-vs-posthog
 tools:
   - id: datafast
-    title: "DataFast — not a PostHog replacement"
-    blurb: "A fixed tier for revenue attribution. The button is an affiliate link."
+    title: "DataFast, for channel revenue"
+    blurb: "Starter from $9 a month. Not a replay or flags product. The button is an affiliate link."
     cta: "Visit DataFast"
     placement: datafast-vs-posthog-card
     featured: true
-    secondaryHref: /reviews/datafast/
-    secondaryCta: Read the review
+    secondaryHref: /pricing/datafast/
+    secondaryCta: DataFast pricing
   - id: posthog
     title: PostHog
-    blurb: "Free allowances, then usage pricing. The suite is the product."
+    blurb: "Free for the first million analytics events, then usage pricing."
     cta: PostHog pricing
     href: /pricing/posthog/
-  - id: ga4
-    title: Google Analytics 4
-    blurb: "The other free comparison, if ads rather than replay is the overlap."
-    cta: DataFast vs GA4
-    href: /compare/datafast-vs-google-analytics/
   - id: mixpanel
     title: Mixpanel
-    blurb: "The other event-analytics suite, if you are leaving PostHog’s bill."
+    blurb: "Another event product, with published packs after the free million."
     cta: DataFast vs Mixpanel
     href: /compare/datafast-vs-mixpanel/
-honestyTitle: A testimonial is not a feature list
+  - id: ga4
+    title: Google Analytics 4
+    blurb: "Free, if the missing piece is ads reporting rather than a suite."
+    cta: DataFast vs GA4
+    href: /compare/datafast-vs-google-analytics/
+honestyTitle: A free million events is not a $9 plan
 honesty: |
-  DataFast’s homepage includes customer lines about replacing other tools. Those lines are not a feature matrix. PostHog includes session replay and feature flags. DataFast does not. If you use those PostHog products, DataFast does not replace them.
+  PostHog can be $0 for a month that stays inside the allowances. DataFast's entry plan is $9 and answers a narrower question. Compare them only after you name the report. Buying PostHog to see which blog post sold the plan is how a small team ends up with a suite and no revenue answer.
 faqs:
-  - q: Is DataFast a PostHog alternative?
-    a: "For revenue attribution, it can replace the work of wiring payment events into a product tool. As a full replacement, no. PostHog’s pricing page is a suite: analytics, replay, and flags, with free monthly allowances. DataFast’s docs center on traffic joined to payments. See [PostHog alternatives](/alternatives/posthog/) if you are leaving PostHog for cost, and the [review](/reviews/datafast/) if you are arriving at DataFast."
-  - q: Which one is free?
-    a: "PostHog’s pricing page lists analytics at 1 million events, session replay at 5,000 recordings, and feature flags at 1 million requests. The product-analytics pricing doc prices the first million events at $0 and the next million of the published anonymous card at $0.00005 each. DataFast’s terms describe a 14-day trial, then a subscription. Starter is $9 a month at 10,000 events."
-  - q: Can a founder use both?
-    a: "Yes. PostHog on the application, DataFast on the marketing site, is a split that matches the two jobs. Sending every marketing pageview into PostHog as an identified event is how a free allowance gets spent without answering the revenue question DataFast is for."
-  - q: Are DataFast links affiliate links?
-    a: "Yes, via via=sortino. PostHog links are citations."
+  - q: Is PostHog free?
+    a: "Inside the monthly allowances, yes, with no card required. The first million analytics events, 5,000 recordings, and 1 million feature-flag requests are the allowances founders notice first. Past the allowance, the free plan drops extra usage. Pay-as-you-go bills it. The [PostHog pricing](/pricing/posthog/) guide has the rates."
+  - q: What does DataFast cost next to that?
+    a: "Starter is $9 a month and Growth is $19 a month. Both figures are published starting prices for 10,000 events. It will not give you PostHog's replay and flags. See the [pricing ladder](/pricing/datafast/) and the [review](/reviews/datafast/)."
+  - q: When do people leave PostHog for something smaller?
+    a: "When the bill is marketing pageviews they never needed as product events, or when they installed the suite and only open a traffic chart. The [PostHog alternatives](/alternatives/posthog/) page starts from that point. [DataFast vs Mixpanel](/compare/datafast-vs-mixpanel/) is the closer product-analytics comparison."
+  - q: Are the DataFast links affiliate links?
+    a: "Yes. They use via=sortino. PostHog links on this site do not."
 related:
   - href: /pricing/posthog/
     type: Pricing
     title: PostHog pricing
-    description: Allowances and the anonymous event card in more detail.
+    description: Free allowances and the anonymous event rates.
   - href: /alternatives/posthog/
     type: Alternatives
     title: PostHog alternatives
-    description: When to leave the suite, and which tool matches the part you use.
+    description: When to leave, and which tool matches the part you use.
   - href: /pricing/datafast/
     type: Pricing
     title: DataFast pricing
-    description: The fixed ladder, if the suite is more tool than you wanted.
+    description: The fixed monthly ladder.
   - href: /reviews/datafast/
     type: Reviews
     title: DataFast review
-    description: What the analytics product includes, and what it refuses.
+    description: Scope, limits, and the other companies named DataFast.
 sources:
   - label: PostHog pricing
     href: https://posthog.com/pricing
-  - label: PostHog product analytics pricing
-    href: https://posthog.com/docs/product-analytics/pricing
+  - label: PostHog anonymous vs identified events
+    href: https://posthog.com/docs/data/anonymous-vs-identified-events
 ---
 
-DataFast versus PostHog is a comparison people make because both products can record that something happened on a website. PostHog then goes on to session replay, feature flags, experiments, and a usage bill. DataFast goes on to a payment provider and a channel. Picking one logo to “do analytics” throws away whichever half you did not name.
+DataFast vs PostHog splits a marketing-revenue question from a product suite. PostHog can collect pageviews. It is still the wrong purchase if all you wanted was which channel paid.
 
-Figures below are as of 25 November 2026. DataFast is the app at datafa.st. The [review](/reviews/datafast/) covers the maker and the other companies that use the name.
+Figures below are as of 26 November 2026.
 
-## PostHog’s free bucket and the bill after it
+## PostHog's free allowance and the bill after it
 
-As of 25 November 2026, PostHog includes analytics at 1 million events, session replay at 5,000 recordings, and feature flags at 1 million requests. Anonymous events are $0 for the first 1 million, then $0.00005 per event from 1 to 2 million, $0.0000343 from 2 to 15 million, and lower rates after that. The [PostHog pricing](/pricing/posthog/) guide keeps the longer card. Identified events cost more, and they are not a single published rate.
+PostHog does not list a per-seat fee. Analytics includes 1 million events a month free. Session replay includes 5,000 recordings. Feature flags include 1 million requests. Error tracking includes 100,000 exceptions. Surveys include 1,500 responses. The free plan is 1 project and 1 year of event retention, and usage stops at the limits. Pay-as-you-go keeps the free allowances, then bills overage, with 6 projects and 2 years of retention.
 
-That structure matters. A marketing site that only needs pageviews can stay inside the free million for a long time. A product that records identified events, replay, and flags has more meters than DataFast’s one event ladder. “PostHog is free” and “DataFast is $9” is a true pair of headlines and a bad model of a busy app.
+Above 1 million events, anonymous events from 1 to 2 million are $0.00005 each on the published card. A month of 1.5 million anonymous events is the free million plus 500,000 events at that rate, which is $25, before replay, flags, or identified events. PostHog says anonymous events can be up to 4× cheaper than identified events because they skip the person profile. The full rate card is on the [pricing guide](/pricing/posthog/).
 
-## DataFast’s fixed tier
+## DataFast's fixed tier
 
-DataFast Starter is $9 a month. Growth is $19. Both figures are published starting prices for 10,000 monthly events. Events include pageviews, payments, trial signups, and custom goals. They count equally, across sites, every month. The homepage plan cards include API, CLI, and MCP on both of those 10,000-event cards. They do not include session replay or feature flags. The [pricing page](/pricing/datafast/) is the full ladder. The trial is 14 days. The terms do not describe a permanent free plan.
+DataFast Starter is $9 a month and Growth is $19 a month. Both figures are published starting prices for 10,000 monthly events. The product joins traffic to payments. It does not include session replay or feature flags. The [pricing page](/pricing/datafast/) has the steps above 10,000 events. The [review](/reviews/datafast/) keeps the scope tight.
 
-The thing you are paying for, if you are paying on purpose, is the packaged revenue join: Stripe, Lemon Squeezy, Polar, Shopify, or the Payment API, then a view of which source showed up on the payment. PostHog can receive a payment event if you send one. That is instrumentation. It is not the same as a homepage that is organized around that join and a doc called a revenue-attribution guide.
+If the PostHog bill is marketing pageviews, a fixed tier for channel revenue can be the smaller product. If the bill is replay you watch and flags you ship, DataFast will not replace it.
 
 ## Which bill to accept
 
-Accept PostHog, including a possible usage bill, when someone on the team opens replay or ships a flag. DataFast will not stand in for that week. A second tool for the marketing site can sit beside it. The [PostHog alternatives](/alternatives/posthog/) page is for when the suite itself is what you want to leave.
-
-Accept DataFast’s $9 and up when there is no suite requirement and the question is channel revenue. Do not accept it as a way to “get PostHog features cheaper.” The features are not on the card. If the overlap you actually meant was GA4, the page is [DataFast vs Google Analytics](/compare/datafast-vs-google-analytics/). If it was Mixpanel’s event packs, it is [DataFast vs Mixpanel](/compare/datafast-vs-mixpanel/).
+Accept PostHog's usage bill when a person on the team will use the suite and you have set a billing limit. Accept DataFast's monthly tier when you will connect a payment provider and you do not want the suite. Keep [GA4](/compare/datafast-vs-google-analytics/) if ads reporting is the other requirement. The [PostHog alternatives](/alternatives/posthog/) page is the leaving checklist.

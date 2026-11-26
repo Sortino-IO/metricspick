@@ -1,135 +1,111 @@
 ---
-title: "PostHog alternatives for founders"
-seoTitle: "Best PostHog alternatives for founders"
-description: "PostHog alternatives compared honestly: Mixpanel and Amplitude for product analytics, DataFast for revenue attribution, and GA4 or Plausible when the suite is more product than you need."
+title: "PostHog alternatives"
+seoTitle: "PostHog Alternatives"
+description: "PostHog alternatives for founders using one part of the suite. Mixpanel and Amplitude for events, DataFast for revenue, and lighter tools for a marketing site."
 kicker: Alternatives
-lede: "PostHog is a product suite with a wide free tier. An alternative only helps if you know which part of the suite you use, and which part you installed because the homepage made it look easy."
+lede: "Leave PostHog if you installed a suite and only open a traffic chart, or if the usage bill is marketing pageviews you never needed as product events. Stay if replay, flags, or product funnels are in weekly use and the free allowance, or a billing limit, covers you. Mixpanel and Amplitude are the suite-shaped alternatives. DataFast is the revenue alternative."
 accent: "PostHog alternatives"
-updated: 2026-11-24
+updated: 2026-11-26
 section: alternatives
 breadcrumb: PostHog
-order: 30
+order: 20
 tldr:
-  - "Mixpanel and Amplitude are the alternatives when you still want product analytics."
-  - "DataFast is the alternative when the question is revenue by channel, not replay and flags."
-  - "GA4, Plausible, and Fathom are the alternatives when PostHog was only ever a marketing-site tag."
-  - "PostHog’s first million analytics events each month are free. Check your volume before you leave to save money."
-tldrNote: "Prices and allowances as of 24 November 2026. DataFast is not a full PostHog replacement."
+  - "Mixpanel and Amplitude stay in product analytics. Amplitude is free to 2 million events."
+  - "DataFast fits revenue by channel and does not replace replay or flags."
+  - "GA4 and Plausible fit a marketing site that did not need the suite."
+  - "PostHog's first million analytics events each month are free."
+tldrNote: "PostHog allowances as of 26 November 2026."
 jobs:
-  - title: Another product suite
-    body: You use funnels, replay, or flags, and you want a different vendor for that same job.
+  - title: Still need product events
+    body: You will keep funnels, cohorts, or experiments, under a different bill.
     who: Mixpanel or Amplitude
-  - title: Revenue by channel
-    body: You want payments tied to marketing sources, and you do not use the rest of the suite.
-    who: Start with DataFast
-  - title: A calmer marketing tag
-    body: The project is a website. Replay and flags are unused.
+  - title: Only the revenue report
+    body: Replay and flags are installed and unused.
+    who: DataFast
+  - title: A marketing site
+    body: Pageviews and referrers are the whole question.
     who: Plausible, Fathom, or GA4
-  - title: The free tier fits
-    body: You are inside 1 million events, 5,000 recordings, and the other free allowances.
+  - title: The suite is in use
+    body: Someone watches recordings or ships flags every week.
     who: Stay on PostHog
 comparison: posthog-alternatives
-ladders:
-  - posthog
-  - mixpanel
 tools:
+  - id: posthog
+    title: PostHog
+    blurb: "Stay if the suite is the point and the allowance covers your month."
+    cta: PostHog pricing
+    href: /pricing/posthog/
   - id: mixpanel
     title: Mixpanel
-    blurb: "Event analytics with its own free million events. Multi-touch attribution starts on Growth."
+    blurb: "Event analytics with a free million events, then published packs."
     cta: Mixpanel alternatives
     href: /alternatives/mixpanel/
   - id: amplitude
     title: Amplitude
-    blurb: "A larger published free event tier, at 2 million events a month, and a Plus plan with a starting price of $0."
+    blurb: "Free for 2 million events, then an estimator rather than a pack table."
     cta: Amplitude pricing
     href: /pricing/amplitude/
   - id: datafast
-    title: "DataFast — revenue, not the suite"
-    blurb: "Use it for channel and page revenue. Keep PostHog if you still need replay, flags, or product funnels."
+    title: "DataFast, for channel revenue"
+    blurb: "A fixed monthly tier if the only question is revenue by channel. The button is an affiliate link."
     cta: "Visit DataFast"
     placement: posthog-alt-card
     featured: true
-    secondaryHref: /reviews/datafast/
-    secondaryCta: Read the review
-  - id: plausible
-    blurb: "A cookieless marketing-site tool. Revenue tracking is a Business-plan feature in Plausible’s docs."
-    cta: Plausible overview
-    href: /alternatives/plausible/
-honestyTitle: When you should not rip PostHog out
+    secondaryHref: /compare/datafast-vs-posthog/
+    secondaryCta: DataFast vs PostHog
+honestyTitle: Do not leave to save money you are not spending
 honesty: |
-  Stay if replay, feature flags, or experiments are in the weekly workflow, if you self-host the open-source product on purpose, or if your event volume still fits the free allowances and the bill is the fear rather than the invoice. A second tool for marketing revenue can sit beside PostHog. It does not have to replace it.
+  Inside the free allowances, PostHog's price is $0. An alternative does not make that cheaper. Leave when a feature you need is missing, when the overage is real, or when the product shape is wrong. The [pricing guide](/pricing/posthog/) is the bill. This page is the "should we leave" version.
 faqs:
-  - q: Is DataFast a PostHog alternative?
-    a: "For revenue attribution, yes. As a full replacement, no. PostHog’s pricing page is a suite: analytics, replay, flags, experiments, and more. DataFast’s docs center on traffic joined to payments. Read the [DataFast review](/reviews/datafast/) and the [PostHog vs GA4](/compare/posthog-vs-google-analytics/) comparison before you treat them as substitutes."
-  - q: What is the cheapest way to leave PostHog?
-    a: "First check whether you are inside the free tier. The first million analytics events, 5,000 recordings, and 1 million flag requests each month are free. If you are over that and you only needed a marketing dashboard, Plausible or Fathom can be cheaper than a product suite. If you still need the suite, price Mixpanel and Amplitude at the same event volume."
-  - q: Does PostHog do revenue attribution?
-    a: "You can send payment events and analyze them. That is instrumentation, not a packaged “which channel paid” product. Mixpanel marks multi-touch attribution as a Growth feature. DataFast’s product is built around the payment join. Pick the level of assembly you want to do yourself."
+  - q: What are the closest PostHog alternatives?
+    a: "Mixpanel and Amplitude, if you still want product analytics. Mixpanel publishes event packs after 1 million events. Amplitude is free for 2 million. See [Mixpanel alternatives](/alternatives/mixpanel/) and [Amplitude pricing](/pricing/amplitude/). DataFast is the alternative only for revenue by channel: [DataFast vs PostHog](/compare/datafast-vs-posthog/)."
+  - q: Is PostHog free?
+    a: "Inside the monthly allowances, yes. The first million analytics events, 5,000 recordings, and 1 million flag requests are the ones founders notice first. Past the allowance, the free plan drops extra usage. The [pricing page](/pricing/posthog/) has the rates."
+  - q: When is GA4 the better PostHog alternative?
+    a: "When the site is a marketing site, Google Ads matters, and you do not use replay or flags. The comparison is [PostHog vs Google Analytics](/compare/posthog-vs-google-analytics/). [Plausible](/alternatives/plausible/) is the cookieless version of that idea."
   - q: Are the DataFast links affiliate links?
-    a: "Yes. They include via=sortino. PostHog, Mixpanel, Amplitude, and Plausible links here are citations, not affiliate links."
+    a: "Yes. They use via=sortino. PostHog, Mixpanel, and Amplitude links on this site do not."
 related:
-  - href: /compare/datafast-vs-posthog/
-    type: Compare
-    title: DataFast vs PostHog
-    description: A fixed revenue tier beside PostHog’s free allowances.
   - href: /pricing/posthog/
     type: Pricing
-    title: PostHog pricing, explained for founders
-    description: Free allowances, anonymous event rates, and a worked example.
+    title: PostHog pricing
+    description: Allowances, rates, and a small overage example.
   - href: /compare/posthog-vs-google-analytics/
     type: Compare
     title: PostHog vs Google Analytics
-    description: Which overlap is real, and which job belongs to which tool.
+    description: Free GA4 versus PostHog's usage curve.
+  - href: /compare/datafast-vs-posthog/
+    type: Compare
+    title: DataFast vs PostHog
+    description: Fixed revenue pricing beside the suite.
   - href: /alternatives/mixpanel/
     type: Alternatives
     title: Mixpanel alternatives
-    description: The other product-analytics shortlist.
+    description: The other event-analytics shortlist.
   - href: /reviews/datafast/
     type: Reviews
     title: DataFast review
-    description: Published prices, payment providers, and the cookieless limit.
+    description: What the revenue tool will not replace.
 ---
 
-PostHog publishes a monthly allowance for each product, then usage rates. As of 24 November 2026 those allowances included 1 million analytics events, 5,000 session recordings, 1 million feature-flag requests, 100,000 error-tracking exceptions, and 1,500 survey responses. Most companies use the product for free. The free plan is one project and one year of event retention, and usage stops at the limits so you are not surprised by a bill. Pay-as-you-go keeps the same free bucket, adds a card, and bills what you use beyond it, with six projects and two years of retention.
+PostHog alternatives help only if you know which part of the suite you use. PostHog is product analytics, session replay, feature flags, experiments, and more, with a wide free tier. An alternative that drops the part you open every week is not a savings.
 
-Above 1 million anonymous events, the published starting rate is $0.00005 each for the next million. The rate then steps down. The full card is on the [PostHog pricing](/pricing/posthog/) page. Identified events add a person-profile charge. Anonymous events can cost up to four times less. That is the product people mean when they search for a PostHog alternative: a suite with a real free tier and a usage curve, not a single dashboard.
+Details below are as of 26 November 2026.
 
 ## Name the part you actually use
 
-PostHog is easy to install as “our analytics” and then use as three different products.
+Analytics: 1 million events a month free. Replay: 5,000 recordings. Flags: 1 million requests. The free plan is one project and one year of event retention, and usage stops at the limits. If those limits cover you and someone uses the suite, stay. The [pricing guide](/pricing/posthog/) is where to check an overage before you migrate.
 
-If the weekly habit is session replay and feature flags, an alternative has to cover that habit. Mixpanel includes replay on Free, Growth, and Enterprise, with 10,000 replays on Free and a much higher ceiling on Growth. Amplitude includes replay on the plans it lists, with 10,000 recordings on Free. That does not mean the replay product feels like PostHog’s. It means you are still shopping in the suite aisle.
-
-If the weekly habit is a funnel of product events, Mixpanel and Amplitude are the direct alternatives. Both are event tools. Both will feel familiar the week you have to rename an event. The [Mixpanel alternatives](/alternatives/mixpanel/) and [Amplitude alternatives](/alternatives/amplitude/) pages compare their published allowances. Amplitude’s free tier is 2 million events. PostHog’s analytics free tier is 1 million. Mixpanel’s free tier is 1 million. A team at 1.5 million anonymous events should do the arithmetic before calling any of them the cheap option.
-
-If the weekly habit is “which page made money,” you are not using the suite. You are using PostHog as a marketing tag with extra buttons. DataFast, Plausible, Fathom, or GA4 are the alternatives, and they are not interchangeable with each other either.
+If the only chart anyone opens is marketing traffic, you bought a suite for a referrer report. [Plausible](/alternatives/plausible/), Fathom, or [GA4](/compare/posthog-vs-google-analytics/) are the smaller products. The [cookieless guide](/guides/cookieless-analytics/) matters if the consent story is why you avoided GA4.
 
 ## DataFast for the revenue question
 
-DataFast is the recommendation on this site when the job is revenue attribution. It is not a full replacement for PostHog. The homepage asks which marketing channels drive paying customers. The docs show how to connect Stripe, Lemon Squeezy, Polar, and Paddle. Starter is $9 a month. Growth is $19. Both figures are published starting prices for 10,000 monthly events. Growth adds sites, seats, longer retention, social mentions, and link attribution. The [review](/reviews/datafast/) has the rest of the ladder.
-
-What you lose by leaving PostHog for DataFast is the suite: replay, flags, experiments, error tracking, the warehouse-shaped features. What you gain, if those were idle, is a product whose terms and docs talk about payments as events and about channels as the thing the dashboard is for. The default script uses cookies. The cookieless script trades away long-horizon identity. DataFast writes that trade-off down. Read it in the [cookieless guide](/guides/cookieless-analytics/) if a banner is the reason you want to leave PostHog’s cookie choices.
-
-PostHog’s persistence is configurable. There is no single cookie story for every install. If your reason for leaving is privacy paperwork, read PostHog’s privacy docs for the install you have, then read DataFast’s cookieless doc, then decide. A logo swap does not finish a privacy review.
+DataFast is from $9 a month at 10,000 events. It joins payments to channels and pages. It does not include replay or flags. It is the right PostHog alternative when the bill is coming from marketing pageviews and the question is which source paid. It is the wrong one if a teammate watches recordings. The comparison is [DataFast vs PostHog](/compare/datafast-vs-posthog/). The [review](/reviews/datafast/) keeps that scope. The link is an affiliate link.
 
 ## Mixpanel and Amplitude if you still want events
 
-Mixpanel Growth has a published starting price of $0, then steps up in published packs. At 1.5 million events, yearly billing is $100 a month and monthly billing is $140. Both figures are published prices for that step. Multi-touch attribution is a Growth feature. If you adopted PostHog partly for “attribution” and you meant multi-touch product attribution, Mixpanel’s matrix is the one to read. If you meant “the blog post that sold the annual plan,” you are back to DataFast or to GA4’s ads reports.
-
-Amplitude Plus has a published starting price of $0 after a free 2 million events. There is no single dollar rate for the steps above that. You estimate. The [Amplitude pricing](/pricing/amplitude/) guide lists what is published: retention lengths, the Plus feature list, and the startup year of Growth for companies under the stated size and funding caps.
-
-Choose Mixpanel or Amplitude when a person on the team will own the event plan. Choose to stay on PostHog when that person already owns the PostHog project and the invoice is inside a billing limit you set. You can set billing limits on most products, and hitting the limit drops additional events rather than charging past it. That control is part of the product. An alternative that lacks it can be a worse deal at the same per-event price.
-
-## Marketing-site alternatives
-
-Plausible’s homepage is a cookieless analytics product with a slider from $9 a month. Revenue tracking is described in the docs as a reason to choose Business. Fathom’s published starting price is $15 a month, for up to 100,000 pageviews, with event and revenue tracking on all plans. GA4 is free and is the tool to keep if Google Ads is the spend. The [GA4 alternatives](/alternatives/google-analytics/) page is the long version, and it is the right page if PostHog was never inside the app.
-
-A sensible pattern for a small SaaS company is two tools on purpose. PostHog, Mixpanel, or Amplitude on the product host. DataFast, Plausible, Fathom, or GA4 on the marketing host. The mistake is one tool forced to answer both questions badly. PostHog can ingest the marketing site. It can also become a bill of identified pageviews you did not need person profiles for. Anonymous events are the cheaper PostHog path for a content site. Use that setting if you stay.
+[Mixpanel](/alternatives/mixpanel/) is free for 1 million events, then sells packs. The first paid yearly step founders notice is 1.5 million events at $100 a month. [Amplitude](/pricing/amplitude/) is free for 2 million events, with Plus starting at $0 once a card is on file. A team between 1 and 2 million events may pay PostHog or Mixpanel and pay Amplitude nothing, with a different feature mix. Compare the reports you open, not the logos.
 
 ## A leaving checklist
 
-Write the three PostHog screens someone opened in the last month. If the list is replay and flags, shortlist Mixpanel and Amplitude and price them at your event volume. If the list is a web-analytics dashboard, shortlist Plausible, Fathom, and GA4. If the list is a wish for revenue by channel, shortlist DataFast and read the review before you export anything.
-
-Do not delete the PostHog project in the same afternoon. PostHog retains events for a year on the free plan and two years on pay-as-you-go. Your history is part of the value. Run the new tool in parallel until one real question has been answered twice.
-
-The rates above are the public card. Your mix of anonymous and identified events will not match a stranger’s example, including the $25 illustration on the pricing page, which assumes 1.5 million anonymous events and no other product.
+Write down the three PostHog screens someone opened last week. If they are replay, flags, or product funnels, stay or move to Mixpanel or Amplitude. If they are a traffic chart, move to a site-analytics tool. If they are "which campaign brought revenue," price DataFast beside a billing limit on PostHog, and keep the suite only for the product work that remains.

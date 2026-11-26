@@ -1,38 +1,38 @@
 ---
 title: "DataFast vs Mixpanel"
-seoTitle: "DataFast vs Mixpanel for founders"
-description: "DataFast vs Mixpanel: revenue by marketing source against Mixpanel’s event analytics, including the free million events and the first paid Growth pack."
+seoTitle: "DataFast vs Mixpanel"
+description: "DataFast vs Mixpanel: revenue by channel against event analytics with a free million events. See the first paid pack and which team should use which product."
 kicker: Compare
-lede: "Mixpanel analyzes product events and publishes a free plan up to 1 million events a month. DataFast joins marketing traffic to payments. Its published starting price is $9 a month. One is a product-analytics system. The other is a channel-revenue tool."
+lede: "Choose Mixpanel if you analyze product events and you are inside the free million, or you will pay for a Growth pack. Choose DataFast if the report is which marketing source brought a payment and you do not want an event system. One is product analytics. The other is channel revenue."
 accent: "DataFast vs Mixpanel"
-updated: 2026-11-25
+updated: 2026-11-26
 section: compare
 breadcrumb: DataFast vs Mixpanel
 order: 60
 tldr:
-  - "Choose Mixpanel when the team already thinks in events, funnels, and retention inside the product."
-  - "Choose DataFast when the missing report is which campaign or page brought a paying customer and you do not want to design that model."
-  - "Mixpanel’s pricing page lists a free plan up to 1 million events a month, with no credit card. The 1.5 million Growth pack is $100 a month on yearly billing and $140 a month on monthly billing."
-  - "DataFast is not a full Mixpanel replacement. Adding it for the marketing site is the usual fit."
-tldrNote: "Mixpanel pack prices and DataFast’s homepage ladder as of 25 November 2026. DataFast links are affiliate links."
+  - "Mixpanel's free plan covers up to 1 million events a month."
+  - "The first paid Growth pack is 1.5 million events: $100 a month on yearly billing, or $140 on monthly billing."
+  - "Multi-touch attribution is on Growth and Enterprise, not on Free."
+  - "DataFast is from $9 a month for 10,000 events, for revenue by channel."
+tldrNote: "Prices as of 26 November 2026. DataFast links are affiliate links."
 jobs:
-  - title: Product events
-    body: Funnels, retention, and an event dictionary are the work.
+  - title: Product events and cohorts
+    body: You will instrument the app and compare groups of users.
     who: Mixpanel
-  - title: Marketing revenue
-    body: You want the payment credited to a channel without a warehouse project.
+  - title: Revenue by marketing source
+    body: You will connect payments and skip the cohort product.
     who: DataFast
-  - title: You are inside the free million
-    body: The Mixpanel bill is still zero and the taxonomy is already clean.
-    who: Stay until the volume or the job changes
-  - title: Replay and flags in the same suite
-    body: Mixpanel’s pricing page lists those on the plans. So does PostHog.
-    who: Compare PostHog if you are suite-shopping
+  - title: Stay at $0
+    body: You are under 1 million events and the free reports are enough.
+    who: Mixpanel Free
+  - title: A closer suite comparison
+    body: PostHog or Amplitude may match the product work better.
+    who: Read those comparisons
 comparison: datafast-vs-mixpanel
 tools:
   - id: datafast
-    title: "DataFast — a different job"
-    blurb: "Fixed monthly tiers for revenue attribution. The button is an affiliate link."
+    title: "DataFast, for channel revenue"
+    blurb: "Starter from $9 a month. Not a cohort product. The button is an affiliate link."
     cta: "Visit DataFast"
     placement: datafast-vs-mixpanel-card
     featured: true
@@ -40,73 +40,71 @@ tools:
     secondaryCta: DataFast pricing
   - id: mixpanel
     title: Mixpanel
-    blurb: "Free up to 1 million events a month, then published Growth packs."
+    blurb: "Free for 1 million events, then published Growth packs."
     cta: Mixpanel pricing
     href: /pricing/mixpanel/
   - id: posthog
     title: PostHog
-    blurb: "Another free million, plus replay and flags on a usage card."
+    blurb: "Usage rates after a free million events."
     cta: DataFast vs PostHog
     href: /compare/datafast-vs-posthog/
   - id: amplitude
     title: Amplitude
-    blurb: "Free for 2 million events, if the product-analytics shortlist is the real search."
+    blurb: "Free for 2 million events, then an estimator."
     cta: DataFast vs Amplitude
     href: /compare/datafast-vs-amplitude/
-honestyTitle: Do not migrate a taxonomy to save $9
+honestyTitle: Do not buy product events to see referrers
 honesty: |
-  A Mixpanel project with a clean event dictionary is expensive to throw away. DataFast will not import that dictionary into a marketing dashboard and preserve the cohorts. If the pain is the Mixpanel invoice, price the next event pack first. If the pain is that marketing still cannot see which post sold the plan, add DataFast or GA4 beside Mixpanel.
+  Mixpanel's packs are product-analytics prices. A content site that only needs referrers should not buy 1.5 million product events to see them. Plausible, Fathom, and GA4 price that question differently. DataFast prices the payment join, not cohorts.
 faqs:
-  - q: Is DataFast a Mixpanel alternative?
-    a: "Only for a different job. Mixpanel’s pricing page is product analytics: events, replay, heatmaps, experiments, and flags are listed across the plans. DataFast is traffic joined to payments. It is not a full replacement for Mixpanel, PostHog, or Amplitude. The [Mixpanel alternatives](/alternatives/mixpanel/) page is the shortlist if you are leaving. The [review](/reviews/datafast/) is the shortlist if you are not."
-  - q: What does Mixpanel cost at the first paid step?
-    a: "Free covers up to 1 million events a month, with no credit card, plus 10,000 session replays, up to 10 active feature flags, and up to 1,000 experiment MEUs. On yearly billing, 1.5 million events is $100 a month ($1,200 a year). On monthly billing, the same 1.5 million is $140 a month. More packs are on the [Mixpanel pricing](/pricing/mixpanel/) page."
-  - q: Does Mixpanel do what DataFast does?
-    a: "You can send revenue as an event and build the report. DataFast is that report, with named payment-provider connections. Which one is less work depends on whether you already have the Mixpanel tracking plan."
-  - q: Which links are affiliate links?
-    a: "DataFast links, with via=sortino. Mixpanel links are citations."
+  - q: What is Mixpanel's first paid step?
+    a: "Growth's published starting price is $0, with 1 million events included. The next yearly step is 1.5 million events at $100 a month. Monthly billing at that step is $140. Both figures are published prices for 1.5 million events. The [Mixpanel pricing](/pricing/mixpanel/) guide has the higher packs."
+  - q: Does the free plan include attribution?
+    a: "Mixpanel lists multi-touch attribution as not available on Free and available on Growth and Enterprise. DataFast's channel revenue is a different report. The [attribution guide](/guides/marketing-attribution-tools/) separates those meanings."
+  - q: How does DataFast's price compare?
+    a: "Starter is $9 a month at 10,000 events. It does not include Mixpanel's cohort product. See the [pricing ladder](/pricing/datafast/), the [alternatives](/alternatives/mixpanel/), and the [review](/reviews/datafast/)."
+  - q: Are the DataFast links affiliate links?
+    a: "Yes. They use via=sortino. Mixpanel links on this site do not."
 related:
   - href: /pricing/mixpanel/
     type: Pricing
     title: Mixpanel pricing
-    description: Free limits and the Growth packs from the public pricing page.
+    description: Free plan and Growth packs.
   - href: /alternatives/mixpanel/
     type: Alternatives
     title: Mixpanel alternatives
-    description: PostHog, Amplitude, and when not to switch.
+    description: When to leave, and when to stay in product analytics.
   - href: /pricing/datafast/
     type: Pricing
     title: DataFast pricing
-    description: The fixed event ladder, if you are pricing a marketing-site add-on.
+    description: The fixed event ladder.
   - href: /reviews/datafast/
     type: Reviews
     title: DataFast review
-    description: The scope of the revenue recommendation.
+    description: What the revenue tool includes.
 sources:
   - label: Mixpanel pricing
     href: https://mixpanel.com/pricing/
 ---
 
-DataFast versus Mixpanel looks like an analytics comparison and behaves like a category error if you force a winner. Mixpanel is where a product team reads events. DataFast is where a founder reads which marketing source showed up on a payment. The logos can coexist. They rarely substitute.
+DataFast vs Mixpanel compares a channel-revenue tool with an event-analytics product. Founders usually reach this page because Mixpanel feels large for "which campaign brought the last ten payments," or because DataFast cannot answer a cohort question.
 
-Figures below are as of 25 November 2026. DataFast is datafa.st, the analytics product associated with Marc Lou on its homepage, not the Arizona or Ecuador companies that use the name.
+Figures below are as of 26 November 2026.
 
-## Mixpanel’s published prices
+## Mixpanel's published prices
 
-Mixpanel’s free plan covers up to 1 million events a month, 10,000 session replays, up to 1,000 monthly experiment users, up to 10 active feature flags, and unlimited seats, with no credit card. Every plan includes analytics, session replay, heatmaps, experiments, and feature flags. That catalog is not DataFast’s.
+Mixpanel prices events, not seats. Free, Growth, and Enterprise include unlimited seats. Free covers up to 1 million events a month, 10,000 session replays, up to 10 feature flags, and up to 1,000 experiment monthly event units. Growth's published starting price is $0, with that million included.
 
-Growth is the paid pack layer. On yearly billing, 1.5 million events a month is $100 a month, $1,200 a year. On monthly billing, 1.5 million events is $140 a month. At 2 million events, yearly billing is $185 a month. The [Mixpanel pricing](/pricing/mixpanel/) guide has more of the table. Group Analytics and Data Pipelines are add-ons, and their prices are not publicly listed.
+Yearly billing at the steps founders hit first: 1.5 million events is $100 a month, 2 million is $185, 5 million is $438, and 10 million is $840. Monthly billing at 1.5 million is $140. Both figures at 1.5 million are published prices for that step. Above 20 million events, Mixpanel says to contact sales. The [pricing guide](/pricing/mixpanel/) keeps the table.
 
-Multi-touch attribution is on the paid plans. The [Mixpanel alternatives](/alternatives/mixpanel/) page places that feature on Growth and Enterprise, not on Free. If attribution inside Mixpanel is why you pay for Growth, check the current feature matrix before you cancel it for a marketing tool.
+Multi-touch attribution is not available on Free. It is available on Growth and Enterprise. Group Analytics and Data Pipelines are paid add-ons, and their prices are not publicly listed.
 
-## DataFast’s side of the invoice
+Early-stage companies founded less than 5 years ago, with up to $8 million in total funding, that have not redeemed another offer, can get a first year on the Startup Plan. Read Mixpanel's startup terms before you count that year in a budget.
 
-DataFast has no million-event free tier. The terms describe a 14-day trial. Starter is $9 a month at 10,000 events, $19 at 100,000, and $199 at 10 million plus. Growth’s published starting price is $19. The [pricing page](/pricing/datafast/) is the full grid. Events are pageviews plus payments, trial signups, and custom goals. A product that already emits a dense Mixpanel stream would be a poor thing to mirror, event for event, into a DataFast plan whose allowance begins at 10,000 events.
+## DataFast's side of the invoice
 
-The feature you would be buying is the provider join and the channel view, on a plan card that also includes API, CLI, and MCP, and that does not list Mixpanel’s replay and flags. Payment providers named on the DataFast homepage FAQ are Stripe, Lemon Squeezy, Polar, and Shopify, plus a Payment API.
+DataFast Starter is $9 a month and Growth is $19 a month. Both figures are published starting prices for 10,000 monthly events. You connect a payment provider and read revenue by source, campaign, or page. There is no cohort product, no session replay, and no feature flags. The [pricing page](/pricing/datafast/) is the ladder. The [review](/reviews/datafast/) is the product note.
 
 ## The decision
 
-Stay on Mixpanel if the event dictionary is the asset and the free million still covers the month, or if the next pack is cheaper than rebuilding. Add DataFast if the marketing site’s revenue sources are still a guess and you want that report as a product rather than a Mixpanel board you have to maintain. Leave Mixpanel for DataFast only if you have decided to stop doing product analytics. That is a strategy change, not a coupon.
-
-[DataFast vs Amplitude](/compare/datafast-vs-amplitude/) is the same split with the larger free tier. [DataFast vs PostHog](/compare/datafast-vs-posthog/) is the split with replay and flags priced as usage.
+Stay on Mixpanel Free if you are under 1 million events and the free reports cover what you open. Pay for Growth when you are near the cap or you need a Growth-only line such as saved cohorts or multi-touch. Choose DataFast when the report is marketing revenue and you will not instrument the product. [PostHog](/compare/datafast-vs-posthog/) and [Amplitude](/compare/datafast-vs-amplitude/) are the other product-analytics comparisons. The [Mixpanel alternatives](/alternatives/mixpanel/) page is the wider shortlist.

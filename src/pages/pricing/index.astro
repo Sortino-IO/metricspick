@@ -2,29 +2,31 @@
 import { getCollection } from "astro:content";
 import GuideList from "../../components/GuideList.astro";
 import Simple from "../../layouts/Simple.astro";
+import { visitIdsForArticle } from "../../data/catalog";
 
 const articles = (await getCollection("articles", ({ data }) => data.section === "pricing")).sort(
   (a, b) => a.data.order - b.data.order,
 );
 ---
 <Simple
-  title="Analytics pricing"
-  description="DataFast, PostHog, Amplitude, and Mixpanel pricing for founders, with the published steps from each vendor."
+  title="Analytics Pricing Guides"
+  description="Analytics pricing for DataFast, PostHog, Mixpanel, and Amplitude. Compare free allowances, the first paid step, and fixed monthly plans before you add a card."
   kicker="Pricing"
-  lede="Some analytics products publish a monthly tier. Others publish a free allowance and then charge for volume. These guides show the published steps."
+  lede="Read the first paid step at your volume before you compare logos. Some products publish a monthly tier. Others stay free inside an allowance, then bill usage."
   crumbs={[{ href: "/", label: "Home" }, { label: "Pricing" }]}
 >
-  <p>DataFast, the analytics product at datafa.st, publishes monthly event tiers on its homepage. Starter is $9 and Growth is $19. Both figures are published starting prices for 10,000 monthly events. The <a href="/pricing/datafast/">DataFast pricing</a> guide is that ladder, as of 25 November 2026. datafa.st/pricing returns 404, so the homepage is the source. The <a href="/reviews/datafast/">DataFast review</a> covers what the product is, and which other companies share the name.</p>
-  <p>PostHog, Mixpanel, and Amplitude publish a free event allowance and then charge for volume. The useful question is what the first paid step costs at your volume. Plausible and Fathom price marketing analytics differently, and GA4’s standard product is free. Those figures are also compared on the <a href="/alternatives/">alternatives hub</a> and the <a href="/compare/">compare hub</a>.</p>
-  <p>DataFast amounts are as of 25 November 2026. PostHog, Amplitude, and Mixpanel amounts are as of 24 November 2026 unless a page dates a figure later. Where a vendor only publishes a $0 starting price or a calculator, the guide treats the price as an estimate or a quote.</p>
+  <p>DataFast, the analytics product at datafa.st, publishes monthly event tiers on its homepage. Starter is from $9 a month and Growth is from $19 a month. Both figures are published starting prices for 10,000 monthly events. The <a href="/pricing/datafast/">DataFast pricing</a> guide is that ladder, as of 26 November 2026. The <a href="/reviews/datafast/">DataFast review</a> covers what the product is, and which other companies share the name.</p>
+  <p>PostHog, Mixpanel, and Amplitude publish a free event allowance and then charge for volume. The useful question is what the first paid step costs at your volume. Plausible and Fathom price marketing analytics by pageviews, and standard GA4 is free. Those figures are also on the <a href="/alternatives/">alternatives hub</a> and the <a href="/compare/">compare hub</a>.</p>
+  <p>Where a vendor publishes a $0 starting price and then a calculator or a quote, the guide says so. Confirm the current rate before you buy.</p>
   <section slot="wide" class="band band-yellow">
     <div class="article-wide">
-      <h2>Pricing guides</h2>
+      <h2>Analytics pricing</h2>
       <GuideList
         items={articles.map((article) => ({
           href: `/${article.id}/`,
           title: article.data.title,
           description: article.data.description,
+          visits: visitIdsForArticle(article.id),
         }))}
       />
     </div>

@@ -1,78 +1,78 @@
 ---
 title: "DataFast vs Fathom"
-seoTitle: "DataFast vs Fathom for founders"
-description: "DataFast vs Fathom: a $9 revenue-attribution plan against Fathom’s $15 entry price, 50 sites, cookieless analytics, and revenue tracking listed on the plans."
+seoTitle: "DataFast vs Fathom"
+description: "DataFast vs Fathom: from $9 a month for 10,000 events, or Fathom from $15 a month for 100,000 pageviews and 50 sites. See cookies, revenue, and fit."
 kicker: Compare
-lede: "Fathom’s published starting price is $15 a month, for up to 100,000 pageviews and 50 sites, and revenue tracking is on the product. DataFast’s published starting price is $9 a month, for 10,000 events. It is built around which source brought the payment. The cheaper choice depends on site count and on how the sale is attributed."
+lede: "Choose Fathom if you want a cookieless dashboard, revenue tracking on every plan, and up to 50 sites at the entry price. Choose DataFast if one site's revenue by channel is the report you will open, and you will accept its cookie choice. Fathom is from $15 a month. DataFast is from $9 a month. The cheaper invoice depends on site count and on how the sale is attributed."
 accent: "DataFast vs Fathom"
-updated: 2026-11-25
+updated: 2026-11-26
 section: compare
 breadcrumb: DataFast vs Fathom
 order: 30
 tldr:
-  - "Choose Fathom for a cookieless dashboard, revenue tracking on the plans, and 50 sites at the $15 entry price."
-  - "Choose DataFast when one site’s revenue-by-channel report is the whole job and you will live with its cookie choice."
-  - "Fathom has no free plan. The trial is 7 days. DataFast’s terms describe a 14-day trial and no ongoing free tier."
-  - "Fathom Business is $39 at the 100,000-pageview step and is about seats and API limits, not about unlocking revenue."
-tldrNote: "Fathom and DataFast prices as of 25 November 2026. DataFast links are affiliate links."
+  - "Fathom fits cookieless analytics, revenue on every plan, and 50 sites at $15 a month."
+  - "DataFast fits revenue by source on a smaller event plan, from $9 a month."
+  - "Fathom has no free plan. The trial is 7 days and requires a card. DataFast's trial is 14 days and does not require a card."
+  - "Fathom Business is about seats and API limits, not about unlocking revenue."
+tldrNote: "Prices as of 26 November 2026. DataFast links are affiliate links."
 jobs:
-  - title: One product, revenue by source
+  - title: Revenue by source
     body: You will connect Stripe or another documented provider and read channel revenue.
     who: DataFast
-  - title: Many sites, simple analytics
-    body: Client sites or a portfolio, with revenue tracking included in the pitch.
+  - title: Many sites
+    body: Client sites or a portfolio, with revenue tracking included.
     who: Fathom
-  - title: Avoid a cookie banner
-    body: The analytics script itself should not be the thing that forces a banner.
-    who: Fathom, or DataFast’s cookieless script with the accuracy note
-  - title: You only needed pageviews
-    body: Plausible’s $9 Starter is the other cookieless comparison.
+  - title: No analytics cookie
+    body: The analytics script itself should not be what forces a banner.
+    who: Fathom, or DataFast's cookieless script
+  - title: Pageviews only
+    body: Plausible's $9 Starter is the other cookieless comparison.
     who: Read DataFast vs Plausible
 comparison: datafast-vs-fathom
 tools:
   - id: datafast
-    title: "DataFast — the revenue specialist"
-    blurb: "Starter from $9 a month. The button is an affiliate link."
+    title: "DataFast, for channel revenue"
+    blurb: "Starter from $9 a month at 10,000 events. The button is an affiliate link."
     cta: "Visit DataFast"
     placement: datafast-vs-fathom-card
     featured: true
-    secondaryHref: /reviews/datafast/
-    secondaryCta: Read the review
+    secondaryHref: /pricing/datafast/
+    secondaryCta: DataFast pricing
   - id: fathom
     title: Fathom
-    blurb: "From $15 a month, up to 100,000 pageviews and 50 sites."
+    blurb: "From $15 a month for up to 100,000 pageviews and 50 sites."
     cta: Fathom alternatives
     href: /alternatives/fathom-analytics/
   - id: plausible
     title: Plausible
-    blurb: "Cookieless, and revenue tracking pointed at the Business plan."
+    blurb: "Cookieless traffic from $9 a month. Revenue tracking is on Business."
     cta: DataFast vs Plausible
     href: /compare/datafast-vs-plausible/
-honestyTitle: Two different revenue reports
+honestyTitle: Site count can beat the lower sticker
 honesty: |
-  Fathom includes event and revenue tracking on its plans. DataFast documents a payment-provider join and a revenue-attribution guide. Both are called revenue. They are not the same report. Send a test payment in the trial you start before you cancel the other tool.
+  DataFast Starter at 10,000 events is one website. Fathom Standard at up to 100,000 pageviews includes 50 sites. A portfolio of client sites can cost less on Fathom even though $15 is higher than $9. A single store that lives on channel revenue can be the reverse.
 faqs:
-  - q: Is DataFast cheaper than Fathom?
-    a: "DataFast Starter is $9 a month at 10,000 events and $19 at 100,000 events. Fathom’s published starting price is $15 a month, for up to 100,000 monthly pageviews and 50 sites. At that step, Standard is $15 and Business is $39. Both figures are published prices for up to 100,000 monthly pageviews. Fathom includes far more sites at that entry price. DataFast Starter is one website. The [pricing page](/pricing/datafast/) has the rest of the DataFast ladder."
-  - q: Does Fathom already track revenue?
-    a: "Fathom includes event and revenue tracking, plus UTM campaigns, and does not require a cookie banner. Business, at $39 beside the 100,000-pageview plan, adds seats, roles, an audit log, and a higher API limit. It is not the plan that unlocks revenue."
-  - q: Does Fathom have a free plan?
-    a: "No. The trial is 7 days and requires a card. DataFast’s 14-day trial does not require a card, and the terms do not describe an ongoing free tier."
-  - q: Which links are affiliate links?
-    a: "DataFast links, via via=sortino. Fathom links are ordinary citations."
+  - q: Is DataFast or Fathom cheaper?
+    a: "DataFast Starter is $9 a month and Fathom Standard is $15 a month. Both figures are published starting prices: DataFast for 10,000 events, Fathom for up to 100,000 pageviews and 50 sites. At that Fathom step, Business is $39 and adds seats, roles, and a higher API limit. Yearly billing on both is ten times the monthly price. The [DataFast pricing](/pricing/datafast/) page lists the event steps. The [Fathom alternatives](/alternatives/fathom-analytics/) page lists Fathom's higher pageview steps."
+  - q: Which one tracks revenue?
+    a: "Both can. Fathom lists event and revenue tracking on every plan. DataFast is built around the payment join and expects a connected provider. Fathom Business does not unlock revenue. It adds team features."
+  - q: Which one is cookieless?
+    a: "Fathom does not require a cookie banner for its script. DataFast's default script uses cookies. The cookieless script rotates its visitor salt about every 24 hours, which weakens journeys that take weeks. See the [cookieless guide](/guides/cookieless-analytics/)."
+  - q: Are the DataFast links affiliate links?
+    a: "Yes. They use via=sortino. Fathom links on this site do not."
 related:
   - href: /alternatives/fathom-analytics/
     type: Alternatives
-    title: Fathom alternatives
-    description: Plausible, DataFast, and GA4 starting from Fathom’s price.
+    title: Fathom Analytics alternatives
+    description: Plausible, DataFast, GA4, and PostHog from Fathom's side.
   - href: /pricing/datafast/
     type: Pricing
     title: DataFast pricing
-    description: The event ladder Fathom’s pageview price is being compared with.
+    description: The event ladder above the $9 step.
   - href: /reviews/datafast/
     type: Reviews
     title: DataFast review
-    description: Features, Marc Lou, and the other companies named DataFast.
+    description: What datafa.st is, and which names it is not.
   - href: /compare/datafast-vs-plausible/
     type: Compare
     title: DataFast vs Plausible
@@ -82,26 +82,26 @@ sources:
     href: https://usefathom.com/pricing
 ---
 
-DataFast versus Fathom is the comparison to read when both products claim they can show revenue and you want the invoice and the privacy story to be specific. Fathom is a cookieless website-analytics product with a published entry price and a lot of sites in that price. DataFast is a revenue-attribution product with a lower entry price, one site on Starter, and a default script that uses cookies.
+DataFast vs Fathom is a choice between a revenue-attribution product and a simple privacy analytics product that includes revenue on the plans. Founders usually leave one of them because of site count, cookies, or how the sale is credited.
 
-Figures below are as of 25 November 2026. DataFast means the analytics app at datafa.st. It does not mean the Arizona IT company or the Ecuador payments company. That disambiguation is in the [review](/reviews/datafast/).
+Figures below are as of 26 November 2026. DataFast is [datafa.st](https://datafa.st/). The [review](/reviews/datafast/) separates it from the other companies that use the name.
 
-## The entry invoices
+## DataFast vs Fathom at the entry price
 
-Fathom’s published starting price is $15 a month, for up to 100,000 monthly pageviews and 50 sites. At that step, Standard is $15 a month and Business is $39. Both figures are published prices for up to 100,000 monthly pageviews. Standard is the plan for measuring sites. Business is for teams, and for companies that use the API or AI reporting. The Business checkout at that step is `business_monthly_100k`. It includes everything in Standard, plus 10 team seats besides you, roles, a team audit log, and higher API limits. Traffic from 100,000 to 25 million pageviews does not by itself force a move from Standard to Business. There is no free plan. Extra site packs of 50 are $10 a month or $100 a year. The pageview slider continues upward. Prices above those two entry figures are not listed here.
+Fathom's published starting price is $15 a month, for up to 100,000 monthly pageviews and 50 sites. At that step, Business is $39 a month. Both figures are published prices for that step. Standard includes every analytics feature, including event and revenue tracking, UTM campaigns, and history while you subscribe. Business adds 10 team seats plus you, roles, an audit log, and a higher API limit. There is no free plan. The trial is 7 days and requires a card. Yearly billing is ten times the monthly price. Above 25 million pageviews, Fathom quotes a custom plan.
 
-At 10,000 events, DataFast Starter is $9 a month and Growth is $19. Both figures are published starting prices for that step. At 100,000 events, Starter is $19 and Growth is $39. Starter is 1 website and 1 team member. Growth is 30 websites and 30 team members. The [pricing page](/pricing/datafast/) has the full event ladder through 10 million plus. At 100,000 events, DataFast Starter is $19 and Fathom Standard is $15. Fathom includes 50 sites at that $15. DataFast is the lower invoice only on a small event step with one site. A client roster reverses it.
+DataFast Starter is $9 a month and Growth is $19 a month. Both figures are published starting prices for 10,000 monthly events. Starter is 1 website and 1 team member. Growth is 30 websites and 30 team members. The trial is 14 days and does not require a card. The full ladder is on the [pricing page](/pricing/datafast/).
+
+The units differ. Fathom meters pageviews. DataFast counts pageviews, payments, trial signups, and custom goals as events, across every site on the account.
 
 ## Revenue and cookies
 
-Fathom includes event and revenue tracking, UTM campaigns, and no cookie banner as part of the product, not as a Business upsell. That is the practical difference from Plausible, which puts revenue tracking on Business.
+Fathom lists revenue tracking on every plan, so you do not buy a higher tier to unlock it. DataFast treats the payment join as the product. You connect Stripe, Lemon Squeezy, Polar, Shopify, or send payments through the API.
 
-DataFast’s homepage is the revenue pitch: connect a payment processor and see which channel brought paying customers. Native integrations are Stripe, Lemon Squeezy, Polar, and Shopify, plus a Payment API. The default script uses cookies, and may need a banner. The cookieless script skips a cookie for the visitor id, with a salt that rotates about every 24 hours and weaker long-journey attribution. If “no banner” is the requirement, Fathom matches it more directly than DataFast’s default install. If you use DataFast cookieless for the same requirement, read the accuracy limit first. The [cookieless guide](/guides/cookieless-analytics/) puts that trade in plain language.
+Fathom's script is cookieless. DataFast's default script uses cookies, which is the more reliable option when a payment happens days later. The cookieless DataFast script is the option when avoiding that cookie is the constraint, with a shorter memory.
 
-The two revenue reports are set up differently. Fathom includes revenue tracking. DataFast documents provider connections and an attribution guide, and cookieless mode weakens that attribution. A test payment shows which report you actually get.
+If you only needed pageviews, [DataFast vs Plausible](/compare/datafast-vs-plausible/) is the closer price comparison. Plausible Starter is also $9 a month, and its revenue features sit on Business.
 
 ## Which one to start
 
-Start Fathom if you have many sites, you want the cookieless default, and revenue tracking on the entry plan is enough. The trial is 7 days and requires a card.
-
-Start DataFast if the site count is one, the question is channel revenue, and you will connect a provider and choose the cookie script deliberately. The 14-day trial does not require a card. Do not buy DataFast as a 50-site agency plan. That is Fathom’s entry price, or DataFast Growth if you have already accepted a higher event tier and a 30-site cap.
+Start with Fathom if you manage many low-traffic sites, you want revenue on the entry plan, and a cookieless script is the requirement. Start with DataFast if you have one marketing site, you will connect a payment provider, and channel revenue is the report you will open. The [Fathom alternatives](/alternatives/fathom-analytics/) page is the wider shortlist if neither entry plan matches the traffic you already have.
