@@ -1,134 +1,258 @@
 ---
-title: "PostHog vs Google Analytics"
-seoTitle: "PostHog vs Google Analytics for founders"
-description: "PostHog vs Google Analytics for founders: which job each tool actually does, what the free tiers include, and when to run both instead of picking a winner."
+title: "PostHog vs Google Analytics: Which One Fits Your Team?"
+seoTitle: "PostHog vs Google Analytics (GA4): Which Should You Use?"
+description: "PostHog vs Google Analytics 4: free tiers, pricing, retention, and cookies compared, plus when to pick one tool, when to run both, and what each misses."
 kicker: Compare
-lede: "PostHog and GA4 overlap on pageviews and funnels. They diverge on ads, warehouses, replay, and flags. Most teams that feel forced to pick one should keep the one they already use well and add the other only for a missing job."
+lede: |
+  Choose **Google Analytics 4** if your growth runs on Google Ads, or if your team already relies on a working GA4 setup. It is free, and it connects natively to Google’s ad tools. Choose **PostHog** if you need to see what people do inside your product: session replays, feature flags, experiments, and event funnels. Its first 1 million analytics events each month are free.
+
+  Many teams end up using both: GA4 on the marketing site and PostHog in the app. If your real question is which channel brings paying customers, neither tool answers it out of the box. That is where a revenue-focused tool like DataFast fits.
 accent: "PostHog vs Google Analytics"
-updated: 2026-11-24
+updated: 2026-11-25
 section: compare
 breadcrumb: PostHog vs GA4
-order: 10
+order: 80
+exactTitle: true
+tldrTitle: Quick answer
 tldr:
-  - "Choose GA4 when Google Ads, a finished GA4 practice, or a BigQuery export is the thing you would miss."
-  - "Choose PostHog when the product needs events, replay, flags, or experiments, and you want that suite on a usage bill."
-  - "Standard GA4 is free. PostHog’s first million analytics events a month are free, then usage pricing starts."
-  - "Neither is the revenue-attribution specialist. DataFast is the third name when that is the actual question."
-tldrNote: "Prices and product details as of 24 November 2026."
-jobs:
-  - title: Ads and the Google stack
-    body: Campaigns, audiences, and a team that already trusts GA4.
-    who: Stay on GA4
-  - title: The product suite
-    body: Replay, flags, and product funnels are the weekly work.
-    who: Look at PostHog
-  - title: Revenue by channel
-    body: You want the payment tied to a page or campaign without a suite.
-    who: Start with DataFast
-  - title: Run both
-    body: The marketing host and the product host are different questions.
-    who: GA4 or a light tool, plus PostHog
-comparison: posthog-vs-ga
-ladders:
-  - posthog
-tools:
-  - id: posthog
-    title: PostHog
-    blurb: "The suite side of this comparison. Free allowances, then a public usage card."
-    cta: PostHog pricing
-    href: /pricing/posthog/
-  - id: ga4
-    title: Google Analytics 4
-    blurb: "The free, ads-connected side. Cookies and complexity included."
-    cta: GA4 alternatives
-    href: /alternatives/google-analytics/
-  - id: datafast
-    title: "DataFast — if revenue is the missing report"
-    blurb: "Not a winner of PostHog vs GA4. A third tool when neither answer is the payment join."
-    cta: "Visit DataFast"
-    placement: posthog-vs-ga-card
-    featured: true
-    secondaryHref: /reviews/datafast/
-    secondaryCta: Read the review
-honestyTitle: There is often no single winner
-honesty: |
-  Replacing GA4 with PostHog because a thread said GA4 is confusing will also delete ads reporting. Replacing PostHog with GA4 because GA4 is free will delete replay and flags. If both reports are real, the honest architecture is both tools, scoped to the host each one is good at.
+  - "**Pick GA4** if Google Ads, audiences, or a BigQuery export are part of how you work."
+  - "**Pick PostHog** if your product team needs events, replays, feature flags, or A/B tests."
+  - "**Run both** if your marketing site and your product need different answers."
+  - "**Add DataFast** if you want revenue tied to the channel or page that drove it, without building it yourself."
+tldrNote: "Standard GA4 is free. PostHog is free up to 1 million analytics events a month, then usage-based."
 faqs:
-  - q: Is PostHog a Google Analytics alternative?
-    a: "For product analytics, it is a different and often better instrument. For a marketing site tied to Google Ads, GA4 remains the tool that speaks Google’s ad stack. See [PostHog alternatives](/alternatives/posthog/) if you are leaving PostHog, and [GA4 alternatives](/alternatives/google-analytics/) if you are leaving GA4."
-  - q: Which one is free?
-    a: "Standard GA4 is free. PostHog is free inside monthly allowances, including 1 million analytics events, and bills usage after that on pay-as-you-go. A busy product can outgrow the allowance. A brochure site on GA4 does not get a usage invoice from Google for the standard product."
-  - q: Can I use both?
-    a: "Yes. A common split is GA4, Plausible, Fathom, or DataFast on the marketing site, and PostHog on the app. Double-tagging every page into both, with PostHog identified events, is how the PostHog bill grows without a new insight."
-  - q: Where does DataFast fit?
-    a: "Beside this comparison, not instead of it. DataFast is for revenue attribution. It does not replace PostHog’s suite or GA4’s ads reports. The [review](/reviews/datafast/) has the price ladder. Links to DataFast are affiliate links."
+  - q: "Is PostHog a good Google Analytics alternative?"
+    a: "For product analytics, yes. PostHog goes deeper on in-app behavior and adds replay, flags, and experiments. For a marketing site that depends on Google Ads, GA4 is still the better fit. See [GA4 alternatives](/alternatives/google-analytics/) and [PostHog alternatives](/alternatives/posthog/) for other options."
+  - q: "Is PostHog free?"
+    a: "Yes, up to monthly limits that include 1 million analytics events and 5,000 session recordings. The free plan stops at those limits. On pay-as-you-go, usage beyond them is billed."
+  - q: "Is Google Analytics 4 free?"
+    a: "Yes. Standard GA4 is free. Analytics 360, the enterprise tier, adds higher limits and up to 50 months of data retention, with quote-only pricing."
+  - q: "Can I use PostHog and Google Analytics together?"
+    a: "Yes. A common setup is GA4 on the marketing site and PostHog in the product. Avoid sending every marketing pageview to PostHog as an identified event, because that raises your bill without adding insight."
 related:
   - href: /pricing/posthog/
     type: Pricing
     title: PostHog pricing
-    description: The allowances and the anonymous event card.
+    description: free allowances and per-event rates
   - href: /alternatives/google-analytics/
     type: Alternatives
     title: Google Analytics alternatives
-    description: Lighter tools if PostHog is more suite than you wanted.
-  - href: /guides/marketing-attribution-tools/
-    type: Guides
-    title: Marketing attribution tools
-    description: How credit for a payment differs across these products.
-  - href: /reviews/datafast/
-    type: Reviews
-    title: DataFast review
-    description: The revenue pick, scoped so it does not swallow this comparison.
+    description: lighter tools for marketing sites
   - href: /compare/datafast-vs-posthog/
     type: Compare
     title: DataFast vs PostHog
-    description: The revenue tool beside PostHog, when GA4 is not the other name.
+    description: revenue attribution next to a product suite
+  - href: /guides/marketing-attribution-tools/
+    type: Guides
+    title: Marketing attribution tools
+    description: how each tool credits a sale
+  - href: /reviews/datafast/
+    type: Reviews
+    title: DataFast review
+    description: features, pricing, and who it suits
+sourcesExclusive: true
+sources:
+  - label: PostHog pricing
+    href: https://posthog.com/pricing
+  - label: PostHog product analytics pricing
+    href: https://posthog.com/docs/product-analytics/pricing
+  - label: PostHog anonymous vs identified events
+    href: https://posthog.com/docs/data/anonymous-vs-identified-events
+  - label: Google Analytics
+    href: https://marketingplatform.google.com/about/analytics/
+  - label: GA4 data retention
+    href: https://support.google.com/analytics/answer/7667196
+  - label: Analytics 360 limits
+    href: https://support.google.com/analytics/answer/11202874
+  - label: GA4 BigQuery Export
+    href: https://support.google.com/analytics/answer/9358801
+  - label: DataFast
+    href: https://datafa.st/?via=sortino
 ---
 
-PostHog versus Google Analytics is a popular comparison because both can tell you that a page was viewed. That overlap is real and it is the smallest part of either product. GA4 is Google’s free measurement product for sites and apps, connected to Google’s advertising tools. PostHog is a product suite that prices analytics, replay, flags, experiments, and other meters separately, with a large monthly free tier. Choosing between them as if they were two themes for the same dashboard is how teams delete the report they still need.
+## PostHog vs GA4 at a glance
 
-Figures below are as of 24 November 2026.
+<div class="table-scroll">
+<table class="compare">
+<thead>
+<tr>
+<th></th>
+<th>PostHog</th>
+<th>Google Analytics 4</th>
+<th>DataFast</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Best for</td>
+<td data-label="PostHog">Product analytics, replay, feature flags</td>
+<td data-label="Google Analytics 4">Marketing sites tied to Google Ads</td>
+<td data-label="DataFast">Seeing which channels bring paying customers</td>
+</tr>
+<tr>
+<td>Starting price</td>
+<td data-label="PostHog">Free for 1M events a month</td>
+<td data-label="Google Analytics 4">Free (Analytics 360 is quote-only)</td>
+<td data-label="DataFast">From $9 a month</td>
+</tr>
+<tr>
+<td>Data retention</td>
+<td data-label="PostHog">1 year free, 2 years on pay-as-you-go</td>
+<td data-label="Google Analytics 4">Up to 14 months for event data</td>
+<td data-label="DataFast">3 years on Starter</td>
+</tr>
+<tr>
+<td>Revenue attribution</td>
+<td data-label="PostHog">Possible if you send payment events</td>
+<td data-label="Google Analytics 4">Through ads reports and explorations</td>
+<td data-label="DataFast">Built in</td>
+</tr>
+<tr>
+<td>Cookies</td>
+<td data-label="PostHog">Configurable</td>
+<td data-label="Google Analytics 4">Uses cookies by default</td>
+<td data-label="DataFast">Cookie or cookieless</td>
+</tr>
+<tr>
+<td></td>
+<td data-label="PostHog"><div class="visit-row"><a class="btn btn-primary btn-sm" href="https://posthog.com/" rel="nofollow noopener" target="_blank">Visit PostHog</a></div></td>
+<td data-label="Google Analytics 4"><div class="visit-row"><a class="btn btn-primary btn-sm" href="https://marketingplatform.google.com/about/analytics/" rel="nofollow noopener" target="_blank">Visit Google Analytics</a></div></td>
+<td data-label="DataFast"><div class="visit-row"><a class="btn btn-primary btn-sm datafast-cta" href="https://datafa.st/?via=sortino" rel="sponsored nofollow noopener" target="_blank" data-placement="posthog-vs-ga-table">Visit DataFast</a></div></td>
+</tr>
+</tbody>
+</table>
+</div>
 
-## What GA4 is for
+## When Google Analytics 4 is the better choice
 
-[GA4](https://marketingplatform.google.com/about/analytics/) is free, aimed at understanding customers across sites and apps, with native links into Google Ads and the rest of Google’s advertising stack. Standard GA4 has no monthly list price. Analytics 360, the enterprise tier, is quote-only.
+GA4 is the default for a reason: it costs nothing and connects directly to Google Ads. If paid search or Google audiences drive your growth, GA4 is hard to replace.
 
-The standard web tag uses cookies. If your consent setup requires a banner before those cookies, the banner is part of operating GA4. The interface is deep. Explorations, audiences, and attribution models repay a person who learns them. They punish a founder who opens the property twice a month. That is a description of the product’s shape, not a statistic about failure rates.
+**Where GA4 is strong**
 
-Keep GA4 if someone on the team uses Google Ads reporting, if a BigQuery export is already in a warehouse someone queries, or if the property is already trusted and the pain is a single missing chart you could build. Leaving because the navigation feels dated is a weak reason if the ads account is the company’s acquisition engine.
+- Free for standard properties. Only Analytics 360, the enterprise tier, carries a fee, and its pricing is quote-only.
+- Native links to Google Ads and the rest of Google's marketing stack.
+- BigQuery export on the free tier, with a daily limit of 1 million events.
 
-## What PostHog is for
+**Where GA4 falls short**
 
-PostHog’s pricing page lists a free monthly bucket: 1 million analytics events, 5,000 session recordings, 1 million feature-flag requests, 100,000 exceptions, 1,500 survey responses, and more. The free plan is one project and one year of event retention, and it stops at the limits instead of billing you. Pay-as-you-go keeps the bucket and bills the rest, with six projects and two years of retention. Past the first million, the published starting rate for anonymous events is $0.00005. The [pricing guide](/pricing/posthog/) does the arithmetic and points at the identified-event caveat.
+- Event data is kept for 2 or 14 months on standard properties. Longer retention requires Analytics 360.
+- The standard tag sets cookies. In many regions, that means you need a consent banner.
+- The interface rewards people who use it every week. Founders who log in twice a month often struggle to find the report they need.
 
-You adopt PostHog when a developer will send events, when someone will watch a replay, or when flags and experiments are part of shipping. You can also point it at a marketing site. Doing only that, with identified events, is an expensive way to redraw GA4. Use [anonymous events](https://posthog.com/docs/data/anonymous-vs-identified-events) when you do not need a person profile. They can cost up to four times less than identified events.
+Stay on GA4 if your team runs Google Ads or already queries a BigQuery export. If nobody opens GA4 and you don't run ads, a lighter tool may serve you better. See our [Google Analytics alternatives](/alternatives/google-analytics/).
 
-## Where they actually overlap
+<div class="visit-row">
+<a class="btn btn-primary btn-sm" href="https://marketingplatform.google.com/about/analytics/" rel="nofollow noopener" target="_blank">Visit Google Analytics</a>
+</div>
 
-Both can show traffic sources, pages, and a funnel if you define the steps. Both can be installed on a website with a snippet or an SDK. Both will produce a chart that looks like “users this week” within an hour of a careful install.
+## When PostHog is the better choice
 
-The overlap ends at the edges that make each product worth paying attention to. GA4’s edge is Google’s ad and measurement ecosystem. PostHog’s edge is the suite around the event: replay of a session, a flag that changes the product, an experiment, an error. A fair comparison asks which edge you will touch in the next month. The chart of pageviews is a tie you do not need to break.
+PostHog is built for product teams. It bundles product analytics, session replay, feature flags, experiments, error tracking, and surveys, each with its own monthly free allowance.
 
-Cookies are not a tie. GA4’s standard tag sets first-party analytics cookies. PostHog’s persistence depends on configuration, including options aimed at fewer cookies. PostHog is not cookieless in every install. Read the persistence docs for the SDK you will ship. The [cookieless guide](/guides/cookieless-analytics/) is about tools that lead with that design, which is a third group: Plausible, Fathom, and DataFast’s optional cookieless script.
+**What you get free every month**
 
-## A practical split that respects both
+- 1 million analytics events
+- 5,000 session recordings
+- 1 million feature flag requests
+- 100,000 exceptions
+- 1,500 survey responses
 
-Put GA4 on the marketing site if ads spend is real. Put PostHog on the application if the product team will use it. Give each a job sentence. “GA4 answers paid-search questions. PostHog answers what happened inside the app.” If you cannot write the second sentence, do not add PostHog yet. If you cannot write the first, and nobody opens GA4, a lighter marketing tool may be the GA4 replacement, and PostHog is not required for that replacement. The [GA4 alternatives](/alternatives/google-analytics/) page is that shortlist: Plausible, Fathom, and DataFast, with PostHog kept in its own section.
+The free plan includes 1 project and 1 year of data retention, and it stops at the limits instead of billing you. Pay-as-you-go keeps the same free allowance, then charges for what you use beyond it. It also raises the limits to 6 projects and 2 years of retention.
 
-DataFast enters when the missing sentence is “which channel brought the payment.” GA4 can approach that through ads and explorations. PostHog can approach it if you send a payment event and build the insight. DataFast’s product is that join, with Starter at $9 per month for 10,000 events. It does not evaluate a feature flag. Treating it as the winner of PostHog versus GA4 would be a category error. It belongs when both of those tools have failed to make revenue obvious, which is the point of the [review](/reviews/datafast/). The link is an affiliate link. The category error would still be an error without it.
+### PostHog pricing above the free tier
 
-## Migration mistakes
+<div class="table-scroll">
+<table class="compare">
+<thead>
+<tr>
+<th>Analytics events per month</th>
+<th>Price per event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>First 1 million</td>
+<td data-label="Price per event">Free</td>
+</tr>
+<tr>
+<td>1-2 million</td>
+<td data-label="Price per event">$0.00005</td>
+</tr>
+<tr>
+<td>2-15 million</td>
+<td data-label="Price per event">$0.0000343</td>
+</tr>
+<tr>
+<td>15-50 million</td>
+<td data-label="Price per event">$0.0000295</td>
+</tr>
+<tr>
+<td>50-100 million</td>
+<td data-label="Price per event">$0.0000218</td>
+</tr>
+<tr>
+<td>100-250 million</td>
+<td data-label="Price per event">$0.000015</td>
+</tr>
+<tr>
+<td>250 million and above</td>
+<td data-label="Price per event">$0.000009</td>
+</tr>
+</tbody>
+</table>
+</div>
 
-The expensive mistake is deleting GA4 the day PostHog’s snippet returns 200. You lose the overlap period that tells you whether sources match well enough to trust. Keep two weeks. Compare one source you believe, such as a single campaign with a known spend.
+These rates apply to anonymous events. Identified events, which attach activity to a user profile, cost more. PostHog says anonymous events can be up to 4 times cheaper, so send identified events only where you need a user profile. Our [PostHog pricing guide](/pricing/posthog/) works through example bills.
 
-The quiet mistake is sending every marketing pageview into PostHog as an identified event because the example code did it that way. The bill then measures your blog’s success. Anonymous events, or a different tool on the marketing host, avoid that.
+Pick PostHog if a developer will instrument events and someone will act on replays, flags, or experiments. Using it only for marketing-site pageviews usually costs more effort than it saves.
 
-The organizational mistake is assigning both tools to “whoever has a minute.” GA4 without an owner becomes a login nobody shares. PostHog without an owner becomes an event name nobody can define. One owner per tool, even if that owner is the founder, is the minimum.
+<div class="visit-row">
+<a class="btn btn-primary btn-sm" href="https://posthog.com/" rel="nofollow noopener" target="_blank">Visit PostHog</a>
+</div>
 
-## How to decide in an afternoon
+## Where PostHog and Google Analytics overlap
 
-List the five questions you asked analytics last month. Mark each GA4, PostHog, or neither.
+Both tools show traffic sources, top pages, and funnels you define. Both install with a snippet or an SDK. For basic traffic reports, either works.
 
-If they are all ads and acquisition, stay on GA4 and ignore PostHog until the product needs it. If they are all in-app behavior, price PostHog’s allowance against your event volume and try it beside GA4, not instead of a warehouse export you still query. If they are all “did this article make money,” read the [attribution guide](/guides/marketing-attribution-tools/) and trial DataFast or another marketing tool. If the list is mixed, split the tools by host and stop looking for a winner.
+The differences are what matter:
 
-Mixpanel and Amplitude belong in the same conversation as PostHog, not as GA4. Their pricing guides are [here](/pricing/mixpanel/) and [here](/pricing/amplitude/). Use them when the suite shortlist has more than one logo. Use this page when the other logo is Google.
+- **Advertising:** GA4 connects to Google Ads. PostHog does not offer the same native link.
+- **Product tools:** PostHog includes session replay, feature flags, and experiments. GA4 has none of these.
+- **Cookies:** GA4's standard tag sets first-party cookies. PostHog lets you configure persistence, including options that use fewer cookies, but it is not cookieless by default. If you need a cookieless setup, see our [cookieless analytics guide](/guides/cookieless-analytics/).
+
+## Using PostHog and GA4 together
+
+Running both is often the right call when your marketing site and your product have different owners and different questions. A common split looks like this:
+
+- **Marketing site:** GA4, or a lighter tool such as Plausible, Fathom, or DataFast.
+- **Product:** PostHog.
+
+Before you add PostHog, write one sentence for each tool, for example: "GA4 answers paid-search questions. PostHog shows what happens inside the app." If you can't write the PostHog sentence, you probably don't need it yet.
+
+Three mistakes to avoid when you switch or add a tool:
+
+1. **Removing GA4 too early.** Run both for at least two weeks and compare one campaign you trust before you turn GA4 off.
+2. **Sending every pageview as an identified event.** On a busy blog, this inflates your PostHog bill without adding insight. Use anonymous events on marketing pages.
+3. **Leaving tools without an owner.** Give each tool one person who is responsible for it, even if that person is the founder.
+
+## Where DataFast fits
+
+DataFast is not a replacement for either tool. It does one job: it connects revenue to the channel, campaign, or page that brought the customer. GA4 can get close through ads reports and explorations. PostHog can get there if you send payment events and build the report yourself.
+
+Consider DataFast if you've tried both and still can't see which channels drive sales. Plans start at $9 a month. Read our [DataFast review](/reviews/datafast/), check [DataFast pricing](/pricing/datafast/), or see how it compares in [DataFast vs PostHog](/compare/datafast-vs-posthog/) and [DataFast vs Google Analytics](/compare/datafast-vs-google-analytics/).
+
+<div class="visit-row">
+<a class="btn btn-primary btn-sm datafast-cta" href="https://datafa.st/?via=sortino" rel="sponsored nofollow noopener" target="_blank" data-placement="posthog-vs-ga-cta">Visit DataFast</a>
+<em>(affiliate link)</em>
+</div>
+
+## How to decide
+
+List the five questions you asked your analytics tool last month, then sort them:
+
+- **Mostly ads and acquisition:** stay on GA4.
+- **Mostly in-app behavior:** try PostHog alongside GA4, and estimate your event volume against the free tier first.
+- **Mostly "which channel made us money":** read our [marketing attribution guide](/guides/marketing-attribution-tools/) and trial a revenue tool like DataFast.
+- **A mix:** split the tools by site and app.
+
+Comparing PostHog with other product analytics tools instead? See our [Mixpanel pricing](/pricing/mixpanel/) and [Amplitude pricing](/pricing/amplitude/) guides.

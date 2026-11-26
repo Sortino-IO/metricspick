@@ -20,7 +20,15 @@ function rewriteLinks() {
             }
           } else if (/^https?:\/\//.test(href)) {
             node.properties.target = "_blank";
-            node.properties.rel = "noopener";
+            const current = node.properties.rel;
+            const rel = Array.isArray(current) ? current.join(" ") : String(current ?? "");
+            if (/\bnofollow\b/.test(rel) || /\bsponsored\b/.test(rel)) {
+              const parts = new Set(rel.split(/\s+/).filter(Boolean));
+              parts.add("noopener");
+              node.properties.rel = [...parts].join(" ");
+            } else {
+              node.properties.rel = "noopener";
+            }
           }
         } catch {
           /* leave the original href if it cannot be parsed */
